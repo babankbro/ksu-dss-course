@@ -1,0 +1,35 @@
+# ---------- Node / Next.js (web/) ----------
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+next-env.d.ts
+.vercel/
+
+# ---------- สภาพแวดล้อมและความลับ ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Obsidian (เก็บเฉพาะการตั้งค่าที่ใช้ร่วมกัน) ----------
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ---------- Python (สคริปต์เตรียมข้อมูล) ----------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# ---------- ระบบปฏิบัติการและโปรแกรมแก้ไข ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+~$*
+
+# ---------- ไฟล์ชั่วคราวของ Claude Code ----------
+.claude/settings.local.json

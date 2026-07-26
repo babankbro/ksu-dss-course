@@ -1,0 +1,487 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/xyeyvj",
+    "id": "xyeyvj",
+    "slide": 18,
+    "layoutId": "512b4db9-3059-41e2-b3b5-53f72323ec31",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "b424b29c-3834-4d73-bdef-857ef3ddd6a6",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Noto Sans Thai"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "512b4db9-3059-41e2-b3b5-53f72323ec31",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "b424b29c-3834-4d73-bdef-857ef3ddd6a6",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "b424b29c-3834-4d73-bdef-857ef3ddd6a6",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/8ry58r6h",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "alt": "ภาพ Future DSS ที่มนุษย์กำกับ AI agents และการตัดสินใจ",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "db7e6422-c587-4f21-b962-2ebebd4eb0b5",
+        "contentType": "image/png",
+        "byteLength": 1854291
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/61ojmhwn",
+      "id": "2",
+      "name": "future-overlay",
+      "bbox": [
+        0,
+        0,
+        520,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#FFFFFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/72x0vmds",
+      "id": "3",
+      "name": "future-kicker",
+      "bbox": [
+        44,
+        46,
+        400,
+        32
+      ],
+      "geometry": "rect",
+      "text": "FUTURE DSS",
+      "textPreview": "FUTURE DSS",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "FUTURE DSS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "FUTURE DSS",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "FUTURE DSS",
+              "fontSize": 18,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g7q1srep",
+      "id": "4",
+      "name": "future-title",
+      "bbox": [
+        44,
+        150,
+        440,
+        220
+      ],
+      "geometry": "rect",
+      "text": "ฉลาดขึ้น\nต้องตรวจสอบได้\nมากขึ้น",
+      "textPreview": "ฉลาดขึ้น | ต้องตรวจสอบได้ | มากขึ้น",
+      "resolvedFontSize": 60,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 60,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ฉลาดขึ้น"
+          },
+          {
+            "index": 2,
+            "text": "ต้องตรวจสอบได้"
+          },
+          {
+            "index": 3,
+            "text": "มากขึ้น"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ฉลาดขึ้น",
+          "resolvedTextStyle": {
+            "fontSize": 60,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ฉลาดขึ้น",
+              "fontSize": 60,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "ต้องตรวจสอบได้",
+          "resolvedTextStyle": {
+            "fontSize": 60,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ต้องตรวจสอบได้",
+              "fontSize": 60,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "มากขึ้น",
+          "resolvedTextStyle": {
+            "fontSize": 60,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "มากขึ้น",
+              "fontSize": 60,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h8z21wva",
+      "id": "5",
+      "name": "future-copy",
+      "bbox": [
+        44,
+        430,
+        430,
+        130
+      ],
+      "geometry": "rect",
+      "text": "Conversational • Multi-model\nAgentic • Uncertainty-aware\nContinuous monitoring",
+      "textPreview": "Conversational • Multi-model | Agentic • Uncertainty-aware | Continuous monitoring",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Conversational • Multi-model"
+          },
+          {
+            "index": 2,
+            "text": "Agentic • Uncertainty-aware"
+          },
+          {
+            "index": 3,
+            "text": "Continuous monitoring"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Conversational • Multi-model",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Conversational • Multi-model",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "Agentic • Uncertainty-aware",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Agentic • Uncertainty-aware",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "Continuous monitoring",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Continuous monitoring",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/u58jq1wj",
+      "id": "6",
+      "name": "future-question",
+      "bbox": [
+        44,
+        618,
+        430,
+        38
+      ],
+      "geometry": "rect",
+      "text": "Autonomy ต้องสัมพันธ์กับความเสี่ยง",
+      "textPreview": "Autonomy ต้องสัมพันธ์กับความเสี่ยง",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Noto Sans Thai",
+        "color": "#C84B4B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Autonomy ต้องสัมพันธ์กับความเสี่ยง"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Autonomy ต้องสัมพันธ์กับความเสี่ยง",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Autonomy ต้องสัมพันธ์กับความเสี่ยง",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -1,0 +1,468 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/v4vman",
+    "id": "v4vman",
+    "slide": 1,
+    "layoutId": "14eb8617-6c00-47c7-b4b3-95c06eb98ff0",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "1e90c550-ca83-4698-bbbe-49b7e9c9ba72",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F6F8FA",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Noto Sans Thai"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "14eb8617-6c00-47c7-b4b3-95c06eb98ff0",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "1e90c550-ca83-4698-bbbe-49b7e9c9ba72",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "1e90c550-ca83-4698-bbbe-49b7e9c9ba72",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/3i1o7mp0",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "alt": "สถาปัตยกรรม DSS จากข้อมูลสู่การตัดสินใจ",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "6f65ee5a-c73c-4000-bac8-1f6e8d4c642b",
+        "contentType": "image/png",
+        "byteLength": 1922394
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9wfexovu",
+      "id": "2",
+      "name": "fade",
+      "bbox": [
+        0,
+        0,
+        650,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F7F9FB",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ov6xoju9",
+      "id": "3",
+      "name": "ck",
+      "bbox": [
+        48,
+        52,
+        560,
+        34
+      ],
+      "geometry": "rect",
+      "text": "WEEK 02 • DECISION SUPPORT SYSTEMS",
+      "textPreview": "WEEK 02 • DECISION SUPPORT SYSTEMS",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 02 • DECISION SUPPORT SYSTEMS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 02 • DECISION SUPPORT SYSTEMS",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 02 • DECISION SUPPORT SYSTEMS",
+              "fontSize": 19,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/byhwzyd0",
+      "id": "4",
+      "name": "ct",
+      "bbox": [
+        48,
+        164,
+        560,
+        174
+      ],
+      "geometry": "rect",
+      "text": "สถาปัตยกรรม\nDSS",
+      "textPreview": "สถาปัตยกรรม | DSS",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 72,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "สถาปัตยกรรม"
+          },
+          {
+            "index": 2,
+            "text": "DSS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "สถาปัตยกรรม",
+          "resolvedTextStyle": {
+            "fontSize": 72,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "สถาปัตยกรรม",
+              "fontSize": 72,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "DSS",
+          "resolvedTextStyle": {
+            "fontSize": 72,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DSS",
+              "fontSize": 72,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ax8fqtcf",
+      "id": "5",
+      "name": "cs",
+      "bbox": [
+        48,
+        385,
+        580,
+        74
+      ],
+      "geometry": "rect",
+      "text": "4 Subsystems • 20 Applications • Future DSS",
+      "textPreview": "4 Subsystems • 20 Applications • Future DSS",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4 Subsystems • 20 Applications • Future DSS"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4 Subsystems • 20 Applications • Future DSS",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4 Subsystems • 20 Applications • Future DSS",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/x0ze18vq",
+      "id": "6",
+      "name": "cc",
+      "bbox": [
+        48,
+        510,
+        570,
+        44
+      ],
+      "geometry": "rect",
+      "text": "จากข้อมูล → เหตุผล → คำแนะนำ → การลงมือทำ",
+      "textPreview": "จากข้อมูล → เหตุผล → คำแนะนำ → การลงมือทำ",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#C84B4B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "จากข้อมูล → เหตุผล → คำแนะนำ → การลงมือทำ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "จากข้อมูล → เหตุผล → คำแนะนำ → การลงมือทำ",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "จากข้อมูล → เหตุผล → คำแนะนำ → การลงมือทำ",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wzqxs3u5",
+      "id": "7",
+      "name": "course",
+      "bbox": [
+        48,
+        630,
+        560,
+        28
+      ],
+      "geometry": "rect",
+      "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+      "textPreview": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+              "fontSize": 18,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

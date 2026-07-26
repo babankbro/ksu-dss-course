@@ -1,0 +1,409 @@
+{"kind":"deck","id":"pr/4kks7i","name":"Deck"}
+{"kind":"layout","layoutId":"b424b29c-3834-4d73-bdef-857ef3ddd6a6","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"512b4db9-3059-41e2-b3b5-53f72323ec31","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/6qerb5","slide":1,"title":"WEEK 01 • DECISION SUPPORT SYSTEMS","textShapes":4}
+{"kind":"shape","id":"sh/sbuhgbm5","slide":1,"name":"cover-fade","bbox":[0,0,670,720]}
+{"kind":"textbox","id":"sh/tc3i9g3a","slide":1,"name":"cover-kicker","text":"WEEK 01 • DECISION SUPPORT SYSTEMS","textPreview":"WEEK 01 • DECISION SUPPORT SYSTEMS","textChars":34,"textLines":1,"bbox":[48,54,560,38]}
+{"kind":"textbox","id":"sh/udczil4v","slide":1,"name":"cover-title","text":"ระบบสนับสนุน\nการตัดสินใจ","textPreview":"ระบบสนับสนุน | การตัดสินใจ","textChars":24,"textLines":2,"bbox":[48,170,600,210]}
+{"kind":"textbox","id":"sh/fel0bqlg","slide":1,"name":"cover-subtitle","text":"ประวัติ • 20 Applications • Future DSS","textPreview":"ประวัติ • 20 Applications • Future DSS","textChars":38,"textLines":1,"bbox":[48,424,570,50]}
+{"kind":"textbox","id":"sh/gfehkvm1","slide":1,"name":"cover-course","text":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textPreview":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textChars":36,"textLines":1,"bbox":[48,616,560,32]}
+{"kind":"image","id":"im/elsrql8b","slide":1,"name":"","geometry":"rect","alt":"ภาพประกอบกำเนิดระบบสนับสนุนการตัดสินใจในยุค mainframe","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/6qerb5","slide":1,"text":"เปิดด้วยคำถาม: วันนี้นักศึกษาตัดสินใจเรื่องใดโดยใช้ข้อมูลจากระบบดิจิทัลแล้วบ้าง?\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (project asset: assets/dss-origins.png)"}
+{"kind":"slide","id":"sl/jqghs7","slide":2,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":9}
+{"kind":"textbox","id":"sh/2hwrehgj","slide":2,"name":"kicker-2","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/p4nqpcza","slide":2,"name":"title-2","text":"วันนี้เราจะตอบ 5 คำถาม","textPreview":"วันนี้เราจะตอบ 5 คำถาม","textChars":22,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/4je9g7yp","slide":2,"name":"rule-2","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/fel8j2h8","slide":2,"name":"footer-label-2","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/udcraxgn","slide":2,"name":"footer-number-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/hgnqlczy","slide":2,"name":"bullet-198-0","bbox":[84,206,12,12]}
+{"kind":"textbox","id":"sh/gfe9c7yd","slide":2,"name":"bullet-text-198-0","text":"DSS คืออะไร — และไม่ใช่อะไร?","textPreview":"DSS คืออะไร — และไม่ใช่อะไร?","textChars":28,"textLines":1,"bbox":[112,198,1052,82]}
+{"kind":"shape","id":"sh/7al8fihw","slide":2,"name":"bullet-198-1","bbox":[84,288,12,12]}
+{"kind":"textbox","id":"sh/69cr6dgb","slide":2,"name":"bullet-text-198-1","text":"ปัญหาแบบใดที่ DSS ช่วยได้ดีที่สุด?","textPreview":"ปัญหาแบบใดที่ DSS ช่วยได้ดีที่สุด?","textChars":34,"textLines":1,"bbox":[112,280,1052,82]}
+{"kind":"shape","id":"sh/k32lkje9","slide":2,"name":"bullet-198-2","bbox":[84,370,12,12]}
+{"kind":"textbox","id":"sh/l4b2dofe","slide":2,"name":"bullet-text-198-2","text":"DSS พัฒนาจาก model สู่ AI agents อย่างไร?","textPreview":"DSS พัฒนาจาก model สู่ AI agents อย่างไร?","textChars":41,"textLines":1,"bbox":[112,362,1052,82]}
+{"kind":"shape","id":"sh/y1k3i9w3","slide":2,"name":"bullet-198-3","bbox":[84,452,12,12]}
+{"kind":"textbox","id":"sh/z2tkbexo","slide":2,"name":"bullet-text-198-3","text":"20 งานประยุกต์มีโครงสร้างร่วมกันอะไร?","textPreview":"20 งานประยุกต์มีโครงสร้างร่วมกันอะไร?","textChars":37,"textLines":1,"bbox":[112,444,1052,82]}
+{"kind":"shape","id":"sh/cz2lgzex","slide":2,"name":"bullet-198-4","bbox":[84,534,12,12]}
+{"kind":"textbox","id":"sh/x0b294fi","slide":2,"name":"bullet-text-198-4","text":"Future DSS ควรฉลาดและรับผิดชอบแค่ไหน?","textPreview":"Future DSS ควรฉลาดและรับผิดชอบแค่ไหน?","textChars":37,"textLines":1,"bbox":[112,526,1052,82]}
+{"kind":"notes","id":"nt/jqghs7","slide":2,"text":"ให้นักศึกษาเลือกหนึ่งคำถามที่อยากได้คำตอบมากที่สุด เพื่อใช้ตรวจการเรียนรู้ท้ายคาบ\n\n[Sources]\n- Course syllabus and Week-01 source note in this vault."}
+{"kind":"slide","id":"sl/kw7mu2","slide":3,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":8}
+{"kind":"textbox","id":"sh/psrmhoj6","slide":3,"name":"kicker-3","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/25g3m9kv","slide":3,"name":"title-3","text":"เมื่อข้อมูลเพิ่มขึ้น การตัดสินใจไม่ได้ง่ายขึ้นเสมอ","textPreview":"เมื่อข้อมูลเพิ่มขึ้น การตัดสินใจไม่ได้ง่ายขึ้นเสมอ","textChars":50,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/3qp4fe1g","slide":3,"name":"rule-3","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/g3ylkz2p","slide":3,"name":"footer-label-3","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/h47md4ja","slide":3,"name":"footer-number-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/u1g3i9kj","slide":3,"name":"hook-claim","text":"ข้อมูลมาก\nเวลาน้อย\nเป้าหมายขัดแย้ง","textPreview":"ข้อมูลมาก | เวลาน้อย | เป้าหมายขัดแย้ง","textChars":34,"textLines":3,"bbox":[58,215,430,280]}
+{"kind":"shape","id":"sh/f2p4be14","slide":3,"name":"hook-panel","bbox":[560,195,630,360]}
+{"kind":"textbox","id":"sh/0z25w32t","slide":3,"name":"hook-case","text":"สถานการณ์เปิดชั้นเรียน","textPreview":"สถานการณ์เปิดชั้นเรียน","textChars":22,"textLines":1,"bbox":[600,228,520,38]}
+{"kind":"textbox","id":"sh/10bmp8je","slide":3,"name":"hook-copy","text":"ยอดขายลดลง 12%\nแต่กำไรเพิ่มขึ้น 4%\nลูกค้าร้องเรียนน้อยลง\nสินค้าคงคลังสูงขึ้น","textPreview":"ยอดขายลดลง 12% | แต่กำไรเพิ่มขึ้น 4% | ลูกค้าร้องเรียนน้อยลง | สินค้าคงคลังสูงขึ้น","textChars":76,"textLines":4,"bbox":[600,300,520,190]}
+{"kind":"textbox","id":"sh/5wratw3m","slide":3,"name":"hook-question","text":"ผู้บริหารควรทำอะไรต่อ — และต้องรู้อะไรเพิ่ม?","textPreview":"ผู้บริหารควรทำอะไรต่อ — และต้องรู้อะไรเพิ่ม?","textChars":44,"textLines":1,"bbox":[600,502,520,44]}
+{"kind":"notes","id":"nt/kw7mu2","slide":3,"text":"กิจกรรม 3 นาที: ให้แต่ละคู่เสนอการตัดสินใจหนึ่งข้อ แล้วชี้ว่าข้อมูลใดยังขาด\n\n[Sources]\n- Herbert A. Simon, Administrative Behavior (1947); The New Science of Management Decision (1960)."}
+{"kind":"slide","id":"sl/6g3v5y","slide":4,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":9}
+{"kind":"textbox","id":"sh/y54ri5gj","slide":4,"name":"kicker-4","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/l8vadkfu","slide":4,"name":"title-4","text":"DSS ทำให้ข้อมูลและแบบจำลองกลายเป็น “ทางเลือก”","textPreview":"DSS ทำให้ข้อมูลและแบบจำลองกลายเป็น “ทางเลือก”","textChars":45,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/07m9kfy9","slide":4,"name":"rule-4","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/naxsfax0","slide":4,"name":"footer-label-4","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/m9orm5gf","slide":4,"name":"footer-number-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/9cfahkf6","slide":4,"name":"definition-band","bbox":[42,192,1196,150]}
+{"kind":"textbox","id":"sh/8b6tofyl","slide":4,"name":"definition","text":"ระบบคอมพิวเตอร์แบบโต้ตอบที่รวมข้อมูล แบบจำลอง ความรู้ และส่วนติดต่อผู้ใช้ เพื่อช่วยมนุษย์วิเคราะห์ทางเลือกในปัญหาซับซ้อน","textPreview":"ระบบคอมพิวเตอร์แบบโต้ตอบที่รวมข้อมูล แบบจำลอง ความรู้ และส่วนติดต่อผู้ใช้ เพื่อช่วยมนุษย์วิเคราะห์ทางเลือกในปัญหาซับซ้อน","textChars":120,"textLines":1,"bbox":[74,226,1130,95]}
+{"kind":"textbox","id":"sh/3ets3qxw","slide":4,"name":"does-title","text":"DSS ช่วย","textPreview":"DSS ช่วย","textChars":8,"textLines":1,"bbox":[70,396,480,40]}
+{"kind":"textbox","id":"sh/2dkralgb","slide":4,"name":"does","text":"• ทำให้เห็นสถานการณ์\n• สร้างและเปรียบเทียบทางเลือก\n• ทำ what-if / forecast / optimize","textPreview":"• ทำให้เห็นสถานการณ์ | • สร้างและเปรียบเทียบทางเลือก | • ทำ what-if / forecast / optimize","textChars":85,"textLines":3,"bbox":[70,454,510,150]}
+{"kind":"textbox","id":"sh/wbels3yt","slide":4,"name":"not-title","text":"DSS ไม่ควร","textPreview":"DSS ไม่ควร","textChars":10,"textLines":1,"bbox":[676,396,480,40]}
+{"kind":"textbox","id":"sh/xc721ofe","slide":4,"name":"not","text":"• ซ่อนสมมติฐานและข้อจำกัด\n• ยกเลิกความรับผิดชอบของมนุษย์\n• ทำให้คำแนะนำดูเป็นความจริงเด็ดขาด","textPreview":"• ซ่อนสมมติฐานและข้อจำกัด | • ยกเลิกความรับผิดชอบของมนุษย์ | • ทำให้คำแนะนำดูเป็นความจริงเด็ดขาด","textChars":92,"textLines":3,"bbox":[676,454,520,150]}
+{"kind":"notes","id":"nt/6g3v5y","slide":4,"text":"เน้นคำว่า interactive และ support: ระบบต้องเปิดให้ผู้ใช้สำรวจ ปรับ และตั้งคำถาม\n\n[Sources]\n- Power, D.J. (2004), https://aisel.aisnet.org/cais/vol13/iss1/13/"}
+{"kind":"slide","id":"sl/updhcu","slide":5,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":13}
+{"kind":"textbox","id":"sh/h8val476","slide":5,"name":"kicker-5","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/ul4bqpov","slide":5,"name":"title-5","text":"DSS เด่นที่สุดกับปัญหา “กึ่งมีโครงสร้าง”","textPreview":"DSS เด่นที่สุดกับปัญหา “กึ่งมีโครงสร้าง”","textChars":40,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/v6dsjupg","slide":5,"name":"rule-5","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/8jmtoz6p","slide":5,"name":"footer-label-5","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/tkvahk7a","slide":5,"name":"footer-number-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/6hkbmpoj","slide":5,"name":"struct-0","bbox":[42,210,360,360]}
+{"kind":"textbox","id":"sh/7itsfup4","slide":5,"name":"struct-head-0","text":"STRUCTURED","textPreview":"STRUCTURED","textChars":10,"textLines":1,"bbox":[70,242,304,42]}
+{"kind":"textbox","id":"sh/kf2tkf6t","slide":5,"name":"struct-desc-0","text":"กฎและขั้นตอนชัด","textPreview":"กฎและขั้นตอนชัด","textChars":15,"textLines":1,"bbox":[70,320,304,105]}
+{"kind":"textbox","id":"sh/lgbadk7y","slide":5,"name":"struct-example-0","text":"ตัวอย่าง\nจุดสั่งซื้อสินค้า","textPreview":"ตัวอย่าง | จุดสั่งซื้อสินค้า","textChars":26,"textLines":2,"bbox":[70,475,304,75]}
+{"kind":"shape","id":"sh/lobm1grm","slide":5,"name":"struct-1","bbox":[441,210,360,360]}
+{"kind":"textbox","id":"sh/kn25sbq1","slide":5,"name":"struct-head-1","text":"SEMI-STRUCTURED","textPreview":"SEMI-STRUCTURED","textChars":15,"textLines":1,"bbox":[469,242,304,42]}
+{"kind":"textbox","id":"sh/zm94z69w","slide":5,"name":"struct-desc-1","text":"โมเดลช่วยได้\nมนุษย์ยังต้องตัดสิน","textPreview":"โมเดลช่วยได้ | มนุษย์ยังต้องตัดสิน","textChars":32,"textLines":2,"bbox":[469,320,304,105]}
+{"kind":"textbox","id":"sh/yl0nq18b","slide":5,"name":"struct-example-1","text":"ตัวอย่าง\nอนุมัติสินเชื่อ","textPreview":"ตัวอย่าง | อนุมัติสินเชื่อ","textChars":24,"textLines":2,"bbox":[469,475,304,75]}
+{"kind":"shape","id":"sh/x0rmxwrq","slide":5,"name":"struct-2","bbox":[840,210,360,360]}
+{"kind":"textbox","id":"sh/czi5obq5","slide":5,"name":"struct-head-2","text":"UNSTRUCTURED","textPreview":"UNSTRUCTURED","textChars":12,"textLines":1,"bbox":[868,242,304,42]}
+{"kind":"textbox","id":"sh/by94v69k","slide":5,"name":"struct-desc-2","text":"เป้าหมายและวิธีแก้ไม่ชัด","textPreview":"เป้าหมายและวิธีแก้ไม่ชัด","textChars":24,"textLines":1,"bbox":[868,320,304,105]}
+{"kind":"textbox","id":"sh/ax0nm18z","slide":5,"name":"struct-example-2","text":"ตัวอย่าง\nยุทธศาสตร์จังหวัด","textPreview":"ตัวอย่าง | ยุทธศาสตร์จังหวัด","textChars":26,"textLines":2,"bbox":[868,475,304,75]}
+{"kind":"notes","id":"nt/updhcu","slide":5,"text":"ถามให้นักศึกษาจำแนก “การเลือกสาขาเรียน” และอภิปรายว่าคำตอบอาจเปลี่ยนตามบริบท\n\n[Sources]\n- Gorry & Scott Morton (1971), https://dspace.mit.edu/bitstream/handle/1721.1/47936/frameworkformana00gorr.pdf"}
+{"kind":"slide","id":"sl/1yzk90","slide":6,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":21}
+{"kind":"textbox","id":"sh/al8fyx47","slide":6,"name":"kicker-6","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/xozets3y","slide":6,"name":"title-6","text":"การตัดสินใจเป็นวงจร ไม่ใช่คำตอบครั้งเดียว","textPreview":"การตัดสินใจเป็นวงจร ไม่ใช่คำตอบครั้งเดียว","textChars":41,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/cnqx0nmd","slide":6,"name":"rule-6","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/nyxwni5g","slide":6,"name":"footer-label-6","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/2xovud4b","slide":6,"name":"footer-number-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/pkzepsnm","slide":6,"name":"arrow-0","bbox":[300,322,62,42]}
+{"kind":"shape","id":"sh/ozqdwnm1","slide":6,"name":"arrow-1","bbox":[602,322,62,42]}
+{"kind":"shape","id":"sh/fuxwjy5k","slide":6,"name":"arrow-2","bbox":[904,322,62,42]}
+{"kind":"shape","id":"sh/etovqd4z","slide":6,"name":"phase-0","bbox":[54,230,250,280]}
+{"kind":"textbox","id":"sh/gbud07y1","slide":6,"name":"phase-no-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[78,250,44,55]}
+{"kind":"textbox","id":"sh/hwnu9cfm","slide":6,"name":"phase-name-0","text":"INTELLIGENCE","textPreview":"INTELLIGENCE","textChars":12,"textLines":1,"bbox":[78,318,202,40]}
+{"kind":"textbox","id":"sh/u9cvyxgb","slide":6,"name":"phase-q-0","text":"ปัญหาคืออะไร?","textPreview":"ปัญหาคืออะไร?","textChars":13,"textLines":1,"bbox":[78,384,202,62]}
+{"kind":"textbox","id":"sh/valc72xg","slide":6,"name":"phase-tech-0","text":"ตรวจจับ • สำรวจ","textPreview":"ตรวจจับ • สำรวจ","textChars":15,"textLines":1,"bbox":[78,462,202,32]}
+{"kind":"shape","id":"sh/87utwny5","slide":6,"name":"phase-1","bbox":[356,230,250,280]}
+{"kind":"textbox","id":"sh/t83u5sfq","slide":6,"name":"phase-no-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[380,250,44,55]}
+{"kind":"textbox","id":"sh/65cbudgz","slide":6,"name":"phase-name-1","text":"DESIGN","textPreview":"DESIGN","textChars":6,"textLines":1,"bbox":[380,318,202,40]}
+{"kind":"textbox","id":"sh/76lc3ixk","slide":6,"name":"phase-q-1","text":"มีทางเลือกอะไร?","textPreview":"มีทางเลือกอะไร?","textChars":15,"textLines":1,"bbox":[380,384,202,62]}
+{"kind":"textbox","id":"sh/s3ed8re9","slide":6,"name":"phase-tech-1","text":"จำลอง • สร้าง","textPreview":"จำลอง • สร้าง","textChars":13,"textLines":1,"bbox":[380,462,202,32]}
+{"kind":"shape","id":"sh/d47uhwfu","slide":6,"name":"phase-2","bbox":[658,230,250,280]}
+{"kind":"textbox","id":"sh/1k3u1c7y","slide":6,"name":"phase-no-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[682,250,44,55]}
+{"kind":"textbox","id":"sh/0juds76d","slide":6,"name":"phase-name-2","text":"CHOICE","textPreview":"CHOICE","textChars":6,"textLines":1,"bbox":[682,318,202,40]}
+{"kind":"textbox","id":"sh/zi1czmps","slide":6,"name":"phase-q-2","text":"ทางเลือกใดเหมาะ?","textPreview":"ทางเลือกใดเหมาะ?","textChars":16,"textLines":1,"bbox":[682,384,202,62]}
+{"kind":"textbox","id":"sh/ehsbqhon","slide":6,"name":"phase-tech-2","text":"เปรียบเทียบ • optimize","textPreview":"เปรียบเทียบ • optimize","textChars":22,"textLines":1,"bbox":[682,462,202,32]}
+{"kind":"shape","id":"sh/dwjuxc72","slide":6,"name":"phase-3","bbox":[960,230,250,280]}
+{"kind":"textbox","id":"sh/cvato7qh","slide":6,"name":"phase-no-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[984,250,44,55]}
+{"kind":"textbox","id":"sh/ru1cv2pw","slide":6,"name":"phase-name-3","text":"IMPLEMENTATION","textPreview":"IMPLEMENTATION","textChars":14,"textLines":1,"bbox":[984,318,202,40]}
+{"kind":"textbox","id":"sh/qtsbmx8b","slide":6,"name":"phase-q-3","text":"ทำแล้วได้ผลอย่างไร?","textPreview":"ทำแล้วได้ผลอย่างไร?","textChars":19,"textLines":1,"bbox":[984,384,202,62]}
+{"kind":"textbox","id":"sh/psjuts7q","slide":6,"name":"phase-tech-3","text":"ติดตาม • เรียนรู้","textPreview":"ติดตาม • เรียนรู้","textChars":17,"textLines":1,"bbox":[984,462,202,32]}
+{"kind":"textbox","id":"sh/4ratknq5","slide":6,"name":"feedback-loop","text":"ผลลัพธ์ใหม่อาจทำให้ต้องย้อนกลับไปกำหนดปัญหาอีกครั้ง","textPreview":"ผลลัพธ์ใหม่อาจทำให้ต้องย้อนกลับไปกำหนดปัญหาอีกครั้ง","textChars":51,"textLines":1,"bbox":[280,560,720,42]}
+{"kind":"notes","id":"nt/1yzk90","slide":6,"text":"ย้ำว่า Implementation สร้างข้อมูลใหม่ และ feedback อาจทำให้ย้อนกลับไป Intelligence\n\n[Sources]\n- Simon, H.A. (1960), The New Science of Management Decision.\n- Gorry & Scott Morton (1971), MIT."}
+{"kind":"slide","id":"sl/nmy1yy","slide":7,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":12}
+{"kind":"textbox","id":"sh/t47ulor6","slide":7,"name":"kicker-7","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/61gbq98v","slide":7,"name":"title-7","text":"ก่อนมี DSS เรามี “ศาสตร์การตัดสินใจ”","textPreview":"ก่อนมี DSS เรามี “ศาสตร์การตัดสินใจ”","textChars":36,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/r2pcje9g","slide":7,"name":"rule-7","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/4zytozqp","slide":7,"name":"footer-label-7","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/507uh4ra","slide":7,"name":"footer-number-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/idwbm98j","slide":7,"name":"roots-big","text":"1940s–1960s","textPreview":"1940s–1960s","textChars":11,"textLines":1,"bbox":[60,222,460,90]}
+{"kind":"textbox","id":"sh/jy5cfe94","slide":7,"name":"roots-sub","text":"รากฐานที่มาบรรจบกัน","textPreview":"รากฐานที่มาบรรจบกัน","textChars":19,"textLines":1,"bbox":[60,325,460,44]}
+{"kind":"shape","id":"sh/ovid03qt","slide":7,"name":"root-box-0","bbox":[604,204,574,96]}
+{"kind":"textbox","id":"sh/pwrut87e","slide":7,"name":"root-title-0","text":"Operations Research","textPreview":"Operations Research","textChars":19,"textLines":1,"bbox":[634,219,500,30]}
+{"kind":"textbox","id":"sh/1wn6147e","slide":7,"name":"root-desc-0","text":"แบบจำลองและการหาค่าเหมาะที่สุด","textPreview":"แบบจำลองและการหาค่าเหมาะที่สุด","textChars":30,"textLines":1,"bbox":[634,257,500,28]}
+{"kind":"shape","id":"sh/gve58zqt","slide":7,"name":"root-box-1","bbox":[604,329,574,96]}
+{"kind":"textbox","id":"sh/fu54zup8","slide":7,"name":"root-title-1","text":"Behavioral Decision","textPreview":"Behavioral Decision","textChars":19,"textLines":1,"bbox":[634,344,500,30]}
+{"kind":"textbox","id":"sh/etwn6p8n","slide":7,"name":"root-desc-1","text":"bounded rationality และ satisficing","textPreview":"bounded rationality และ satisficing","textChars":35,"textLines":1,"bbox":[634,382,500,28]}
+{"kind":"shape","id":"sh/tsnmxk72","slide":7,"name":"root-box-2","bbox":[604,454,574,96]}
+{"kind":"textbox","id":"sh/sru54fqh","slide":7,"name":"root-title-2","text":"Interactive Computing","textPreview":"Interactive Computing","textChars":21,"textLines":1,"bbox":[634,469,500,30]}
+{"kind":"textbox","id":"sh/rql4va9w","slide":7,"name":"root-desc-2","text":"ปรับตัวแปรและเห็นผลได้ทันที","textPreview":"ปรับตัวแปรและเห็นผลได้ทันที","textChars":27,"textLines":1,"bbox":[634,507,500,28]}
+{"kind":"notes","id":"nt/nmy1yy","slide":7,"text":"เชื่อมให้เห็นว่า DSS ไม่ได้เกิดจากคอมพิวเตอร์อย่างเดียว แต่เกิดจากแบบจำลอง + พฤติกรรมมนุษย์ + การโต้ตอบ\n\n[Sources]\n- Power, D.J. (2007), https://dssresources.com/history/dsshistory.html\n- Simon, H.A. (1947, 1960)."}
+{"kind":"slide","id":"sl/csdgc3","slide":8,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":5}
+{"kind":"textbox","id":"sh/l0fut4v6","slide":8,"name":"kicker-8","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/yx4vi9wf","slide":8,"name":"title-8","text":"กลางทศวรรษ 1960: ผู้จัดการเริ่ม “ทดลองกับโมเดล”","textPreview":"กลางทศวรรษ 1960: ผู้จัดการเริ่ม “ทดลองกับโมเดล”","textChars":47,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/jyxcred0","slide":8,"name":"rule-8","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/wvmdgzep","slide":8,"name":"footer-label-8","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/xwvup4vu","slide":8,"name":"footer-number-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/a94vupwj","slide":8,"name":"origin-copy","text":"Time-sharing และ interactive display ทำให้การวางแผนไม่ต้องรอรายงานรอบถัดไป\n\nผู้ใช้เปลี่ยนสมมติฐาน → ระบบคำนวณ → เห็นผล → ปรับอีกครั้ง","textPreview":"Time-sharing และ interactive display ทำให้การวางแผนไม่ต้องรอรายงานรอบถัดไป |  | ผู้ใช้เปลี่ยนสมมติฐาน → ระบบคำนวณ → เห็นผล → ปรับอีกครั้ง","textChars":133,"textLines":3,"bbox":[52,220,520,300]}
+{"kind":"image","id":"im/e9kjutsf","slide":8,"name":"","geometry":"rect","alt":"ภาพประกอบ terminal แบบโต้ตอบสำหรับการวางแผนในทศวรรษ 1960","bbox":[648,190,590,420]}
+{"kind":"notes","id":"nt/csdgc3","slide":8,"text":"เปรียบเทียบกับการรอรายงาน batch: ความเร็วของ feedback เปลี่ยนบทบาทผู้จัดการจากผู้รับรายงานเป็นผู้สำรวจทางเลือก\n\n[Sources]\n- Power, D.J. (2007), https://dssresources.com/history/dsshistory.html\n- Generated illustration: OpenAI ImageGen, 2026 (project asset: assets/interactive-terminal-1960s.png)."}
+{"kind":"slide","id":"sl/lvljha","slide":9,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":19}
+{"kind":"textbox","id":"sh/faxkf2hk","slide":9,"name":"kicker-9","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/gb6lo7i5","slide":9,"name":"title-9","text":"1971: จับคู่ระดับงานกับโครงสร้างปัญหา","textPreview":"1971: จับคู่ระดับงานกับโครงสร้างปัญหา","textChars":37,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/hcf2hczq","slide":9,"name":"rule-9","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/2d83qh0b","slide":9,"name":"footer-label-9","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/3ehkjmhg","slide":9,"name":"footer-number-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4fqls7i1","slide":9,"name":"matrix-head-0","bbox":[320,224,264,70]}
+{"kind":"textbox","id":"sh/pgz2lczm","slide":9,"name":"matrix-head-text-0","text":"Structured","textPreview":"Structured","textChars":10,"textLines":1,"bbox":[330,242,244,34]}
+{"kind":"shape","id":"sh/q183uh07","slide":9,"name":"matrix-head-1","bbox":[590,224,264,70]}
+{"kind":"textbox","id":"sh/r2hknmhs","slide":9,"name":"matrix-head-text-1","text":"Semi-structured","textPreview":"Semi-structured","textChars":15,"textLines":1,"bbox":[600,242,244,34]}
+{"kind":"shape","id":"sh/3ulwr21g","slide":9,"name":"matrix-head-2","bbox":[860,224,264,70]}
+{"kind":"textbox","id":"sh/itcvixkv","slide":9,"name":"matrix-head-text-2","text":"Unstructured","textPreview":"Unstructured","textChars":12,"textLines":1,"bbox":[870,242,244,34]}
+{"kind":"textbox","id":"sh/5g3etcjm","slide":9,"name":"matrix-row-0","text":"Operational control","textPreview":"Operational control","textChars":19,"textLines":1,"bbox":[52,304,242,54]}
+{"kind":"shape","id":"sh/4vudk721","slide":9,"name":"matrix-cell-0-0","bbox":[320,304,264,88]}
+{"kind":"textbox","id":"sh/vqlwni1k","slide":9,"name":"matrix-cell-text-0-0","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[334,326,236,46]}
+{"kind":"shape","id":"sh/upsvexkz","slide":9,"name":"matrix-cell-0-1","bbox":[590,304,264,88]}
+{"kind":"textbox","id":"sh/hs3epsjq","slide":9,"name":"matrix-cell-text-0-1","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[604,326,236,46]}
+{"kind":"shape","id":"sh/grudgn25","slide":9,"name":"matrix-cell-0-2","bbox":[860,304,264,88]}
+{"kind":"textbox","id":"sh/fm5wzm1o","slide":9,"name":"matrix-cell-text-0-2","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[874,326,236,46]}
+{"kind":"textbox","id":"sh/elwvqhk3","slide":9,"name":"matrix-row-1","text":"Management control","textPreview":"Management control","textChars":18,"textLines":1,"bbox":[52,400,242,54]}
+{"kind":"shape","id":"sh/ah0zil4b","slide":9,"name":"matrix-cell-1-0","bbox":[320,400,264,88]}
+{"kind":"textbox","id":"sh/bi9grqlw","slide":9,"name":"matrix-cell-text-1-0","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[334,422,236,46]}
+{"kind":"shape","id":"sh/wjihkvmh","slide":9,"name":"matrix-cell-1-1","bbox":[590,400,264,88]}
+{"kind":"textbox","id":"sh/xkryt032","slide":9,"name":"matrix-cell-text-1-1","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[604,422,236,46]}
+{"kind":"shape","id":"sh/yl0zm54n","slide":9,"name":"matrix-cell-1-2","bbox":[860,400,264,88]}
+{"kind":"textbox","id":"sh/j69gvql8","slide":9,"name":"matrix-cell-text-1-2","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[874,422,236,46]}
+{"kind":"textbox","id":"sh/k7ihov2d","slide":9,"name":"matrix-row-2","text":"Strategic planning","textPreview":"Strategic planning","textChars":18,"textLines":1,"bbox":[52,496,242,54]}
+{"kind":"shape","id":"sh/l8byx03y","slide":9,"name":"matrix-cell-2-0","bbox":[320,496,264,88]}
+{"kind":"textbox","id":"sh/epgfa143","slide":9,"name":"matrix-cell-text-2-0","text":"ระบบต้องออกแบบให้เหมาะ","textPreview":"ระบบต้องออกแบบให้เหมาะ","textChars":22,"textLines":1,"bbox":[334,518,236,46]}
+{"kind":"shape","id":"sh/zapgj6lo","slide":9,"name":"matrix-cell-2-1","bbox":[590,496,264,88]}
+{"kind":"textbox","id":"sh/h4v2p4n6","slide":9,"name":"matrix-cell-text-2-1","text":"DSS มีคุณค่าสูง","textPreview":"DSS มีคุณค่าสูง","textChars":15,"textLines":1,"bbox":[604,518,236,46]}
+{"kind":"shape","id":"sh/g3m1wz6l","slide":9,"name":"matrix-cell-2-2","bbox":[860,496,264,88]}
+{"kind":"textbox","id":"sh/v2dknu5g","slide":9,"name":"matrix-cell-text-2-2","text":"DSS มีคุณค่าสูง","textPreview":"DSS มีคุณค่าสูง","textChars":15,"textLines":1,"bbox":[874,518,236,46]}
+{"kind":"notes","id":"nt/lvljha","slide":9,"text":"กรอบนี้ไม่ได้บอกว่า operational = structured เสมอ แต่ช่วยถามว่าระบบรายงานแบบเดิมเพียงพอกับงานเชิงกลยุทธ์หรือไม่\n\n[Sources]\n- Gorry & Scott Morton (1971), https://dspace.mit.edu/bitstream/handle/1721.1/47936/frameworkformana00gorr.pdf"}
+{"kind":"slide","id":"sl/39g31u","slide":10,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":16}
+{"kind":"textbox","id":"sh/e98jedw3","slide":10,"name":"kicker-10","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/1wz2psvu","slide":10,"name":"title-10","text":"1970s–80s: DSS ย้ายจากห้องคอมพิวเตอร์สู่โต๊ะผู้ใช้","textPreview":"1970s–80s: DSS ย้ายจากห้องคอมพิวเตอร์สู่โต๊ะผู้ใช้","textChars":50,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/gvq1gne9","slide":10,"name":"rule-10","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/r6hkjydc","slide":10,"name":"footer-label-10","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/658jatw7","slide":10,"name":"footer-number-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/t8z2l8vi","slide":10,"name":"timeline-line-10","bbox":[90,332,1100,4]}
+{"kind":"shape","id":"sh/s7q1c3ex","slide":10,"name":"dot-10-0","bbox":[82,317,32,32]}
+{"kind":"textbox","id":"sh/b21kv2dw","slide":10,"name":"date-10-0","text":"1970s","textPreview":"1970s","textChars":5,"textLines":1,"bbox":[82,258,230,34]}
+{"kind":"textbox","id":"sh/q1s3mxwb","slide":10,"name":"milestone-10-0","text":"Model base + Database + Dialog","textPreview":"Model base + Database + Dialog","textChars":30,"textLines":1,"bbox":[82,382,244,76]}
+{"kind":"textbox","id":"sh/o7idsj6p","slide":10,"name":"meaning-10-0","text":"ระบบโต้ตอบและ iterative","textPreview":"ระบบโต้ตอบและ iterative","textChars":23,"textLines":1,"bbox":[82,472,244,58]}
+{"kind":"shape","id":"sh/98re1o7a","slide":10,"name":"dot-10-1","bbox":[374,317,32,32]}
+{"kind":"textbox","id":"sh/m50vq9oj","slide":10,"name":"date-10-1","text":"ต้น 1980s","textPreview":"ต้น 1980s","textChars":9,"textLines":1,"bbox":[374,258,230,34]}
+{"kind":"textbox","id":"sh/n69wzep4","slide":10,"name":"milestone-10-1","text":"Spreadsheet / Personal DSS","textPreview":"Spreadsheet / Personal DSS","textChars":26,"textLines":1,"bbox":[374,382,244,76]}
+{"kind":"textbox","id":"sh/03idoz6t","slide":10,"name":"meaning-10-1","text":"ผู้ใช้ทำ what-if เอง","textPreview":"ผู้ใช้ทำ what-if เอง","textChars":20,"textLines":1,"bbox":[374,472,244,58]}
+{"kind":"shape","id":"sh/14rex47e","slide":10,"name":"dot-10-2","bbox":[666,317,32,32]}
+{"kind":"textbox","id":"sh/ehgvm9on","slide":10,"name":"date-10-2","text":"กลาง 1980s","textPreview":"กลาง 1980s","textChars":10,"textLines":1,"bbox":[666,258,230,34]}
+{"kind":"textbox","id":"sh/zipcvup8","slide":10,"name":"milestone-10-2","text":"EIS + Group DSS","textPreview":"EIS + Group DSS","textChars":15,"textLines":1,"bbox":[666,382,244,76]}
+{"kind":"textbox","id":"sh/cfydkz6h","slide":10,"name":"meaning-10-2","text":"ผู้บริหารและทีมเข้าถึงร่วมกัน","textPreview":"ผู้บริหารและทีมเข้าถึงร่วมกัน","textChars":29,"textLines":1,"bbox":[666,472,244,58]}
+{"kind":"shape","id":"sh/dg7ut472","slide":10,"name":"dot-10-3","bbox":[958,317,32,32]}
+{"kind":"textbox","id":"sh/twzahgzq","slide":10,"name":"date-10-3","text":"ปลาย 1980s","textPreview":"ปลาย 1980s","textChars":10,"textLines":1,"bbox":[958,258,230,34]}
+{"kind":"textbox","id":"sh/sbqtobyl","slide":10,"name":"milestone-10-3","text":"Expert systems","textPreview":"Expert systems","textChars":14,"textLines":1,"bbox":[958,382,244,76]}
+{"kind":"textbox","id":"sh/rahsfqh0","slide":10,"name":"meaning-10-3","text":"เพิ่มกฎและความรู้ผู้เชี่ยวชาญ","textPreview":"เพิ่มกฎและความรู้ผู้เชี่ยวชาญ","textChars":29,"textLines":1,"bbox":[958,472,244,58]}
+{"kind":"notes","id":"nt/39g31u","slide":10,"text":"ชี้ว่า spreadsheet ทำให้ DSS democratized แต่ก็เพิ่มความเสี่ยงจากสูตรผิดและไฟล์หลายเวอร์ชัน\n\n[Sources]\n- Power, D.J. (2007), https://dssresources.com/history/dsshistory.html\n- Hogue & Watson (1984), https://aisel.aisnet.org/icis1984/16/"}
+{"kind":"slide","id":"sl/hecfyi","slide":11,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":16}
+{"kind":"textbox","id":"sh/yxojih0z","slide":11,"name":"kicker-11","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/lkfidwja","slide":11,"name":"title-11","text":"1990s: Data Warehouse, OLAP และ BI","textPreview":"1990s: Data Warehouse, OLAP และ BI","textChars":34,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/kj61krip","slide":11,"name":"rule-11","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/bux07m18","slide":11,"name":"footer-label-11","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/at4jeh0n","slide":11,"name":"footer-number-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/xwfi9cje","slide":11,"name":"arrow-11-0","bbox":[310,336,64,38]}
+{"kind":"shape","id":"sh/wv61grit","slide":11,"name":"arrow-11-1","bbox":[610,336,64,38]}
+{"kind":"shape","id":"sh/vqh0j61s","slide":11,"name":"arrow-11-2","bbox":[910,336,64,38]}
+{"kind":"shape","id":"sh/up8jq107","slide":11,"name":"step-11-0","bbox":[42,244,260,270]}
+{"kind":"textbox","id":"sh/0nuhwb2h","slide":11,"name":"step-no-11-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[64,262,46,48]}
+{"kind":"textbox","id":"sh/l83y5g32","slide":11,"name":"step-title-11-0","text":"DATA WAREHOUSE","textPreview":"DATA WAREHOUSE","textChars":14,"textLines":1,"bbox":[64,335,216,65]}
+{"kind":"textbox","id":"sh/ylczulkb","slide":11,"name":"step-desc-11-0","text":"รวมข้อมูลย้อนหลัง","textPreview":"รวมข้อมูลย้อนหลัง","textChars":17,"textLines":1,"bbox":[64,432,216,50]}
+{"kind":"shape","id":"sh/zmlg3qlw","slide":11,"name":"step-11-1","bbox":[342,244,260,270]}
+{"kind":"textbox","id":"sh/cjuhsb25","slide":11,"name":"step-no-11-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[364,262,46,48]}
+{"kind":"textbox","id":"sh/dk3y1g3q","slide":11,"name":"step-title-11-1","text":"OLAP","textPreview":"OLAP","textChars":4,"textLines":1,"bbox":[364,335,216,65]}
+{"kind":"textbox","id":"sh/qhszq14f","slide":11,"name":"step-desc-11-1","text":"Slice • Dice • Drill","textPreview":"Slice • Dice • Drill","textChars":20,"textLines":1,"bbox":[364,432,216,50]}
+{"kind":"shape","id":"sh/bilgz6lk","slide":11,"name":"step-11-2","bbox":[642,244,260,270]}
+{"kind":"textbox","id":"sh/ofah4rm9","slide":11,"name":"step-no-11-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[664,262,46,48]}
+{"kind":"textbox","id":"sh/pgjyxw3u","slide":11,"name":"step-title-11-2","text":"EIS / DASHBOARD","textPreview":"EIS / DASHBOARD","textChars":15,"textLines":1,"bbox":[664,335,216,65]}
+{"kind":"textbox","id":"sh/50r6lor6","slide":11,"name":"step-desc-11-2","text":"ตัวชี้วัดสำหรับผู้บริหาร","textPreview":"ตัวชี้วัดสำหรับผู้บริหาร","textChars":24,"textLines":1,"bbox":[664,432,216,50]}
+{"kind":"shape","id":"sh/kzi5c3al","slide":11,"name":"step-11-3","bbox":[942,244,260,270]}
+{"kind":"textbox","id":"sh/jy9ojy9g","slide":11,"name":"step-no-11-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[964,262,46,48]}
+{"kind":"textbox","id":"sh/ix0natsv","slide":11,"name":"step-title-11-3","text":"BUSINESS INTELLIGENCE","textPreview":"BUSINESS INTELLIGENCE","textChars":21,"textLines":1,"bbox":[964,335,216,65]}
+{"kind":"textbox","id":"sh/xwr6hora","slide":11,"name":"step-desc-11-3","text":"วิเคราะห์ทั่วองค์กร","textPreview":"วิเคราะห์ทั่วองค์กร","textChars":19,"textLines":1,"bbox":[964,432,216,50]}
+{"kind":"notes","id":"nt/hecfyi","slide":11,"text":"ใช้ตัวอย่างยอดขาย: transaction → warehouse → cube → dashboard → business action\n\n[Sources]\n- Power, D.J. (2007), https://dssresources.com/history/dsshistory.html"}
+{"kind":"slide","id":"sl/s8s6hb","slide":12,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":8}
+{"kind":"textbox","id":"sh/ad0j2pwv","slide":12,"name":"kicker-12","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/x0bix4f6","slide":12,"name":"title-12","text":"2000s: Web และ Cloud ทำให้ DSS ไปถึงจุดตัดสินใจ","textPreview":"2000s: Web และ Cloud ทำให้ DSS ไปถึงจุดตัดสินใจ","textChars":47,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/wzi14ze1","slide":12,"name":"rule-12","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/na90rux4","slide":12,"name":"footer-label-12","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/m90jypwj","slide":12,"name":"footer-number-12","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/9critkfa","slide":12,"name":"before-panel","bbox":[54,210,500,350]}
+{"kind":"shape","id":"sh/8bi10zep","slide":12,"name":"after-panel","bbox":[726,210,500,350]}
+{"kind":"textbox","id":"sh/z6p0nax8","slide":12,"name":"before-title","text":"ก่อน","textPreview":"ก่อน","textChars":4,"textLines":1,"bbox":[90,242,420,44]}
+{"kind":"textbox","id":"sh/y5gju5wn","slide":12,"name":"after-title","text":"หลัง","textPreview":"หลัง","textChars":4,"textLines":1,"bbox":[762,242,420,44]}
+{"kind":"textbox","id":"sh/47ytszqd","slide":12,"name":"before-copy","text":"• ระบบเฉพาะเครื่อง\n• ข้อมูลภายใน\n• ผู้ใช้กลุ่มเล็ก\n• อัปเดตเป็นรอบ","textPreview":"• ระบบเฉพาะเครื่อง | • ข้อมูลภายใน | • ผู้ใช้กลุ่มเล็ก | • อัปเดตเป็นรอบ","textChars":66,"textLines":4,"bbox":[90,318,420,190]}
+{"kind":"textbox","id":"sh/587a147y","slide":12,"name":"after-copy","text":"• Web / Mobile access\n• เชื่อม ERP–CRM–ภายนอก\n• ผู้ใช้ทั่วองค์กร\n• ใกล้ real-time","textPreview":"• Web / Mobile access | • เชื่อม ERP–CRM–ภายนอก | • ผู้ใช้ทั่วองค์กร | • ใกล้ real-time","textChars":81,"textLines":4,"bbox":[762,318,420,190]}
+{"kind":"shape","id":"sh/ilgrq987","slide":12,"name":"transition-arrow","bbox":[585,345,110,56]}
+{"kind":"notes","id":"nt/s8s6hb","slide":12,"text":"การเข้าถึงง่ายขึ้นไม่ได้รับประกันว่าข้อมูลมีคุณภาพหรือการตัดสินใจดีขึ้น ต้องมี governance ควบคู่\n\n[Sources]\n- Power, D.J. (2007), https://dssresources.com/history/dsshistory.html"}
+{"kind":"slide","id":"sl/769iqa","slide":13,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":16}
+{"kind":"textbox","id":"sh/t0jml83m","slide":13,"name":"kicker-13","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/6d83at4b","slide":13,"name":"title-13","text":"2010s: จากรายงานสู่ Predictive & Prescriptive","textPreview":"2010s: จากรายงานสู่ Predictive & Prescriptive","textChars":45,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/7e14jy5g","slide":13,"name":"rule-13","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/g3alg3md","slide":13,"name":"footer-label-13","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/h4jmp83y","slide":13,"name":"footer-number-13","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/u1s3et47","slide":13,"name":"level-bar-0","bbox":[62,204,1120,78]}
+{"kind":"textbox","id":"sh/v214nyls","slide":13,"name":"level-name-0","text":"DESCRIPTIVE","textPreview":"DESCRIPTIVE","textChars":11,"textLines":1,"bbox":[86,225,230,34]}
+{"kind":"textbox","id":"sh/w7ql4jmt","slide":13,"name":"level-question-0","text":"เกิดอะไรขึ้น?","textPreview":"เกิดอะไรขึ้น?","textChars":13,"textLines":1,"bbox":[348,223,350,40]}
+{"kind":"textbox","id":"sh/x8zmdone","slide":13,"name":"level-tech-0","text":"รายงาน • OLAP","textPreview":"รายงาน • OLAP","textChars":13,"textLines":1,"bbox":[760,226,370,34]}
+{"kind":"shape","id":"sh/183mp4bq","slide":13,"name":"level-bar-1","bbox":[62,306,1120,78]}
+{"kind":"textbox","id":"sh/07u5wza5","slide":13,"name":"level-name-1","text":"DIAGNOSTIC","textPreview":"DIAGNOSTIC","textChars":10,"textLines":1,"bbox":[86,327,230,34]}
+{"kind":"textbox","id":"sh/z6l4nutk","slide":13,"name":"level-question-1","text":"ทำไมจึงเกิด?","textPreview":"ทำไมจึงเกิด?","textChars":12,"textLines":1,"bbox":[348,325,350,40]}
+{"kind":"textbox","id":"sh/e5cnupsf","slide":13,"name":"level-tech-1","text":"Drill-down • causal clues","textPreview":"Drill-down • causal clues","textChars":25,"textLines":1,"bbox":[760,328,370,34]}
+{"kind":"shape","id":"sh/9c3mt4r2","slide":13,"name":"level-bar-2","bbox":[62,408,1120,78]}
+{"kind":"textbox","id":"sh/obu50zah","slide":13,"name":"level-name-2","text":"PREDICTIVE","textPreview":"PREDICTIVE","textChars":10,"textLines":1,"bbox":[86,429,230,34]}
+{"kind":"textbox","id":"sh/nal4rutw","slide":13,"name":"level-question-2","text":"จะเกิดอะไร?","textPreview":"จะเกิดอะไร?","textChars":11,"textLines":1,"bbox":[348,427,350,40]}
+{"kind":"textbox","id":"sh/m9cnypsb","slide":13,"name":"level-tech-2","text":"ML • forecasting","textPreview":"ML • forecasting","textChars":16,"textLines":1,"bbox":[760,430,370,34]}
+{"kind":"shape","id":"sh/x0nmxory","slide":13,"name":"level-bar-3","bbox":[62,510,1120,78]}
+{"kind":"textbox","id":"sh/wfe54jad","slide":13,"name":"level-name-3","text":"PRESCRIPTIVE","textPreview":"PRESCRIPTIVE","textChars":12,"textLines":1,"bbox":[86,531,230,34]}
+{"kind":"textbox","id":"sh/gv6xgrm1","slide":13,"name":"level-question-3","text":"ควรทำอะไร?","textPreview":"ควรทำอะไร?","textChars":10,"textLines":1,"bbox":[348,529,350,40]}
+{"kind":"textbox","id":"sh/hwfypc36","slide":13,"name":"level-tech-3","text":"Optimization • simulation","textPreview":"Optimization • simulation","textChars":25,"textLines":1,"bbox":[760,532,370,34]}
+{"kind":"notes","id":"nt/769iqa","slide":13,"text":"ยกตัวอย่างโลจิสติกส์: dashboard รู้ว่าช้า → model ทำนายช้า → optimization จัดเส้นทางใหม่\n\n[Sources]\n- Hosack et al. (2012), https://aisel.aisnet.org/jais/vol13/iss5/3/"}
+{"kind":"slide","id":"sl/ofax0a","slide":14,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":14}
+{"kind":"textbox","id":"sh/z69kn654","slide":14,"name":"kicker-14","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/k72lgbmp","slide":14,"name":"title-14","text":"2020s: Decision Intelligence เชื่อม insight เข้ากับ action","textPreview":"2020s: Decision Intelligence เชื่อม insight เข้ากับ action","textChars":58,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/l8b2pgna","slide":14,"name":"rule-14","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/a103a1on","slide":14,"name":"footer-label-14","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/b29kj658","slide":14,"name":"footer-number-14","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/c3ilcr6d","slide":14,"name":"di-big","text":"ไม่ใช่แค่\n“โมเดลเก่ง”","textPreview":"ไม่ใช่แค่ | “โมเดลเก่ง”","textChars":21,"textLines":2,"bbox":[58,212,430,180]}
+{"kind":"textbox","id":"sh/x4r2lwny","slide":14,"name":"di-next","text":"แต่คือ “ระบบการตัดสินใจ”\nที่วัดผลและเรียนรู้ได้","textPreview":"แต่คือ “ระบบการตัดสินใจ” | ที่วัดผลและเรียนรู้ได้","textChars":47,"textLines":2,"bbox":[58,420,450,110]}
+{"kind":"shape","id":"sh/uxk3ml4r","slide":14,"name":"di-box-0","bbox":[602,205,580,78]}
+{"kind":"textbox","id":"sh/vyt4vq5c","slide":14,"name":"di-title-0","text":"Generative AI","textPreview":"Generative AI","textChars":13,"textLines":1,"bbox":[628,218,200,28]}
+{"kind":"textbox","id":"sh/bexw3at4","slide":14,"name":"di-desc-0","text":"สรุป อธิบาย สร้างทางเลือก","textPreview":"สรุป อธิบาย สร้างทางเลือก","textChars":25,"textLines":1,"bbox":[842,218,312,48]}
+{"kind":"shape","id":"sh/adofapsj","slide":14,"name":"di-box-1","bbox":[602,305,580,78]}
+{"kind":"textbox","id":"sh/xgfe5kba","slide":14,"name":"di-title-1","text":"Decision workflow","textPreview":"Decision workflow","textChars":17,"textLines":1,"bbox":[628,318,200,28]}
+{"kind":"textbox","id":"sh/wf6xcfap","slide":14,"name":"di-desc-1","text":"วิเคราะห์ → อนุมัติ → ลงมือทำ","textPreview":"วิเคราะห์ → อนุมัติ → ลงมือทำ","textChars":29,"textLines":1,"bbox":[842,318,312,48]}
+{"kind":"shape","id":"sh/j2hw7utg","slide":14,"name":"di-box-2","bbox":[602,405,580,78]}
+{"kind":"textbox","id":"sh/y18fepsv","slide":14,"name":"di-title-2","text":"DecisionOps","textPreview":"DecisionOps","textChars":11,"textLines":1,"bbox":[628,418,200,28]}
+{"kind":"textbox","id":"sh/l4ze94b6","slide":14,"name":"di-desc-2","text":"ติดตาม model + outcome + drift","textPreview":"ติดตาม model + outcome + drift","textChars":30,"textLines":1,"bbox":[842,418,312,48]}
+{"kind":"shape","id":"sh/k3qxgza1","slide":14,"name":"di-box-3","bbox":[602,505,580,78]}
+{"kind":"textbox","id":"sh/76hgbutc","slide":14,"name":"di-title-3","text":"AI agents","textPreview":"AI agents","textChars":9,"textLines":1,"bbox":[628,518,200,28]}
+{"kind":"textbox","id":"sh/658fi9sr","slide":14,"name":"di-desc-3","text":"วางแผน เรียกเครื่องมือ ทำงานเป็นขั้น","textPreview":"วางแผน เรียกเครื่องมือ ทำงานเป็นขั้น","textChars":36,"textLines":1,"bbox":[842,518,312,48]}
+{"kind":"notes","id":"nt/ofax0a","slide":14,"text":"แยกคำว่า analytics model ออกจาก decision system: ระบบต้องมี actor, action, constraints, feedback และ accountability\n\n[Sources]\n- IBM, Agentic Data Management (2026), https://www.ibm.com/think/insights/agentic-data-management\n- NIST AI RMF, https://www.nist.gov/itl/ai-risk-management-framework"}
+{"kind":"slide","id":"sl/lep73o","slide":15,"title":"20 APPLICATIONS","textShapes":3}
+{"kind":"shape","id":"sh/5ony58r2","slide":15,"name":"apps-title-bg","bbox":[0,0,1280,142]}
+{"kind":"textbox","id":"sh/knexw3ah","slide":15,"name":"apps-kicker","text":"20 APPLICATIONS","textPreview":"20 APPLICATIONS","textChars":15,"textLines":1,"bbox":[42,26,300,30]}
+{"kind":"textbox","id":"sh/vilgzy9k","slide":15,"name":"apps-title","text":"20 Applications: ใครต้องตัดสินใจอะไร?","textPreview":"20 Applications: ใครต้องตัดสินใจอะไร?","textChars":37,"textLines":1,"bbox":[42,64,1170,60]}
+{"kind":"shape","id":"sh/axcfqtsf","slide":15,"name":"apps-caption-bg","bbox":[42,606,1196,66]}
+{"kind":"textbox","id":"sh/xkny18rq","slide":15,"name":"apps-caption","text":"วิเคราะห์ทุกระบบด้วย 6 มิติ: Decision maker • Decision • Data • Model • Action • Accountability","textPreview":"วิเคราะห์ทุกระบบด้วย 6 มิติ: Decision maker • Decision • Data • Model • Action • Accountability","textChars":95,"textLines":1,"bbox":[70,624,1140,32]}
+{"kind":"image","id":"im/r21032dc","slide":15,"name":"","geometry":"rect","alt":"ภาพรวมการประยุกต์ DSS ในหลายอุตสาหกรรม","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/lep73o","slide":15,"text":"ใช้ภาพให้ผู้เรียนระบุโดเมนที่มองเห็น แล้วถามว่าการตัดสินใจของแต่ละโดเมนมี deadline ต่างกันอย่างไร\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (project asset: assets/dss-applications.png)."}
+{"kind":"slide","id":"sl/7wzopr","slide":16,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":34}
+{"kind":"textbox","id":"sh/rid4b6hs","slide":16,"name":"kicker-16","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/cjm5kbid","slide":16,"name":"title-16","text":"20 Applications — สุขภาพ การเงิน ค้าปลีก และโรงงาน","textPreview":"20 Applications — สุขภาพ การเงิน ค้าปลีก และโรงงาน","textChars":50,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/dkvmdgzy","slide":16,"name":"rule-16","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/2dkne10b","slide":16,"name":"footer-label-16","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/3et476hw","slide":16,"name":"footer-number-16","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4f25grih","slide":16,"name":"app16-0","bbox":[48,190,575,72]}
+{"kind":"textbox","id":"sh/pgvm9wzm","slide":16,"name":"app16-no-0","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[66,206,48,34]}
+{"kind":"textbox","id":"sh/m9onql0f","slide":16,"name":"app16-name-0","text":"Clinical support","textPreview":"Clinical support","textChars":16,"textLines":1,"bbox":[126,202,270,28]}
+{"kind":"textbox","id":"sh/naxojqh0","slide":16,"name":"app16-decision-0","text":"ตรวจ/รักษา","textPreview":"ตรวจ/รักษา","textChars":10,"textLines":1,"bbox":[408,204,190,28]}
+{"kind":"shape","id":"sh/jyd8b6l4","slide":16,"name":"app16-1","bbox":[653,190,575,72]}
+{"kind":"textbox","id":"sh/ix4ri14j","slide":16,"name":"app16-no-1","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[671,206,48,34]}
+{"kind":"textbox","id":"sh/50vqdw3a","slide":16,"name":"app16-name-1","text":"Hospital capacity","textPreview":"Hospital capacity","textChars":17,"textLines":1,"bbox":[731,202,270,28]}
+{"kind":"textbox","id":"sh/4zm9kbmp","slide":16,"name":"app16-decision-1","text":"เตียง/บุคลากร","textPreview":"เตียง/บุคลากร","textChars":13,"textLines":1,"bbox":[1013,204,190,28]}
+{"kind":"shape","id":"sh/r2d8f6l0","slide":16,"name":"app16-2","bbox":[48,281,575,72]}
+{"kind":"textbox","id":"sh/614rm14f","slide":16,"name":"app16-no-2","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[66,297,48,34]}
+{"kind":"textbox","id":"sh/t4fqhg36","slide":16,"name":"app16-name-2","text":"Credit approval","textPreview":"Credit approval","textChars":15,"textLines":1,"bbox":[126,293,270,28]}
+{"kind":"textbox","id":"sh/s369ob2l","slide":16,"name":"app16-decision-2","text":"วงเงิน/เงื่อนไข","textPreview":"วงเงิน/เงื่อนไข","textChars":15,"textLines":1,"bbox":[408,295,190,28]}
+{"kind":"shape","id":"sh/f6x8jqlc","slide":16,"name":"app16-3","bbox":[653,281,575,72]}
+{"kind":"textbox","id":"sh/e5orqlkr","slide":16,"name":"app16-no-3","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[671,297,48,34]}
+{"kind":"textbox","id":"sh/ql8bip4z","slide":16,"name":"app16-name-3","text":"Fraud detection","textPreview":"Fraud detection","textChars":15,"textLines":1,"bbox":[731,293,270,28]}
+{"kind":"textbox","id":"sh/bm1cbu5k","slide":16,"name":"app16-decision-3","text":"ตรวจสอบ/ระงับ","textPreview":"ตรวจสอบ/ระงับ","textChars":13,"textLines":1,"bbox":[1013,295,190,28]}
+{"kind":"shape","id":"sh/cnatkfm5","slide":16,"name":"app16-4","bbox":[48,372,575,72]}
+{"kind":"textbox","id":"sh/dojudkna","slide":16,"name":"app16-no-4","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[66,388,48,34]}
+{"kind":"textbox","id":"sh/2x8be5on","slide":16,"name":"app16-name-4","text":"Portfolio allocation","textPreview":"Portfolio allocation","textChars":20,"textLines":1,"bbox":[126,384,270,28]}
+{"kind":"textbox","id":"sh/3yhc7a58","slide":16,"name":"app16-decision-4","text":"สัดส่วนลงทุน","textPreview":"สัดส่วนลงทุน","textChars":12,"textLines":1,"bbox":[408,386,190,28]}
+{"kind":"shape","id":"sh/ozqtgf6t","slide":16,"name":"app16-5","bbox":[653,372,575,72]}
+{"kind":"textbox","id":"sh/p0zu9kne","slide":16,"name":"app16-no-5","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[671,388,48,34]}
+{"kind":"textbox","id":"sh/mtcbq947","slide":16,"name":"app16-name-5","text":"Demand forecasting","textPreview":"Demand forecasting","textChars":18,"textLines":1,"bbox":[731,384,270,28]}
+{"kind":"textbox","id":"sh/nulcje5s","slide":16,"name":"app16-decision-5","text":"สั่งซื้อ/ผลิต","textPreview":"สั่งซื้อ/ผลิต","textChars":13,"textLines":1,"bbox":[1013,386,190,28]}
+{"kind":"shape","id":"sh/h0765sb6","slide":16,"name":"app16-6","bbox":[48,463,575,72]}
+{"kind":"textbox","id":"sh/gzy5wnal","slide":16,"name":"app16-no-6","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[66,479,48,34]}
+{"kind":"textbox","id":"sh/vypo32t0","slide":16,"name":"app16-name-6","text":"Dynamic pricing","textPreview":"Dynamic pricing","textChars":15,"textLines":1,"bbox":[126,475,270,28]}
+{"kind":"textbox","id":"sh/uxwnuxsf","slide":16,"name":"app16-decision-6","text":"ราคา/ส่วนลด","textPreview":"ราคา/ส่วนลด","textChars":11,"textLines":1,"bbox":[408,477,190,28]}
+{"kind":"shape","id":"sh/twnm1sbu","slide":16,"name":"app16-7","bbox":[653,463,575,72]}
+{"kind":"textbox","id":"sh/8ve5snu9","slide":16,"name":"app16-no-7","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[671,479,48,34]}
+{"kind":"textbox","id":"sh/7u54zit4","slide":16,"name":"app16-name-7","text":"Product assortment","textPreview":"Product assortment","textChars":18,"textLines":1,"bbox":[731,475,270,28]}
+{"kind":"textbox","id":"sh/6twnqdcj","slide":16,"name":"app16-decision-7","text":"สินค้าแต่ละสาขา","textPreview":"สินค้าแต่ละสาขา","textChars":15,"textLines":1,"bbox":[1013,477,190,28]}
+{"kind":"shape","id":"sh/dsr6dcbe","slide":16,"name":"app16-8","bbox":[48,554,575,72]}
+{"kind":"textbox","id":"sh/sri547at","slide":16,"name":"app16-no-8","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[66,570,48,34]}
+{"kind":"textbox","id":"sh/0jm58n6x","slide":16,"name":"app16-name-8","text":"Production scheduling","textPreview":"Production scheduling","textChars":21,"textLines":1,"bbox":[126,566,270,28]}
+{"kind":"textbox","id":"sh/lkvmhs7i","slide":16,"name":"app16-decision-8","text":"ตารางผลิต","textPreview":"ตารางผลิต","textChars":9,"textLines":1,"bbox":[408,568,190,28]}
+{"kind":"shape","id":"sh/ex4n6do7","slide":16,"name":"app16-9","bbox":[653,554,575,72]}
+{"kind":"textbox","id":"sh/zyd4fips","slide":16,"name":"app16-no-9","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[671,570,48,34]}
+{"kind":"textbox","id":"sh/8nm5cn69","slide":16,"name":"app16-name-9","text":"Predictive maintenance","textPreview":"Predictive maintenance","textChars":22,"textLines":1,"bbox":[731,566,270,28]}
+{"kind":"textbox","id":"sh/9ofmls7u","slide":16,"name":"app16-decision-9","text":"เวลาซ่อม","textPreview":"เวลาซ่อม","textChars":8,"textLines":1,"bbox":[1013,568,190,28]}
+{"kind":"notes","id":"nt/7wzopr","slide":16,"text":"สุ่มหมายเลขและให้ผู้เรียนระบุ structuredness กับ cost of error ภายใน 30 วินาที\n\n[Sources]\n- Application synthesis based on standard DSS domains; see Week-01-Expanded-Content.md."}
+{"kind":"slide","id":"sl/kzovpq","slide":17,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":34}
+{"kind":"textbox","id":"sh/vmhkja9k","slide":17,"name":"kicker-17","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/gnqlsfq5","slide":17,"name":"title-17","text":"20 Applications — โครงสร้างพื้นฐานและสังคม","textPreview":"20 Applications — โครงสร้างพื้นฐานและสังคม","textChars":42,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/hoz2l0rq","slide":17,"name":"rule-17","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ips3u58b","slide":17,"name":"footer-label-17","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/3q1kna9w","slide":17,"name":"footer-number-17","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4balwfq1","slide":17,"name":"app17-0","bbox":[48,190,575,72]}
+{"kind":"textbox","id":"sh/5cj2pkrm","slide":17,"name":"app17-no-0","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[66,206,48,34]}
+{"kind":"textbox","id":"sh/ytojilsr","slide":17,"name":"app17-name-0","text":"Route optimization","textPreview":"Route optimization","textChars":18,"textLines":1,"bbox":[126,202,270,28]}
+{"kind":"textbox","id":"sh/juxkbq9c","slide":17,"name":"app17-decision-0","text":"เส้นทาง/รถ","textPreview":"เส้นทาง/รถ","textChars":10,"textLines":1,"bbox":[408,204,190,28]}
+{"kind":"shape","id":"sh/b6lcfepk","slide":17,"name":"app17-1","bbox":[653,190,575,72]}
+{"kind":"textbox","id":"sh/q5cb698z","slide":17,"name":"app17-no-1","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[671,206,48,34]}
+{"kind":"textbox","id":"sh/d83uho7q","slide":17,"name":"app17-name-1","text":"Supply-chain risk","textPreview":"Supply-chain risk","textChars":17,"textLines":1,"bbox":[731,202,270,28]}
+{"kind":"textbox","id":"sh/c7ut8jq5","slide":17,"name":"app17-decision-1","text":"แหล่งซื้อ/สำรอง","textPreview":"แหล่งซื้อ/สำรอง","textChars":15,"textLines":1,"bbox":[1013,204,190,28]}
+{"kind":"shape","id":"sh/32lcbepo","slide":17,"name":"app17-2","bbox":[48,281,575,72]}
+{"kind":"textbox","id":"sh/21sb2983","slide":17,"name":"app17-no-2","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[66,297,48,34]}
+{"kind":"textbox","id":"sh/p43udo7e","slide":17,"name":"app17-name-2","text":"Precision agriculture","textPreview":"Precision agriculture","textChars":21,"textLines":1,"bbox":[126,293,270,28]}
+{"kind":"textbox","id":"sh/o3ut4jq9","slide":17,"name":"app17-decision-2","text":"น้ำ/ปุ๋ย/เก็บเกี่ยว","textPreview":"น้ำ/ปุ๋ย/เก็บเกี่ยว","textChars":19,"textLines":1,"bbox":[408,295,190,28]}
+{"kind":"shape","id":"sh/fe1c7u9c","slide":17,"name":"app17-3","bbox":[653,281,575,72]}
+{"kind":"textbox","id":"sh/edsbyp8r","slide":17,"name":"app17-no-3","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[671,297,48,34]}
+{"kind":"textbox","id":"sh/i98vapsz","slide":17,"name":"app17-name-3","text":"Disaster response","textPreview":"Disaster response","textChars":17,"textLines":1,"bbox":[731,293,270,28]}
+{"kind":"textbox","id":"sh/jahcjutk","slide":17,"name":"app17-decision-3","text":"เตือน/อพยพ","textPreview":"เตือน/อพยพ","textChars":10,"textLines":1,"bbox":[1013,295,190,28]}
+{"kind":"shape","id":"sh/4badczap","slide":17,"name":"app17-4","bbox":[48,372,575,72]}
+{"kind":"textbox","id":"sh/5cjul4ba","slide":17,"name":"app17-no-4","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[66,388,48,34]}
+{"kind":"textbox","id":"sh/6dsve9sv","slide":17,"name":"app17-name-4","text":"Energy dispatch","textPreview":"Energy dispatch","textChars":15,"textLines":1,"bbox":[126,384,270,28]}
+{"kind":"textbox","id":"sh/re1cnetg","slide":17,"name":"app17-decision-4","text":"เดินเครื่อง/ซื้อไฟ","textPreview":"เดินเครื่อง/ซื้อไฟ","textChars":18,"textLines":1,"bbox":[408,386,190,28]}
+{"kind":"shape","id":"sh/szadgja1","slide":17,"name":"app17-5","bbox":[653,372,575,72]}
+{"kind":"textbox","id":"sh/t0jup4bm","slide":17,"name":"app17-no-5","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[671,388,48,34]}
+{"kind":"textbox","id":"sh/e1svi9s7","slide":17,"name":"app17-name-5","text":"Traffic control","textPreview":"Traffic control","textChars":15,"textLines":1,"bbox":[731,384,270,28]}
+{"kind":"textbox","id":"sh/f21cretc","slide":17,"name":"app17-decision-5","text":"สัญญาณ/เบี่ยงทาง","textPreview":"สัญญาณ/เบี่ยงทาง","textChars":16,"textLines":1,"bbox":[1013,386,190,28]}
+{"kind":"shape","id":"sh/pwnyh8vu","slide":17,"name":"app17-6","bbox":[48,463,575,72]}
+{"kind":"textbox","id":"sh/ovexo3u9","slide":17,"name":"app17-no-6","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[66,479,48,34]}
+{"kind":"textbox","id":"sh/3u5gfido","slide":17,"name":"app17-name-6","text":"Student early warning","textPreview":"Student early warning","textChars":21,"textLines":1,"bbox":[126,475,270,28]}
+{"kind":"textbox","id":"sh/2tcfmdc3","slide":17,"name":"app17-decision-6","text":"ช่วยเหลือเฉพาะราย","textPreview":"ช่วยเหลือเฉพาะราย","textChars":17,"textLines":1,"bbox":[408,477,190,28]}
+{"kind":"shape","id":"sh/d0nylsvq","slide":17,"name":"app17-7","bbox":[653,463,575,72]}
+{"kind":"textbox","id":"sh/czexsnu5","slide":17,"name":"app17-no-7","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[671,479,48,34]}
+{"kind":"textbox","id":"sh/by5gjidk","slide":17,"name":"app17-name-7","text":"Workforce scheduling","textPreview":"Workforce scheduling","textChars":20,"textLines":1,"bbox":[731,475,270,28]}
+{"kind":"textbox","id":"sh/qxwfqdcf","slide":17,"name":"app17-decision-7","text":"กะ/การจัดคน","textPreview":"กะ/การจัดคน","textChars":11,"textLines":1,"bbox":[1013,477,190,28]}
+{"kind":"shape","id":"sh/l47ypsv2","slide":17,"name":"app17-8","bbox":[48,554,575,72]}
+{"kind":"textbox","id":"sh/03yxwnuh","slide":17,"name":"app17-no-8","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[66,570,48,34]}
+{"kind":"textbox","id":"sh/wji1orep","slide":17,"name":"app17-name-8","text":"Cybersecurity response","textPreview":"Cybersecurity response","textChars":22,"textLines":1,"bbox":[126,566,270,28]}
+{"kind":"textbox","id":"sh/xkrihwfa","slide":17,"name":"app17-decision-8","text":"จัดลำดับ/ตอบโต้","textPreview":"จัดลำดับ/ตอบโต้","textChars":15,"textLines":1,"bbox":[408,568,190,28]}
+{"kind":"shape","id":"sh/ax0jm1wj","slide":17,"name":"app17-9","bbox":[653,554,575,72]}
+{"kind":"textbox","id":"sh/vy90fmx4","slide":17,"name":"app17-no-9","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[671,570,48,34]}
+{"kind":"textbox","id":"sh/8vi1kred","slide":17,"name":"app17-name-9","text":"Policy simulation","textPreview":"Policy simulation","textChars":17,"textLines":1,"bbox":[731,566,270,28]}
+{"kind":"textbox","id":"sh/9wridwfy","slide":17,"name":"app17-decision-9","text":"เปรียบเทียบนโยบาย","textPreview":"เปรียบเทียบนโยบาย","textChars":17,"textLines":1,"bbox":[1013,568,190,28]}
+{"kind":"notes","id":"nt/kzovpq","slide":17,"text":"เน้นว่าความเสี่ยงสูง เช่น อพยพหรือ cybersecurity ต้องมี latency ต่ำ แต่ยังต้อง trace ย้อนหลังได้\n\n[Sources]\n- Application synthesis based on standard DSS domains; see Week-01-Expanded-Content.md."}
+{"kind":"slide","id":"sl/xyeyvj","slide":18,"title":"FUTURE DSS","textShapes":4}
+{"kind":"shape","id":"sh/61ojmhwn","slide":18,"name":"future-overlay","bbox":[0,0,520,720]}
+{"kind":"textbox","id":"sh/72x0vmds","slide":18,"name":"future-kicker","text":"FUTURE DSS","textPreview":"FUTURE DSS","textChars":10,"textLines":1,"bbox":[44,46,400,32]}
+{"kind":"textbox","id":"sh/g7q1srep","slide":18,"name":"future-title","text":"ฉลาดขึ้น\nต้องตรวจสอบได้\nมากขึ้น","textPreview":"ฉลาดขึ้น | ต้องตรวจสอบได้ | มากขึ้น","textChars":31,"textLines":3,"bbox":[44,150,440,220]}
+{"kind":"textbox","id":"sh/h8z21wva","slide":18,"name":"future-copy","text":"Conversational • Multi-model\nAgentic • Uncertainty-aware\nContinuous monitoring","textPreview":"Conversational • Multi-model | Agentic • Uncertainty-aware | Continuous monitoring","textChars":78,"textLines":3,"bbox":[44,430,430,130]}
+{"kind":"textbox","id":"sh/u58jq1wj","slide":18,"name":"future-question","text":"Autonomy ต้องสัมพันธ์กับความเสี่ยง","textPreview":"Autonomy ต้องสัมพันธ์กับความเสี่ยง","textChars":34,"textLines":1,"bbox":[44,618,430,38]}
+{"kind":"image","id":"im/8ry58r6h","slide":18,"name":"","geometry":"rect","alt":"ภาพ Future DSS ที่มนุษย์กำกับ AI agents และการตัดสินใจ","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/xyeyvj","slide":18,"text":"ชวนอภิปราย: ระบบใดควร autonomous ได้ และระบบใดต้อง human approval ทุกครั้ง?\n\n[Sources]\n- NIST AI RMF 1.0, https://doi.org/10.6028/NIST.AI.100-1\n- IBM, Agentic Data Management (2026), https://www.ibm.com/think/insights/agentic-data-management\n- Generated illustration: OpenAI ImageGen, 2026 (project asset)."}
+{"kind":"slide","id":"sl/r53zky","slide":19,"title":"DECISION SUPPORT SYSTEMS • WEEK 01","textShapes":6}
+{"kind":"textbox","id":"sh/id4z6xkj","slide":19,"name":"kicker-19","text":"DECISION SUPPORT SYSTEMS • WEEK 01","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 01","textChars":34,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/5gfyhc3a","slide":19,"name":"title-19","text":"10 คำถามที่ต้องตอบก่อนเชื่อคำแนะนำของ DSS","textPreview":"10 คำถามที่ต้องตอบก่อนเชื่อคำแนะนำของ DSS","textChars":41,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/kf6h872p","slide":19,"name":"rule-19","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/badgb2ls","slide":19,"name":"footer-label-19","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/a94z2xkn","slide":19,"name":"footer-number-19","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/xcvydc3y","slide":19,"name":"q-left","bbox":[52,204,560,392]}
+{"kind":"shape","id":"sh/wbmh472d","slide":19,"name":"q-right","bbox":[668,204,560,392]}
+{"kind":"textbox","id":"sh/nmtg7ilw","slide":19,"name":"q-left-text","text":"1  ใครคือผู้ตัดสินใจ?\n2  ต้องตัดสินใจเรื่องอะไร?\n3  ข้อมูลมาจากไหน?\n4  คุณภาพและอคติเป็นอย่างไร?\n5  โมเดลตั้งสมมติฐานอะไร?","textPreview":"1  ใครคือผู้ตัดสินใจ? | 2  ต้องตัดสินใจเรื่องอะไร? | 3  ข้อมูลมาจากไหน? | 4  คุณภาพและอคติเป็นอย่างไร? | 5  โมเดลตั้งสมมติฐานอะไร?","textChars":122,"textLines":5,"bbox":[88,235,490,324]}
+{"kind":"textbox","id":"sh/mlkfydkb","slide":19,"name":"q-right-text","text":"6  มีทางเลือกใดถูกละเลย?\n7  ความไม่แน่นอนสูงแค่ไหน?\n8  ใครได้รับผลกระทบ?\n9  มนุษย์ override ได้หรือไม่?\n10  ใครรับผิดชอบและตรวจสอบ?","textPreview":"6  มีทางเลือกใดถูกละเลย? | 7  ความไม่แน่นอนสูงแค่ไหน? | 8  ใครได้รับผลกระทบ? | 9  มนุษย์ override ได้หรือไม่? | 10  ใครรับผิดชอบและตรวจสอบ?","textChars":131,"textLines":5,"bbox":[704,235,490,324]}
+{"kind":"notes","id":"nt/r53zky","slide":19,"text":"คำถามบนสไลด์เป็น checklist วิเคราะห์ระบบ ส่วนแบบฝึก 10 ข้อพร้อมแนวคำตอบอยู่ใน Week-01-Questions.md\n\n[Sources]\n- NIST AI RMF Core, https://airc.nist.gov/airmf-resources/airmf/5-sec-core/\n- NIST AI RMF Appendix C, https://airc.nist.gov/airmf-resources/airmf/appendices/app-c-ai-risk-management-and-human-ai-interaction/"}
+{"kind":"slide","id":"sl/i5cg2r","slide":20,"title":"WEEK 01 • NEXT ACTION","textShapes":11}
+{"kind":"textbox","id":"sh/mxkfa98z","slide":20,"name":"kicker-20","text":"WEEK 01 • NEXT ACTION","textPreview":"WEEK 01 • NEXT ACTION","textChars":21,"textLines":1,"bbox":[42,30,800,32]}
+{"kind":"textbox","id":"sh/90vy5o7a","slide":20,"name":"title-20","text":"ลงมือทำ: วิเคราะห์อดีต แล้วออกแบบอนาคต","textPreview":"ลงมือทำ: วิเคราะห์อดีต แล้วออกแบบอนาคต","textChars":38,"textLines":1,"bbox":[42,70,1160,78]}
+{"kind":"shape","id":"sh/8z2hcjqp","slide":20,"name":"rule-20","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/v2dg7ypg","slide":20,"name":"footer-label-20","text":"KSU • ระบบสนับสนุนการตัดสินใจ","textPreview":"KSU • ระบบสนับสนุนการตัดสินใจ","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/u14zet8v","slide":20,"name":"footer-number-20","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/h4vy987m","slide":20,"name":"lab1","bbox":[54,202,540,356]}
+{"kind":"shape","id":"sh/w3mhg3q1","slide":20,"name":"lab2","bbox":[686,202,540,356]}
+{"kind":"textbox","id":"sh/b69gvupc","slide":20,"name":"lab1-no","text":"LAB 01","textPreview":"LAB 01","textChars":6,"textLines":1,"bbox":[86,232,180,34]}
+{"kind":"textbox","id":"sh/a50f2p8r","slide":20,"name":"lab1-title","text":"DSS History &\nDecision Case","textPreview":"DSS History & | Decision Case","textChars":27,"textLines":2,"bbox":[86,300,450,100]}
+{"kind":"textbox","id":"sh/8zidgnah","slide":20,"name":"lab1-copy","text":"สร้าง timeline\nใช้ Simon วิเคราะห์ระบบเตือนนักศึกษา\nอภิปราย support vs automation","textPreview":"สร้าง timeline | ใช้ Simon วิเคราะห์ระบบเตือนนักศึกษา | อภิปราย support vs automation","textChars":81,"textLines":3,"bbox":[86,432,450,100]}
+{"kind":"textbox","id":"sh/90ru9sb2","slide":20,"name":"lab2-no","text":"LAB 02","textPreview":"LAB 02","textChars":6,"textLines":1,"bbox":[718,232,180,34]}
+{"kind":"textbox","id":"sh/mx0vedsr","slide":20,"name":"lab2-title","text":"Design a\nFuture DSS","textPreview":"Design a | Future DSS","textChars":19,"textLines":2,"bbox":[718,300,450,100]}
+{"kind":"textbox","id":"sh/ny9c7itc","slide":20,"name":"lab2-copy","text":"สร้าง Decision Canvas\nออกแบบ 4 subsystems + feedback\nกำหนด autonomy และ guardrails","textPreview":"สร้าง Decision Canvas | ออกแบบ 4 subsystems + feedback | กำหนด autonomy และ guardrails","textChars":82,"textLines":3,"bbox":[718,432,450,100]}
+{"kind":"textbox","id":"sh/wn2dknat","slide":20,"name":"closing","text":"เป้าหมาย: DSS ที่มีประโยชน์ ตรวจสอบได้ และมนุษย์ยังรับผิดชอบ","textPreview":"เป้าหมาย: DSS ที่มีประโยชน์ ตรวจสอบได้ และมนุษย์ยังรับผิดชอบ","textChars":60,"textLines":1,"bbox":[180,602,920,42]}
+{"kind":"notes","id":"nt/i5cg2r","slide":20,"text":"ปิดคาบด้วย exit ticket: DSS ที่ดีควรเพิ่ม “คุณภาพการตัดสินใจ” ไม่ใช่เพียงเพิ่ม automation\n\n[Sources]\n- Lab instructions in Lab-01-DSS-History-and-Decision-Case.md and Lab-02-Design-a-Future-DSS.md."}

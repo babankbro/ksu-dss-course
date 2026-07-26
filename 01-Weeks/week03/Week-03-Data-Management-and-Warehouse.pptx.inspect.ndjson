@@ -1,0 +1,324 @@
+{"kind":"deck","id":"pr/2d2mkp","name":"Deck"}
+{"kind":"layout","layoutId":"0fce2171-d8b7-4d56-9db1-1a7a58d616de","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"87bcccd5-0abe-4c2d-a2ae-c9835276b9e5","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/6zhohf","slide":1,"title":"WEEK 03 • DATA FOUNDATION","textShapes":5}
+{"kind":"shape","id":"sh/0badwry5","slide":1,"name":"cover-fade","bbox":[0,0,650,720]}
+{"kind":"textbox","id":"sh/1c3e5wza","slide":1,"name":"ck","text":"WEEK 03 • DATA FOUNDATION","textPreview":"WEEK 03 • DATA FOUNDATION","textChars":25,"textLines":1,"bbox":[48,52,550,34]}
+{"kind":"textbox","id":"sh/q5svqhgn","slide":1,"name":"ct","text":"Data Management\n& Data Warehouse","textPreview":"Data Management | & Data Warehouse","textChars":32,"textLines":2,"bbox":[48,154,590,180]}
+{"kind":"textbox","id":"sh/r61cz2h8","slide":1,"name":"cs","text":"OLTP • ETL/ELT • Star Schema • Future Data","textPreview":"OLTP • ETL/ELT • Star Schema • Future Data","textChars":42,"textLines":1,"bbox":[48,390,580,62]}
+{"kind":"textbox","id":"sh/c7ads7yt","slide":1,"name":"cq","text":"หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?","textPreview":"หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?","textChars":38,"textLines":1,"bbox":[48,510,570,42]}
+{"kind":"textbox","id":"sh/d8ju1cze","slide":1,"name":"cc","text":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textPreview":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textChars":36,"textLines":1,"bbox":[48,630,560,28]}
+{"kind":"image","id":"im/ylsnyp47","slide":1,"name":"","geometry":"rect","alt":"ข้อมูลจากหลายระบบไหลเข้าสู่คลังข้อมูลสำหรับการตัดสินใจ","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/6zhohf","slide":1,"text":"เปิดด้วยกรณีฝ่ายขาย บัญชี และ dashboard รายงานยอดขายไม่เท่ากัน\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/data-warehouse-cover.png)."}
+{"kind":"slide","id":"sl/odjmjn","slide":2,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":9}
+{"kind":"textbox","id":"sh/07qdkruh","slide":2,"name":"k-2","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/zmxcrmtw","slide":2,"name":"t-2","text":"วันนี้เราจะตอบ 5 คำถาม","textPreview":"วันนี้เราจะตอบ 5 คำถาม","textChars":22,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ylovihcb","slide":2,"name":"r-2","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/dkfupcbq","slide":2,"name":"fl-2","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/cj6dg7u5","slide":2,"name":"fn-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/bixcn2tk","slide":2,"name":"bd-195-0","bbox":[80,206,11,11]}
+{"kind":"textbox","id":"sh/qhobexcz","slide":2,"name":"bt-195-0","text":"ทำไมงานวิเคราะห์ต้องแยกจาก OLTP?","textPreview":"ทำไมงานวิเคราะห์ต้องแยกจาก OLTP?","textChars":32,"textLines":1,"bbox":[107,195,1063,82]}
+{"kind":"shape","id":"sh/xgju1gbu","slide":2,"name":"bd-195-1","bbox":[80,288,11,11]}
+{"kind":"textbox","id":"sh/wfadsbu9","slide":2,"name":"bt-195-1","text":"จะพิสูจน์ว่าข้อมูลผ่าน ETL โดยไม่สูญหายได้อย่างไร?","textPreview":"จะพิสูจน์ว่าข้อมูลผ่าน ETL โดยไม่สูญหายได้อย่างไร?","textChars":50,"textLines":1,"bbox":[107,277,1063,82]}
+{"kind":"shape","id":"sh/q9g7axov","slide":2,"name":"bd-195-2","bbox":[80,370,11,11]}
+{"kind":"textbox","id":"sh/rapoj2pg","slide":2,"name":"bt-195-2","text":"เหตุใด Grain จึงต้องมาก่อน Fact และ Dimension?","textPreview":"เหตุใด Grain จึงต้องมาก่อน Fact และ Dimension?","textChars":46,"textLines":1,"bbox":[107,359,1063,82]}
+{"kind":"shape","id":"sh/sbypc761","slide":2,"name":"bd-195-3","bbox":[80,452,11,11]}
+{"kind":"textbox","id":"sh/dc7qlc7m","slide":2,"name":"bt-195-3","text":"เมื่อใดควรใช้ Star, Snowflake, Lake หรือ Lakehouse?","textPreview":"เมื่อใดควรใช้ Star, Snowflake, Lake หรือ Lakehouse?","textChars":51,"textLines":1,"bbox":[107,441,1063,82]}
+{"kind":"shape","id":"sh/ilw76xoz","slide":2,"name":"bd-195-4","bbox":[80,534,11,11]}
+{"kind":"textbox","id":"sh/3m5of2pk","slide":2,"name":"bt-195-4","text":"ข้อมูลแบบใดพร้อมให้ BI, ML และ AI ใช้ร่วมกัน?","textPreview":"ข้อมูลแบบใดพร้อมให้ BI, ML และ AI ใช้ร่วมกัน?","textChars":45,"textLines":1,"bbox":[107,523,1063,82]}
+{"kind":"notes","id":"nt/odjmjn","slide":2,"text":"ให้นักศึกษาเลือกคำถามที่ตนยังตอบไม่ได้หนึ่งข้อ\n\n[Sources]\n- Course Week-03 source note and expanded content in this vault."}
+{"kind":"slide","id":"sl/qbxgd7","slide":3,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":14}
+{"kind":"textbox","id":"sh/365snyl0","slide":3,"name":"k-3","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/47y9w32l","slide":3,"name":"t-3","text":"ตัวเลขเดียวกันอาจมีหลายความหมาย","textPreview":"ตัวเลขเดียวกันอาจมีหลายความหมาย","textChars":31,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/p87ap836","slide":3,"name":"r-3","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/qtgrydkr","slide":3,"name":"fl-3","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/rupsrylc","slide":3,"name":"fn-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/cvyt032h","slide":3,"name":"v-0","bbox":[60,215,350,265]}
+{"kind":"textbox","id":"sh/dw7at832","slide":3,"name":"vh-0","text":"ฝ่ายขาย","textPreview":"ฝ่ายขาย","textChars":7,"textLines":1,"bbox":[88,240,294,34]}
+{"kind":"textbox","id":"sh/6xcrm9k7","slide":3,"name":"vv-0","text":"9.8 M","textPreview":"9.8 M","textChars":5,"textLines":1,"bbox":[88,304,294,76]}
+{"kind":"textbox","id":"sh/7ylsfels","slide":3,"name":"vn-0","text":"วันสั่งซื้อ","textPreview":"วันสั่งซื้อ","textChars":11,"textLines":1,"bbox":[88,416,294,30]}
+{"kind":"shape","id":"sh/ripcryhs","slide":3,"name":"v-1","bbox":[460,215,350,265]}
+{"kind":"textbox","id":"sh/6hgbitg7","slide":3,"name":"vh-1","text":"บัญชี","textPreview":"บัญชี","textChars":5,"textLines":1,"bbox":[488,240,294,34]}
+{"kind":"textbox","id":"sh/tkrut8zi","slide":3,"name":"vv-1","text":"9.2 M","textPreview":"9.2 M","textChars":5,"textLines":1,"bbox":[488,304,294,76]}
+{"kind":"textbox","id":"sh/sjidk3yx","slide":3,"name":"vn-1","text":"วันรับรู้รายได้","textPreview":"วันรับรู้รายได้","textChars":15,"textLines":1,"bbox":[488,416,294,30]}
+{"kind":"shape","id":"sh/jepcnehg","slide":3,"name":"v-2","bbox":[860,215,350,265]}
+{"kind":"textbox","id":"sh/idgbe9gv","slide":3,"name":"vh-2","text":"Dashboard","textPreview":"Dashboard","textChars":9,"textLines":1,"bbox":[888,240,294,34]}
+{"kind":"textbox","id":"sh/5g7upozm","slide":3,"name":"vv-2","text":"10.1 M","textPreview":"10.1 M","textChars":6,"textLines":1,"bbox":[888,304,294,76]}
+{"kind":"textbox","id":"sh/4fytgjy1","slide":3,"name":"vn-2","text":"ยังไม่หักคืนสินค้า","textPreview":"ยังไม่หักคืนสินค้า","textChars":18,"textLines":1,"bbox":[888,416,294,30]}
+{"kind":"textbox","id":"sh/vq5cjehk","slide":3,"name":"take","text":"Data Warehouse สร้างนิยามร่วม ประวัติ และหลักฐานการคำนวณ","textPreview":"Data Warehouse สร้างนิยามร่วม ประวัติ และหลักฐานการคำนวณ","textChars":56,"textLines":1,"bbox":[145,545,990,54]}
+{"kind":"notes","id":"nt/qbxgd7","slide":3,"text":"ถามว่าตัวเลขใดถูก แล้วชี้ว่าคำถามยังขาด semantic definition\n\n[Sources]\n- Scenario synthesized for instruction; no empirical values claimed."}
+{"kind":"slide","id":"sl/v7jmis","slide":4,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":9}
+{"kind":"textbox","id":"sh/snmlsfqd","slide":4,"name":"k-4","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/rmtkzu98","slide":4,"name":"t-4","text":"OLTP และ Analytics ถูกออกแบบให้ทำงานคนละแบบ","textPreview":"OLTP และ Analytics ถูกออกแบบให้ทำงานคนละแบบ","textChars":43,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/qlk3qp8n","slide":4,"name":"r-4","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/5kb2xkr2","slide":4,"name":"fl-4","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/4j2lofqh","slide":4,"name":"fn-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/3itkva9w","slide":4,"name":"oltp","bbox":[54,205,520,350]}
+{"kind":"textbox","id":"sh/ixk3m58b","slide":4,"name":"oh","text":"OLTP","textPreview":"OLTP","textChars":4,"textLines":1,"bbox":[84,232,180,40]}
+{"kind":"textbox","id":"sh/hwb2t0rq","slide":4,"name":"ob","text":"งาน: insert / update เล็กและถี่\nเป้าหมาย: transaction ถูกต้อง\nแบบจำลอง: normalized\nเวลา: สถานะปัจจุบัน\nผู้ใช้: ระบบปฏิบัติการ","textPreview":"งาน: insert / update เล็กและถี่ | เป้าหมาย: transaction ถูกต้อง | แบบจำลอง: normalized | เวลา: สถานะปัจจุบัน | ผู้ใช้: ระบบปฏิบัติการ","textChars":125,"textLines":5,"bbox":[84,308,430,190]}
+{"kind":"shape","id":"sh/gvilkvq5","slide":4,"name":"dw","bbox":[706,205,520,350]}
+{"kind":"textbox","id":"sh/u9gj25gf","slide":4,"name":"dh","text":"ANALYTICAL WAREHOUSE","textPreview":"ANALYTICAL WAREHOUSE","textChars":20,"textLines":1,"bbox":[736,232,420,40]}
+{"kind":"textbox","id":"sh/vupkbax0","slide":4,"name":"db","text":"งาน: scan / join / aggregate\nเป้าหมาย: แนวโน้มและทางเลือก\nแบบจำลอง: dimensional\nเวลา: ประวัติหลายปี\nผู้ใช้: BI • DSS • ML","textPreview":"งาน: scan / join / aggregate | เป้าหมาย: แนวโน้มและทางเลือก | แบบจำลอง: dimensional | เวลา: ประวัติหลายปี | ผู้ใช้: BI • DSS • ML","textChars":121,"textLines":5,"bbox":[736,308,430,190]}
+{"kind":"textbox","id":"sh/gvy14vyl","slide":4,"name":"sep","text":"แยก workload เพื่อไม่ให้คำถามเชิงวิเคราะห์กระทบการขายจริง","textPreview":"แยก workload เพื่อไม่ให้คำถามเชิงวิเคราะห์กระทบการขายจริง","textChars":57,"textLines":1,"bbox":[160,588,960,38]}
+{"kind":"notes","id":"nt/v7jmis","slide":4,"text":"เปรียบเทียบ query หนึ่งรายการขายกับยอดรวมสามปี\n\n[Sources]\n- Microsoft Learn, WideWorldImportersDW, https://learn.microsoft.com/en-us/sql/samples/wide-world-importers-dw-database-catalog"}
+{"kind":"slide","id":"sl/fc59so","slide":5,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":4}
+{"kind":"textbox","id":"sh/7yh0ru58","slide":5,"name":"k-5","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/8zq10zmt","slide":5,"name":"t-5","text":"ระบบธุรกรรมป้อนข้อมูล — คลังข้อมูลอธิบายอดีต","textPreview":"ระบบธุรกรรมป้อนข้อมูล — คลังข้อมูลอธิบายอดีต","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/90zit4ne","slide":5,"name":"r-5","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/y9ojup4r","slide":5,"name":"fl-5","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/zux0nu5w","slide":5,"name":"fn-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"image","id":"im/9c3e5gb2","slide":5,"name":"","geometry":"rect","alt":"ภาพเปรียบเทียบระบบธุรกรรมกับคลังข้อมูลเชิงวิเคราะห์","bbox":[56,184,1168,460]}
+{"kind":"notes","id":"nt/fc59so","slide":5,"text":"ให้ผู้เรียนชี้ workload, data model และผู้ใช้ของแต่ละฝั่ง\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/oltp-vs-warehouse.png).\n- Microsoft Learn, dimensional modeling overview, https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview"}
+{"kind":"slide","id":"sl/zlh2kr","slide":6,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":13}
+{"kind":"textbox","id":"sh/dgryd8fq","slide":6,"name":"k-6","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/qt0fidwz","slide":6,"name":"t-6","text":"คลังข้อมูลที่ดีรักษาบริบทข้ามระบบและข้ามเวลา","textPreview":"คลังข้อมูลที่ดีรักษาบริบทข้ามระบบและข้ามเวลา","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ru9gbyxk","slide":6,"name":"r-6","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/4ryxg3e9","slide":6,"name":"fl-6","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/ps7ep8fe","slide":6,"name":"fn-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/2pgfetw3","slide":6,"name":"q-0","bbox":[45,220,270,310]}
+{"kind":"shape","id":"sh/3qpwnyxo","slide":6,"name":"q-0-a","bbox":[45,220,8,310]}
+{"kind":"textbox","id":"sh/gnyxcjex","slide":6,"name":"q-0-h","text":"SUBJECT","textPreview":"SUBJECT","textChars":7,"textLines":1,"bbox":[72,240,222,36]}
+{"kind":"textbox","id":"sh/ho7elofi","slide":6,"name":"q-0-b","text":"จัดตามเรื่องธุรกิจ\nลูกค้า • ยอดขาย","textPreview":"จัดตามเรื่องธุรกิจ | ลูกค้า • ยอดขาย","textChars":34,"textLines":2,"bbox":[72,294,222,220]}
+{"kind":"shape","id":"sh/9wzap83m","slide":6,"name":"q-1","bbox":[349,220,270,310]}
+{"kind":"shape","id":"sh/8v69w321","slide":6,"name":"q-1-a","bbox":[349,220,8,310]}
+{"kind":"textbox","id":"sh/nuxsnylg","slide":6,"name":"q-1-h","text":"INTEGRATED","textPreview":"INTEGRATED","textChars":10,"textLines":1,"bbox":[376,240,222,36]}
+{"kind":"textbox","id":"sh/mtorutkv","slide":6,"name":"q-1-b","text":"รหัส หน่วย นิยาม\nสอดคล้องกัน","textPreview":"รหัส หน่วย นิยาม | สอดคล้องกัน","textChars":28,"textLines":2,"bbox":[376,294,222,220]}
+{"kind":"shape","id":"sh/lsfqlo3q","slide":6,"name":"q-2","bbox":[653,220,270,310]}
+{"kind":"shape","id":"sh/0r69sj25","slide":6,"name":"q-2-a","bbox":[653,220,8,310]}
+{"kind":"textbox","id":"sh/zqx8jelk","slide":6,"name":"q-2-h","text":"TIME-VARIANT","textPreview":"TIME-VARIANT","textChars":12,"textLines":1,"bbox":[680,240,222,36]}
+{"kind":"textbox","id":"sh/yporq9kz","slide":6,"name":"q-2-b","text":"เก็บวันที่และประวัติ\nเพื่อเปรียบเทียบ","textPreview":"เก็บวันที่และประวัติ | เพื่อเปรียบเทียบ","textChars":37,"textLines":2,"bbox":[680,294,222,220]}
+{"kind":"shape","id":"sh/d4vqho3e","slide":6,"name":"q-3","bbox":[957,220,270,310]}
+{"kind":"shape","id":"sh/c3m9oj2t","slide":6,"name":"q-3-a","bbox":[957,220,8,310]}
+{"kind":"textbox","id":"sh/47q94jap","slide":6,"name":"q-3-h","text":"NON-VOLATILE","textPreview":"NON-VOLATILE","textChars":12,"textLines":1,"bbox":[984,240,222,36]}
+{"kind":"textbox","id":"sh/p8zaxoba","slide":6,"name":"q-3-b","text":"เปลี่ยนอย่างควบคุม\nย้อนตรวจได้","textPreview":"เปลี่ยนอย่างควบคุม | ย้อนตรวจได้","textChars":30,"textLines":2,"bbox":[984,294,222,220]}
+{"kind":"textbox","id":"sh/258r29sj","slide":6,"name":"nv","text":"Non-volatile ≠ ห้ามแก้ • ต้องแก้แบบมีเวอร์ชันและหลักฐาน","textPreview":"Non-volatile ≠ ห้ามแก้ • ต้องแก้แบบมีเวอร์ชันและหลักฐาน","textChars":55,"textLines":1,"bbox":[170,580,940,42]}
+{"kind":"notes","id":"nt/zlh2kr","slide":6,"text":"ใช้ตัวอย่างรหัสจังหวัดต่างกันระหว่าง POS และ CRM เพื่ออธิบาย Integrated\n\n[Sources]\n- IBM Research, data warehouse characteristics, https://dominoweb.draco.res.ibm.com/reports/rc23184.pdf"}
+{"kind":"slide","id":"sl/feqyuf","slide":7,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":15}
+{"kind":"textbox","id":"sh/y1sn6lov","slide":7,"name":"k-7","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/l436h0nm","slide":7,"name":"t-7","text":"Pipeline ที่เชื่อถือได้ต้องมีทางออกสำหรับข้อมูลผิด","textPreview":"Pipeline ที่เชื่อถือได้ต้องมีทางออกสำหรับข้อมูลผิด","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/k3u58v61","slide":7,"name":"r-7","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/7qlojq5s","slide":7,"name":"fl-7","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/6pcna5o7","slide":7,"name":"fn-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/ts36l0ni","slide":7,"name":"p-0","bbox":[36,235,205,230]}
+{"kind":"textbox","id":"sh/8ru5cv6d","slide":7,"name":"ph-0","text":"EXTRACT","textPreview":"EXTRACT","textChars":7,"textLines":1,"bbox":[54,260,169,32]}
+{"kind":"textbox","id":"sh/fu5ona5o","slide":7,"name":"pb-0","text":"batch • CDC\nbatch_id + time","textPreview":"batch • CDC | batch_id + time","textChars":27,"textLines":2,"bbox":[54,335,169,78]}
+{"kind":"shape","id":"sh/utcne5o3","slide":7,"name":"pa-0","bbox":[236,330,48,30]}
+{"kind":"shape","id":"sh/c769kv69","slide":7,"name":"p-1","bbox":[285,235,205,230]}
+{"kind":"textbox","id":"sh/dsfqd0nu","slide":7,"name":"ph-1","text":"PROFILE","textPreview":"PROFILE","textChars":7,"textLines":1,"bbox":[303,260,169,32]}
+{"kind":"textbox","id":"sh/q54rilo3","slide":7,"name":"pb-1","text":"schema • null\nrow count","textPreview":"schema • null | row count","textChars":23,"textLines":2,"bbox":[303,335,169,78]}
+{"kind":"shape","id":"sh/r6x8bq5o","slide":7,"name":"pa-1","bbox":[485,330,48,30]}
+{"kind":"shape","id":"sh/0v69of65","slide":7,"name":"p-2","bbox":[534,235,205,230]}
+{"kind":"textbox","id":"sh/lwfah0nq","slide":7,"name":"ph-2","text":"TRANSFORM","textPreview":"TRANSFORM","textChars":9,"textLines":1,"bbox":[552,260,169,32]}
+{"kind":"textbox","id":"sh/etorm5of","slide":7,"name":"pb-2","text":"clean • map\ndeduplicate","textPreview":"clean • map | deduplicate","textChars":23,"textLines":2,"bbox":[552,335,169,78]}
+{"kind":"shape","id":"sh/zux8fa50","slide":7,"name":"pa-2","bbox":[734,330,48,30]}
+{"kind":"shape","id":"sh/8zq9sf6h","slide":7,"name":"p-3","bbox":[783,235,205,230]}
+{"kind":"textbox","id":"sh/90zalkn2","slide":7,"name":"ph-3","text":"LOAD","textPreview":"LOAD","textChars":4,"textLines":1,"bbox":[801,260,169,32]}
+{"kind":"textbox","id":"sh/x4bipgbu","slide":7,"name":"pb-3","text":"dimension → fact\nidempotent","textPreview":"dimension → fact | idempotent","textChars":27,"textLines":2,"bbox":[801,335,169,78]}
+{"kind":"shape","id":"sh/w32hgbu9","slide":7,"name":"pa-3","bbox":[983,330,48,30]}
+{"kind":"shape","id":"sh/v2t0nqto","slide":7,"name":"p-4","bbox":[1032,235,205,230]}
+{"kind":"textbox","id":"sh/a1kzelcj","slide":7,"name":"ph-4","text":"RECONCILE","textPreview":"RECONCILE","textChars":9,"textLines":1,"bbox":[1050,260,169,32]}
+{"kind":"textbox","id":"sh/58vit0b6","slide":7,"name":"pb-4","text":"rows • totals\nrejects","textPreview":"rows • totals | rejects","textChars":21,"textLines":2,"bbox":[1050,335,169,78]}
+{"kind":"shape","id":"sh/k7mhkvul","slide":7,"name":"reject","bbox":[420,515,440,72]}
+{"kind":"textbox","id":"sh/j6t0rqt0","slide":7,"name":"rt","text":"QUARANTINE: เก็บ record + reason + source","textPreview":"QUARANTINE: เก็บ record + reason + source","textChars":41,"textLines":1,"bbox":[445,535,390,32]}
+{"kind":"notes","id":"nt/feqyuf","slide":7,"text":"ย้ำว่า rejected record ไม่ควรถูกทิ้งเงียบ\n\n[Sources]\n- Microsoft Learn, Modern Data Warehouse, https://learn.microsoft.com/en-us/data-engineering/playbook/solutions/modern-data-warehouse/"}
+{"kind":"slide","id":"sl/m85n1c","slide":8,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":11}
+{"kind":"textbox","id":"sh/c3i9gfmt","slide":8,"name":"k-8","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/b29sna58","slide":8,"name":"t-8","text":"ETL และ ELT ต่างลำดับ — แต่ไม่ต่างเรื่องความรับผิดชอบ","textPreview":"ETL และ ELT ต่างลำดับ — แต่ไม่ต่างเรื่องความรับผิดชอบ","textChars":53,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/a10re5o3","slide":8,"name":"r-8","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/lsbatknq","slide":8,"name":"fl-8","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/k729kfm5","slide":8,"name":"fn-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/z6tsra5k","slide":8,"name":"etl","text":"ETL","textPreview":"ETL","textChars":3,"textLines":1,"bbox":[62,215,200,52]}
+{"kind":"textbox","id":"sh/y5kri54z","slide":8,"name":"etlf","text":"Extract → Transform → Load","textPreview":"Extract → Transform → Load","textChars":26,"textLines":1,"bbox":[62,292,510,44]}
+{"kind":"textbox","id":"sh/1w7qh0n6","slide":8,"name":"etlb","text":"แปลงก่อนเข้าคลัง\nควบคุม target schema ชัด","textPreview":"แปลงก่อนเข้าคลัง | ควบคุม target schema ชัด","textChars":41,"textLines":2,"bbox":[62,375,500,90]}
+{"kind":"shape","id":"sh/gby98v6l","slide":8,"name":"div","bbox":[624,205,2,330]}
+{"kind":"textbox","id":"sh/2lcfetov","slide":8,"name":"elt","text":"ELT","textPreview":"ELT","textChars":3,"textLines":1,"bbox":[688,215,200,52]}
+{"kind":"textbox","id":"sh/3mlgnypg","slide":8,"name":"eltf","text":"Extract → Load → Transform","textPreview":"Extract → Load → Transform","textChars":26,"textLines":1,"bbox":[688,292,520,44]}
+{"kind":"textbox","id":"sh/onuxg361","slide":8,"name":"eltb","text":"เก็บ raw ก่อน แปลงใน platform\nยืดหยุ่นกับ compute และข้อมูลใหม่","textPreview":"เก็บ raw ก่อน แปลงใน platform | ยืดหยุ่นกับ compute และข้อมูลใหม่","textChars":63,"textLines":2,"bbox":[688,375,500,90]}
+{"kind":"textbox","id":"sh/po3yp87m","slide":8,"name":"same","text":"ทั้งคู่ต้องมี validation • lineage • access control • reconciliation","textPreview":"ทั้งคู่ต้องมี validation • lineage • access control • reconciliation","textChars":68,"textLines":1,"bbox":[160,570,960,44]}
+{"kind":"notes","id":"nt/m85n1c","slide":8,"text":"ให้นักศึกษาปกป้องตัวเลือก ETL หรือ ELT ด้วยบริบท ไม่ใช่ความใหม่ของเทคโนโลยี\n\n[Sources]\n- Microsoft Learn, Modern Data Warehouse, https://learn.microsoft.com/en-us/data-engineering/playbook/solutions/modern-data-warehouse/"}
+{"kind":"slide","id":"sl/cuj89i","slide":9,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":16}
+{"kind":"textbox","id":"sh/ml47y14n","slide":9,"name":"k-9","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/9ovq9w3y","slide":9,"name":"t-9","text":"Data Quality ต้องเป็นกฎที่วัดและดำเนินการได้","textPreview":"Data Quality ต้องเป็นกฎที่วัดและดำเนินการได้","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/onmp0rmd","slide":9,"name":"r-9","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/fyt83mlw","slide":9,"name":"fl-9","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/exk7uh4b","slide":9,"name":"fn-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/1kvq5w32","slide":9,"name":"dq-0","bbox":[62,205,350,140]}
+{"kind":"shape","id":"sh/0zmpwrmh","slide":9,"name":"dq-0-a","bbox":[62,205,8,140]}
+{"kind":"textbox","id":"sh/jux8f6l0","slide":9,"name":"dq-0-h","text":"COMPLETE","textPreview":"COMPLETE","textChars":8,"textLines":1,"bbox":[89,225,302,36]}
+{"kind":"textbox","id":"sh/ytor6l4v","slide":9,"name":"dq-0-b","text":"order_id ไม่ว่าง","textPreview":"order_id ไม่ว่าง","textChars":16,"textLines":1,"bbox":[89,279,302,50]}
+{"kind":"shape","id":"sh/oru5kj2h","slide":9,"name":"dq-1","bbox":[462,205,350,140]}
+{"kind":"shape","id":"sh/ps36do3m","slide":9,"name":"dq-1-a","bbox":[462,205,8,140]}
+{"kind":"textbox","id":"sh/25sni9kb","slide":9,"name":"dq-1-h","text":"UNIQUE","textPreview":"UNIQUE","textChars":6,"textLines":1,"bbox":[489,225,302,36]}
+{"kind":"textbox","id":"sh/3ql4belw","slide":9,"name":"dq-1-b","text":"receipt line ไม่ซ้ำ","textPreview":"receipt line ไม่ซ้ำ","textChars":19,"textLines":1,"bbox":[489,279,302,50]}
+{"kind":"shape","id":"sh/g3a5gz25","slide":9,"name":"dq-2","bbox":[862,205,350,140]}
+{"kind":"shape","id":"sh/h4jm943q","slide":9,"name":"dq-2-a","bbox":[862,205,8,140]}
+{"kind":"textbox","id":"sh/u1sne9kz","slide":9,"name":"dq-2-h","text":"VALID","textPreview":"VALID","textChars":5,"textLines":1,"bbox":[889,225,302,36]}
+{"kind":"textbox","id":"sh/f2147elk","slide":9,"name":"dq-2-b","text":"quantity > 0","textPreview":"quantity > 0","textChars":12,"textLines":1,"bbox":[889,279,302,50]}
+{"kind":"shape","id":"sh/sza5cz29","slide":9,"name":"dq-3","bbox":[62,385,350,140]}
+{"kind":"shape","id":"sh/t0jm543e","slide":9,"name":"dq-3-a","bbox":[62,385,8,140]}
+{"kind":"textbox","id":"sh/9krutwr6","slide":9,"name":"dq-3-h","text":"CONSISTENT","textPreview":"CONSISTENT","textChars":10,"textLines":1,"bbox":[89,405,302,36]}
+{"kind":"textbox","id":"sh/8jit0rql","slide":9,"name":"dq-3-b","text":"net = gross − discount","textPreview":"net = gross − discount","textChars":22,"textLines":1,"bbox":[89,459,302,50]}
+{"kind":"shape","id":"sh/ni9crm90","slide":9,"name":"dq-4","bbox":[462,385,350,140]}
+{"kind":"shape","id":"sh/mh0byh8f","slide":9,"name":"dq-4-a","bbox":[462,385,8,140]}
+{"kind":"textbox","id":"sh/lg7upcra","slide":9,"name":"dq-4-h","text":"TIMELY","textPreview":"TIMELY","textChars":6,"textLines":1,"bbox":[489,405,302,36]}
+{"kind":"textbox","id":"sh/0fytwrqp","slide":9,"name":"dq-4-b","text":"ถึงภายใน 30 นาที","textPreview":"ถึงภายใน 30 นาที","textChars":16,"textLines":1,"bbox":[489,459,302,50]}
+{"kind":"shape","id":"sh/zepcnm94","slide":9,"name":"dq-5","bbox":[862,385,350,140]}
+{"kind":"shape","id":"sh/ydgbuh8j","slide":9,"name":"dq-5-a","bbox":[862,385,8,140]}
+{"kind":"textbox","id":"sh/5cbu1gre","slide":9,"name":"dq-5-h","text":"REFERENTIAL","textPreview":"REFERENTIAL","textChars":11,"textLines":1,"bbox":[889,405,302,36]}
+{"kind":"textbox","id":"sh/kb2dsbqt","slide":9,"name":"dq-5-b","text":"product key ต้องพบ","textPreview":"product key ต้องพบ","textChars":18,"textLines":1,"bbox":[889,459,302,50]}
+{"kind":"notes","id":"nt/cuj89i","slide":9,"text":"แต่ละ rule ต้องมี threshold, owner และ action: warn, quarantine หรือ stop\n\n[Sources]\n- Microsoft Learn, Modern Data Warehouse, https://learn.microsoft.com/en-us/data-engineering/playbook/solutions/modern-data-warehouse/"}
+{"kind":"slide","id":"sl/h6vdaa","slide":10,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":10}
+{"kind":"textbox","id":"sh/gjido3ip","slide":10,"name":"k-10","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/vi9cfy14","slide":10,"name":"t-10","text":"Dimensional Modeling เริ่มจากหนึ่งประโยคเรื่อง Grain","textPreview":"Dimensional Modeling เริ่มจากหนึ่งประโยคเรื่อง Grain","textChars":52,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/uh0bmt0j","slide":10,"name":"r-10","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/5obul8j6","slide":10,"name":"fl-10","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/4nids3il","slide":10,"name":"fn-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/3m9cjy10","slide":10,"name":"gq","text":"“หนึ่งแถวแทนอะไร?”","textPreview":"“หนึ่งแถวแทนอะไร?”","textChars":18,"textLines":1,"bbox":[70,225,520,70]}
+{"kind":"shape","id":"sh/il0vqt0v","slide":10,"name":"good","bbox":[650,205,550,155]}
+{"kind":"textbox","id":"sh/dcbupsji","slide":10,"name":"gh","text":"ชัด","textPreview":"ชัด","textChars":3,"textLines":1,"bbox":[680,230,100,32]}
+{"kind":"textbox","id":"sh/sr2dwnix","slide":10,"name":"gb","text":"หนึ่งสินค้าในหนึ่งใบเสร็จ\nณ เวลาชำระเงิน","textPreview":"หนึ่งสินค้าในหนึ่งใบเสร็จ | ณ เวลาชำระเงิน","textChars":40,"textLines":2,"bbox":[680,284,460,62]}
+{"kind":"shape","id":"sh/29s3ihwr","slide":10,"name":"bad","bbox":[650,405,550,140]}
+{"kind":"textbox","id":"sh/3ul4bmdc","slide":10,"name":"bh","text":"ไม่ชัด","textPreview":"ไม่ชัด","textChars":6,"textLines":1,"bbox":[680,430,120,32]}
+{"kind":"textbox","id":"sh/ovulkrex","slide":10,"name":"bb","text":"หนึ่งแถวแทน “ยอดขาย”","textPreview":"หนึ่งแถวแทน “ยอดขาย”","textChars":20,"textLines":1,"bbox":[680,485,460,44]}
+{"kind":"textbox","id":"sh/pw3mdcvi","slide":10,"name":"rule","text":"ห้ามผสม transaction, daily total และ snapshot ใน fact เดียว","textPreview":"ห้ามผสม transaction, daily total และ snapshot ใน fact เดียว","textChars":59,"textLines":1,"bbox":[120,590,1040,40]}
+{"kind":"notes","id":"nt/h6vdaa","slide":10,"text":"ก่อนถามว่ามี dimension อะไร ให้ทุกกลุ่มเขียน grain statement ก่อน\n\n[Sources]\n- Kimball Group, Dimensional Modeling Techniques, https://www.kimballgroup.com/wp-content/uploads/2013/08/2013.09-Kimball-Dimensional-Modeling-Techniques11.pdf"}
+{"kind":"slide","id":"sl/3p7cm9","slide":11,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":4}
+{"kind":"textbox","id":"sh/buh4r6h0","slide":11,"name":"k-11","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/wvq50bil","slide":11,"name":"t-11","text":"Star Schema ทำให้เหตุการณ์หนึ่งชุดมองได้หลายบริบท","textPreview":"Star Schema ทำให้เหตุการณ์หนึ่งชุดมองได้หลายบริบท","textChars":49,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/xwzmtgz6","slide":11,"name":"r-11","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/mpo3u10j","slide":11,"name":"fl-11","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/nqh4n6h4","slide":11,"name":"fn-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"image","id":"im/dcvuxs76","slide":11,"name":"","geometry":"rect","alt":"ภาพ Retail Star Schema มี fact sales ตรงกลางและมิติรอบด้าน","bbox":[66,184,1148,460]}
+{"kind":"notes","id":"nt/3p7cm9","slide":11,"text":"ให้ผู้เรียนชี้ fact, dimensions, event rows และ filter paths จากภาพ\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/retail-star-schema.png).\n- Microsoft Learn, star schema guidance, https://learn.microsoft.com/en-ie/power-bi/guidance/star-schema"}
+{"kind":"slide","id":"sl/z8p823","slide":12,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":8}
+{"kind":"textbox","id":"sh/t8r6xcnm","slide":12,"name":"k-12","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/6lgnmx4v","slide":12,"name":"t-12","text":"Fact เก็บเหตุการณ์ — Dimension ให้คำอธิบาย","textPreview":"Fact เก็บเหตุการณ์ — Dimension ให้คำอธิบาย","textChars":42,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/rmpov25g","slide":12,"name":"r-12","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/4jy5k7mp","slide":12,"name":"fl-12","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/5k76tsna","slide":12,"name":"fn-12","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/ihgnix4j","slide":12,"name":"fact","bbox":[54,205,520,350]}
+{"kind":"textbox","id":"sh/jipor254","slide":12,"name":"fh","text":"FACT TABLE","textPreview":"FACT TABLE","textChars":10,"textLines":1,"bbox":[84,232,260,38]}
+{"kind":"textbox","id":"sh/of2pwrm9","slide":12,"name":"fb","text":"• foreign keys\n• measures\n• receipt / event id\n• เติบโตต่อเนื่อง\n\nเช่น quantity, net amount","textPreview":"• foreign keys | • measures | • receipt / event id | • เติบโตต่อเนื่อง |  | เช่น quantity, net amount","textChars":91,"textLines":6,"bbox":[84,305,420,210]}
+{"kind":"shape","id":"sh/pgb65w3e","slide":12,"name":"dim","bbox":[706,205,520,350]}
+{"kind":"textbox","id":"sh/x4by1k3m","slide":12,"name":"dh","text":"DIMENSION TABLE","textPreview":"DIMENSION TABLE","textChars":15,"textLines":1,"bbox":[736,232,320,38]}
+{"kind":"textbox","id":"sh/c32x8f21","slide":12,"name":"db","text":"• surrogate key\n• business key\n• descriptive attributes\n• hierarchy / history\n\nเช่น product, customer, date","textPreview":"• surrogate key | • business key | • descriptive attributes | • hierarchy / history |  | เช่น product, customer, date","textChars":107,"textLines":6,"bbox":[736,305,420,210]}
+{"kind":"notes","id":"nt/z8p823","slide":12,"text":"ถามว่า receipt number เป็น measure, dimension หรือ degenerate dimension\n\n[Sources]\n- Microsoft Learn, dimensional modeling overview, https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview"}
+{"kind":"slide","id":"sl/nhcp28","slide":13,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":11}
+{"kind":"textbox","id":"sh/belc3etw","slide":13,"name":"k-13","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/cfutwjuh","slide":13,"name":"t-13","text":"Measure บางชนิดห้ามบวกข้ามทุกมิติ","textPreview":"Measure บางชนิดห้ามบวกข้ามทุกมิติ","textChars":33,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/dg3u5ob2","slide":13,"name":"r-13","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/yhcbytcn","slide":13,"name":"fl-13","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/zilc7yts","slide":13,"name":"fn-13","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/0jed03ud","slide":13,"name":"m-0","bbox":[62,225,350,310]}
+{"kind":"shape","id":"sh/lknu9oby","slide":13,"name":"m-0-a","bbox":[62,225,8,310]}
+{"kind":"textbox","id":"sh/elsbmpc3","slide":13,"name":"m-0-h","text":"ADDITIVE","textPreview":"ADDITIVE","textChars":8,"textLines":1,"bbox":[89,245,302,36]}
+{"kind":"textbox","id":"sh/fm1cvudo","slide":13,"name":"m-0-b","text":"quantity • sales\nบวกได้ทุกมิติ","textPreview":"quantity • sales | บวกได้ทุกมิติ","textChars":30,"textLines":2,"bbox":[89,299,302,220]}
+{"kind":"shape","id":"sh/fm5k7aho","slide":13,"name":"m-1","bbox":[462,225,350,310]}
+{"kind":"shape","id":"sh/elwje503","slide":13,"name":"m-1-a","bbox":[462,225,8,310]}
+{"kind":"textbox","id":"sh/18n290zu","slide":13,"name":"m-1-h","text":"SEMI-ADDITIVE","textPreview":"SEMI-ADDITIVE","textChars":13,"textLines":1,"bbox":[489,245,302,36]}
+{"kind":"textbox","id":"sh/gne1gvy9","slide":13,"name":"m-1-b","text":"account balance\nบวกข้ามบัญชี ไม่ข้ามเวลา","textPreview":"account balance | บวกข้ามบัญชี ไม่ข้ามเวลา","textChars":40,"textLines":2,"bbox":[489,299,302,220]}
+{"kind":"shape","id":"sh/rilk3qhs","slide":13,"name":"m-2","bbox":[862,225,350,310]}
+{"kind":"shape","id":"sh/6hcjal07","slide":13,"name":"m-2-a","bbox":[862,225,8,310]}
+{"kind":"textbox","id":"sh/tk3250zy","slide":13,"name":"m-2-h","text":"NON-ADDITIVE","textPreview":"NON-ADDITIVE","textChars":12,"textLines":1,"bbox":[889,245,302,36]}
+{"kind":"textbox","id":"sh/sju1cvid","slide":13,"name":"m-2-b","text":"rate • percentage\nคำนวณจากฐาน","textPreview":"rate • percentage | คำนวณจากฐาน","textChars":29,"textLines":2,"bbox":[889,299,302,220]}
+{"kind":"textbox","id":"sh/jel0z6hg","slide":13,"name":"mq","text":"ยอดคงเหลือรายวัน 100 บาท × 30 วัน ไม่ได้แปลว่ามีเงิน 3,000 บาท","textPreview":"ยอดคงเหลือรายวัน 100 บาท × 30 วัน ไม่ได้แปลว่ามีเงิน 3,000 บาท","textChars":62,"textLines":1,"bbox":[140,582,1000,40]}
+{"kind":"notes","id":"nt/nhcp28","slide":13,"text":"ใช้ตัวอย่าง balance เพื่อป้องกัน double counting\n\n[Sources]\n- Microsoft Learn, fact tables in dimensional modeling, https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-fact-tables"}
+{"kind":"slide","id":"sl/qlgxrf","slide":14,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":9}
+{"kind":"textbox","id":"sh/gzm5cj2l","slide":14,"name":"k-14","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/fydo3el0","slide":14,"name":"t-14","text":"SCD เลือกว่าจะจำอดีตหรือเขียนอดีตใหม่","textPreview":"SCD เลือกว่าจะจำอดีตหรือเขียนอดีตใหม่","textChars":37,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ux4na9kf","slide":14,"name":"r-14","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/twv6143u","slide":14,"name":"fl-14","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/svm58j2p","slide":14,"name":"fn-14","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/7ud4zel4","slide":14,"name":"scd1","bbox":[54,215,520,320]}
+{"kind":"textbox","id":"sh/6t4n69kj","slide":14,"name":"s1h","text":"TYPE 1 • OVERWRITE","textPreview":"TYPE 1 • OVERWRITE","textChars":18,"textLines":1,"bbox":[84,244,380,36]}
+{"kind":"textbox","id":"sh/dsz6d83e","slide":14,"name":"s1b","text":"แก้ค่าเดิมโดยตรง\nประวัติเดิมหาย\n\nเหมาะ: แก้คำสะกดผิด","textPreview":"แก้ค่าเดิมโดยตรง | ประวัติเดิมหาย |  | เหมาะ: แก้คำสะกดผิด","textChars":52,"textLines":4,"bbox":[84,325,420,140]}
+{"kind":"shape","id":"sh/cr65k32t","slide":14,"name":"scd2","bbox":[706,215,520,320]}
+{"kind":"textbox","id":"sh/u1wryl8r","slide":14,"name":"s2h","text":"TYPE 2 • NEW ROW","textPreview":"TYPE 2 • NEW ROW","textChars":16,"textLines":1,"bbox":[736,244,380,36]}
+{"kind":"textbox","id":"sh/f2p87qpc","slide":14,"name":"s2b","text":"เพิ่ม surrogate key ใหม่\neffective_from / to\n\nเหมาะ: ย้ายภูมิภาคลูกค้า","textPreview":"เพิ่ม surrogate key ใหม่ | effective_from / to |  | เหมาะ: ย้ายภูมิภาคลูกค้า","textChars":70,"textLines":4,"bbox":[736,325,420,140]}
+{"kind":"textbox","id":"sh/g3y90bqx","slide":14,"name":"scdq","text":"คำถาม: รายงานอดีตควรเห็น “ข้อมูลตอนนั้น” หรือ “ข้อมูลล่าสุด”?","textPreview":"คำถาม: รายงานอดีตควรเห็น “ข้อมูลตอนนั้น” หรือ “ข้อมูลล่าสุด”?","textChars":61,"textLines":1,"bbox":[145,580,990,44]}
+{"kind":"notes","id":"nt/qlgxrf","slide":14,"text":"ให้ผู้เรียนเลือก Type 1/2 สำหรับชื่อสินค้า ที่อยู่ลูกค้า และ credit segment\n\n[Sources]\n- Kimball Group, Slowly Changing Dimension Techniques, https://www.kimballgroup.com/wp-content/uploads/2013/08/2013.09-Kimball-Dimensional-Modeling-Techniques11.pdf"}
+{"kind":"slide","id":"sl/bmy846","slide":15,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":13}
+{"kind":"textbox","id":"sh/8fyhobi9","slide":15,"name":"k-15","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/nepgv61o","slide":15,"name":"t-15","text":"เลือก Platform จากโครงสร้าง ผู้ใช้ และการกำกับดูแล","textPreview":"เลือก Platform จากโครงสร้าง ผู้ใช้ และการกำกับดูแล","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/mdgzml03","slide":15,"name":"r-15","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/xkry10jq","slide":15,"name":"fl-15","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/wjihsvi5","slide":15,"name":"fn-15","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/vi9gzq1k","slide":15,"name":"pl-0","bbox":[45,218,270,315]}
+{"kind":"shape","id":"sh/ah0zql0f","slide":15,"name":"pl-0-a","bbox":[45,218,8,315]}
+{"kind":"textbox","id":"sh/donypwjm","slide":15,"name":"pl-0-h","text":"WAREHOUSE","textPreview":"WAREHOUSE","textChars":9,"textLines":1,"bbox":[72,238,222,36]}
+{"kind":"textbox","id":"sh/cnexgr21","slide":15,"name":"pl-0-b","text":"structured BI\nmetric ชัด","textPreview":"structured BI | metric ชัด","textChars":24,"textLines":2,"bbox":[72,292,222,225]}
+{"kind":"shape","id":"sh/it0fyhwb","slide":15,"name":"pl-1","bbox":[349,218,270,315]}
+{"kind":"shape","id":"sh/3u9w7mxw","slide":15,"name":"pl-1-a","bbox":[349,218,8,315]}
+{"kind":"textbox","id":"sh/4v2x0reh","slide":15,"name":"pl-1-h","text":"DATA MART","textPreview":"DATA MART","textChars":9,"textLines":1,"bbox":[376,238,222,36]}
+{"kind":"textbox","id":"sh/5wbe9wf2","slide":15,"name":"pl-1-b","text":"เฉพาะแผนก\nเร็วแต่เสี่ยง silo","textPreview":"เฉพาะแผนก | เร็วแต่เสี่ยง silo","textChars":28,"textLines":2,"bbox":[376,292,222,225]}
+{"kind":"shape","id":"sh/qxkf21wn","slide":15,"name":"pl-2","bbox":[653,218,270,315]}
+{"kind":"shape","id":"sh/rytwb6xs","slide":15,"name":"pl-2-a","bbox":[653,218,8,315]}
+{"kind":"textbox","id":"sh/sz2x4red","slide":15,"name":"pl-2-h","text":"DATA LAKE","textPreview":"DATA LAKE","textChars":9,"textLines":1,"bbox":[680,238,222,36]}
+{"kind":"textbox","id":"sh/d0bedwfy","slide":15,"name":"pl-2-b","text":"raw ทุกชนิด\nเสี่ยง data swamp","textPreview":"raw ทุกชนิด | เสี่ยง data swamp","textChars":29,"textLines":2,"bbox":[680,292,222,225]}
+{"kind":"shape","id":"sh/e1kf61wj","slide":15,"name":"pl-3","bbox":[957,218,270,315]}
+{"kind":"shape","id":"sh/z2tgf6x4","slide":15,"name":"pl-3-a","bbox":[957,218,8,315]}
+{"kind":"textbox","id":"sh/bqdwn6tc","slide":15,"name":"pl-3-h","text":"LAKEHOUSE","textPreview":"LAKEHOUSE","textChars":9,"textLines":1,"bbox":[984,238,222,36]}
+{"kind":"textbox","id":"sh/ap4vu1cr","slide":15,"name":"pl-3-b","text":"open storage +\ntable reliability","textPreview":"open storage + | table reliability","textChars":32,"textLines":2,"bbox":[984,292,222,225]}
+{"kind":"textbox","id":"sh/xsvepgb2","slide":15,"name":"choose","text":"ไม่มี platform ใดทดแทน grain, metadata, quality และ ownership","textPreview":"ไม่มี platform ใดทดแทน grain, metadata, quality และ ownership","textChars":61,"textLines":1,"bbox":[160,584,960,42]}
+{"kind":"notes","id":"nt/bmy846","slide":15,"text":"เปรียบเทียบ technology choice กับ governance capability\n\n[Sources]\n- Microsoft Learn, Modern Data Warehouse, https://learn.microsoft.com/en-us/data-engineering/playbook/solutions/modern-data-warehouse/\n- Databricks, medallion architecture, https://docs.databricks.com/gcp/en/lakehouse/medallion"}
+{"kind":"slide","id":"sl/h6cgdb","slide":16,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":6}
+{"kind":"textbox","id":"sh/gjutorqp","slide":16,"name":"k-16","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/filcfm9k","slide":16,"name":"t-16","text":"Applications 01–10: การค้า การเงิน สุขภาพ ลูกค้า","textPreview":"Applications 01–10: การค้า การเงิน สุขภาพ ลูกค้า","textChars":48,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/uhcbmh8z","slide":16,"name":"r-16","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/p8nulwrm","slide":16,"name":"fl-16","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/4nutsrq1","slide":16,"name":"fn-16","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/3mlcj69g","slide":16,"name":"al","bbox":[50,198,570,420]}
+{"kind":"shape","id":"sh/2lcbq18v","slide":16,"name":"ar","bbox":[660,198,570,420]}
+{"kind":"textbox","id":"sh/dcnupgri","slide":16,"name":"alt","text":"01 Retail • receipt line • returns\n02 Card spend • posted txn • currency\n03 Deposits • account-day • balance\n04 Claims • claim event • late update\n05 Hospital • encounter • privacy","textPreview":"01 Retail • receipt line • returns | 02 Card spend • posted txn • currency | 03 Deposits • account-day • balance | 04 Claims • claim even...","textChars":180,"textLines":5,"bbox":[80,224,510,360]}
+{"kind":"textbox","id":"sh/cbetwbqx","slide":16,"name":"art","text":"06 Pharmacy • dispensed item • codes\n07 Telecom • session • volume\n08 Churn • customer-month • labels\n09 E-commerce • session event • identity\n10 Attribution • conversion-touch • definition","textPreview":"06 Pharmacy • dispensed item • codes | 07 Telecom • session • volume | 08 Churn • customer-month • labels | 09 E-commerce • session event...","textChars":189,"textLines":5,"bbox":[690,224,510,360]}
+{"kind":"notes","id":"nt/h6cgdb","slide":16,"text":"อ่านแต่ละบรรทัดเป็น application • grain • data-quality risk\n\n[Sources]\n- Week-03 expanded content; examples synthesized for instruction."}
+{"kind":"slide","id":"sl/c5e4uo","slide":17,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":6}
+{"kind":"textbox","id":"sh/x8j6dsnm","slide":17,"name":"k-17","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/a587idov","slide":17,"name":"t-17","text":"Applications 11–20: Supply Chain, IoT, สังคม และ ESG","textPreview":"Applications 11–20: Supply Chain, IoT, สังคม และ ESG","textChars":52,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/v6hobi5g","slide":17,"name":"r-17","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/kvapon6d","slide":17,"name":"fl-17","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/5wj6hsni","slide":17,"name":"fn-17","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/i9s7mdo7","slide":17,"name":"al2","bbox":[50,198,570,420]}
+{"kind":"shape","id":"sh/ju1ofi5s","slide":17,"name":"ar2","bbox":[660,198,570,420]}
+{"kind":"textbox","id":"sh/szups769","slide":17,"name":"alt2","text":"11 Inventory • product-location-day • timing\n12 Delivery • shipment milestone • missing event\n13 Production • batch • unit consistency\n14 Telemetry • sensor-interval • late data\n15 Fleet • trip • GPS quality","textPreview":"11 Inventory • product-location-day • timing | 12 Delivery • shipment milestone • missing event | 13 Production • batch • unit consistenc...","textChars":207,"textLines":5,"bbox":[80,224,510,360]}
+{"kind":"textbox","id":"sh/t03qlcnu","slide":17,"name":"art2","text":"16 Energy • meter-interval • time zone\n17 Traffic • segment-interval • missing sensor\n18 Education • student-course-term • privacy\n19 Agriculture • field-day • calibration\n20 ESG • facility-period-source • provenance","textPreview":"16 Energy • meter-interval • time zone | 17 Traffic • segment-interval • missing sensor | 18 Education • student-course-term • privacy | ...","textChars":216,"textLines":5,"bbox":[690,224,510,360]}
+{"kind":"notes","id":"nt/c5e4uo","slide":17,"text":"ให้ผู้เรียนเลือก application หนึ่งข้อแล้วประกาศ grain ใหม่\n\n[Sources]\n- Week-03 expanded content; examples synthesized for instruction."}
+{"kind":"slide","id":"sl/kfwj52","slide":18,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":7}
+{"kind":"textbox","id":"sh/7e5cnq1k","slide":18,"name":"k-18","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/8fetgvi5","slide":18,"name":"t-18","text":"Future Data: คุณภาพเพิ่มทีละชั้น แต่ Governance ครอบทุกชั้น","textPreview":"Future Data: คุณภาพเพิ่มทีละชั้น แต่ Governance ครอบทุกชั้น","textChars":59,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/9g7up0jq","slide":18,"name":"r-18","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ypwbal03","slide":18,"name":"fl-18","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/zq5cjq18","slide":18,"name":"fn-18","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/lcnul0je","slide":18,"name":"fp","bbox":[850,184,378,455]}
+{"kind":"textbox","id":"sh/ilgvm507","slide":18,"name":"fph","text":"TRUSTED DATA PATH","textPreview":"TRUSTED DATA PATH","textChars":17,"textLines":1,"bbox":[880,214,310,34]}
+{"kind":"textbox","id":"sh/jmpcva1s","slide":18,"name":"fpb","text":"Bronze • raw + provenance\nSilver • validate + conform\nGold • model + metrics\n\nData products + semantic layer\nLineage + quality + privacy\nBI • ML • AI agents","textPreview":"Bronze • raw + provenance | Silver • validate + conform | Gold • model + metrics |  | Data products + semantic layer | Lineage + quality ...","textChars":156,"textLines":7,"bbox":[880,290,300,240]}
+{"kind":"textbox","id":"sh/bu94rmtc","slide":18,"name":"fpq","text":"มากกว่า Storage:\nต้องรู้ความหมายและที่มา","textPreview":"มากกว่า Storage: | ต้องรู้ความหมายและที่มา","textChars":40,"textLines":2,"bbox":[880,558,300,58]}
+{"kind":"image","id":"im/10zelkrm","slide":18,"name":"","geometry":"rect","alt":"Future Data Architecture แบบ Bronze Silver Gold พร้อม lineage governance และ AI consumers","bbox":[44,184,780,455]}
+{"kind":"notes","id":"nt/kfwj52","slide":18,"text":"อธิบาย Bronze/Silver/Gold เป็นระดับคุณภาพ ไม่ใช่ชื่อผลิตภัณฑ์\n\n[Sources]\n- Databricks, medallion architecture, https://docs.databricks.com/gcp/en/lakehouse/medallion\n- Microsoft Learn, Modern Data Warehouse, https://learn.microsoft.com/en-us/data-engineering/playbook/solutions/modern-data-warehouse/\n- Generated illustration: OpenAI ImageGen, 2026 (assets/future-data-architecture.png)."}
+{"kind":"slide","id":"sl/cwx07l","slide":19,"title":"DECISION SUPPORT SYSTEMS • WEEK 03","textShapes":6}
+{"kind":"textbox","id":"sh/d4fytwbi","slide":19,"name":"k-19","text":"DECISION SUPPORT SYSTEMS • WEEK 03","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 03","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/q14zi1c7","slide":19,"name":"t-19","text":"10 คำถามตรวจ Data Product ก่อนเผยแพร่","textPreview":"10 คำถามตรวจ Data Product ก่อนเผยแพร่","textChars":37,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/r2dgr6tc","slide":19,"name":"r-19","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/4zmhgru1","slide":19,"name":"fl-19","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/p0vypwbm","slide":19,"name":"fn-19","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/2x4zehcv","slide":19,"name":"ql","bbox":[52,202,560,400]}
+{"kind":"shape","id":"sh/3ydgnmtg","slide":19,"name":"qr","bbox":[668,202,560,400]}
+{"kind":"textbox","id":"sh/ovqhsvu5","slide":19,"name":"qlt","text":"1 Process + grain ชัดไหม?\n2 Dataset/metric owner คือใคร?\n3 Mapping ย้อนตรวจได้ไหม?\n4 Keys และ integrity ผ่านไหม?\n5 SCD ตรงความต้องการไหม?","textPreview":"1 Process + grain ชัดไหม? | 2 Dataset/metric owner คือใคร? | 3 Mapping ย้อนตรวจได้ไหม? | 4 Keys และ integrity ผ่านไหม? | 5 SCD ตรงความต้อ...","textChars":137,"textLines":5,"bbox":[86,234,500,330]}
+{"kind":"textbox","id":"sh/9wzi1gbq","slide":19,"name":"qrt","text":"6 Pipeline รันซ้ำปลอดภัยไหม?\n7 Source/target reconcile ไหม?\n8 Freshness ทันการตัดสินใจไหม?\n9 Lineage/privacy/access ครบไหม?\n10 BI/ML/AI ใช้นิยามเดียวกันไหม?","textPreview":"6 Pipeline รันซ้ำปลอดภัยไหม? | 7 Source/target reconcile ไหม? | 8 Freshness ทันการตัดสินใจไหม? | 9 Lineage/privacy/access ครบไหม? | 10 BI...","textChars":156,"textLines":5,"bbox":[702,234,500,330]}
+{"kind":"notes","id":"nt/cwx07l","slide":19,"text":"ใช้เป็น design review checklist ก่อนอนุญาตให้ dashboard หรือ AI ใช้ dataset\n\n[Sources]\n- Microsoft Learn, dimensional modeling overview, https://learn.microsoft.com/en-us/fabric/data-warehouse/dimensional-modeling-overview\n- Week-03-Questions.md in this teaching package."}
+{"kind":"slide","id":"sl/ulvnk4","slide":20,"title":"WEEK 03 • NEXT ACTION","textShapes":11}
+{"kind":"textbox","id":"sh/4ritw7y1","slide":20,"name":"k-20","text":"WEEK 03 • NEXT ACTION","textPreview":"WEEK 03 • NEXT ACTION","textChars":21,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/3q9sn2hg","slide":20,"name":"t-20","text":"ลงมือทำ: นิยามข้อมูล แล้วพิสูจน์ว่าข้อมูลถูกต้อง","textPreview":"ลงมือทำ: นิยามข้อมูล แล้วพิสูจน์ว่าข้อมูลถูกต้อง","textChars":48,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/2pgbuxgv","slide":20,"name":"r-20","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/dwratcfi","slide":20,"name":"fl-20","text":"KSU • Data Management for DSS","textPreview":"KSU • Data Management for DSS","textChars":29,"textLines":1,"bbox":[42,676,500,20]}
+{"kind":"textbox","id":"sh/cvit07yx","slide":20,"name":"fn-20","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/ru9sr2xs","slide":20,"name":"lab1","bbox":[54,202,540,356]}
+{"kind":"shape","id":"sh/qt0byxg7","slide":20,"name":"lab2","bbox":[686,202,540,356]}
+{"kind":"textbox","id":"sh/1kbaxcfu","slide":20,"name":"l1n","text":"LAB 01","textPreview":"LAB 01","textChars":6,"textLines":1,"bbox":[86,232,180,34]}
+{"kind":"textbox","id":"sh/0z2t4ry9","slide":20,"name":"l1h","text":"Quality &\nGrain Contract","textPreview":"Quality & | Grain Contract","textChars":24,"textLines":2,"bbox":[86,300,450,98]}
+{"kind":"textbox","id":"sh/m5k7ul8j","slide":20,"name":"l1b","text":"ประกาศ grain\nสร้าง quality rules 8 ข้อ\nออกแบบ reconciliation","textPreview":"ประกาศ grain | สร้าง quality rules 8 ข้อ | ออกแบบ reconciliation","textChars":60,"textLines":3,"bbox":[86,430,450,105]}
+{"kind":"textbox","id":"sh/n6to3694","slide":20,"name":"l2n","text":"LAB 02","textPreview":"LAB 02","textChars":6,"textLines":1,"bbox":[718,232,180,34]}
+{"kind":"textbox","id":"sh/872pwbqp","slide":20,"name":"l2h","text":"Build a Retail\nStar Schema","textPreview":"Build a Retail | Star Schema","textChars":26,"textLines":2,"bbox":[718,300,450,98]}
+{"kind":"textbox","id":"sh/98v65gra","slide":20,"name":"l2b","text":"สร้าง dimension + fact\nเก็บ rejects และ audit\nทดสอบ totals + idempotency","textPreview":"สร้าง dimension + fact | เก็บ rejects และ audit | ทดสอบ totals + idempotency","textChars":72,"textLines":3,"bbox":[718,430,450,105]}
+{"kind":"textbox","id":"sh/a947yl8v","slide":20,"name":"close","text":"เป้าหมาย: ตัวเลขที่ตอบได้ทั้ง “เท่าไร” “หมายถึงอะไร” และ “มาจากไหน”","textPreview":"เป้าหมาย: ตัวเลขที่ตอบได้ทั้ง “เท่าไร” “หมายถึงอะไร” และ “มาจากไหน”","textChars":67,"textLines":1,"bbox":[135,602,1010,42]}
+{"kind":"notes","id":"nt/ulvnk4","slide":20,"text":"ปิดด้วย exit ticket: เขียน grain statement หนึ่งประโยคและ reconciliation หนึ่งสมการ\n\n[Sources]\n- Lab-01-Data-Quality-and-Grain-Contract.md and Lab-02-Build-a-Retail-Star-Schema.md."}

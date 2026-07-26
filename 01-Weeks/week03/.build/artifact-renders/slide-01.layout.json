@@ -1,0 +1,468 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/6zhohf",
+    "id": "6zhohf",
+    "slide": 1,
+    "layoutId": "87bcccd5-0abe-4c2d-a2ae-c9835276b9e5",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "0fce2171-d8b7-4d56-9db1-1a7a58d616de",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#F7F9FB",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Noto Sans Thai"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "87bcccd5-0abe-4c2d-a2ae-c9835276b9e5",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "0fce2171-d8b7-4d56-9db1-1a7a58d616de",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "0fce2171-d8b7-4d56-9db1-1a7a58d616de",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/ylsnyp47",
+      "id": "1",
+      "bbox": [
+        0,
+        0,
+        1280,
+        720
+      ],
+      "geometry": "rect",
+      "alt": "ข้อมูลจากหลายระบบไหลเข้าสู่คลังข้อมูลสำหรับการตัดสินใจ",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "7800e15e-964b-4930-8591-12f8b55f43e1",
+        "contentType": "image/png",
+        "byteLength": 1888736
+      }
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0badwry5",
+      "id": "2",
+      "name": "cover-fade",
+      "bbox": [
+        0,
+        0,
+        650,
+        720
+      ],
+      "geometry": "rect",
+      "fillColor": "#F8FAFC",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1c3e5wza",
+      "id": "3",
+      "name": "ck",
+      "bbox": [
+        48,
+        52,
+        550,
+        34
+      ],
+      "geometry": "rect",
+      "text": "WEEK 03 • DATA FOUNDATION",
+      "textPreview": "WEEK 03 • DATA FOUNDATION",
+      "resolvedFontSize": 19,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 19,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "WEEK 03 • DATA FOUNDATION"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "WEEK 03 • DATA FOUNDATION",
+          "resolvedTextStyle": {
+            "fontSize": 19,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "WEEK 03 • DATA FOUNDATION",
+              "fontSize": 19,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/q5svqhgn",
+      "id": "4",
+      "name": "ct",
+      "bbox": [
+        48,
+        154,
+        590,
+        180
+      ],
+      "geometry": "rect",
+      "text": "Data Management\n& Data Warehouse",
+      "textPreview": "Data Management | & Data Warehouse",
+      "resolvedFontSize": 63,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 63,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Data Management"
+          },
+          {
+            "index": 2,
+            "text": "& Data Warehouse"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Data Management",
+          "resolvedTextStyle": {
+            "fontSize": 63,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Data Management",
+              "fontSize": 63,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "& Data Warehouse",
+          "resolvedTextStyle": {
+            "fontSize": 63,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "& Data Warehouse",
+              "fontSize": 63,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r61cz2h8",
+      "id": "5",
+      "name": "cs",
+      "bbox": [
+        48,
+        390,
+        580,
+        62
+      ],
+      "geometry": "rect",
+      "text": "OLTP • ETL/ELT • Star Schema • Future Data",
+      "textPreview": "OLTP • ETL/ELT • Star Schema • Future Data",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "OLTP • ETL/ELT • Star Schema • Future Data"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "OLTP • ETL/ELT • Star Schema • Future Data",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "OLTP • ETL/ELT • Star Schema • Future Data",
+              "fontSize": 25,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/c7ads7yt",
+      "id": "6",
+      "name": "cq",
+      "bbox": [
+        48,
+        510,
+        570,
+        42
+      ],
+      "geometry": "rect",
+      "text": "หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?",
+      "textPreview": "หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Noto Sans Thai",
+        "color": "#C84B4B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "หนึ่งแถวคืออะไร — และยอดใดต้องเท่ากัน?",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/d8ju1cze",
+      "id": "7",
+      "name": "cc",
+      "bbox": [
+        48,
+        630,
+        560,
+        28
+      ],
+      "geometry": "rect",
+      "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+      "textPreview": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+      "resolvedFontSize": 18,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+          "resolvedTextStyle": {
+            "fontSize": 18,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "รายวิชาระบบสนับสนุนการตัดสินใจ • KSU",
+              "fontSize": 18,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

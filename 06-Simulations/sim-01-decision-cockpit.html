@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decision Cockpit — จำลองการตัดสินใจตามกรอบ Simon</title>
+<style>
+  :root{
+    --bg:#0f1220; --panel:#171a2e; --panel2:#1e2240; --line:#2b3157;
+    --tx:#e8ebff; --dim:#9aa2c9; --acc:#5b8cff; --acc2:#8b5cf6;
+    --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444; --gold:#fbbf24;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f5f6fb; --panel:#ffffff; --panel2:#eef1fa; --line:#d7dcf0;
+           --tx:#151833; --dim:#5b628a; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:"Sarabun","Noto Sans Thai","Segoe UI",system-ui,sans-serif;
+    line-height:1.6;font-size:15px}
+  .wrap{max-width:1180px;margin:0 auto;padding:16px}
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;
+    background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:14px}
+  h1{font-size:19px;margin:0}
+  h1 small{display:block;font-size:12px;color:var(--dim);font-weight:400;margin-top:2px}
+  .hud{display:flex;gap:10px;flex-wrap:wrap}
+  .chip{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:6px 12px;font-size:13px}
+  .chip b{font-size:16px;display:block;line-height:1.2}
+  .grid{display:grid;grid-template-columns:1fr 320px;gap:14px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:14px}
+  .card h2{font-size:16px;margin:0 0 10px}
+  .card h3{font-size:14px;margin:14px 0 6px;color:var(--dim)}
+  /* stepper */
+  .steps{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+  .step{flex:1;min-width:120px;background:var(--panel2);border:1px solid var(--line);
+    border-radius:10px;padding:8px 10px;font-size:12.5px;color:var(--dim);position:relative}
+  .step b{display:block;font-size:13.5px;color:var(--tx)}
+  .step.active{border-color:var(--acc);background:linear-gradient(180deg,rgba(91,140,255,.18),transparent)}
+  .step.done{opacity:.55}
+  .step.done::after{content:"✓";position:absolute;right:10px;top:8px;color:var(--ok)}
+  /* buttons */
+  button{font-family:inherit;font-size:14px;cursor:pointer;border-radius:10px;
+    border:1px solid var(--line);background:var(--panel2);color:var(--tx);padding:9px 14px;transition:.15s}
+  button:hover{border-color:var(--acc)}
+  button:disabled{opacity:.4;cursor:not-allowed}
+  .primary{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+  .primary:hover{filter:brightness(1.1)}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+  .spacer{flex:1}
+  /* mode cards */
+  .modes{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  @media(max-width:760px){.modes{grid-template-columns:1fr}}
+  .mode{background:var(--panel2);border:2px solid var(--line);border-radius:12px;padding:14px;cursor:pointer;transition:.15s}
+  .mode:hover{border-color:var(--acc)}
+  .mode.sel{border-color:var(--acc);box-shadow:0 0 0 3px rgba(91,140,255,.18)}
+  .mode b{display:block;font-size:15px;margin-bottom:4px}
+  .mode span{font-size:12.5px;color:var(--dim)}
+  .mode .tag{display:inline-block;font-size:11px;padding:2px 8px;border-radius:20px;margin-top:8px}
+  .t-red{background:rgba(239,68,68,.18);color:var(--bad)}
+  .t-amber{background:rgba(245,158,11,.18);color:var(--warn)}
+  .t-green{background:rgba(34,197,94,.18);color:var(--ok)}
+  /* signals */
+  .sig{background:var(--panel2);border-left:3px solid var(--acc);border-radius:8px;padding:10px 12px;margin-bottom:8px;font-size:13.5px}
+  .sig.blur{filter:blur(4px);user-select:none}
+  .sig .src{font-size:11.5px;color:var(--dim);display:block;margin-bottom:2px}
+  /* alternatives */
+  .alt{background:var(--panel2);border:2px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}
+  .alt.sel{border-color:var(--gold);box-shadow:0 0 0 3px rgba(251,191,36,.15)}
+  .alt-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+  .alt-head b{font-size:14px}
+  label{font-size:12.5px;color:var(--dim);display:block;margin-bottom:2px}
+  input[type=range]{width:100%;accent-color:var(--acc)}
+  .val{font-variant-numeric:tabular-nums;font-weight:600;color:var(--tx)}
+  .pred{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:10px;
+    padding-top:10px;border-top:1px dashed var(--line)}
+  .pred div{text-align:center}
+  .pred span{display:block;font-size:11.5px;color:var(--dim)}
+  .pred b{font-size:15px;font-variant-numeric:tabular-nums}
+  .hidden-box{text-align:center;padding:14px;color:var(--dim);font-size:13px;
+    border:1px dashed var(--line);border-radius:10px;margin-top:10px}
+  /* timer */
+  .timer{font-size:26px;font-weight:700;font-variant-numeric:tabular-nums;color:var(--bad)}
+  .timerbar{height:6px;background:var(--panel2);border-radius:3px;overflow:hidden;margin-top:6px}
+  .timerbar i{display:block;height:100%;background:var(--bad);transition:width 1s linear}
+  /* table */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:right}
+  th:first-child,td:first-child{text-align:left}
+  th{color:var(--dim);font-weight:600;font-size:12px}
+  td b{font-variant-numeric:tabular-nums}
+  .pos{color:var(--ok)} .neg{color:var(--bad)}
+  /* note */
+  .note{background:linear-gradient(90deg,rgba(139,92,246,.14),transparent);
+    border-left:3px solid var(--acc2);border-radius:8px;padding:10px 12px;font-size:13px;margin-top:12px}
+  .note b{color:var(--acc2)}
+  .log{max-height:240px;overflow-y:auto;font-size:12.5px}
+  .log div{padding:5px 0;border-bottom:1px dashed var(--line);color:var(--dim)}
+  .log div b{color:var(--tx)}
+  svg{width:100%;height:auto;display:block}
+  .legend{display:flex;gap:14px;font-size:12px;color:var(--dim);margin-top:6px;flex-wrap:wrap}
+  .legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px}
+  .center{text-align:center}
+  .big{font-size:30px;font-weight:700;font-variant-numeric:tabular-nums}
+  .muted{color:var(--dim);font-size:12.5px}
+  .kbd{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>🎛️ Decision Cockpit
+    <small>จำลองการตัดสินใจตามกรอบของ Simon — รายวิชาระบบสนับสนุนการตัดสินใจ (W1–W2)</small>
+  </h1>
+  <div class="hud" id="hud"></div>
+</header>
+
+<!-- ========== หน้าเริ่มต้น ========== -->
+<div id="screen-start">
+  <div class="card">
+    <h2>สถานการณ์: ผู้จัดการผลิตภัณฑ์ บริษัทโทรคมนาคม</h2>
+    <p>คุณรับผิดชอบแพ็กเกจรายเดือนของบริษัท <b>KSU Telecom</b> ต้องตัดสินใจ <b>ราคาแพ็กเกจ</b> และ <b>งบการตลาด</b>
+    ทุกไตรมาส รวม 4 ไตรมาส เป้าหมายคือ <b>กำไรสะสมสูงสุด</b> โดยไม่ทำให้ฐานลูกค้าพังทลาย</p>
+    <p class="muted">แต่ละไตรมาสคุณจะเดินผ่านกระบวนการตัดสินใจ 4 ระยะของ Herbert Simon —
+    <b>Intelligence → Design → Choice → Implementation</b> — โดยระบบจะจำกัดข้อมูลที่คุณเห็นตามระยะที่อยู่ และตาม<b>ระดับเครื่องมือ</b>ที่คุณเลือก</p>
+
+    <h3>เลือกระดับเครื่องมือสนับสนุนการตัดสินใจ</h3>
+    <div class="modes" id="modeSel">
+      <div class="mode" data-mode="gut">
+        <b>🧠 สัญชาตญาณล้วน</b>
+        <span>ไม่มีระบบสารสนเทศใดๆ เห็นแค่ข่าวลือ ตัดสินใจจากประสบการณ์ และ<b>มีเวลาจำกัด 30 วินาที</b></span>
+        <span class="tag t-red">Bounded Rationality</span>
+      </div>
+      <div class="mode" data-mode="bi">
+        <b>📊 มี BI ช่วย</b>
+        <span>เห็นรายงานย้อนหลังและแนวโน้ม ตอบได้ว่า “เกิดอะไรขึ้น” แต่ไม่มีการพยากรณ์ผลของทางเลือก</span>
+        <span class="tag t-amber">Business Intelligence</span>
+      </div>
+      <div class="mode" data-mode="dss">
+        <b>🎯 มี DSS เต็มรูปแบบ</b>
+        <span>มีสัญญาณเตือน ตัวแบบพยากรณ์ผลของแต่ละทางเลือก ช่วงความไม่แน่นอน และการวิเคราะห์ความอ่อนไหว</span>
+        <span class="tag t-green">Decision Support</span>
+      </div>
+    </div>
+
+    <div class="note">
+      <b>เคล็ดลับการเรียนรู้:</b> เล่นให้ครบทั้ง 3 โหมด — ทุกโหมดเจอ<b>เหตุการณ์ชุดเดียวกันเป๊ะ</b>
+      (ใช้ตัวเลขสุ่มชุดเดิม) ผลต่างของกำไรสะสมจึงมาจาก<b>คุณภาพของข้อมูลที่ใช้ตัดสินใจ</b>เท่านั้น ไม่ใช่โชค
+    </div>
+
+    <div class="row" style="margin-top:14px">
+      <button class="primary" id="btnStart" disabled>เริ่มไตรมาสที่ 1 ▶</button>
+      <button id="btnReset2">ล้างผลที่บันทึกไว้</button>
+      <div class="spacer"></div>
+      <span class="muted" id="playedInfo"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ========== หน้าเล่น ========== -->
+<div id="screen-play" style="display:none">
+  <div class="steps" id="steps"></div>
+  <div class="grid">
+    <div>
+      <div class="card" id="mainCard"></div>
+    </div>
+    <div>
+      <div class="card">
+        <h2>📈 สถานะกิจการ</h2>
+        <div id="chart"></div>
+        <div class="legend">
+          <span><i style="background:var(--acc)"></i>ลูกค้า (พันราย)</span>
+          <span><i style="background:var(--gold)"></i>กำไร (ล้านบาท)</span>
+        </div>
+        <table style="margin-top:10px" id="histTable"></table>
+      </div>
+      <div class="card">
+        <h2>📜 บันทึกเหตุการณ์</h2>
+        <div class="log" id="log"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== หน้าสรุป ========== -->
+<div id="screen-end" style="display:none">
+  <div class="card" id="endCard"></div>
+</div>
+
+<div class="card" style="margin-top:6px">
+  <h2>🎓 บันทึกสำหรับผู้สอน</h2>
+  <p class="muted">การจำลองนี้ออกแบบให้เกิดข้อค้นพบ 4 ข้อ: (1) ระยะ Intelligence ที่อ่อนแอทำให้ทุกระยะถัดไปเสียเปล่า
+  (2) BI ตอบได้แค่ “เกิดอะไรขึ้น” จึงยังตัดสินใจภายใต้ความไม่แน่นอนไม่ได้
+  (3) DSS ให้การพยากรณ์ที่ <b>ผิดได้</b> — ตัวแบบไม่ใช่ความจริง จึงต้องมีวิจารณญาณมนุษย์กำกับ
+  (4) เวลาที่จำกัดบีบให้มนุษย์ satisfice ไม่ใช่ optimize ตามแนวคิด Bounded Rationality</p>
+</div>
+
+</div>
+
+<script>
+/* ============================================================
+   Decision Cockpit — DSS course simulation
+   ไม่มี dependency ภายนอก ทำงานแบบ offline ได้
+   ============================================================ */
+
+/* ---------- ตัวสุ่มแบบกำหนดเมล็ด (deterministic) ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+const SEED = 20260726;             // เมล็ดคงที่ → ทุกโหมดเจอเหตุการณ์เดียวกัน
+const NQ = 4;                      // จำนวนไตรมาส
+
+/* ---------- เหตุการณ์ประจำไตรมาส (สคริปต์ตายตัว + สุ่มเล็กน้อย) ---------- */
+const EVENTS = [
+  { q:0, key:'calm', label:'ตลาดปกติ',
+    truth:{ compPrice:499, churnShock:0.00, costShock:0 },
+    signals:{
+      gut:['ทีมขายบ่นว่า “ลูกค้าถามหาโปรถูกลง” แต่ไม่มีตัวเลขยืนยัน'],
+      bi:['รายงานไตรมาสก่อน: ลูกค้า 100,000 ราย churn 4.2% ราคาเฉลี่ยคู่แข่ง 499 บาท'],
+      dss:['ตัวแบบไม่พบสัญญาณผิดปกติ — ความน่าจะเป็นที่คู่แข่งจะปรับราคาในไตรมาสนี้ ≈ 15%']
+    }},
+  { q:1, key:'pricewar', label:'คู่แข่งเปิดสงครามราคา',
+    truth:{ compPrice:399, churnShock:0.03, costShock:0 },
+    signals:{
+      gut:['มีข่าวลือในวงการว่าคู่แข่งเตรียม “ทำอะไรสักอย่าง” ต้นไตรมาสนี้'],
+      bi:['รายงานล่าสุด: ยอดสมัครใหม่ลดลง 8% เทียบไตรมาสก่อน (ข้อมูลถึงสิ้นไตรมาสที่แล้วเท่านั้น)'],
+      dss:['🚨 Text Analytics จับข่าวจากสื่อ 42 ชิ้น: คู่แข่งประกาศแพ็กเกจ 399 บาท — ความเชื่อมั่น 88%',
+           'ตัวแบบพยากรณ์: หากคงราคาเดิม อัตรา churn จะเพิ่มขึ้นประมาณ +3 จุดเปอร์เซ็นต์']
+    }},
+  { q:2, key:'regulator', label:'ข้อบังคับใหม่จากหน่วยงานกำกับ',
+    truth:{ compPrice:429, churnShock:0.01, costShock:18, priceCap:599 },
+    signals:{
+      gut:['ได้ยินว่าหน่วยงานกำกับกำลังพิจารณาอะไรบางอย่างเรื่องค่าบริการ'],
+      bi:['รายงาน: ต้นทุนโครงข่ายต่อรายเพิ่มขึ้น 6% ฐานลูกค้าเริ่มทรงตัว'],
+      dss:['⚖️ กฎใหม่มีผลไตรมาสนี้: เพดานราคา 599 บาท และค่าธรรมเนียมกำกับดูแลเพิ่ม 18 ล้านบาท/ไตรมาส',
+           'ตัวแบบเตือน: ข้อจำกัดนี้ตัดทางเลือกราคาสูงออกทั้งหมด → ต้องแข่งด้วยแบรนด์แทน']
+    }},
+  { q:3, key:'outage', label:'เหตุขัดข้องของโครงข่าย',
+    truth:{ compPrice:429, churnShock:0.07, costShock:25, priceCap:599 },
+    signals:{
+      gut:['ลูกค้าบางส่วนโพสต์บ่นเรื่องสัญญาณในโซเชียล'],
+      bi:['รายงาน: จำนวนสายร้องเรียนเพิ่มขึ้น 210% ในสัปดาห์ที่ผ่านมา'],
+      dss:['🔧 ระบบตรวจพบเหตุขัดข้องระดับภูมิภาค — ตัวแบบประเมิน churn ส่วนเพิ่ม +7 จุดเปอร์เซ็นต์',
+           'ข้อเสนอจากตัวแบบ: ลดราคาชั่วคราวหรือเพิ่มงบชดเชยลูกค้า เพื่อหยุดการไหลออก']
+    }}
+];
+
+/* ---------- ตัวแบบตลาด (ความจริงที่ผู้เล่นไม่เห็น) ---------- */
+const MARKET_TOTAL = 420;      // ขนาดตลาดรวม (พันราย)
+const COST_PER_SUB = 118;      // ต้นทุนต่อรายต่อเดือน (บาท)
+
+function simulate(state, decision, truth, rng){
+  const mkt = decision.marketing;
+  // เพดานราคาตามกฎหมาย: ถ้าตั้งเกิน ราคาถูกบังคับลงมาที่เพดาน + ถูกปรับ
+  // (ผู้เล่นที่ไม่มีระบบตรวจจับข้อบังคับจะเจอผลนี้โดยไม่รู้ตัว)
+  let price = decision.price, fine = 0;
+  if(truth.priceCap && price > truth.priceCap){
+    price = truth.priceCap;
+    fine = 40;
+  }
+  const ratio = price / truth.compPrice;
+  const brand = Math.min(1, state.brand*0.62 + mkt/260);
+  // ความน่าดึงดูด
+  let attract = 1.55 - 1.05*ratio + 0.55*brand;
+  attract = Math.max(0.05, Math.min(2.0, attract));
+  const pool = Math.max(0, MARKET_TOTAL - state.subs);
+  const adds = pool * 0.085 * attract * (0.94 + 0.12*rng());
+  // อัตราการเลิกใช้บริการ
+  let churn = 0.040 + 0.115*(ratio-1) + truth.churnShock - 0.035*brand;
+  churn = Math.max(0.008, Math.min(0.42, churn * (0.95 + 0.10*rng())));
+  const lost = state.subs * churn;
+  const subs = Math.max(5, state.subs - lost + adds);
+  // การเงิน (หน่วย: ล้านบาทต่อไตรมาส)
+  const revenue = subs * price * 3 / 1000;
+  const cost    = subs * COST_PER_SUB * 3 / 1000;
+  const profit  = revenue - cost - mkt - (truth.costShock||0) - fine;
+  return { subs, brand, churn, adds, lost, revenue, cost, profit, fine, effPrice:price };
+}
+
+/* ตัวแบบ "ที่ DSS ใช้" — จงใจให้คลาดจากความจริงเล็กน้อย
+   และไม่รู้ shock ที่ยังตรวจไม่พบ → สอนว่าโมเดลไม่ใช่ความจริง */
+function predict(state, decision, truth, mode){
+  const known = { compPrice: truth.compPrice,
+                  churnShock: (mode==='dss') ? truth.churnShock*0.8 : 0,
+                  costShock:  (mode==='dss') ? (truth.costShock||0) : 0 };
+  const rngFixed = ()=>0.5;
+  const est = simulate({...state}, decision, known, rngFixed);
+  est.profit *= 0.97;                 // อคติของตัวแบบ
+  est.band = Math.abs(est.profit)*0.13 + 6;   // ช่วงความไม่แน่นอน ±
+  return est;
+}
+
+/* ---------- สถานะเกม ---------- */
+let G = null;
+const $ = id => document.getElementById(id);
+const fmt = (n,d=1) => n.toLocaleString('th-TH',{minimumFractionDigits:d,maximumFractionDigits:d});
+const money = n => (n>=0?'':'−') + fmt(Math.abs(n),1);
+
+function newGame(mode){
+  const rng = mulberry32(SEED);
+  return {
+    mode, q:0, rng,
+    state:{ subs:100, brand:0.35 },
+    cum:0, history:[], alts:[], chosen:null, phase:0,
+    logs:[], timerId:null, timeLeft:0, autoPicked:false
+  };
+}
+
+/* ---------- HUD ---------- */
+const MODE_NAME = { gut:'🧠 สัญชาตญาณล้วน', bi:'📊 มี BI ช่วย', dss:'🎯 มี DSS เต็มรูปแบบ' };
+function renderHUD(){
+  if(!G){ $('hud').innerHTML=''; return; }
+  $('hud').innerHTML = `
+    <div class="chip">โหมด<b style="font-size:13px">${MODE_NAME[G.mode]}</b></div>
+    <div class="chip">ไตรมาส<b>${Math.min(G.q+1,NQ)} / ${NQ}</b></div>
+    <div class="chip">ลูกค้า<b>${fmt(G.state.subs,1)} พัน</b></div>
+    <div class="chip">กำไรสะสม<b class="${G.cum>=0?'pos':'neg'}">${money(G.cum)} ลบ.</b></div>`;
+}
+
+/* ---------- Stepper ---------- */
+const PHASES = [
+  {n:'1. Intelligence', d:'ค้นหาและรับรู้ปัญหา'},
+  {n:'2. Design',       d:'สร้างทางเลือก'},
+  {n:'3. Choice',       d:'เลือกทางเลือก'},
+  {n:'4. Implementation',d:'นำไปปฏิบัติและเรียนรู้'}
+];
+function renderSteps(){
+  $('steps').innerHTML = PHASES.map((p,i)=>
+    `<div class="step ${i===G.phase?'active':''} ${i<G.phase?'done':''}"><b>${p.n}</b>${p.d}</div>`).join('');
+}
+
+/* ---------- แผนภูมิประวัติ ---------- */
+function renderChart(){
+  const h = G.history;
+  if(!h.length){ $('chart').innerHTML = '<p class="muted center" style="padding:20px 0">ยังไม่มีข้อมูล — จบไตรมาสแรกแล้วกราฟจะปรากฏ</p>'; $('histTable').innerHTML=''; return; }
+  const W=280,H=120,P=24;
+  const maxS = Math.max(...h.map(r=>r.subs),120);
+  const profits = h.map(r=>r.profit);
+  const maxP = Math.max(...profits,10), minP = Math.min(...profits,-10);
+  const x = i => P + (h.length===1? (W-2*P)/2 : i*(W-2*P)/(h.length-1));
+  const yS = v => H-P - (v/maxS)*(H-2*P);
+  const yP = v => H-P - ((v-minP)/(maxP-minP||1))*(H-2*P);
+  const path = (vals,f) => vals.map((v,i)=>`${i?'L':'M'}${x(i).toFixed(1)},${f(v).toFixed(1)}`).join(' ');
+  $('chart').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="กราฟลูกค้าและกำไร">
+    <line x1="${P}" y1="${H-P}" x2="${W-P}" y2="${H-P}" stroke="var(--line)"/>
+    <path d="${path(h.map(r=>r.subs),yS)}" fill="none" stroke="var(--acc)" stroke-width="2.5"/>
+    <path d="${path(profits,yP)}" fill="none" stroke="var(--gold)" stroke-width="2.5" stroke-dasharray="4 3"/>
+    ${h.map((r,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${yS(r.subs).toFixed(1)}" r="3" fill="var(--acc)"/>`).join('')}
+    ${h.map((r,i)=>`<circle cx="${x(i).toFixed(1)}" cy="${yP(r.profit).toFixed(1)}" r="3" fill="var(--gold)"/>`).join('')}
+    ${h.map((r,i)=>`<text x="${x(i).toFixed(1)}" y="${H-6}" font-size="9" fill="var(--dim)" text-anchor="middle">Q${i+1}</text>`).join('')}
+  </svg>`;
+  $('histTable').innerHTML = `<tr><th>ไตรมาส</th><th>ราคา</th><th>ลูกค้า</th><th>churn</th><th>กำไร</th></tr>` +
+    h.map((r,i)=>`<tr><td>Q${i+1}</td><td>${r.price}</td><td>${fmt(r.subs,1)}</td>
+      <td>${fmt(r.churn*100,1)}%</td><td class="${r.profit>=0?'pos':'neg'}"><b>${money(r.profit)}</b></td></tr>`).join('');
+}
+
+function renderLog(){
+  $('log').innerHTML = G.logs.slice().reverse().map(l=>`<div>${l}</div>`).join('') ||
+    '<div class="muted">ยังไม่มีบันทึก</div>';
+}
+function addLog(t){ G.logs.push(`<b>Q${Math.min(G.q+1,NQ)}</b> · ${t}`); renderLog(); }
+
+/* ============================================================
+   ระยะที่ 1 — Intelligence
+   ============================================================ */
+function renderIntelligence(){
+  const ev = EVENTS[G.q];
+  const sigs = ev.signals[G.mode];
+  const cap = ev.truth.priceCap;
+  $('mainCard').innerHTML = `
+    <h2>🔍 ระยะที่ 1 — Intelligence: ค้นหาและรับรู้ปัญหา</h2>
+    <p class="muted">ในระยะนี้คุณยังไม่ต้องตัดสินใจอะไร หน้าที่เดียวคือ<b>รับรู้ให้ได้ว่ากำลังเกิดอะไรขึ้น</b>
+    สังเกตว่าข้อมูลที่คุณเห็นขึ้นกับระดับเครื่องมือที่เลือกไว้</p>
+    <h3>สัญญาณที่ระบบของคุณจับได้</h3>
+    ${sigs.map(s=>`<div class="sig"><span class="src">${G.mode==='dss'?'ตัวแบบตรวจจับสัญญาณ':G.mode==='bi'?'รายงาน BI ย้อนหลัง':'ข่าวลือ / ประสบการณ์'}</span>${s}</div>`).join('')}
+    ${G.mode==='gut' ? `<div class="sig blur"><span class="src">ข้อมูลที่คุณไม่มีสิทธิ์เข้าถึง</span>ข้อมูลเชิงลึกถูกปิดกั้น เพราะองค์กรไม่มีระบบสารสนเทศรองรับ</div>`:''}
+    ${cap && G.mode!=='dss' ? `<div class="sig blur"><span class="src">ข้อมูลที่ระบบของคุณจับไม่ได้</span>ข้อบังคับใหม่ที่มีผลต่อการตั้งราคา</div>`:''}
+
+    <h3>คุณวินิจฉัยว่าปัญหาหลักของไตรมาสนี้คืออะไร?</h3>
+    <div id="dx"></div>
+    <div class="note"><b>เชื่อมกับทฤษฎี:</b> ระยะ Intelligence คือจุดที่ Data Warehouse, OLAP และการตรวจจับสัญญาณให้คุณค่าสูงสุด
+    — ถ้าวินิจฉัยปัญหาผิดตั้งแต่ระยะนี้ ทางเลือกที่ออกแบบในระยะถัดไปจะแก้ปัญหาผิดข้อทั้งหมด</div>
+    <div class="row" style="margin-top:12px">
+      <div class="spacer"></div>
+      <button class="primary" id="btnNext1" disabled>ไปสู่ระยะ Design ▶</button>
+    </div>`;
+
+  const options = [
+    {k:'pricewar', t:'คู่แข่งกำลังตัดราคา — ความได้เปรียบด้านราคาของเราหายไป'},
+    {k:'regulator',t:'มีข้อจำกัดจากภายนอกที่ทำให้ตั้งราคาสูงไม่ได้ และต้นทุนเพิ่ม'},
+    {k:'outage',   t:'คุณภาพบริการมีปัญหา ทำให้ลูกค้าไหลออกผิดปกติ'},
+    {k:'calm',     t:'ยังไม่มีภัยคุกคามชัดเจน — เน้นเติบโตตามปกติ'}
+  ];
+  $('dx').innerHTML = options.map(o=>
+    `<div class="alt" data-dx="${o.k}" style="cursor:pointer;padding:10px 12px">${o.t}</div>`).join('');
+  $('dx').querySelectorAll('[data-dx]').forEach(el=>{
+    el.onclick = ()=>{
+      $('dx').querySelectorAll('[data-dx]').forEach(x=>x.classList.remove('sel'));
+      el.classList.add('sel');
+      G.dx = el.dataset.dx;
+      $('btnNext1').disabled = false;
+    };
+  });
+  $('btnNext1').onclick = ()=>{
+    const ok = G.dx === EVENTS[G.q].key;
+    addLog(ok ? `✅ วินิจฉัยปัญหาถูกต้อง (${EVENTS[G.q].label})`
+              : `❌ วินิจฉัยปัญหาคลาดเคลื่อน — ความจริงคือ “${EVENTS[G.q].label}”`);
+    G.dxCorrect = ok;
+    G.phase = 1; render();
+  };
+}
+
+/* ============================================================
+   ระยะที่ 2 — Design
+   ============================================================ */
+function defaultAlts(){
+  // ค่าเริ่มต้นจะถูกจำกัดตามเพดานเฉพาะโหมด DSS เท่านั้น
+  // โหมดอื่นไม่รู้ว่ามีเพดาน จึงต้องไม่ถูกจำกัดโดยปริยาย (มิฉะนั้นจะเป็นการใบ้)
+  const cap = (G.mode==='dss' && EVENTS[G.q].truth.priceCap) ? EVENTS[G.q].truth.priceCap : 999;
+  const c = p => Math.min(p, cap);
+  return [
+    { name:'ก. รักษาส่วนต่างกำไร',  price:c(549), marketing:20 },
+    { name:'ข. สู้ด้วยราคา',        price:c(429), marketing:30 },
+    { name:'ค. ลงทุนสร้างแบรนด์',   price:c(499), marketing:70 }
+  ];
+}
+function renderDesign(){
+  if(!G.alts.length) G.alts = defaultAlts();
+  const cap = EVENTS[G.q].truth.priceCap;
+  const capKnown = cap && G.mode==='dss';
+  $('mainCard').innerHTML = `
+    <h2>✏️ ระยะที่ 2 — Design: สร้างทางเลือก</h2>
+    <p class="muted">ออกแบบทางเลือก 3 แบบที่<b>แตกต่างกันจริง</b> — ปรับราคาและงบการตลาดของแต่ละทางเลือก
+    ระยะนี้ยังไม่ต้องเลือก และ<b>ยังไม่เห็นผลพยากรณ์</b></p>
+    ${capKnown?`<div class="sig">⚖️ ข้อจำกัดที่ทราบ: ราคาสูงสุดตามกฎหมาย ${cap} บาท — ระบบล็อกสไลเดอร์ให้แล้ว</div>`:''}
+    <div id="altBox"></div>
+    <div class="note"><b>เชื่อมกับทฤษฎี:</b> คุณภาพของการตัดสินใจถูกจำกัดด้วยคุณภาพของทางเลือกที่คิดออก —
+    ถ้าทางเลือกทั้ง 3 คล้ายกันหมด ระยะ Choice จะไม่มีความหมาย นี่คือเหตุผลที่ DSS ต้องมี Model Management
+    ไว้ช่วยสร้างและจำลองทางเลือก ไม่ใช่แค่เก็บข้อมูล</div>
+    <div class="row" style="margin-top:12px">
+      <button id="btnReDefault">คืนค่าเริ่มต้น</button>
+      <div class="spacer"></div>
+      <button class="primary" id="btnNext2">ไปสู่ระยะ Choice ▶</button>
+    </div>`;
+  drawAlts(false);
+  $('btnReDefault').onclick = ()=>{ G.alts = defaultAlts(); drawAlts(false); };
+  $('btnNext2').onclick = ()=>{ G.phase=2; render(); };
+}
+function drawAlts(withPred){
+  const cap = EVENTS[G.q].truth.priceCap || 899;
+  const maxPrice = (G.mode==='dss' && EVENTS[G.q].truth.priceCap) ? cap : 899;
+  $('altBox').innerHTML = G.alts.map((a,i)=>`
+    <div class="alt ${G.chosen===i?'sel':''}" data-alt="${i}">
+      <div class="alt-head"><b>${a.name}</b>
+        ${withPred?`<button data-pick="${i}" class="${G.chosen===i?'primary':''}">${G.chosen===i?'เลือกแล้ว ✓':'เลือกทางเลือกนี้'}</button>`:''}
+      </div>
+      <label>ราคาแพ็กเกจ: <span class="val" id="pv${i}">${a.price}</span> บาท/เดือน</label>
+      <input type="range" min="299" max="${maxPrice}" step="10" value="${Math.min(a.price,maxPrice)}" data-p="${i}" ${withPred?'disabled':''}>
+      <label style="margin-top:8px">งบการตลาด: <span class="val" id="mv${i}">${a.marketing}</span> ล้านบาท/ไตรมาส</label>
+      <input type="range" min="0" max="120" step="5" value="${a.marketing}" data-m="${i}" ${withPred?'disabled':''}>
+      ${withPred?predBox(a):''}
+    </div>`).join('');
+  if(!withPred){
+    $('altBox').querySelectorAll('[data-p]').forEach(el=>el.oninput=e=>{
+      const i=+el.dataset.p; G.alts[i].price=+el.value; $('pv'+i).textContent=el.value; });
+    $('altBox').querySelectorAll('[data-m]').forEach(el=>el.oninput=e=>{
+      const i=+el.dataset.m; G.alts[i].marketing=+el.value; $('mv'+i).textContent=el.value; });
+  } else {
+    $('altBox').querySelectorAll('[data-pick]').forEach(el=>el.onclick=()=>pick(+el.dataset.pick));
+  }
+}
+function predBox(a){
+  if(G.mode==='dss'){
+    const p = predict(G.state, a, EVENTS[G.q].truth, 'dss');
+    return `<div class="pred">
+      <div><span>ลูกค้าที่คาดว่าจะเหลือ</span><b>${fmt(p.subs,1)} พัน</b></div>
+      <div><span>churn ที่คาดการณ์</span><b>${fmt(p.churn*100,1)}%</b></div>
+      <div><span>กำไรที่คาดการณ์</span><b class="${p.profit>=0?'pos':'neg'}">${money(p.profit)} ± ${fmt(p.band,0)}</b></div>
+    </div>
+    <div class="muted" style="margin-top:6px;font-size:12px">⚠️ ค่านี้มาจากตัวแบบ ไม่ใช่ความจริง — ช่วง ± คือความไม่แน่นอนที่ตัวแบบยอมรับว่ามี</div>`;
+  }
+  if(G.mode==='bi'){
+    const last = G.history[G.history.length-1];
+    return `<div class="hidden-box">📊 BI บอกได้แค่อดีต: ${last?`ไตรมาสก่อนราคา ${last.price} บาท ได้กำไร ${money(last.profit)} ลบ.`:'ยังไม่มีข้อมูลย้อนหลังของแพ็กเกจนี้'}
+      <br><b>ไม่มีการพยากรณ์ผลของทางเลือกนี้</b></div>`;
+  }
+  return `<div class="hidden-box">🧠 ไม่มีข้อมูลสนับสนุน — ตัดสินใจจากสัญชาตญาณ</div>`;
+}
+
+/* ============================================================
+   ระยะที่ 3 — Choice
+   ============================================================ */
+function renderChoice(){
+  const gut = G.mode==='gut';
+  $('mainCard').innerHTML = `
+    <h2>🎯 ระยะที่ 3 — Choice: เลือกทางเลือก</h2>
+    ${gut?`<div class="sig" style="border-color:var(--bad)">
+      <span class="src">ข้อจำกัดของโหมดสัญชาตญาณ</span>
+      คุณมีเวลา <b>30 วินาที</b> ก่อนที่ประชุมบอร์ดจะเริ่ม — ถ้าตัดสินใจไม่ทัน ระบบจะเลือกทางเลือกแรกให้อัตโนมัติ
+      <div class="row" style="margin-top:8px;align-items:baseline">
+        <span class="timer" id="tmr">30</span><span class="muted">วินาที</span>
+      </div>
+      <div class="timerbar"><i id="tbar" style="width:100%"></i></div>
+    </div>`:''}
+    <p class="muted">${G.mode==='dss'
+      ? 'ตัวแบบพยากรณ์ผลของแต่ละทางเลือกให้แล้ว พร้อมช่วงความไม่แน่นอน — แต่การตัดสินใจยังเป็นของคุณ'
+      : G.mode==='bi'
+      ? 'คุณเห็นเฉพาะข้อมูลย้อนหลัง ไม่มีการพยากรณ์ว่าทางเลือกใดจะให้ผลอย่างไร'
+      : 'ไม่มีข้อมูลสนับสนุนใดๆ'}</p>
+    <div id="altBox"></div>
+    ${G.mode==='dss'?`
+      <h3>🔬 การวิเคราะห์ความอ่อนไหว (Sensitivity Analysis)</h3>
+      <label>ถ้าคู่แข่งตั้งราคาต่างจากที่ตัวแบบคาดไว้: <span class="val" id="sv">0</span>%</label>
+      <input type="range" id="sens" min="-20" max="20" step="5" value="0">
+      <div id="sensOut" class="muted" style="margin-top:6px"></div>`:''}
+    <div class="note"><b>เชื่อมกับทฤษฎี:</b> ${G.mode==='dss'
+      ? 'นี่คือหน้าที่ของ Model Management Subsystem — ไม่ใช่ให้คำตอบเดียวจบ แต่ให้ผู้บริหารปรับตัวแปรแล้วเห็นผลทันที'
+      : G.mode==='bi'
+      ? 'BI หยุดที่การรายงาน มนุษย์ต้องเดาต่อเองว่าอนาคตจะเป็นอย่างไร — นี่คือช่องว่างที่ Decision Intelligence พยายามอุด'
+      : 'เมื่อข้อมูลและเวลาจำกัด มนุษย์จะไม่ optimize แต่จะ satisfice — เลือกสิ่งที่ “พอรับได้” ตามแนวคิด Bounded Rationality'}</div>
+    <div class="row" style="margin-top:12px">
+      <div class="spacer"></div>
+      <button class="primary" id="btnNext3" disabled>ดำเนินการตามแผน ▶</button>
+    </div>`;
+  drawAlts(true);
+  if(G.mode==='dss'){
+    const upd = ()=>{
+      const d = +$('sens').value; $('sv').textContent = (d>0?'+':'')+d;
+      const t = {...EVENTS[G.q].truth, compPrice: EVENTS[G.q].truth.compPrice*(1+d/100)};
+      $('sensOut').innerHTML = G.alts.map(a=>{
+        const p = predict(G.state,a,t,'dss');
+        return `${a.name}: กำไรคาดการณ์ <b class="${p.profit>=0?'pos':'neg'}">${money(p.profit)}</b> ลบ.`;
+      }).join(' &nbsp;·&nbsp; ');
+    };
+    $('sens').oninput = upd; upd();
+  }
+  $('btnNext3').onclick = ()=>{ stopTimer(); G.phase=3; render(); };
+  if(gut) startTimer();
+}
+function pick(i){
+  G.chosen = i;
+  drawAlts(true);
+  if(G.mode==='dss'){ const s=$('sens'); if(s) s.dispatchEvent(new Event('input')); }
+  $('btnNext3').disabled = false;
+}
+function startTimer(){
+  G.timeLeft = 30;
+  G.timerId = setInterval(()=>{
+    G.timeLeft--;
+    const t=$('tmr'), b=$('tbar');
+    if(t) t.textContent = G.timeLeft;
+    if(b) b.style.width = (G.timeLeft/30*100)+'%';
+    if(G.timeLeft<=0){
+      stopTimer();
+      if(G.chosen===null){ G.chosen=0; G.autoPicked=true;
+        addLog('⏰ หมดเวลา — ระบบเลือกทางเลือกแรกให้อัตโนมัติ (satisficing แบบบังคับ)'); }
+      G.phase=3; render();
+    }
+  },1000);
+}
+function stopTimer(){ if(G.timerId){ clearInterval(G.timerId); G.timerId=null; } }
+
+/* ============================================================
+   ระยะที่ 4 — Implementation
+   ============================================================ */
+function renderImplementation(){
+  const ev = EVENTS[G.q];
+  const a  = G.alts[G.chosen];
+  const pred = predict(G.state, a, ev.truth, G.mode);
+  const res  = simulate(G.state, a, ev.truth, G.rng);
+
+  G.state = { subs:res.subs, brand:res.brand };
+  G.cum += res.profit;
+  G.history.push({ price:a.price, marketing:a.marketing, subs:res.subs,
+                   churn:res.churn, profit:res.profit, name:a.name });
+  addLog(`ดำเนินการ “${a.name}” ราคา ${a.price} บาท · งบตลาด ${a.marketing} ลบ. → กำไร ${money(res.profit)} ลบ.`);
+
+  const err = res.profit - pred.profit;
+  const surprise = Math.abs(err) > (pred.band||10);
+
+  $('mainCard').innerHTML = `
+    <h2>🚀 ระยะที่ 4 — Implementation: ผลลัพธ์จริงและการเรียนรู้</h2>
+    <div class="sig"><span class="src">เหตุการณ์จริงที่เกิดขึ้นในไตรมาสนี้</span><b>${ev.label}</b> —
+      ราคาคู่แข่งจริง ${ev.truth.compPrice} บาท${ev.truth.churnShock>0?` · churn ส่วนเพิ่มจากเหตุการณ์ +${fmt(ev.truth.churnShock*100,0)} จุด`:''}${ev.truth.costShock?` · ต้นทุนพิเศษ ${ev.truth.costShock} ลบ.`:''}</div>
+
+    <div class="pred" style="border-top:none;margin-top:14px">
+      <div><span>ลูกค้าคงเหลือ</span><b>${fmt(res.subs,1)} พัน</b></div>
+      <div><span>อัตราการเลิกใช้จริง</span><b>${fmt(res.churn*100,1)}%</b></div>
+      <div><span>กำไรไตรมาสนี้</span><b class="${res.profit>=0?'pos':'neg'}">${money(res.profit)} ลบ.</b></div>
+    </div>
+
+    ${res.fine ? `<div class="note" style="border-color:var(--bad)"><b>ถูกปรับจากหน่วยงานกำกับ ${res.fine} ล้านบาท:</b>
+      คุณตั้งราคา ${a.price} บาท ซึ่งเกินเพดาน ${ev.truth.priceCap} บาท ระบบบังคับลดราคาลงมาที่เพดานและปรับเงิน —
+      นี่คือต้นทุนของการ<b>ไม่รู้ข้อจำกัดในระยะ Intelligence</b></div>`:''}
+
+    <h3>ตัวแบบพยากรณ์แม่นแค่ไหน?</h3>
+    ${G.mode==='dss'
+      ? `<table>
+          <tr><th>รายการ</th><th>ตัวแบบพยากรณ์</th><th>เกิดขึ้นจริง</th><th>คลาดเคลื่อน</th></tr>
+          <tr><td>กำไร (ลบ.)</td><td>${money(pred.profit)}</td><td>${money(res.profit)}</td>
+              <td class="${surprise?'neg':'pos'}">${money(err)}</td></tr>
+          <tr><td>ลูกค้า (พัน)</td><td>${fmt(pred.subs,1)}</td><td>${fmt(res.subs,1)}</td>
+              <td>${money(res.subs-pred.subs)}</td></tr>
+        </table>
+        <div class="note">${surprise
+          ? '<b>บทเรียนสำคัญ:</b> ผลจริงหลุดออกนอกช่วงความไม่แน่นอนที่ตัวแบบระบุไว้ — ตัวแบบ<b>ไม่ใช่ความจริง</b> มันคือแผนที่ ไม่ใช่ภูมิประเทศ นี่คือเหตุผลที่ DSS ต้องมีมนุษย์กำกับเสมอ'
+          : '<b>ข้อสังเกต:</b> ผลจริงอยู่ในช่วงที่ตัวแบบคาดไว้ — ตัวแบบทำงานได้ดีเมื่อสัญญาณถูกตรวจจับครบ'}</div>`
+      : `<div class="hidden-box">โหมดนี้ไม่มีตัวแบบพยากรณ์ให้เปรียบเทียบ —
+         คุณไม่มีทางรู้เลยว่า “ถ้าเลือกอีกทางจะดีกว่าหรือไม่”</div>`}
+
+    ${G.autoPicked ? `<div class="note" style="border-color:var(--bad)"><b>ผลของการหมดเวลา:</b>
+      คุณถูกบังคับให้เลือกทางเลือกแรกโดยไม่ได้พิจารณาครบ — นี่คือ Bounded Rationality ในรูปธรรม</div>`:''}
+    ${G.dxCorrect===false ? `<div class="note" style="border-color:var(--warn)"><b>ย้อนกลับไประยะ Intelligence:</b>
+      คุณวินิจฉัยปัญหาผิดตั้งแต่ต้นไตรมาส ทางเลือกที่ออกแบบจึงมุ่งแก้ปัญหาคนละข้อกับที่เกิดขึ้นจริง</div>`:''}
+
+    <div class="row" style="margin-top:14px">
+      <div class="spacer"></div>
+      <button class="primary" id="btnNextQ">${G.q+1>=NQ?'ดูสรุปผลทั้งปี ▶':'เริ่มไตรมาสที่ '+(G.q+2)+' ▶'}</button>
+    </div>`;
+
+  G.autoPicked = false;
+  $('btnNextQ').onclick = ()=>{
+    G.q++; G.phase=0; G.alts=[]; G.chosen=null; G.dx=null; G.dxCorrect=null;
+    if(G.q>=NQ) endGame(); else render();
+  };
+}
+
+/* ============================================================
+   สรุปผล
+   ============================================================ */
+function saveScore(){
+  const all = JSON.parse(localStorage.getItem('dss_cockpit')||'{}');
+  all[G.mode] = { cum:G.cum, subs:G.state.subs, at:new Date().toISOString() };
+  localStorage.setItem('dss_cockpit', JSON.stringify(all));
+  return all;
+}
+function endGame(){
+  const all = saveScore();
+  stopTimer();
+  $('screen-play').style.display='none';
+  $('screen-end').style.display='';
+  const order = ['gut','bi','dss'];
+  const vals = order.map(m=>all[m]?all[m].cum:null);
+  const maxAbs = Math.max(...vals.filter(v=>v!==null).map(v=>Math.abs(v)),1);
+  const played = vals.filter(v=>v!==null).length;
+
+  $('endCard').innerHTML = `
+    <h2>🏁 สรุปผลการดำเนินงาน 4 ไตรมาส — โหมด ${MODE_NAME[G.mode]}</h2>
+    <div class="center" style="margin:12px 0">
+      <div class="muted">กำไรสะสมทั้งปี</div>
+      <div class="big ${G.cum>=0?'pos':'neg'}">${money(G.cum)} ล้านบาท</div>
+      <div class="muted">ฐานลูกค้าคงเหลือ ${fmt(G.state.subs,1)} พันราย</div>
+    </div>
+
+    <h3>ผลรายไตรมาส</h3>
+    <table>
+      <tr><th>ไตรมาส</th><th>ทางเลือกที่ใช้</th><th>ราคา</th><th>ลูกค้า</th><th>churn</th><th>กำไร</th></tr>
+      ${G.history.map((r,i)=>`<tr><td>Q${i+1}</td><td style="text-align:left">${r.name}</td>
+        <td>${r.price}</td><td>${fmt(r.subs,1)}</td><td>${fmt(r.churn*100,1)}%</td>
+        <td class="${r.profit>=0?'pos':'neg'}"><b>${money(r.profit)}</b></td></tr>`).join('')}
+    </table>
+
+    <h3>เปรียบเทียบข้ามโหมด (เหตุการณ์ชุดเดียวกันทั้งหมด)</h3>
+    ${order.map(m=>{
+      const v = all[m]?all[m].cum:null;
+      const w = v===null?0:Math.abs(v)/maxAbs*100;
+      return `<div style="margin-bottom:10px">
+        <div class="row"><span style="min-width:180px">${MODE_NAME[m]}</span>
+          <b class="${v===null?'muted':(v>=0?'pos':'neg')}">${v===null?'ยังไม่ได้เล่น':money(v)+' ลบ.'}</b></div>
+        <div class="timerbar" style="height:10px"><i style="width:${w}%;background:${v===null?'var(--line)':(v>=0?'var(--ok)':'var(--bad)')}"></i></div>
+      </div>`;
+    }).join('')}
+
+    ${played<3?`<div class="note">ยังเล่นไม่ครบทุกโหมด — เล่นให้ครบทั้ง 3 เพื่อเห็นว่า
+      <b>ผลต่างของกำไรมาจากคุณภาพข้อมูลที่ใช้ตัดสินใจล้วนๆ</b> เพราะเหตุการณ์ทุกโหมดเหมือนกันทุกประการ</div>`
+      :`<div class="note"><b>ข้อสรุปของการจำลอง:</b>
+        ระยะ Intelligence ที่แม่นยำทำให้ทางเลือกในระยะ Design ตรงปัญหา · การพยากรณ์ในระยะ Choice ลดการเดา ·
+        แต่ตัวแบบยังผิดได้เสมอเมื่อมีสัญญาณที่ระบบตรวจไม่พบ — DSS จึง<b>สนับสนุน</b>การตัดสินใจ ไม่ใช่<b>แทนที่</b>ผู้ตัดสินใจ</div>`}
+
+    <h3>คำถามสะท้อนคิด (ใช้ตอบในใบงาน)</h3>
+    <ol class="muted">
+      <li>ไตรมาสใดที่การวินิจฉัยปัญหาในระยะ Intelligence ส่งผลต่อกำไรมากที่สุด และเพราะเหตุใด</li>
+      <li>ในโหมด DSS มีไตรมาสใดที่ตัวแบบพยากรณ์ผิดจนหลุดช่วงความไม่แน่นอน? อะไรคือสาเหตุ</li>
+      <li>ถ้าให้เพิ่มระบบย่อยของ DSS ได้อีกหนึ่งอย่างเพื่อยกระดับผลลัพธ์ คุณจะเพิ่มอะไร และวางไว้ที่ระยะใดของ Simon</li>
+      <li>โหมดสัญชาตญาณจำกัดเวลา 30 วินาที — ผลที่ได้สะท้อนแนวคิด Bounded Rationality อย่างไร</li>
+    </ol>
+
+    <div class="row" style="margin-top:14px">
+      <button class="primary" id="btnAgain">เล่นอีกครั้งด้วยโหมดอื่น</button>
+      <button id="btnReset">ล้างผลทั้งหมด</button>
+    </div>`;
+  $('btnAgain').onclick = ()=>{ G=null; renderHUD(); showStart(); };
+  $('btnReset').onclick = ()=>{ localStorage.removeItem('dss_cockpit'); G=null; renderHUD(); showStart(); };
+}
+
+/* ============================================================
+   ตัวควบคุมหลัก
+   ============================================================ */
+function render(){
+  renderHUD(); renderSteps(); renderChart(); renderLog();
+  [renderIntelligence, renderDesign, renderChoice, renderImplementation][G.phase]();
+}
+function showStart(){
+  $('screen-start').style.display=''; $('screen-play').style.display='none'; $('screen-end').style.display='none';
+  const all = JSON.parse(localStorage.getItem('dss_cockpit')||'{}');
+  const done = Object.keys(all);
+  $('playedInfo').textContent = done.length ? 'เล่นแล้ว: ' + done.map(m=>MODE_NAME[m]).join(' · ') : 'ยังไม่เคยเล่นโหมดใด';
+  document.querySelectorAll('.mode').forEach(el=>el.classList.remove('sel'));
+  $('btnStart').disabled = true;
+}
+document.querySelectorAll('.mode').forEach(el=>{
+  el.onclick = ()=>{
+    document.querySelectorAll('.mode').forEach(x=>x.classList.remove('sel'));
+    el.classList.add('sel');
+    $('btnStart').disabled=false;
+    $('btnStart').dataset.mode = el.dataset.mode;
+  };
+});
+$('btnStart').onclick = ()=>{
+  G = newGame($('btnStart').dataset.mode);
+  $('screen-start').style.display='none'; $('screen-play').style.display='';
+  addLog('เริ่มปีงบประมาณ — ฐานลูกค้าเริ่มต้น 100,000 ราย');
+  render();
+};
+$('btnReset2').onclick = ()=>{ localStorage.removeItem('dss_cockpit'); showStart(); };
+showStart();
+</script>
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OLAP Cube Explorer — ลูกบาศก์ข้อมูลที่จับต้องได้</title>
+<style>
+  :root{
+    --bg:#0f1220; --panel:#171a2e; --panel2:#1e2240; --line:#2b3157;
+    --tx:#e8ebff; --dim:#9aa2c9; --acc:#5b8cff; --acc2:#8b5cf6;
+    --ok:#22c55e; --warn:#f59e0b; --bad:#ef4444; --gold:#fbbf24;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f5f6fb; --panel:#ffffff; --panel2:#eef1fa; --line:#d7dcf0; --tx:#151833; --dim:#5b628a; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:"Sarabun","Noto Sans Thai","Segoe UI",system-ui,sans-serif;line-height:1.55;font-size:14.5px}
+  .wrap{max-width:1300px;margin:0 auto;padding:16px}
+  header{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:14px;
+    display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  h1{font-size:19px;margin:0}
+  h1 small{display:block;font-size:12px;color:var(--dim);font-weight:400;margin-top:2px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px}
+  .card h2{font-size:15.5px;margin:0 0 10px}
+  .card h3{font-size:13px;margin:12px 0 6px;color:var(--dim);text-transform:none}
+  .layout{display:grid;grid-template-columns:270px 1fr 300px;gap:14px;align-items:start}
+  @media(max-width:1150px){.layout{grid-template-columns:1fr}}
+  button{font-family:inherit;font-size:13.5px;cursor:pointer;border-radius:9px;border:1px solid var(--line);
+    background:var(--panel2);color:var(--tx);padding:7px 11px;transition:.15s}
+  button:hover{border-color:var(--acc)}
+  button:disabled{opacity:.35;cursor:not-allowed}
+  button.primary{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:600}
+  button.mini{padding:4px 8px;font-size:12px}
+  .row{display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+  .spacer{flex:1}
+  select{font-family:inherit;font-size:13.5px;background:var(--panel2);color:var(--tx);
+    border:1px solid var(--line);border-radius:8px;padding:6px 8px;width:100%}
+  label{font-size:12px;color:var(--dim);display:block;margin:8px 0 3px}
+  /* dimension control */
+  .dimbox{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:10px;margin-bottom:9px}
+  .dimbox .t{display:flex;justify-content:space-between;align-items:center;font-size:13.5px;font-weight:600}
+  .axis{font-size:11px;padding:2px 7px;border-radius:20px;background:rgba(91,140,255,.2);color:var(--acc)}
+  .axis.layer{background:rgba(139,92,246,.2);color:var(--acc2)}
+  .lvl{font-size:12px;color:var(--dim);margin:5px 0}
+  .lvl b{color:var(--tx)}
+  .chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+  .chk{font-size:11.5px;padding:3px 8px;border-radius:20px;border:1px solid var(--line);
+    background:var(--panel);cursor:pointer;user-select:none}
+  .chk.on{background:var(--acc);border-color:var(--acc);color:#fff}
+  /* table */
+  .tbl-wrap{overflow-x:auto}
+  table{border-collapse:collapse;font-size:13px;width:100%;min-width:420px}
+  th,td{border:1px solid var(--line);padding:6px 9px;text-align:right;white-space:nowrap}
+  th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:var(--panel)}
+  thead th{background:var(--panel2);color:var(--dim);font-weight:600;font-size:12px}
+  td.cell{cursor:pointer;font-variant-numeric:tabular-nums}
+  td.cell:hover{outline:2px solid var(--acc);outline-offset:-2px}
+  tr.tot td,td.tot{background:var(--panel2);font-weight:600}
+  .mark{outline:2px solid var(--gold)!important;outline-offset:-2px}
+  /* sql */
+  pre{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px;
+    font-size:12px;overflow-x:auto;margin:0;font-family:ui-monospace,Consolas,monospace;color:var(--tx);line-height:1.5}
+  .kw{color:var(--acc);font-weight:600}
+  .fn{color:var(--gold)}
+  .st{color:var(--ok)}
+  /* log */
+  .log{max-height:210px;overflow-y:auto;font-size:12.5px}
+  .log div{padding:5px 0;border-bottom:1px dashed var(--line);color:var(--dim)}
+  .log div b{color:var(--tx)}
+  .op{display:inline-block;font-size:11px;padding:1px 7px;border-radius:20px;margin-right:5px;
+    background:rgba(139,92,246,.2);color:var(--acc2);font-weight:600}
+  .note{background:linear-gradient(90deg,rgba(139,92,246,.13),transparent);border-left:3px solid var(--acc2);
+    border-radius:8px;padding:9px 11px;font-size:12.5px;margin-top:10px}
+  .note b{color:var(--acc2)}
+  .muted{color:var(--dim);font-size:12.5px}
+  svg{display:block;width:100%;height:auto}
+  .quest{background:linear-gradient(90deg,rgba(251,191,36,.14),transparent);
+    border-left:3px solid var(--gold);border-radius:8px;padding:10px 12px;margin-bottom:10px;font-size:13.5px}
+  .quest b{color:var(--gold)}
+  .ok{color:var(--ok)} .bad{color:var(--bad)}
+  .scoreline{display:flex;gap:10px;flex-wrap:wrap;font-size:12.5px;color:var(--dim)}
+  .scoreline b{color:var(--tx)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>🧊 OLAP Cube Explorer
+    <small>ลูกบาศก์ข้อมูล · Roll-up / Drill-down / Slice / Dice / Pivot — รายวิชาระบบสนับสนุนการตัดสินใจ (W3–W4)</small>
+  </h1>
+  <div class="row">
+    <button id="btnChallenge">🎯 โหมดท้าทาย</button>
+    <button id="btnReset">↺ เริ่มใหม่</button>
+  </div>
+</header>
+
+<div id="challengeBar"></div>
+
+<div class="layout">
+
+  <!-- ===== ซ้าย: แผงควบคุมมิติ ===== -->
+  <div>
+    <div class="card">
+      <h2>📐 มิติของลูกบาศก์</h2>
+      <p class="muted" style="margin-top:-4px">แต่ละมิติวางอยู่บนแกนใดแกนหนึ่ง และมี “ระดับ” ของลำดับชั้นที่ปรับได้</p>
+      <div id="dims"></div>
+      <div class="row" style="margin-top:8px">
+        <button id="btnPivot">🔄 Pivot (สลับแถว↔คอลัมน์)</button>
+        <button id="btnRotate">🎲 หมุนแกน (เปลี่ยนมิติที่เป็นชั้น)</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📏 ตัววัด (Measure)</h2>
+      <select id="measure">
+        <option value="sales">ยอดขาย (บาท)</option>
+        <option value="units">จำนวนชิ้น</option>
+        <option value="asp">ราคาเฉลี่ยต่อชิ้น (บาท)</option>
+      </select>
+      <div class="note" style="margin-top:10px"><b>สังเกต:</b> “ราคาเฉลี่ยต่อชิ้น” เป็นตัววัดที่<b>รวมยอดตรงๆ ไม่ได้</b>
+      (non-additive) ต้องคำนวณจากยอดขายหารจำนวนชิ้นในทุกระดับ — เป็นกับดักคลาสสิกของการออกแบบคลังข้อมูล</div>
+    </div>
+  </div>
+
+  <!-- ===== กลาง: ลูกบาศก์ + ตาราง ===== -->
+  <div>
+    <div class="card">
+      <h2>🧊 มุมมองลูกบาศก์</h2>
+      <div id="cube"></div>
+      <div class="muted center" id="cubeCaption" style="text-align:center;margin-top:6px"></div>
+    </div>
+
+    <div class="card">
+      <h2 id="tblTitle">📋 ตารางผลลัพธ์</h2>
+      <div class="tbl-wrap" id="table"></div>
+      <div class="muted" style="margin-top:8px">คลิกที่ช่องใดก็ได้เพื่อ <b>Drill-through</b> ดูข้อมูลธุรกรรมที่ประกอบเป็นตัวเลขนั้น</div>
+      <div id="drillOut"></div>
+    </div>
+  </div>
+
+  <!-- ===== ขวา: SQL + log ===== -->
+  <div>
+    <div class="card">
+      <h2>🧮 SQL ที่เทียบเท่า</h2>
+      <pre id="sql"></pre>
+      <div class="note"><b>ประเด็นสำคัญ:</b> ทุกการดำเนินการ OLAP แปลงเป็น SQL ได้เสมอ —
+      OLAP ไม่ใช่เวทมนตร์ แต่คือชั้นที่ทำให้การถาม-ตอบข้อมูลหลายมิติทำได้เร็วและเป็นภาษาของธุรกิจ</div>
+    </div>
+    <div class="card">
+      <h2>📜 บันทึกการดำเนินการ</h2>
+      <div class="log" id="log"></div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🎓 บันทึกสำหรับผู้สอน</h2>
+  <p class="muted">ชุดข้อมูลถูกฝัง “ความผิดปกติ” ไว้สองจุดโดยเจตนา: (1) ยอดขายภาคอีสานตกผิดปกติในไตรมาส 3 ปี 2025
+  และ (2) หมวดเครื่องใช้ไฟฟ้ามีราคาเฉลี่ยต่อชิ้นสูงแต่จำนวนชิ้นต่ำ ทั้งสองจุด<b>มองไม่เห็นที่ระดับปีหรือระดับภูมิภาครวม</b>
+  ต้อง drill-down ลงไปจึงจะพบ — ใช้สาธิตว่าเหตุใดการรายงานแบบสรุปรวมอย่างเดียวจึงทำให้ผู้บริหารพลาดปัญหา
+  (และเป็นบทนำที่ดีสู่ Simpson's paradox)</p>
+</div>
+
+</div>
+
+<script>
+/* ============================================================
+   OLAP Cube Explorer — DSS course simulation
+   ไม่มี dependency ภายนอก ทำงานแบบ offline ได้
+   ============================================================ */
+
+/* ---------- ตัวสุ่มแบบกำหนดเมล็ด ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;}}
+
+/* ---------- โครงสร้างมิติ ---------- */
+const MONTHS = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+const PRODUCTS = [
+  {cat:'เครื่องดื่ม',      brand:'ดอยคำ',    price:35,  vol:1.00},
+  {cat:'เครื่องดื่ม',      brand:'ชาไทยหอม', price:28,  vol:1.25},
+  {cat:'ของใช้ในบ้าน',    brand:'คลีนพลัส',  price:95,  vol:0.55},
+  {cat:'ของใช้ในบ้าน',    brand:'โฮมแคร์',   price:120, vol:0.42},
+  {cat:'เครื่องใช้ไฟฟ้า', brand:'อีเล็คโทร', price:2450,vol:0.06},
+  {cat:'เครื่องใช้ไฟฟ้า', brand:'พาวเวอร์ซัน',price:3890,vol:0.03}
+];
+const GEO = [
+  {region:'ภาคกลาง',  prov:'กรุงเทพฯ',    w:1.55},
+  {region:'ภาคกลาง',  prov:'นนทบุรี',      w:0.85},
+  {region:'ภาคอีสาน', prov:'ขอนแก่น',      w:0.95},
+  {region:'ภาคอีสาน', prov:'กาฬสินธุ์',    w:0.62},
+  {region:'ภาคเหนือ', prov:'เชียงใหม่',    w:0.90},
+  {region:'ภาคเหนือ', prov:'ลำปาง',        w:0.50},
+  {region:'ภาคใต้',   prov:'ภูเก็ต',        w:0.80},
+  {region:'ภาคใต้',   prov:'สงขลา',        w:0.70}
+];
+
+/* ---------- สร้างข้อมูลธุรกรรม (deterministic) ---------- */
+const FACTS = (()=>{
+  const rng = mulberry32(70425);
+  const rows = [];
+  for(const year of [2024,2025]){
+    for(let m=0;m<12;m++){
+      for(const p of PRODUCTS){
+        for(const g of GEO){
+          const season = 1 + 0.22*Math.sin((m-2)/12*2*Math.PI);          // ฤดูกาล
+          const trend  = year===2025 ? 1.11 : 1.0;                        // เติบโตรายปี
+          const noise  = 0.88 + 0.24*rng();
+          // ความผิดปกติที่ฝังไว้: ภาคอีสานตกหนักใน Q3/2025
+          const anomaly = (year===2025 && g.region==='ภาคอีสาน' && m>=6 && m<=8) ? 0.58 : 1.0;
+          const units = Math.round(2600 * p.vol * g.w * season * trend * noise * anomaly);
+          rows.push({
+            year, month:m, quarter:Math.floor(m/3)+1,
+            cat:p.cat, brand:p.brand, region:g.region, prov:g.prov,
+            units, sales: units * p.price
+          });
+        }
+      }
+    }
+  }
+  return rows;
+})();
+
+/* ---------- นิยามมิติและลำดับชั้น ---------- */
+const DIMS = {
+  time:{ label:'มิติเวลา', table:'dim_date', levels:[
+      {key:'year',    label:'ปี',      col:'d.year',            get:f=>String(f.year)},
+      {key:'quarter', label:'ไตรมาส',  col:'d.year, d.quarter', get:f=>`${f.year}-Q${f.quarter}`},
+      {key:'month',   label:'เดือน',   col:'d.year, d.month',   get:f=>`${f.year}-${MONTHS[f.month]}`}
+    ]},
+  product:{ label:'มิติสินค้า', table:'dim_product', levels:[
+      {key:'cat',   label:'หมวดสินค้า', col:'p.category', get:f=>f.cat},
+      {key:'brand', label:'แบรนด์',     col:'p.brand',    get:f=>f.brand}
+    ]},
+  geo:{ label:'มิติภูมิศาสตร์', table:'dim_store', levels:[
+      {key:'region',label:'ภูมิภาค',   col:'s.region',   get:f=>f.region},
+      {key:'prov',  label:'จังหวัด',    col:'s.province', get:f=>f.prov}
+    ]}
+};
+const DIMKEYS = ['time','product','geo'];
+
+/* ---------- สถานะ ---------- */
+let S = null;
+function initState(){
+  return {
+    rows:'time', cols:'product', layer:'geo',
+    level:{time:0, product:0, geo:0},
+    dice:{time:null, product:null, geo:null},   // null = เลือกทั้งหมด
+    slice:'ALL',                                // สมาชิกของมิติชั้นที่เลือกดู
+    measure:'sales',
+    logs:[], mark:null,
+    challenge:null, qIndex:0, ops:0, score:0
+  };
+}
+const $ = id=>document.getElementById(id);
+const baht = n => n.toLocaleString('th-TH',{maximumFractionDigits:0});
+const fmtM = n => S.measure==='sales' ? baht(Math.round(n/1000))+'k'
+               : S.measure==='units' ? baht(Math.round(n))
+               : baht(Math.round(n));
+
+/* ---------- ตัวช่วยด้านข้อมูล ---------- */
+function lv(dim){ return DIMS[dim].levels[S.level[dim]]; }
+function membersOf(dim, levelIdx){
+  const g = DIMS[dim].levels[levelIdx ?? S.level[dim]].get;
+  const set = [];
+  for(const f of FACTS){ const v=g(f); if(!set.includes(v)) set.push(v); }
+  return set;
+}
+function passDice(f){
+  for(const d of DIMKEYS){
+    const sel = S.dice[d];
+    if(sel && sel.length && !sel.includes(lv(d).get(f))) return false;
+  }
+  return true;
+}
+/* รวมยอดเป็น map: rowKey -> colKey -> {sales,units} (เฉพาะชั้นที่เลือก) */
+function aggregate(){
+  const m = new Map();
+  for(const f of FACTS){
+    if(!passDice(f)) continue;
+    if(S.slice!=='ALL' && lv(S.layer).get(f)!==S.slice) continue;
+    const r = lv(S.rows).get(f), c = lv(S.cols).get(f);
+    if(!m.has(r)) m.set(r,new Map());
+    const rm = m.get(r);
+    if(!rm.has(c)) rm.set(c,{sales:0,units:0});
+    const cell = rm.get(c); cell.sales+=f.sales; cell.units+=f.units;
+  }
+  return m;
+}
+function val(cell){
+  if(!cell) return 0;
+  if(S.measure==='sales') return cell.sales;
+  if(S.measure==='units') return cell.units;
+  return cell.units ? cell.sales/cell.units : 0;   // non-additive
+}
+function combine(a,b){ return {sales:(a?.sales||0)+(b?.sales||0), units:(a?.units||0)+(b?.units||0)}; }
+
+/* ---------- บันทึกการดำเนินการ ---------- */
+function logOp(op, text){
+  S.logs.push(`<span class="op">${op}</span><b>${text}</b>`);
+  if(S.challenge!==null && op!=='DRILL-THROUGH') S.ops++;
+  renderLog();
+}
+function renderLog(){
+  $('log').innerHTML = S.logs.slice().reverse().slice(0,40).map(l=>`<div>${l}</div>`).join('')
+    || '<div class="muted">ยังไม่มีการดำเนินการ</div>';
+}
+
+/* ---------- แผงควบคุมมิติ ---------- */
+function renderDims(){
+  $('dims').innerHTML = DIMKEYS.map(d=>{
+    const axis = S.rows===d?'แถว (rows)':S.cols===d?'คอลัมน์ (cols)':'ชั้น (layers)';
+    const isLayer = S.layer===d;
+    const L = DIMS[d].levels, i = S.level[d];
+    const mem = membersOf(d);
+    const sel = S.dice[d];
+    return `<div class="dimbox">
+      <div class="t"><span>${DIMS[d].label}</span><span class="axis ${isLayer?'layer':''}">${axis}</span></div>
+      <div class="lvl">ระดับปัจจุบัน: <b>${L[i].label}</b> <span class="muted">(${L.map((x,k)=>k===i?'●':'○').join('')} ${i+1}/${L.length})</span></div>
+      <div class="row">
+        <button class="mini" data-ru="${d}" ${i===0?'disabled':''}>⬆ Roll-up</button>
+        <button class="mini" data-dd="${d}" ${i===L.length-1?'disabled':''}>⬇ Drill-down</button>
+      </div>
+      ${isLayer?`
+        <label>Slice — เลือกดูชั้นเดียว</label>
+        <select data-slice>
+          <option value="ALL"${S.slice==='ALL'?' selected':''}>ทุกชั้นรวมกัน (ALL)</option>
+          ${mem.map(v=>`<option${S.slice===v?' selected':''}>${v}</option>`).join('')}
+        </select>`:''}
+      <label>Dice — กรองสมาชิก (คลิกเพื่อเปิด/ปิด)</label>
+      <div class="chips">
+        ${mem.map(v=>`<span class="chk ${(!sel||sel.includes(v))?'on':''}" data-dice="${d}" data-v="${v}">${v}</span>`).join('')}
+      </div>
+    </div>`;
+  }).join('');
+
+  $('dims').querySelectorAll('[data-ru]').forEach(b=>b.onclick=()=>{
+    const d=b.dataset.ru; S.level[d]--;
+    if(d===S.layer) S.slice='ALL';
+    logOp('ROLL-UP',`${DIMS[d].label} → ระดับ ${lv(d).label}`); render();
+  });
+  $('dims').querySelectorAll('[data-dd]').forEach(b=>b.onclick=()=>{
+    const d=b.dataset.dd; S.level[d]++;
+    if(d===S.layer) S.slice='ALL';
+    if(S.dice[d]) S.dice[d]=null;
+    logOp('DRILL-DOWN',`${DIMS[d].label} → ระดับ ${lv(d).label}`); render();
+  });
+  const sl = $('dims').querySelector('[data-slice]');
+  if(sl) sl.onchange = ()=>{ S.slice = sl.value;
+    logOp('SLICE', S.slice==='ALL'?'ยกเลิกการตัดชั้น (ดูรวมทุกชั้น)':`ตัดเฉพาะชั้น “${S.slice}”`); render(); };
+  $('dims').querySelectorAll('[data-dice]').forEach(c=>c.onclick=()=>{
+    const d=c.dataset.dice, v=c.dataset.v, mem=membersOf(d);
+    let sel = S.dice[d] ? [...S.dice[d]] : [...mem];
+    sel = sel.includes(v) ? sel.filter(x=>x!==v) : [...sel,v];
+    if(!sel.length) return;                       // ห้ามปิดหมด
+    S.dice[d] = sel.length===mem.length ? null : sel;
+    if(S.slice!=='ALL' && d===S.layer && S.dice[d] && !S.dice[d].includes(S.slice)) S.slice='ALL';
+    logOp('DICE',`${DIMS[d].label}: เลือก ${S.dice[d]?S.dice[d].length:mem.length} จาก ${mem.length} สมาชิก`); render();
+  });
+}
+
+/* ---------- มุมมองลูกบาศก์ (isometric) ---------- */
+function renderCube(){
+  const layers = membersOf(S.layer).filter(v=>!S.dice[S.layer] || S.dice[S.layer].includes(v));
+  const rowsM = membersOf(S.rows).filter(v=>!S.dice[S.rows] || S.dice[S.rows].includes(v));
+  const colsM = membersOf(S.cols).filter(v=>!S.dice[S.cols] || S.dice[S.cols].includes(v));
+  const nR = Math.min(rowsM.length,12), nC = Math.min(colsM.length,12);
+  const cs = Math.max(7, Math.min(15, 130/Math.max(nR,nC)));
+  const a=0.866*cs, b=0.5*cs;
+  const W=520, H=300;
+  const baseX = W/2 - (nC*a - nR*a)/2 - 30, baseY = 80 + layers.length*13;
+
+  // ค่าของแต่ละชั้นเพื่อไล่เฉดสี
+  const layerVals = layers.map(L=>{
+    let s=0; for(const f of FACTS){ if(!passDice(f)) continue; if(lv(S.layer).get(f)!==L) continue;
+      s += S.measure==='units'?f.units:f.sales; } return s; });
+  const mx = Math.max(...layerVals,1);
+
+  let g='';
+  layers.forEach((L,k)=>{
+    const active = (S.slice==='ALL') || (S.slice===L);
+    const op = active ? 1 : 0.16;
+    const dz = -k*26;
+    const tint = 0.25 + 0.75*(layerVals[k]/mx);
+    let cells='';
+    for(let r=0;r<nR;r++) for(let c=0;c<nC;c++){
+      const x0 = baseX + c*a - r*a, y0 = baseY + c*b + r*b + dz;
+      cells += `<polygon points="${x0},${y0} ${x0+a},${y0+b} ${x0+a-a},${y0+b+b} ${x0-a},${y0+b}"
+        fill="${S.slice===L?'#5b8cff':'#8b5cf6'}" fill-opacity="${(0.20+0.55*tint).toFixed(2)}"
+        stroke="rgba(255,255,255,.22)" stroke-width="0.6"/>`;
+    }
+    g += `<g opacity="${op}">${cells}
+      <text x="${baseX - nR*a - 12}" y="${baseY + nR*b + dz + 4}" font-size="11"
+        fill="${S.slice===L?'var(--acc)':'var(--dim)'}" text-anchor="end">${L}</text></g>`;
+  });
+
+  // ป้ายแกน
+  g += `<text x="${baseX + nC*a/2 + 16}" y="${baseY + nC*b/2 - 14}" font-size="11.5" fill="var(--acc)">
+          ▸ ${DIMS[S.cols].label} · ${lv(S.cols).label} (${colsM.length})</text>`;
+  g += `<text x="${baseX - nR*a/2 - 16}" y="${baseY + nR*b/2 + 30}" font-size="11.5" fill="var(--acc)" text-anchor="end">
+          ◂ ${DIMS[S.rows].label} · ${lv(S.rows).label} (${rowsM.length})</text>`;
+  g += `<text x="${W-8}" y="18" font-size="11.5" fill="var(--acc2)" text-anchor="end">
+          ⬍ ${DIMS[S.layer].label} · ${lv(S.layer).label} (${layers.length} ชั้น)</text>`;
+
+  $('cube').innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="ลูกบาศก์ข้อมูล">${g}</svg>`;
+  $('cubeCaption').innerHTML = S.slice==='ALL'
+    ? `กำลังดู <b>ทุกชั้นรวมกัน</b> — จำนวนช่องข้อมูลทั้งหมด ${rowsM.length}×${colsM.length}×${layers.length} = <b>${rowsM.length*colsM.length*layers.length}</b> เซลล์`
+    : `<b>Slice:</b> ตัดเฉพาะชั้น “${S.slice}” จาก ${layers.length} ชั้น — เหลือ ${rowsM.length}×${colsM.length} = <b>${rowsM.length*colsM.length}</b> เซลล์`;
+}
+
+/* ---------- ตารางผลลัพธ์ ---------- */
+function renderTable(){
+  const m = aggregate();
+  const rowsM = membersOf(S.rows).filter(v=>m.has(v));
+  const colsM = membersOf(S.cols).filter(v=>[...m.values()].some(rm=>rm.has(v)));
+  const nonAdd = S.measure==='asp';
+
+  let colTot = {}, grand = {sales:0,units:0};
+  for(const c of colsM){ colTot[c]={sales:0,units:0}; }
+
+  let html = `<table><thead><tr><th>${DIMS[S.rows].label} · ${lv(S.rows).label}</th>`
+    + colsM.map(c=>`<th>${c}</th>`).join('') + `<th>รวม</th></tr></thead><tbody>`;
+  for(const r of rowsM){
+    let rowTot = {sales:0,units:0};
+    html += `<tr><td>${r}</td>`;
+    for(const c of colsM){
+      const cell = m.get(r)?.get(c);
+      rowTot = combine(rowTot, cell); colTot[c] = combine(colTot[c], cell);
+      const key = r+'|'+c;
+      html += `<td class="cell ${S.mark===key?'mark':''}" data-cell="${key}">${cell?fmtM(val(cell)):'—'}</td>`;
+    }
+    grand = combine(grand,rowTot);
+    html += `<td class="tot">${fmtM(val(rowTot))}</td></tr>`;
+  }
+  html += `<tr class="tot"><td>รวม</td>`
+    + colsM.map(c=>`<td>${fmtM(val(colTot[c]))}</td>`).join('')
+    + `<td>${fmtM(val(grand))}</td></tr></tbody></table>`;
+  $('table').innerHTML = html;
+
+  const mName = {sales:'ยอดขาย (พันบาท)',units:'จำนวนชิ้น',asp:'ราคาเฉลี่ยต่อชิ้น (บาท)'}[S.measure];
+  $('tblTitle').innerHTML = `📋 ${mName}${S.slice!=='ALL'?` · เฉพาะ “${S.slice}”`:''}`
+    + (nonAdd?` <span class="muted" style="font-weight:400">— แถว/คอลัมน์ “รวม” คำนวณใหม่จากยอดขาย÷จำนวนชิ้น ไม่ใช่การบวกค่าเฉลี่ย</span>`:'');
+
+  $('table').querySelectorAll('[data-cell]').forEach(td=>td.onclick=()=>{
+    S.mark = td.dataset.cell; drillThrough(...td.dataset.cell.split('|')); renderTable();
+  });
+}
+function drillThrough(r,c){
+  const rec = FACTS.filter(f=>passDice(f)
+      && (S.slice==='ALL'||lv(S.layer).get(f)===S.slice)
+      && lv(S.rows).get(f)===r && lv(S.cols).get(f)===c);
+  logOp('DRILL-THROUGH',`เจาะถึงธุรกรรมของช่อง “${r} × ${c}” (${rec.length} แถว)`);
+  const show = rec.slice(0,6);
+  $('drillOut').innerHTML = `<div class="note"><b>Drill-through:</b> ช่อง “${r} × ${c}” ประกอบขึ้นจากธุรกรรม ${rec.length} แถว
+    (แสดง ${show.length} แถวแรก)
+    <table style="margin-top:8px"><tr><th>ปี-เดือน</th><th>หมวด</th><th>แบรนด์</th><th>จังหวัด</th><th>ชิ้น</th><th>ยอดขาย</th></tr>
+    ${show.map(f=>`<tr><td>${f.year}-${MONTHS[f.month]}</td><td>${f.cat}</td><td>${f.brand}</td>
+      <td>${f.prov}</td><td>${baht(f.units)}</td><td>${baht(f.sales)}</td></tr>`).join('')}</table></div>`;
+}
+
+/* ---------- SQL ---------- */
+function renderSQL(){
+  const K=s=>`<span class="kw">${s}</span>`, F=s=>`<span class="fn">${s}</span>`, T=s=>`<span class="st">${s}</span>`;
+  const measExpr = S.measure==='sales' ? `${F('SUM')}(f.net_amount)`
+                 : S.measure==='units' ? `${F('SUM')}(f.quantity)`
+                 : `${F('SUM')}(f.net_amount) / ${F('NULLIF')}(${F('SUM')}(f.quantity), 0)`;
+  const where=[];
+  if(S.slice!=='ALL') where.push(`${lv(S.layer).col.split(',')[0].trim()} = ${T(`'${S.slice}'`)}`);
+  for(const d of DIMKEYS){
+    const sel=S.dice[d];
+    if(sel) where.push(`${lv(d).col.split(',')[0].trim()} ${K('IN')} (${sel.map(v=>T(`'${v}'`)).join(', ')})`);
+  }
+  const groupCols = [lv(S.rows).col, lv(S.cols).col].join(', ');
+  $('sql').innerHTML =
+`${K('SELECT')} ${groupCols},
+       ${measExpr} ${K('AS')} measure
+${K('FROM')}   fact_sales f
+${K('JOIN')}   dim_date    d ${K('ON')} d.date_key    = f.date_key
+${K('JOIN')}   dim_product p ${K('ON')} p.product_key = f.product_key
+${K('JOIN')}   dim_store   s ${K('ON')} s.store_key   = f.store_key
+${where.length?`${K('WHERE')}  `+where.join(`\n   ${K('AND')}  `)+'\n':''}${K('GROUP BY')} ${K('ROLLUP')}(${groupCols})
+${K('ORDER BY')} ${groupCols};`;
+}
+
+/* ============================================================
+   โหมดท้าทาย
+   ============================================================ */
+function sumBy(filterFn, measure){
+  let s=0,u=0;
+  for(const f of FACTS){ if(!filterFn(f)) continue; s+=f.sales; u+=f.units; }
+  return measure==='units'?u : measure==='asp' ? (u?s/u:0) : s;
+}
+function argExtreme(list, fn, dir){
+  let best=null, bv=dir>0?-Infinity:Infinity;
+  for(const x of list){ const v=fn(x); if(dir>0?v>bv:v<bv){bv=v;best=x;} }
+  return best;
+}
+function buildChallenges(){
+  const regions=[...new Set(GEO.map(g=>g.region))];
+  const provs  = GEO.map(g=>g.prov);
+  const cats   =[...new Set(PRODUCTS.map(p=>p.cat))];
+  const brands = PRODUCTS.map(p=>p.brand);
+  const q2025  = [1,2,3,4].map(q=>`2025-Q${q}`);
+  const growth = c => {
+    const a=sumBy(f=>f.cat===c&&f.year===2024), b=sumBy(f=>f.cat===c&&f.year===2025);
+    return (b-a)/a;
+  };
+  return [
+    { q:'ไตรมาสใดของปี 2025 ที่มียอดขายรวมทั้งบริษัทสูงที่สุด?',
+      hint:'Roll-up มิติสินค้าและภูมิศาสตร์ แล้ว Drill-down มิติเวลาไปที่ระดับไตรมาส + Dice เฉพาะปี 2025',
+      opts:q2025, par:3,
+      ans:argExtreme(q2025, k=>sumBy(f=>`${f.year}-Q${f.quarter}`===k), +1) },
+
+    { q:'ในปี 2025 ภูมิภาคใดที่ยอดขาย “ตกลง” เมื่อเทียบกับปี 2024?',
+      hint:'ให้มิติเวลาอยู่ที่ระดับปี และมิติภูมิศาสตร์อยู่ที่ระดับภูมิภาค แล้วเทียบสองคอลัมน์',
+      opts:regions, par:3,
+      ans:argExtreme(regions, r=>{
+            const a=sumBy(f=>f.region===r&&f.year===2024), b=sumBy(f=>f.region===r&&f.year===2025);
+            return (b-a)/a; }, -1) },
+
+    { q:'ความผิดปกติของภูมิภาคในข้อก่อนหน้า กระจุกตัวอยู่ที่ไตรมาสใด?',
+      hint:'Slice เฉพาะภูมิภาคนั้น แล้ว Drill-down มิติเวลาไปที่ระดับไตรมาส',
+      opts:q2025, par:3,
+      ans:(()=>{ const r='ภาคอีสาน';
+            return argExtreme(q2025, k=>{
+              const [y,q]=k.split('-Q');
+              const cur=sumBy(f=>f.region===r&&f.year===+y&&f.quarter===+q);
+              const prev=sumBy(f=>f.region===r&&f.year===+y-1&&f.quarter===+q);
+              return (cur-prev)/prev; }, -1); })() },
+
+    { q:'แบรนด์ใดมียอดขายรวมสูงที่สุดตลอดสองปี?',
+      hint:'Drill-down มิติสินค้าไปที่ระดับแบรนด์ แล้วดูแถว/คอลัมน์รวม',
+      opts:brands, par:2,
+      ans:argExtreme(brands, b=>sumBy(f=>f.brand===b), +1) },
+
+    { q:'จังหวัดใดมี “ราคาเฉลี่ยต่อชิ้น” สูงที่สุด?',
+      hint:'เปลี่ยนตัววัดเป็นราคาเฉลี่ยต่อชิ้น แล้ว Drill-down มิติภูมิศาสตร์ไปที่ระดับจังหวัด',
+      opts:provs, par:3,
+      ans:argExtreme(provs, p=>sumBy(f=>f.prov===p,'asp'), +1) },
+
+    { q:'หมวดสินค้าใดเติบโตจากปี 2024 ไปปี 2025 เป็นเปอร์เซ็นต์สูงที่สุด?',
+      hint:'มิติเวลาที่ระดับปี × มิติสินค้าที่ระดับหมวด แล้วคำนวณอัตราเติบโตเอง',
+      opts:cats, par:2,
+      ans:argExtreme(cats, c=>growth(c), +1) }
+  ];
+}
+function startChallenge(){
+  S.challenge = buildChallenges(); S.qIndex=0; S.ops=0; S.score=0;
+  S.logs=[]; logOp('CHALLENGE','เริ่มโหมดท้าทาย — ตอบให้ถูกโดยใช้จำนวนการดำเนินการน้อยที่สุด');
+  renderChallenge(); render();
+}
+function renderChallenge(){
+  if(S.challenge===null){ $('challengeBar').innerHTML=''; return; }
+  if(S.qIndex>=S.challenge.length){
+    $('challengeBar').innerHTML = `<div class="card"><h2>🏁 จบโหมดท้าทาย</h2>
+      <p>ตอบถูก <b class="ok">${S.score}</b> จาก <b>${S.challenge.length}</b> ข้อ ·
+      ใช้การดำเนินการทั้งหมด <b>${S.ops}</b> ครั้ง</p>
+      <div class="note"><b>ตีความคะแนน:</b> จำนวนการดำเนินการที่น้อยลงหมายถึงคุณ<b>แปลงคำถามธุรกิจเป็นเส้นทาง OLAP</b>
+      ได้ตรงขึ้น ซึ่งเป็นทักษะที่ข้อสอบกลางภาคส่วน C วัดโดยตรง</div>
+      <div class="row" style="margin-top:10px"><button class="primary" id="cAgain">เล่นอีกครั้ง</button>
+      <button id="cExit">กลับสู่โหมดสำรวจอิสระ</button></div></div>`;
+    $('cAgain').onclick=startChallenge;
+    $('cExit').onclick=()=>{ S.challenge=null; renderChallenge(); };
+    return;
+  }
+  const c = S.challenge[S.qIndex];
+  $('challengeBar').innerHTML = `<div class="card">
+    <div class="quest"><b>คำถามที่ ${S.qIndex+1}/${S.challenge.length}:</b> ${c.q}</div>
+    <div class="row">
+      <select id="cAns" style="max-width:280px"><option value="">— เลือกคำตอบ —</option>
+        ${c.opts.map(o=>`<option>${o}</option>`).join('')}</select>
+      <button class="primary" id="cSubmit">ตอบ</button>
+      <button id="cHint">💡 ดูคำใบ้</button>
+      <div class="spacer"></div>
+      <div class="scoreline"><span>ถูก <b class="ok">${S.score}</b></span>
+        <span>ใช้ไปแล้ว <b>${S.ops}</b> การดำเนินการ</span>
+        <span>เกณฑ์มาตรฐานข้อนี้ <b>${c.par}</b></span></div>
+    </div>
+    <div id="cFeedback"></div></div>`;
+  $('cHint').onclick = ()=>{ $('cFeedback').innerHTML = `<div class="note"><b>คำใบ้:</b> ${c.hint}</div>`; };
+  $('cSubmit').onclick = ()=>{
+    const a = $('cAns').value; if(!a) return;
+    const ok = a===c.ans;
+    if(ok) S.score++;
+    $('cFeedback').innerHTML = `<div class="note" style="border-color:${ok?'var(--ok)':'var(--bad)'}">
+      ${ok?'<b class="ok">ถูกต้อง ✓</b>':'<b class="bad">ยังไม่ถูก ✗</b> คำตอบที่ถูกคือ <b>'+c.ans+'</b>'}
+      <br><span class="muted">เส้นทางที่สั้นที่สุด: ${c.hint}</span></div>`;
+    logOp('ANSWER',`ข้อ ${S.qIndex+1}: ตอบ “${a}” — ${ok?'ถูก':'ผิด (เฉลย '+c.ans+')'}`);
+    setTimeout(()=>{ S.qIndex++; renderChallenge(); }, 2200);
+  };
+}
+
+/* ============================================================
+   ตัวควบคุมหลัก
+   ============================================================ */
+function render(){ renderDims(); renderCube(); renderTable(); renderSQL(); }
+
+$('btnPivot').onclick = ()=>{ const t=S.rows; S.rows=S.cols; S.cols=t;
+  logOp('PIVOT',`สลับแกน: แถว=${DIMS[S.rows].label} คอลัมน์=${DIMS[S.cols].label}`); render(); };
+$('btnRotate').onclick = ()=>{ const t=S.layer; S.layer=S.rows; S.rows=S.cols; S.cols=t; S.slice='ALL';
+  logOp('ROTATE',`หมุนแกน: ชั้น=${DIMS[S.layer].label}`); render(); };
+$('measure').onchange = ()=>{ S.measure=$('measure').value;
+  logOp('MEASURE',`เปลี่ยนตัววัดเป็น ${$('measure').selectedOptions[0].text}`); render(); };
+$('btnChallenge').onclick = startChallenge;
+$('btnReset').onclick = ()=>{ S=initState(); $('measure').value='sales'; $('drillOut').innerHTML='';
+  logOp('RESET','กลับสู่มุมมองเริ่มต้น'); renderChallenge(); render(); };
+
+S = initState();
+logOp('START','โหลดลูกบาศก์: '+FACTS.length.toLocaleString('th-TH')+' แถวข้อเท็จจริง · 3 มิติ');
+renderChallenge(); render();
+</script>
+</body>
+</html>

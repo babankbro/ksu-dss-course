@@ -1,0 +1,354 @@
+{"kind":"deck","id":"pr/41ra7q","name":"Deck"}
+{"kind":"layout","layoutId":"cc803941-b68a-4f73-bbef-0465c2f997bb","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"59722547-8103-4685-9f46-af2dfea115e7","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/pmho9y","slide":1,"title":"WEEK 04 • MULTIDIMENSIONAL ANALYSIS","textShapes":5}
+{"kind":"shape","id":"sh/lkr6l4v2","slide":1,"name":"fade","bbox":[0,0,650,720]}
+{"kind":"textbox","id":"sh/kjy5czux","slide":1,"name":"ck","text":"WEEK 04 • MULTIDIMENSIONAL ANALYSIS","textPreview":"WEEK 04 • MULTIDIMENSIONAL ANALYSIS","textChars":35,"textLines":1,"bbox":[48,52,600,34]}
+{"kind":"textbox","id":"sh/bupofad0","slide":1,"name":"ct","text":"OLAP &\nMultidimensional Analysis","textPreview":"OLAP & | Multidimensional Analysis","textChars":32,"textLines":2,"bbox":[48,150,600,190]}
+{"kind":"textbox","id":"sh/atgn65cf","slide":1,"name":"cs","text":"Cube • Drill • SQL • Semantic Analytics","textPreview":"Cube • Drill • SQL • Semantic Analytics","textChars":39,"textLines":1,"bbox":[48,397,580,52]}
+{"kind":"textbox","id":"sh/xw76hkv6","slide":1,"name":"cq","text":"จากยอดรวม → บริบท → หลักฐาน","textPreview":"จากยอดรวม → บริบท → หลักฐาน","textChars":27,"textLines":1,"bbox":[48,510,570,42]}
+{"kind":"textbox","id":"sh/wvy58ful","slide":1,"name":"cc","text":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textPreview":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textChars":36,"textLines":1,"bbox":[48,630,560,28]}
+{"kind":"image","id":"im/fu10nydg","slide":1,"name":"","geometry":"rect","alt":"นักวิเคราะห์สำรวจลูกบาศก์ข้อมูลหลายมิติ","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/pmho9y","slide":1,"text":"เปิดด้วยคำถาม: ยอดขายลด 8% — จะ drill มิติใดก่อน และเพราะเหตุใด?\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/olap-cover.png)."}
+{"kind":"slide","id":"sl/768fch","slide":2,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":9}
+{"kind":"textbox","id":"sh/qh8futgr","slide":2,"name":"k-2","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/dkzep8z2","slide":2,"name":"t-2","text":"วันนี้เราจะตอบ 5 คำถาม","textPreview":"วันนี้เราจะตอบ 5 คำถาม","textChars":22,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/sjqxw3yh","slide":2,"name":"r-2","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/3ehwjyh0","slide":2,"name":"fl-2","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/id8fqtgf","slide":2,"name":"fn-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/5gzel8z6","slide":2,"name":"bd-195-0","bbox":[80,206,11,11]}
+{"kind":"textbox","id":"sh/4fqxs3yl","slide":2,"name":"bt-195-0","text":"Cube แทนคำถามหลายมิติอย่างไร?","textPreview":"Cube แทนคำถามหลายมิติอย่างไร?","textChars":29,"textLines":1,"bbox":[107,195,1063,82]}
+{"kind":"shape","id":"sh/vqxwfeh4","slide":2,"name":"bd-195-1","bbox":[80,288,11,11]}
+{"kind":"textbox","id":"sh/upofm9gj","slide":2,"name":"bt-195-1","text":"Roll-up, Drill-down, Slice, Dice และ Pivot ต่างกันอย่างไร?","textPreview":"Roll-up, Drill-down, Slice, Dice และ Pivot ต่างกันอย่างไร?","textChars":58,"textLines":1,"bbox":[107,277,1063,82]}
+{"kind":"shape","id":"sh/gni1w36l","slide":2,"name":"bd-195-2","bbox":[80,370,11,11]}
+{"kind":"textbox","id":"sh/hor25o76","slide":2,"name":"bt-195-2","text":"แปลงเส้นทางวิเคราะห์เป็น SQL ได้อย่างไร?","textPreview":"แปลงเส้นทางวิเคราะห์เป็น SQL ได้อย่างไร?","textChars":40,"textLines":1,"bbox":[107,359,1063,82]}
+{"kind":"shape","id":"sh/ul0jutof","slide":2,"name":"bd-195-3","bbox":[80,452,11,11]}
+{"kind":"textbox","id":"sh/fm9k3yp0","slide":2,"name":"bt-195-3","text":"MOLAP, ROLAP, HOLAP และ columnar OLAP เลือกเมื่อใด?","textPreview":"MOLAP, ROLAP, HOLAP และ columnar OLAP เลือกเมื่อใด?","textChars":51,"textLines":1,"bbox":[107,441,1063,82]}
+{"kind":"shape","id":"sh/8jy1sj6p","slide":2,"name":"bd-195-4","bbox":[80,534,11,11]}
+{"kind":"textbox","id":"sh/tk721o7a","slide":2,"name":"bt-195-4","text":"Future OLAP ใช้ AI โดยยังรักษานิยามและหลักฐานอย่างไร?","textPreview":"Future OLAP ใช้ AI โดยยังรักษานิยามและหลักฐานอย่างไร?","textChars":53,"textLines":1,"bbox":[107,523,1063,82]}
+{"kind":"notes","id":"nt/768fch","slide":2,"text":"ให้นักศึกษาเลือกหนึ่งคำถามเป็น learning target\n\n[Sources]\n- Course Week-04 source note and expanded content in this vault."}
+{"kind":"slide","id":"sl/c77y0f","slide":3,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":12}
+{"kind":"textbox","id":"sh/ahcja1wr","slide":3,"name":"k-3","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/xkn25gvi","slide":3,"name":"t-3","text":"ยอดขายลด 8% ยังไม่ใช่คำตอบ — เป็นจุดเริ่มต้น","textPreview":"ยอดขายลด 8% ยังไม่ใช่คำตอบ — เป็นจุดเริ่มต้น","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/cju1cbex","slide":3,"name":"r-3","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/zm5k7qdo","slide":3,"name":"fl-3","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/ylwjelc3","slide":3,"name":"fn-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/l8n29gve","slide":3,"name":"big","text":"−8%","textPreview":"−8%","textChars":3,"textLines":1,"bbox":[65,220,310,110]}
+{"kind":"textbox","id":"sh/k7elgvu9","slide":3,"name":"question","text":"คำถามต่อไปคือ…","textPreview":"คำถามต่อไปคือ…","textChars":14,"textLines":1,"bbox":[65,365,300,40]}
+{"kind":"shape","id":"sh/fq1kvmd4","slide":3,"name":"q-0","bbox":[450,215,210,120]}
+{"kind":"textbox","id":"sh/epsj2hwj","slide":3,"name":"qt-0","text":"เดือนไหน?","textPreview":"เดือนไหน?","textChars":9,"textLines":1,"bbox":[468,253,174,44]}
+{"kind":"shape","id":"sh/cfixcj25","slide":3,"name":"q-1","bbox":[700,215,210,120]}
+{"kind":"textbox","id":"sh/xgre5o3q","slide":3,"name":"qt-1","text":"ภูมิภาคใด?","textPreview":"ภูมิภาคใด?","textChars":10,"textLines":1,"bbox":[718,253,174,44]}
+{"kind":"shape","id":"sh/ad0fa9kz","slide":3,"name":"q-2","bbox":[950,215,210,120]}
+{"kind":"textbox","id":"sh/be9w3elk","slide":3,"name":"qt-2","text":"สินค้าใด?","textPreview":"สินค้าใด?","textChars":9,"textLines":1,"bbox":[968,253,174,44]}
+{"kind":"shape","id":"sh/kjixg321","slide":3,"name":"q-3","bbox":[450,385,210,120]}
+{"kind":"textbox","id":"sh/lkbe9o3m","slide":3,"name":"qt-3","text":"ช่องทางใด?","textPreview":"ช่องทางใด?","textChars":10,"textLines":1,"bbox":[468,423,174,44]}
+{"kind":"shape","id":"sh/yh0fetkv","slide":3,"name":"q-4","bbox":[700,385,210,120]}
+{"kind":"textbox","id":"sh/zi9w7ylg","slide":3,"name":"qt-4","text":"ธุรกรรมใด?","textPreview":"ธุรกรรมใด?","textChars":10,"textLines":1,"bbox":[718,423,174,44]}
+{"kind":"textbox","id":"sh/0nyd4z2x","slide":3,"name":"claim","text":"OLAP เปลี่ยน KPI ให้เป็นเส้นทางสำรวจที่ทำซ้ำและตรวจสอบได้","textPreview":"OLAP เปลี่ยน KPI ให้เป็นเส้นทางสำรวจที่ทำซ้ำและตรวจสอบได้","textChars":57,"textLines":1,"bbox":[155,575,970,42]}
+{"kind":"notes","id":"nt/c77y0f","slide":3,"text":"ให้ผู้เรียนเสนอ drill path แล้วเปรียบเทียบว่าทำไม path ต่างกัน\n\n[Sources]\n- Scenario synthesized for instruction; no empirical result claimed."}
+{"kind":"slide","id":"sl/wo8uvx","slide":4,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":14}
+{"kind":"textbox","id":"sh/72dkjexs","slide":4,"name":"k-4","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/83mlcjex","slide":4,"name":"t-4","text":"หนึ่ง Cell เกิดจาก Measure ตัดกับหลาย Dimension","textPreview":"หนึ่ง Cell เกิดจาก Measure ตัดกับหลาย Dimension","textChars":47,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/94v2lovi","slide":4,"name":"r-4","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/yxk369wv","slide":4,"name":"fl-4","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/zytkfuxg","slide":4,"name":"fn-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/kz2l8ze1","slide":4,"name":"cell","bbox":[490,260,300,190]}
+{"kind":"textbox","id":"sh/l0b2h4fm","slide":4,"name":"cellh","text":"CELL","textPreview":"CELL","textChars":4,"textLines":1,"bbox":[520,285,240,34]}
+{"kind":"textbox","id":"sh/a9kj2pwz","slide":4,"name":"cellb","text":"Net Sales\nณ Month × Product × Region","textPreview":"Net Sales | ณ Month × Product × Region","textChars":36,"textLines":2,"bbox":[520,350,240,70]}
+{"kind":"shape","id":"sh/batkbuxk","slide":4,"name":"d-0","bbox":[62,215,280,125]}
+{"kind":"textbox","id":"sh/b2ds7e98","slide":4,"name":"dh-0","text":"MEASURE","textPreview":"MEASURE","textChars":7,"textLines":1,"bbox":[82,235,240,30]}
+{"kind":"textbox","id":"sh/a14ry983","slide":4,"name":"db-0","text":"ค่าที่วิเคราะห์","textPreview":"ค่าที่วิเคราะห์","textChars":15,"textLines":1,"bbox":[82,285,240,28]}
+{"kind":"shape","id":"sh/x4va9ore","slide":4,"name":"d-1","bbox":[62,405,280,125]}
+{"kind":"textbox","id":"sh/w3m90jqt","slide":4,"name":"dh-1","text":"DIMENSION","textPreview":"DIMENSION","textChars":9,"textLines":1,"bbox":[82,425,240,30]}
+{"kind":"textbox","id":"sh/j6dsby9k","slide":4,"name":"db-1","text":"บริบทที่แบ่ง","textPreview":"บริบทที่แบ่ง","textChars":12,"textLines":1,"bbox":[82,475,240,28]}
+{"kind":"shape","id":"sh/y54r2t8z","slide":4,"name":"d-2","bbox":[930,215,280,125]}
+{"kind":"textbox","id":"sh/l8fadorq","slide":4,"name":"dh-2","text":"MEMBER","textPreview":"MEMBER","textChars":6,"textLines":1,"bbox":[950,235,240,30]}
+{"kind":"textbox","id":"sh/k7694jq5","slide":4,"name":"db-2","text":"ค่าหนึ่งในมิติ","textPreview":"ค่าหนึ่งในมิติ","textChars":14,"textLines":1,"bbox":[950,285,240,28]}
+{"kind":"shape","id":"sh/fat8zu9g","slide":4,"name":"d-3","bbox":[930,405,280,125]}
+{"kind":"textbox","id":"sh/e9krqp8v","slide":4,"name":"dh-3","text":"HIERARCHY","textPreview":"HIERARCHY","textChars":9,"textLines":1,"bbox":[950,425,240,30]}
+{"kind":"textbox","id":"sh/i58vyxsj","slide":4,"name":"db-3","text":"เส้นทางระดับ","textPreview":"เส้นทางระดับ","textChars":12,"textLines":1,"bbox":[950,475,240,28]}
+{"kind":"notes","id":"nt/wo8uvx","slide":4,"text":"ใช้ตัวอย่างยอดขาย 100 บาท ณ กรกฎาคม × เครื่องดื่ม × กาฬสินธุ์\n\n[Sources]\n- Microsoft Learn, OLAP cubes overview, https://learn.microsoft.com/en-us/system-center/scsm/olap-cubes-overview"}
+{"kind":"slide","id":"sl/kc9ac8","slide":5,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":29}
+{"kind":"textbox","id":"sh/zu1kfitk","slide":5,"name":"k-5","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/kval8na5","slide":5,"name":"t-5","text":"Hierarchy ทำให้การเจาะลึกมีเส้นทางที่มีความหมาย","textPreview":"Hierarchy ทำให้การเจาะลึกมีเส้นทางที่มีความหมาย","textChars":47,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/lw32hsbq","slide":5,"name":"r-5","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/mxc3axsb","slide":5,"name":"fl-5","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/7ylkj29w","slide":5,"name":"fn-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/8zulc7ah","slide":5,"name":"hp-0","bbox":[54,210,360,360]}
+{"kind":"textbox","id":"sh/9032lcr2","slide":5,"name":"hh-0","text":"TIME","textPreview":"TIME","textChars":4,"textLines":1,"bbox":[82,235,300,34]}
+{"kind":"textbox","id":"sh/218jyts7","slide":5,"name":"hl-0-0","text":"Year","textPreview":"Year","textChars":4,"textLines":1,"bbox":[98,315,250,34]}
+{"kind":"textbox","id":"sh/n2hk7yts","slide":5,"name":"ha-0-0","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[354,315,30,30]}
+{"kind":"textbox","id":"sh/7ix4n6pg","slide":5,"name":"hl-0-1","text":"Quarter","textPreview":"Quarter","textChars":7,"textLines":1,"bbox":[98,372,250,34]}
+{"kind":"textbox","id":"sh/6xo3u1ob","slide":5,"name":"ha-0-1","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[354,372,30,30]}
+{"kind":"textbox","id":"sh/tkfmpw7m","slide":5,"name":"hl-0-2","text":"Month","textPreview":"Month","textChars":5,"textLines":1,"bbox":[98,429,250,34]}
+{"kind":"textbox","id":"sh/8j6lwr61","slide":5,"name":"ha-0-2","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[354,429,30,30]}
+{"kind":"textbox","id":"sh/jud4jmpk","slide":5,"name":"hl-0-3","text":"Day","textPreview":"Day","textChars":3,"textLines":1,"bbox":[98,486,250,34]}
+{"kind":"shape","id":"sh/yt43qhoz","slide":5,"name":"hp-1","bbox":[462,210,360,360]}
+{"kind":"textbox","id":"sh/lwvmlw7q","slide":5,"name":"hh-1","text":"PRODUCT","textPreview":"PRODUCT","textChars":7,"textLines":1,"bbox":[490,235,300,34]}
+{"kind":"textbox","id":"sh/kvmlsr65","slide":5,"name":"hl-1-0","text":"Category","textPreview":"Category","textChars":8,"textLines":1,"bbox":[506,315,250,34]}
+{"kind":"textbox","id":"sh/bqdkfmp8","slide":5,"name":"ha-1-0","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[762,315,30,30]}
+{"kind":"textbox","id":"sh/ap43mho3","slide":5,"name":"hl-1-1","text":"Subcategory","textPreview":"Subcategory","textChars":11,"textLines":1,"bbox":[506,372,250,34]}
+{"kind":"textbox","id":"sh/elknyhsv","slide":5,"name":"ha-1-1","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[762,372,30,30]}
+{"kind":"textbox","id":"sh/zmt4r29g","slide":5,"name":"hl-1-2","text":"Product","textPreview":"Product","textChars":7,"textLines":1,"bbox":[506,429,250,34]}
+{"kind":"textbox","id":"sh/0n2507a1","slide":5,"name":"ha-1-2","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[762,429,30,30]}
+{"kind":"textbox","id":"sh/1obmtcr6","slide":5,"name":"hl-1-3","text":"SKU","textPreview":"SKU","textChars":3,"textLines":1,"bbox":[506,486,250,34]}
+{"kind":"shape","id":"sh/mp4n2hsr","slide":5,"name":"hp-2","bbox":[870,210,360,360]}
+{"kind":"textbox","id":"sh/nqd4vm9c","slide":5,"name":"hh-2","text":"GEO","textPreview":"GEO","textChars":3,"textLines":1,"bbox":[898,235,300,34]}
+{"kind":"textbox","id":"sh/orm54rqx","slide":5,"name":"hl-2-0","text":"Country","textPreview":"Country","textChars":7,"textLines":1,"bbox":[914,315,250,34]}
+{"kind":"textbox","id":"sh/9svmxwri","slide":5,"name":"ha-2-0","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[1170,315,30,30]}
+{"kind":"textbox","id":"sh/at4n6183","slide":5,"name":"hl-2-1","text":"Region","textPreview":"Region","textChars":6,"textLines":1,"bbox":[914,372,250,34]}
+{"kind":"textbox","id":"sh/bud4zm9o","slide":5,"name":"ha-2-1","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[1170,372,30,30]}
+{"kind":"textbox","id":"sh/lofq50bq","slide":5,"name":"hl-2-2","text":"Province","textPreview":"Province","textChars":8,"textLines":1,"bbox":[914,429,250,34]}
+{"kind":"textbox","id":"sh/kn6pwvu5","slide":5,"name":"ha-2-2","text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[1170,429,30,30]}
+{"kind":"textbox","id":"sh/jmx83qtk","slide":5,"name":"hl-2-3","text":"Branch","textPreview":"Branch","textChars":6,"textLines":1,"bbox":[914,486,250,34]}
+{"kind":"textbox","id":"sh/ylo7ulcz","slide":5,"name":"hwarning","text":"Hierarchy ผิด → subtotal ผิด และ drill path หลอกผู้ใช้","textPreview":"Hierarchy ผิด → subtotal ผิด และ drill path หลอกผู้ใช้","textChars":54,"textLines":1,"bbox":[180,600,920,38]}
+{"kind":"notes","id":"nt/kc9ac8","slide":5,"text":"อภิปราย ragged hierarchy และกรณีสาขาย้ายภูมิภาค\n\n[Sources]\n- Microsoft Learn, logical architecture of multidimensional data, https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/olap-logical/logical-architecture-overview-analysis-services-multidimensional-data"}
+{"kind":"slide","id":"sl/xll83z","slide":6,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":4}
+{"kind":"textbox","id":"sh/t4r258jm","slide":6,"name":"k-6","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/610judkv","slide":6,"name":"t-6","text":"5 Operations เปลี่ยนระดับ ขอบเขต และมุมมองของ Cube","textPreview":"5 Operations เปลี่ยนระดับ ขอบเขต และมุมมองของ Cube","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/r29k3i1g","slide":6,"name":"r-6","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/4fi1s32p","slide":6,"name":"fl-6","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/50ri183a","slide":6,"name":"fn-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"image","id":"im/nqd0vq5g","slide":6,"name":"","geometry":"rect","alt":"ภาพแสดง roll-up drill-down slice dice และ pivot ของลูกบาศก์ข้อมูล","bbox":[64,184,1152,460]}
+{"kind":"notes","id":"nt/xll83z","slide":6,"text":"ให้นักศึกษาจับคู่ส่วนของภาพกับชื่อ operation ก่อนเฉลย\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/olap-operations.png).\n- Microsoft Learn, OLAP cubes overview, https://learn.microsoft.com/en-us/system-center/scsm/olap-cubes-overview"}
+{"kind":"slide","id":"sl/zt1mpc","slide":7,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":9}
+{"kind":"textbox","id":"sh/lgr69czi","slide":7,"name":"k-7","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/ydgnex0r","slide":7,"name":"t-7","text":"Roll-up สรุปภาพรวม — Drill-down เปิดสาเหตุย่อย","textPreview":"Roll-up สรุปภาพรวม — Drill-down เปิดสาเหตุย่อย","textChars":46,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ze9o72hc","slide":7,"name":"r-7","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/cby5c7i1","slide":7,"name":"fl-7","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/dc765szm","slide":7,"name":"fn-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/qpgnax0v","slide":7,"name":"roll","bbox":[54,210,520,340]}
+{"kind":"textbox","id":"sh/bapo32hg","slide":7,"name":"rh","text":"ROLL-UP ↑","textPreview":"ROLL-UP ↑","textChars":9,"textLines":1,"bbox":[84,240,260,38]}
+{"kind":"textbox","id":"sh/ony58nip","slide":7,"name":"rb","text":"Month → Quarter → Year\n\nลดจำนวน groups\nตอบ “ภาพรวมเป็นอย่างไร?”","textPreview":"Month → Quarter → Year |  | ลดจำนวน groups | ตอบ “ภาพรวมเป็นอย่างไร?”","textChars":63,"textLines":4,"bbox":[84,325,420,155]}
+{"kind":"shape","id":"sh/po761sza","slide":7,"name":"drill","bbox":[706,210,520,340]}
+{"kind":"textbox","id":"sh/pcjqlkzu","slide":7,"name":"dh","text":"DRILL-DOWN ↓","textPreview":"DRILL-DOWN ↓","textChars":12,"textLines":1,"bbox":[736,240,300,38]}
+{"kind":"textbox","id":"sh/oba9cfy9","slide":7,"name":"db","text":"Region → Province → Branch\n\nเพิ่มรายละเอียด\nตอบ “เกิดที่ไหน?”","textPreview":"Region → Province → Branch |  | เพิ่มรายละเอียด | ตอบ “เกิดที่ไหน?”","textChars":61,"textLines":4,"bbox":[736,325,420,155]}
+{"kind":"textbox","id":"sh/nq18jaho","slide":7,"name":"rule","text":"ทั้งสองต้องเดินตาม hierarchy — ไม่ใช่เปลี่ยน filter แบบสุ่ม","textPreview":"ทั้งสองต้องเดินตาม hierarchy — ไม่ใช่เปลี่ยน filter แบบสุ่ม","textChars":59,"textLines":1,"bbox":[165,590,950,40]}
+{"kind":"notes","id":"nt/zt1mpc","slide":7,"text":"ถามว่าการเลือกเฉพาะ Q1 เป็น drill-down หรือ filter\n\n[Sources]\n- Microsoft Learn, drill mode, https://learn.microsoft.com/en-us/power-bi/explore-reports/end-user-drill"}
+{"kind":"slide","id":"sl/ad6bkt","slide":8,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":11}
+{"kind":"textbox","id":"sh/8bm5wbqx","slide":8,"name":"k-8","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/7adon6ps","slide":8,"name":"t-8","text":"Slice, Dice และ Pivot เปลี่ยน Context ไม่เปลี่ยน Measure","textPreview":"Slice, Dice และ Pivot เปลี่ยน Context ไม่เปลี่ยน Measure","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/694nu187","slide":8,"name":"r-8","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/hgf6t07u","slide":8,"name":"fl-8","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/gf650vq9","slide":8,"name":"fn-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/vedorqpo","slide":8,"name":"op-0","bbox":[62,225,350,310]}
+{"kind":"shape","id":"sh/ud4nyl83","slide":8,"name":"op-0-a","bbox":[62,225,8,310]}
+{"kind":"textbox","id":"sh/xkbmhw7a","slide":8,"name":"op-0-h","text":"SLICE","textPreview":"SLICE","textChars":5,"textLines":1,"bbox":[89,245,302,36]}
+{"kind":"textbox","id":"sh/wj25orqp","slide":8,"name":"op-0-b","text":"fix 1 dimension\nYear = 2026","textPreview":"fix 1 dimension | Year = 2026","textChars":27,"textLines":2,"bbox":[89,299,302,220]}
+{"kind":"shape","id":"sh/axsrq9g3","slide":8,"name":"op-1","bbox":[462,225,350,310]}
+{"kind":"shape","id":"sh/vy1szexo","slide":8,"name":"op-1-a","bbox":[462,225,8,310]}
+{"kind":"textbox","id":"sh/wza9sjy9","slide":8,"name":"op-1-h","text":"DICE","textPreview":"DICE","textChars":4,"textLines":1,"bbox":[489,245,302,36]}
+{"kind":"textbox","id":"sh/h0ja1ofe","slide":8,"name":"op-1-b","text":"จำกัดหลายมิติ\nNE + Beverage + Q1","textPreview":"จำกัดหลายมิติ | NE + Beverage + Q1","textChars":32,"textLines":2,"bbox":[489,299,302,220]}
+{"kind":"shape","id":"sh/i1srutgz","slide":8,"name":"op-2","bbox":[862,225,350,310]}
+{"kind":"shape","id":"sh/j2ls3yxk","slide":8,"name":"op-2-a","bbox":[862,225,8,310]}
+{"kind":"textbox","id":"sh/43utwjy5","slide":8,"name":"op-2-h","text":"PIVOT","textPreview":"PIVOT","textChars":5,"textLines":1,"bbox":[889,245,302,36]}
+{"kind":"textbox","id":"sh/543a5ofq","slide":8,"name":"op-2-b","text":"สลับแกนมอง\nRegion ↔ Month","textPreview":"สลับแกนมอง | Region ↔ Month","textChars":25,"textLines":2,"bbox":[889,299,302,220]}
+{"kind":"textbox","id":"sh/6pcbytgb","slide":8,"name":"ctx","text":"ทุกผลลัพธ์ต้องแสดง Filter Context — มิฉะนั้นตัวเลขเทียบกันไม่ได้","textPreview":"ทุกผลลัพธ์ต้องแสดง Filter Context — มิฉะนั้นตัวเลขเทียบกันไม่ได้","textChars":64,"textLines":1,"bbox":[155,584,970,42]}
+{"kind":"notes","id":"nt/ad6bkt","slide":8,"text":"ให้ผู้เรียนเขียน context ของตัวเลขหนึ่ง cell แบบเต็ม\n\n[Sources]\n- Microsoft Learn, OLAP cubes overview, https://learn.microsoft.com/en-us/system-center/scsm/olap-cubes-overview"}
+{"kind":"slide","id":"sl/tq9oyg","slide":9,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":8}
+{"kind":"textbox","id":"sh/vmt0zudg","slide":9,"name":"k-9","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/gn21sfe1","slide":9,"name":"t-9","text":"Drill-across เปรียบเทียบ Fact — Drill-through เปิดหลักฐาน","textPreview":"Drill-across เปรียบเทียบ Fact — Drill-through เปิดหลักฐาน","textChars":57,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/hobi1kvm","slide":9,"name":"r-9","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/2pkjupw7","slide":9,"name":"fl-9","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/3at03udc","slide":9,"name":"fn-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4b21wzux","slide":9,"name":"across","bbox":[54,210,520,350]}
+{"kind":"textbox","id":"sh/pcbi54vi","slide":9,"name":"ah","text":"DRILL-ACROSS","textPreview":"DRILL-ACROSS","textChars":12,"textLines":1,"bbox":[84,240,300,38]}
+{"kind":"textbox","id":"sh/ytgzi5wn","slide":9,"name":"ab","text":"Sales Fact ↔ Returns Fact\nผ่าน Date / Product / Store\n\nคำถาม: ขายมากแต่คืนมากหรือไม่?","textPreview":"Sales Fact ↔ Returns Fact | ผ่าน Date / Product / Store |  | คำถาม: ขายมากแต่คืนมากหรือไม่?","textChars":85,"textLines":4,"bbox":[84,320,430,165]}
+{"kind":"shape","id":"sh/jep0rad8","slide":9,"name":"through","bbox":[706,210,520,350]}
+{"kind":"textbox","id":"sh/b29gfe1g","slide":9,"name":"th","text":"DRILL-THROUGH","textPreview":"DRILL-THROUGH","textChars":13,"textLines":1,"bbox":[736,240,320,38]}
+{"kind":"textbox","id":"sh/a10f69kv","slide":9,"name":"tb","text":"Aggregated Cell → Detail rows\nreceipt • claim • encounter\n\nคำถาม: แถวใดประกอบเป็นยอดนี้?","textPreview":"Aggregated Cell → Detail rows | receipt • claim • encounter |  | คำถาม: แถวใดประกอบเป็นยอดนี้?","textChars":88,"textLines":4,"bbox":[736,320,430,165]}
+{"kind":"notes","id":"nt/tq9oyg","slide":9,"text":"ย้ำเรื่อง conformed dimensions และ row-level permission\n\n[Sources]\n- Microsoft Learn, OLAP cubes overview, https://learn.microsoft.com/en-us/system-center/scsm/olap-cubes-overview\n- Microsoft Learn, report drillthrough, https://learn.microsoft.com/en-us/power-bi/guidance/report-drillthrough"}
+{"kind":"slide","id":"sl/0irzjk","slide":10,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":20}
+{"kind":"textbox","id":"sh/qlsbm94z","slide":10,"name":"k-10","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/do3uhona","slide":10,"name":"t-10","text":"Decision Trail บันทึกว่าข้อค้นพบเกิดจากเส้นทางใด","textPreview":"Decision Trail บันทึกว่าข้อค้นพบเกิดจากเส้นทางใด","textChars":48,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/snutojmp","slide":10,"name":"r-10","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/zqlcjy5g","slide":10,"name":"fl-10","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/epcbqt4v","slide":10,"name":"fn-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/1c3ulonm","slide":10,"name":"f-0","bbox":[38,235,205,230]}
+{"kind":"textbox","id":"sh/0rutsjm1","slide":10,"name":"fn-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[56,252,38,38]}
+{"kind":"textbox","id":"sh/vuhs7u5c","slide":10,"name":"fh-0","text":"START","textPreview":"START","textChars":5,"textLines":1,"bbox":[56,320,169,30]}
+{"kind":"textbox","id":"sh/ut8bepor","slide":10,"name":"fb-0","text":"Sales ↓ 8%","textPreview":"Sales ↓ 8%","textChars":10,"textLines":1,"bbox":[56,385,169,42]}
+{"kind":"shape","id":"sh/03ut83ed","slide":10,"name":"fa-0","bbox":[238,330,48,30]}
+{"kind":"shape","id":"sh/l43u18vy","slide":10,"name":"f-1","bbox":[287,235,205,230]}
+{"kind":"textbox","id":"sh/y1cb6twn","slide":10,"name":"fn-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[305,252,38,38]}
+{"kind":"textbox","id":"sh/z2lszyds","slide":10,"name":"fh-1","text":"DRILL","textPreview":"DRILL","textChars":5,"textLines":1,"bbox":[305,320,169,30]}
+{"kind":"textbox","id":"sh/87utc3ep","slide":10,"name":"fb-1","text":"Quarter → Month","textPreview":"Quarter → Month","textChars":15,"textLines":1,"bbox":[305,385,169,42]}
+{"kind":"shape","id":"sh/98nu58va","slide":10,"name":"fa-1","bbox":[487,330,48,30]}
+{"kind":"shape","id":"sh/m5cbadwj","slide":10,"name":"f-2","bbox":[536,235,205,230]}
+{"kind":"textbox","id":"sh/n6lc3yd4","slide":10,"name":"fn-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[554,252,38,38]}
+{"kind":"textbox","id":"sh/obat0je5","slide":10,"name":"fh-2","text":"DICE","textPreview":"DICE","textChars":4,"textLines":1,"bbox":[554,320,169,30]}
+{"kind":"textbox","id":"sh/pcjatovq","slide":10,"name":"fb-2","text":"NE + Beverage","textPreview":"NE + Beverage","textChars":13,"textLines":1,"bbox":[554,385,169,42]}
+{"kind":"shape","id":"sh/58bqx0nu","slide":10,"name":"fa-2","bbox":[736,330,48,30]}
+{"kind":"shape","id":"sh/47294f69","slide":10,"name":"f-3","bbox":[785,235,205,230]}
+{"kind":"textbox","id":"sh/36t8va5o","slide":10,"name":"fn-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[803,252,38,38]}
+{"kind":"textbox","id":"sh/i5kr25o3","slide":10,"name":"fh-3","text":"PIVOT","textPreview":"PIVOT","textChars":5,"textLines":1,"bbox":[803,320,169,30]}
+{"kind":"textbox","id":"sh/dwba1knq","slide":10,"name":"fb-3","text":"Branch × Channel","textPreview":"Branch × Channel","textChars":16,"textLines":1,"bbox":[803,385,169,42]}
+{"kind":"shape","id":"sh/sv298f65","slide":10,"name":"fa-3","bbox":[985,330,48,30]}
+{"kind":"shape","id":"sh/rut8za5k","slide":10,"name":"f-4","bbox":[1034,235,205,230]}
+{"kind":"textbox","id":"sh/q9kr65oz","slide":10,"name":"fn-4","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1052,252,38,38]}
+{"kind":"textbox","id":"sh/10va5knm","slide":10,"name":"fh-4","text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[1052,320,169,30]}
+{"kind":"textbox","id":"sh/0zm9cz6h","slide":10,"name":"fb-4","text":"42 receipts","textPreview":"42 receipts","textChars":11,"textLines":1,"bbox":[1052,385,169,42]}
+{"kind":"textbox","id":"sh/ytwfax0n","slide":10,"name":"audit","text":"บันทึก metric • filters • hierarchy • baseline • operation sequence • evidence","textPreview":"บันทึก metric • filters • hierarchy • baseline • operation sequence • evidence","textChars":78,"textLines":1,"bbox":[115,550,1050,54]}
+{"kind":"notes","id":"nt/0irzjk","slide":10,"text":"ให้ทุกกลุ่มเล่า path ก่อนเล่าข้อสรุป\n\n[Sources]\n- Microsoft Learn, drill mode, https://learn.microsoft.com/en-us/power-bi/explore-reports/end-user-drill\n- NIST-style traceability principle adapted for instructional analytics workflow."}
+{"kind":"slide","id":"sl/kpm1g7","slide":11,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":7}
+{"kind":"textbox","id":"sh/vixwbah8","slide":11,"name":"k-11","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/wj6dkfyt","slide":11,"name":"t-11","text":"ROLLUP สร้างระดับสรุปตามลำดับ Hierarchy","textPreview":"ROLLUP สร้างระดับสรุปตามลำดับ Hierarchy","textChars":39,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/hkfedkze","slide":11,"name":"r-11","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ilovmpgj","slide":11,"name":"fl-11","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/jmxwfuh4","slide":11,"name":"fn-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4n6dozyp","slide":11,"name":"code","bbox":[54,208,650,360]}
+{"kind":"textbox","id":"sh/5ozehkza","slide":11,"name":"sql","text":"SELECT year, quarter, month,\n       SUM(net_sales) AS sales\nFROM sales\nGROUP BY ROLLUP\n  (year, quarter, month);","textPreview":"SELECT year, quarter, month, |        SUM(net_sales) AS sales | FROM sales | GROUP BY ROLLUP |   (year, quarter, month);","textChars":112,"textLines":5,"bbox":[86,245,590,245]}
+{"kind":"shape","id":"sh/yp4valgf","slide":11,"name":"sets","bbox":[760,208,460,360]}
+{"kind":"textbox","id":"sh/zqdc3qh0","slide":11,"name":"sh","text":"GROUPING SETS","textPreview":"GROUPING SETS","textChars":13,"textLines":1,"bbox":[790,238,340,34]}
+{"kind":"textbox","id":"sh/bmtgnm1k","slide":11,"name":"sb","text":"(year, quarter, month)\n(year, quarter)\n(year)\n()\n\nจำนวนชุด = n + 1","textPreview":"(year, quarter, month) | (year, quarter) | (year) | () |  | จำนวนชุด = n + 1","textChars":66,"textLines":6,"bbox":[790,315,360,190]}
+{"kind":"notes","id":"nt/kpm1g7","slide":11,"text":"เปรียบเทียบกับ GROUP BY ธรรมดาและให้ผู้เรียนทำนายจำนวนแถว\n\n[Sources]\n- DuckDB, GROUPING SETS, https://duckdb.org/docs/current/sql/query_syntax/grouping_sets"}
+{"kind":"slide","id":"sl/uezj8u","slide":12,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":10}
+{"kind":"textbox","id":"sh/1oj25o3m","slide":12,"name":"k-12","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/e1sja94v","slide":12,"name":"t-12","text":"CUBE สร้างทุก Combination — GROUPING SETS เลือกเท่าที่ต้องใช้","textPreview":"CUBE สร้างทุก Combination — GROUPING SETS เลือกเท่าที่ต้องใช้","textChars":61,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/z21k3elg","slide":12,"name":"r-12","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/czq18zmp","slide":12,"name":"fl-12","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/d0z2143a","slide":12,"name":"fn-12","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/qx8j694z","slide":12,"name":"cube","bbox":[54,205,350,355]}
+{"kind":"textbox","id":"sh/ryhkzel4","slide":12,"name":"ch","text":"CUBE","textPreview":"CUBE","textChars":4,"textLines":1,"bbox":[84,235,200,36]}
+{"kind":"textbox","id":"sh/4vq14zmt","slide":12,"name":"cb","text":"3 dimensions\n→ 2³ = 8 sets\n\nครบทุกมุม\nแต่คำนวณมาก","textPreview":"3 dimensions | → 2³ = 8 sets |  | ครบทุกมุม | แต่คำนวณมาก","textChars":49,"textLines":5,"bbox":[84,322,270,170]}
+{"kind":"shape","id":"sh/pwzix43e","slide":12,"name":"gs","bbox":[465,205,350,355]}
+{"kind":"textbox","id":"sh/9cnu1wbi","slide":12,"name":"gh","text":"GROUPING SETS","textPreview":"GROUPING SETS","textChars":13,"textLines":1,"bbox":[495,235,280,36]}
+{"kind":"textbox","id":"sh/obed8rux","slide":12,"name":"gb","text":"เลือกเฉพาะชุด\nที่ตอบคำถาม\n\nชัดและประหยัดกว่า","textPreview":"เลือกเฉพาะชุด | ที่ตอบคำถาม |  | ชัดและประหยัดกว่า","textChars":44,"textLines":4,"bbox":[495,322,270,170]}
+{"kind":"shape","id":"sh/na5cz6tc","slide":12,"name":"gid","bbox":[876,205,350,355]}
+{"kind":"textbox","id":"sh/m9wv61cr","slide":12,"name":"ih","text":"GROUPING_ID","textPreview":"GROUPING_ID","textChars":11,"textLines":1,"bbox":[906,235,260,36]}
+{"kind":"textbox","id":"sh/18nuxwb6","slide":12,"name":"ib","text":"แยก NULL จริง\nจาก subtotal NULL\n\nป้องกันตีความผิด","textPreview":"แยก NULL จริง | จาก subtotal NULL |  | ป้องกันตีความผิด","textChars":49,"textLines":4,"bbox":[906,322,270,170]}
+{"kind":"notes","id":"nt/uezj8u","slide":12,"text":"ให้คำนวณจำนวน sets ของ CUBE 5 มิติและอภิปราย cost\n\n[Sources]\n- DuckDB, GROUPING SETS, https://duckdb.org/docs/current/sql/query_syntax/grouping_sets\n- DuckDB, aggregate functions, https://duckdb.org/docs/lts/sql/functions/aggregates"}
+{"kind":"slide","id":"sl/l2k9ai","slide":13,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":11}
+{"kind":"textbox","id":"sh/ilczelgf","slide":13,"name":"k-13","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/5o3y9gz6","slide":13,"name":"t-13","text":"เลือก OLAP Architecture จาก Latency, Scale และ Freshness","textPreview":"เลือก OLAP Architecture จาก Latency, Scale และ Freshness","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/4nuhgvyl","slide":13,"name":"r-13","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/vi1g36h4","slide":13,"name":"fl-13","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/uhsza1gj","slide":13,"name":"fn-13","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/hk3y5gzu","slide":13,"name":"a-0","bbox":[62,220,350,330]}
+{"kind":"shape","id":"sh/gjahcby9","slide":13,"name":"a-0-a","bbox":[62,220,8,330]}
+{"kind":"textbox","id":"sh/7e1gz6hs","slide":13,"name":"a-0-h","text":"MOLAP","textPreview":"MOLAP","textChars":5,"textLines":1,"bbox":[89,240,302,36]}
+{"kind":"textbox","id":"sh/6tsf61g7","slide":13,"name":"a-0-b","text":"pre-aggregated cube\n\nเร็วมาก\nrefresh/storage สูง","textPreview":"pre-aggregated cube |  | เร็วมาก | refresh/storage สูง","textChars":48,"textLines":4,"bbox":[89,294,302,240]}
+{"kind":"shape","id":"sh/8z61w3qh","slide":13,"name":"a-1","bbox":[462,220,350,330]}
+{"kind":"shape","id":"sh/90fip872","slide":13,"name":"a-1-a","bbox":[462,220,8,330]}
+{"kind":"textbox","id":"sh/mx4jud8b","slide":13,"name":"a-1-h","text":"ROLAP","textPreview":"ROLAP","textChars":5,"textLines":1,"bbox":[489,240,302,36]}
+{"kind":"textbox","id":"sh/7yd0nipw","slide":13,"name":"a-1-b","text":"tables + SQL\n\nscale/freshness ดี\nต้อง optimize","textPreview":"tables + SQL |  | scale/freshness ดี | ต้อง optimize","textChars":46,"textLines":4,"bbox":[489,294,302,240]}
+{"kind":"shape","id":"sh/kvm1s3ql","slide":13,"name":"a-2","bbox":[862,220,350,330]}
+{"kind":"shape","id":"sh/lwvil87q","slide":13,"name":"a-2-a","bbox":[862,220,8,330]}
+{"kind":"textbox","id":"sh/yt4jqt8f","slide":13,"name":"a-2-h","text":"HOLAP","textPreview":"HOLAP","textChars":5,"textLines":1,"bbox":[889,240,302,36]}
+{"kind":"textbox","id":"sh/zud0jyp0","slide":13,"name":"a-2-b","text":"summary + detail\n\nสมดุล\nดูแลซับซ้อน","textPreview":"summary + detail |  | สมดุล | ดูแลซับซ้อน","textChars":35,"textLines":4,"bbox":[889,294,302,240]}
+{"kind":"textbox","id":"sh/4rq147qp","slide":13,"name":"arch","text":"ถามเพิ่ม: cardinality • sparsity • concurrency • drill-through • team skills","textPreview":"ถามเพิ่ม: cardinality • sparsity • concurrency • drill-through • team skills","textChars":76,"textLines":1,"bbox":[120,584,1040,42]}
+{"kind":"notes","id":"nt/l2k9ai","slide":13,"text":"ไม่มีแบบใดดีที่สุดโดยไม่มี workload\n\n[Sources]\n- Microsoft Learn, Analysis Services multidimensional architecture, https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/olap-logical/logical-architecture-overview-analysis-services-multidimensional-data"}
+{"kind":"slide","id":"sl/sp6lgc","slide":14,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":13}
+{"kind":"textbox","id":"sh/bmh8zuts","slide":14,"name":"k-14","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/cnqpszud","slide":14,"name":"t-14","text":"Modern OLAP เร็วขึ้นด้วย Columnar, Vectorization และ Skipping","textPreview":"Modern OLAP เร็วขึ้นด้วย Columnar, Vectorization และ Skipping","textChars":61,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/xozq14by","slide":14,"name":"r-14","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/2ho7mpcb","slide":14,"name":"fl-14","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/nix8vutw","slide":14,"name":"fn-14","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/oj6pofuh","slide":14,"name":"m-0","bbox":[45,220,270,310]}
+{"kind":"shape","id":"sh/pkfqxkbm","slide":14,"name":"m-0-a","bbox":[45,220,8,310]}
+{"kind":"textbox","id":"sh/mds7y9cf","slide":14,"name":"m-0-h","text":"COLUMNAR","textPreview":"COLUMNAR","textChars":8,"textLines":1,"bbox":[72,240,222,36]}
+{"kind":"textbox","id":"sh/7e187et0","slide":14,"name":"m-0-b","text":"อ่านเฉพาะคอลัมน์\nบีบอัดดี","textPreview":"อ่านเฉพาะคอลัมน์ | บีบอัดดี","textChars":25,"textLines":2,"bbox":[72,294,222,220]}
+{"kind":"shape","id":"sh/jq10jedg","slide":14,"name":"m-1","bbox":[349,220,270,310]}
+{"kind":"shape","id":"sh/ip8za9wv","slide":14,"name":"m-1-a","bbox":[349,220,8,310]}
+{"kind":"textbox","id":"sh/5sjilovm","slide":14,"name":"m-1-h","text":"VECTORIZED","textPreview":"VECTORIZED","textChars":10,"textLines":1,"bbox":[376,240,222,36]}
+{"kind":"textbox","id":"sh/krahcje1","slide":14,"name":"m-1-b","text":"ประมวลผลเป็น batch\nใช้ CPU มีประสิทธิภาพ","textPreview":"ประมวลผลเป็น batch | ใช้ CPU มีประสิทธิภาพ","textChars":40,"textLines":2,"bbox":[376,294,222,220]}
+{"kind":"shape","id":"sh/7e10nydc","slide":14,"name":"m-2","bbox":[653,220,270,310]}
+{"kind":"shape","id":"sh/6tsjetwr","slide":14,"name":"m-2-a","bbox":[653,220,8,310]}
+{"kind":"textbox","id":"sh/tgjipovi","slide":14,"name":"m-2-h","text":"DATA SKIPPING","textPreview":"DATA SKIPPING","textChars":13,"textLines":1,"bbox":[680,240,222,36]}
+{"kind":"textbox","id":"sh/sfa1gjex","slide":14,"name":"m-2-b","text":"ข้าม block\nที่ไม่ตรง filter","textPreview":"ข้าม block | ที่ไม่ตรง filter","textChars":27,"textLines":2,"bbox":[680,294,222,220]}
+{"kind":"shape","id":"sh/fil0rydo","slide":14,"name":"m-3","bbox":[957,220,270,310]}
+{"kind":"shape","id":"sh/uhsjitw3","slide":14,"name":"m-3-a","bbox":[957,220,8,310]}
+{"kind":"textbox","id":"sh/qdw3qxgb","slide":14,"name":"m-3-h","text":"SEMANTIC","textPreview":"SEMANTIC","textChars":8,"textLines":1,"bbox":[984,240,222,36]}
+{"kind":"textbox","id":"sh/be5kj2xw","slide":14,"name":"m-3-b","text":"นิยาม metric/hierarchy\nครั้งเดียว","textPreview":"นิยาม metric/hierarchy | ครั้งเดียว","textChars":33,"textLines":2,"bbox":[984,294,222,220]}
+{"kind":"textbox","id":"sh/cfels7yh","slide":14,"name":"blur","text":"เส้นแบ่ง cube กับ relational เบลอลง — แต่ semantics ยังสำคัญเหมือนเดิม","textPreview":"เส้นแบ่ง cube กับ relational เบลอลง — แต่ semantics ยังสำคัญเหมือนเดิม","textChars":70,"textLines":1,"bbox":[145,588,990,40]}
+{"kind":"notes","id":"nt/sp6lgc","slide":14,"text":"เน้นว่า engine เร็วไม่แก้ metric definition ผิด\n\n[Sources]\n- ClickHouse, OLAP database, https://clickhouse.com/resources/engineering/olap-database\n- ClickHouse, columnar storage, https://clickhouse.com/resources/engineering/what-is-columnar-storage"}
+{"kind":"slide","id":"sl/w5pua0","slide":15,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":16}
+{"kind":"textbox","id":"sh/w7qlk7a9","slide":15,"name":"k-15","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/v6hkb2to","slide":15,"name":"t-15","text":"Aggregation Trap ทำให้คำตอบถูกคำนวณแต่ผิดความหมาย","textPreview":"Aggregation Trap ทำให้คำตอบถูกคำนวณแต่ผิดความหมาย","textChars":49,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/a583ixc3","slide":15,"name":"r-15","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/5wj2hcbq","slide":15,"name":"fl-15","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/kvalora5","slide":15,"name":"fn-15","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/ja1kfmtk","slide":15,"name":"tr-0","bbox":[62,205,350,140]}
+{"kind":"shape","id":"sh/i983mhsz","slide":15,"name":"tr-0-a","bbox":[62,205,8,140]}
+{"kind":"textbox","id":"sh/l0f25sbm","slide":15,"name":"tr-0-h","text":"NON-ADDITIVE","textPreview":"NON-ADDITIVE","textChars":12,"textLines":1,"bbox":[89,225,302,36]}
+{"kind":"textbox","id":"sh/0z61cnu1","slide":15,"name":"tr-0-b","text":"อย่าบวก ratio / balance","textPreview":"อย่าบวก ratio / balance","textChars":23,"textLines":1,"bbox":[89,279,302,50]}
+{"kind":"shape","id":"sh/uhsby9g3","slide":15,"name":"tr-1","bbox":[462,205,350,140]}
+{"kind":"shape","id":"sh/vi1sreho","slide":15,"name":"tr-1-a","bbox":[462,205,8,140]}
+{"kind":"textbox","id":"sh/gjut0zyt","slide":15,"name":"tr-1-h","text":"AVG OF AVG","textPreview":"AVG OF AVG","textChars":10,"textLines":1,"bbox":[489,225,302,36]}
+{"kind":"textbox","id":"sh/hk3ut4fe","slide":15,"name":"tr-1-b","text":"ใช้ numerator / denominator","textPreview":"ใช้ numerator / denominator","textChars":27,"textLines":1,"bbox":[489,279,302,50]}
+{"kind":"shape","id":"sh/ilcb29gz","slide":15,"name":"tr-2","bbox":[862,205,350,140]}
+{"kind":"shape","id":"sh/3mlcvexk","slide":15,"name":"tr-2-a","bbox":[862,205,8,140]}
+{"kind":"textbox","id":"sh/4nut4jy5","slide":15,"name":"tr-2-h","text":"NULL","textPreview":"NULL","textChars":4,"textLines":1,"bbox":[889,225,302,36]}
+{"kind":"textbox","id":"sh/5o3uxofq","slide":15,"name":"tr-2-b","text":"แยก data กับ subtotal","textPreview":"แยก data กับ subtotal","textChars":21,"textLines":1,"bbox":[889,279,302,50]}
+{"kind":"shape","id":"sh/q9cb6tgb","slide":15,"name":"tr-3","bbox":[62,385,350,140]}
+{"kind":"shape","id":"sh/ra5czyxg","slide":15,"name":"tr-3-a","bbox":[62,385,8,140]}
+{"kind":"textbox","id":"sh/ne5snydo","slide":15,"name":"tr-3-h","text":"DOUBLE COUNT","textPreview":"DOUBLE COUNT","textChars":12,"textLines":1,"bbox":[89,405,302,36]}
+{"kind":"textbox","id":"sh/mdwbetw3","slide":15,"name":"tr-3-b","text":"ตรวจ many-to-many","textPreview":"ตรวจ many-to-many","textChars":17,"textLines":1,"bbox":[89,459,302,50]}
+{"kind":"shape","id":"sh/9gnap8vu","slide":15,"name":"tr-4","bbox":[462,385,350,140]}
+{"kind":"shape","id":"sh/ofetg3e9","slide":15,"name":"tr-4-a","bbox":[462,385,8,140]}
+{"kind":"textbox","id":"sh/za5sjeds","slide":15,"name":"tr-4-h","text":"SIMPSON","textPreview":"SIMPSON","textChars":7,"textLines":1,"bbox":[489,405,302,36]}
+{"kind":"textbox","id":"sh/epcra9w7","slide":15,"name":"tr-4-b","text":"ดู subgroup ก่อนสรุป","textPreview":"ดู subgroup ก่อนสรุป","textChars":20,"textLines":1,"bbox":[489,459,302,50]}
+{"kind":"shape","id":"sh/1cnalovy","slide":15,"name":"tr-5","bbox":[862,385,350,140]}
+{"kind":"shape","id":"sh/0be9cjed","slide":15,"name":"tr-5-a","bbox":[862,385,8,140]}
+{"kind":"textbox","id":"sh/rmlsfedg","slide":15,"name":"tr-5-h","text":"PRIVACY","textPreview":"PRIVACY","textChars":7,"textLines":1,"bbox":[889,405,302,36]}
+{"kind":"textbox","id":"sh/qlcr69wv","slide":15,"name":"tr-5-b","text":"detail ตามสิทธิ์","textPreview":"detail ตามสิทธิ์","textChars":16,"textLines":1,"bbox":[889,459,302,50]}
+{"kind":"notes","id":"nt/w5pua0","slide":15,"text":"ใช้กรณี conversion rate เพื่อเกริ่น Lab 2\n\n[Sources]\n- DuckDB, GROUPING SETS and GROUPING_ID, https://duckdb.org/docs/current/sql/query_syntax/grouping_sets\n- Microsoft Learn, drillthrough guidance, https://learn.microsoft.com/en-us/power-bi/guidance/report-drillthrough"}
+{"kind":"slide","id":"sl/8sqvvc","slide":16,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":4}
+{"kind":"textbox","id":"sh/xsnylwb6","slide":16,"name":"k-16","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/apwzahsf","slide":16,"name":"t-16","text":"20 Applications ใช้หลักเดียวกัน: Measure × Context × Drill Path","textPreview":"20 Applications ใช้หลักเดียวกัน: Measure × Context × Drill Path","textChars":63,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/vq5gjmt0","slide":16,"name":"r-16","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/kvyhgrax","slide":16,"name":"fl-16","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/5w7ypwb2","slide":16,"name":"fn-16","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"image","id":"im/zatkjits","slide":16,"name":"","geometry":"rect","alt":"ภาพรวมงานประยุกต์ OLAP ยี่สิบโดเมน","bbox":[56,184,1168,455]}
+{"kind":"notes","id":"nt/8sqvvc","slide":16,"text":"ให้ผู้เรียนเลือกโดเมนหนึ่งและประกาศ measure, dimensions และ path\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/olap-20-applications.png)."}
+{"kind":"slide","id":"sl/fbxf9u","slide":17,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":6}
+{"kind":"textbox","id":"sh/mh8bepkb","slide":17,"name":"k-17","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/9kja94jm","slide":17,"name":"t-17","text":"Applications 01–20: ระบุ Measure, Grain และคำถามถัดไป","textPreview":"Applications 01–20: ระบุ Measure, Grain และคำถามถัดไป","textChars":53,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/8jatgz2h","slide":17,"name":"r-17","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/zuhs3a1k","slide":17,"name":"fl-17","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/yt8ra5kz","slide":17,"name":"fn-17","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/lwza5kjq","slide":17,"name":"al","bbox":[50,194,570,430]}
+{"kind":"shape","id":"sh/kvqtcf25","slide":17,"name":"ar","bbox":[660,194,570,430]}
+{"kind":"textbox","id":"sh/bqhszalo","slide":17,"name":"alt","text":"01 Retail • net sales • store/category\n02 Banking • spend • merchant/province\n03 Insurance • paid • claim/provider\n04 Hospital • encounters • clinic/diagnosis\n05 Pharmacy • quantity • drug/branch\n06 Telecom • usage • hour/tower\n07 E-commerce • conversion • stage/device\n08 Marketing • revenue • campaign/channel\n09 Support • resolution • issue/team\n10 Inventory • balance • SKU/warehouse","textPreview":"01 Retail • net sales • store/category | 02 Banking • spend • merchant/province | 03 Insurance • paid • claim/provider | 04 Hospital • en...","textChars":387,"textLines":10,"bbox":[80,215,510,390]}
+{"kind":"textbox","id":"sh/apor65k3","slide":17,"name":"art","text":"11 Supply chain • lead time • supplier/route\n12 Production • units • machine/shift\n13 Maintenance • downtime • asset/failure\n14 Fleet • fuel • vehicle/route\n15 Energy • kWh • hour/tariff\n16 Traffic • volume • segment/weather\n17 Education • pass rate • program/course\n18 Agriculture • yield • crop/field\n19 Public budget • spend • agency/program\n20 ESG • emissions • facility/scope","textPreview":"11 Supply chain • lead time • supplier/route | 12 Production • units • machine/shift | 13 Maintenance • downtime • asset/failure | 14 Fle...","textChars":380,"textLines":10,"bbox":[690,215,510,390]}
+{"kind":"notes","id":"nt/fbxf9u","slide":17,"text":"อ่านรูปแบบ Application • measure • candidate drill dimensions\n\n[Sources]\n- Week-04 expanded content; examples synthesized for instruction."}
+{"kind":"slide","id":"sl/nc0cw1","slide":18,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":7}
+{"kind":"textbox","id":"sh/k7yxkve1","slide":18,"name":"k-18","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/j6pgrqdg","slide":18,"name":"t-18","text":"Future OLAP: AI ช่วยสำรวจได้ แต่ต้องผ่าน Semantic Layer","textPreview":"Future OLAP: AI ช่วยสำรวจได้ แต่ต้องผ่าน Semantic Layer","textChars":55,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/y5gfilwv","slide":18,"name":"r-18","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/twryx0vi","slide":18,"name":"fl-18","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/8vixovex","slide":18,"name":"fn-18","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/6tgfm5wr","slide":18,"name":"fp","bbox":[840,184,388,455]}
+{"kind":"textbox","id":"sh/90nelgve","slide":18,"name":"fph","text":"TRUSTED EXPLORATION","textPreview":"TRUSTED EXPLORATION","textChars":19,"textLines":1,"bbox":[870,214,320,34]}
+{"kind":"textbox","id":"sh/ozexcbet","slide":18,"name":"fpb","text":"• shared metric definition\n• hierarchy + relationship\n• filter context + baseline\n• generated SQL/query\n• lineage + permissions\n• evidence rows\n• human verification","textPreview":"• shared metric definition | • hierarchy + relationship | • filter context + baseline | • generated SQL/query | • lineage + permissions |...","textChars":164,"textLines":7,"bbox":[870,285,310,250]}
+{"kind":"textbox","id":"sh/e9cnep8z","slide":18,"name":"fpq","text":"AI แนะนำ Path\nแต่ห้ามซ่อน Context","textPreview":"AI แนะนำ Path | แต่ห้ามซ่อน Context","textChars":33,"textLines":2,"bbox":[870,560,310,58]}
+{"kind":"image","id":"im/m5k321wn","slide":18,"name":"","geometry":"rect","alt":"Future OLAP มี semantic layer, AI assistant และ human verification","bbox":[44,184,770,455]}
+{"kind":"notes","id":"nt/nc0cw1","slide":18,"text":"AI ควรแสดง query และ metric definition ไม่ใช่เพียงคำตอบภาษาธรรมชาติ\n\n[Sources]\n- Microsoft Learn, Direct Lake overview, https://learn.microsoft.com/en-au/fabric/fundamentals/direct-lake-overview\n- Microsoft Learn, decomposition tree, https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-decomposition-tree\n- Generated illustration: OpenAI ImageGen, 2026 (assets/future-olap.png)."}
+{"kind":"slide","id":"sl/2p7r61","slide":19,"title":"DECISION SUPPORT SYSTEMS • WEEK 04","textShapes":6}
+{"kind":"textbox","id":"sh/4julg3m1","slide":19,"name":"k-19","text":"DECISION SUPPORT SYSTEMS • WEEK 04","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 04","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/3i1kny5g","slide":19,"name":"t-19","text":"10 คำถามตรวจก่อนยอมรับข้อค้นพบจาก OLAP","textPreview":"10 คำถามตรวจก่อนยอมรับข้อค้นพบจาก OLAP","textChars":38,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/2hs3et4v","slide":19,"name":"r-19","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/d83mtsni","slide":19,"name":"fl-19","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/c7ulknmx","slide":19,"name":"fn-19","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/r6lkri5s","slide":19,"name":"ql","bbox":[52,202,560,400]}
+{"kind":"shape","id":"sh/q5c3id47","slide":19,"name":"qr","bbox":[668,202,560,400]}
+{"kind":"textbox","id":"sh/tcj2hone","slide":19,"name":"qlt","text":"1 Measure aggregate ถูกไหม?\n2 Fact grain ตรงคำถามไหม?\n3 Hierarchy มีความหมายไหม?\n4 Filter context เท่ากันไหม?\n5 Operation path บันทึกไหม?","textPreview":"1 Measure aggregate ถูกไหม? | 2 Fact grain ตรงคำถามไหม? | 3 Hierarchy มีความหมายไหม? | 4 Filter context เท่ากันไหม? | 5 Operation path บั...","textChars":137,"textLines":5,"bbox":[86,234,500,330]}
+{"kind":"textbox","id":"sh/sbal8jmt","slide":19,"name":"qrt","text":"6 NULL จริงหรือ subtotal?\n7 มี double counting ไหม?\n8 ผลรวมซ่อน subgroup ไหม?\n9 Drill-through มีสิทธิ์ไหม?\n10 อ้างเหตุผลเกินข้อมูลไหม?","textPreview":"6 NULL จริงหรือ subtotal? | 7 มี double counting ไหม? | 8 ผลรวมซ่อน subgroup ไหม? | 9 Drill-through มีสิทธิ์ไหม? | 10 อ้างเหตุผลเกินข้อมู...","textChars":134,"textLines":5,"bbox":[702,234,500,330]}
+{"kind":"notes","id":"nt/2p7r61","slide":19,"text":"ใช้ checklist กับข้อค้นพบจาก Lab\n\n[Sources]\n- DuckDB, GROUPING SETS, https://duckdb.org/docs/current/sql/query_syntax/grouping_sets\n- Week-04-Questions.md in this teaching package."}
+{"kind":"slide","id":"sl/y8t54f","slide":20,"title":"WEEK 04 • NEXT ACTION","textShapes":11}
+{"kind":"textbox","id":"sh/q5krqh4b","slide":20,"name":"k-20","text":"WEEK 04 • NEXT ACTION","textPreview":"WEEK 04 • NEXT ACTION","textChars":21,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/d8bq1wnm","slide":20,"name":"t-20","text":"ลงมือทำ: สร้างเส้นทางสำรวจ แล้วทดสอบกับดัก","textPreview":"ลงมือทำ: สร้างเส้นทางสำรวจ แล้วทดสอบกับดัก","textChars":42,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/c729srmh","slide":20,"name":"r-20","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/zut8365s","slide":20,"name":"fl-20","text":"KSU • OLAP & Multidimensional Analysis","textPreview":"KSU • OLAP & Multidimensional Analysis","textChars":38,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/etkru147","slide":20,"name":"fn-20","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/1wva5wny","slide":20,"name":"l1","bbox":[54,202,540,356]}
+{"kind":"shape","id":"sh/0v29wbmd","slide":20,"name":"l2","bbox":[686,202,540,356]}
+{"kind":"textbox","id":"sh/fy98r25o","slide":20,"name":"l1n","text":"LAB 01","textPreview":"LAB 01","textChars":6,"textLines":1,"bbox":[86,232,180,34]}
+{"kind":"textbox","id":"sh/ux0rixo3","slide":20,"name":"l1h","text":"OLAP Operations\n& SQL","textPreview":"OLAP Operations | & SQL","textChars":21,"textLines":2,"bbox":[86,300,450,98]}
+{"kind":"textbox","id":"sh/srmtsfux","slide":20,"name":"l1b","text":"ตอบคำถามธุรกิจ 8 ข้อ\nใช้ ROLLUP/CUBE/GROUPING SETS\nบันทึก operation trail","textPreview":"ตอบคำถามธุรกิจ 8 ข้อ | ใช้ ROLLUP/CUBE/GROUPING SETS | บันทึก operation trail","textChars":73,"textLines":3,"bbox":[86,430,450,105]}
+{"kind":"textbox","id":"sh/tcvulkbi","slide":20,"name":"l2n","text":"LAB 02","textPreview":"LAB 02","textChars":6,"textLines":1,"bbox":[718,232,180,34]}
+{"kind":"textbox","id":"sh/6p4bq5c7","slide":20,"name":"l2h","text":"Root Cause &\nAggregation Traps","textPreview":"Root Cause & | Aggregation Traps","textChars":30,"textLines":2,"bbox":[718,300,450,98]}
+{"kind":"textbox","id":"sh/7qdcjatc","slide":20,"name":"l2b","text":"สร้าง Simpson’s paradox\nเปรียบเทียบ weighted rate\nออกแบบ guardrails","textPreview":"สร้าง Simpson’s paradox | เปรียบเทียบ weighted rate | ออกแบบ guardrails","textChars":67,"textLines":3,"bbox":[718,430,450,105]}
+{"kind":"textbox","id":"sh/gf6twfu9","slide":20,"name":"close","text":"เป้าหมาย: ทุกข้อค้นพบมี Context, Path และ Evidence","textPreview":"เป้าหมาย: ทุกข้อค้นพบมี Context, Path และ Evidence","textChars":50,"textLines":1,"bbox":[205,602,870,42]}
+{"kind":"notes","id":"nt/y8t54f","slide":20,"text":"ปิดด้วย exit ticket: เขียน operation sequence จาก KPI ถึง transaction\n\n[Sources]\n- Lab-01-OLAP-Operations-and-SQL.md and Lab-02-Root-Cause-and-Aggregation-Traps.md."}
