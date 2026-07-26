@@ -1,0 +1,358 @@
+{"kind":"deck","id":"pr/cycdja","name":"Deck"}
+{"kind":"layout","layoutId":"8747c3ff-0c18-4a66-a970-2dfbb01374c5","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"e1122612-014e-49fa-9b0f-1bb22bb7cdc8","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/m3fgp8","slide":1,"title":"WEEK 05 • CRISP-DM & CLASSIFICATION","textShapes":5}
+{"kind":"shape","id":"sh/47a14nip","slide":1,"name":"fade","bbox":[0,0,660,720]}
+{"kind":"textbox","id":"sh/58j2xsju","slide":1,"name":"ck","text":"WEEK 05 • CRISP-DM & CLASSIFICATION","textPreview":"WEEK 05 • CRISP-DM & CLASSIFICATION","textChars":35,"textLines":1,"bbox":[48,52,600,34]}
+{"kind":"textbox","id":"sh/u18jyd07","slide":1,"name":"ct","text":"Data Mining I","textPreview":"Data Mining I","textChars":13,"textLines":1,"bbox":[48,165,600,80]}
+{"kind":"textbox","id":"sh/v2h0ry1s","slide":1,"name":"cs","text":"Process • Preparation • Models • Metrics","textPreview":"Process • Preparation • Models • Metrics","textChars":40,"textLines":1,"bbox":[48,305,585,48]}
+{"kind":"textbox","id":"sh/w3a103id","slide":1,"name":"cq","text":"จากคะแนนโมเดล → นโยบาย → การตัดสินใจ","textPreview":"จากคะแนนโมเดล → นโยบาย → การตัดสินใจ","textChars":36,"textLines":1,"bbox":[48,480,580,44]}
+{"kind":"textbox","id":"sh/h4jit8jy","slide":1,"name":"cc","text":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textPreview":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textChars":36,"textLines":1,"bbox":[48,630,560,28]}
+{"kind":"image","id":"im/ep8ja94z","slide":1,"name":"","geometry":"rect","alt":"นักวิเคราะห์ตรวจเส้นทางการจำแนกข้อมูลเป็นสองผลลัพธ์","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/m3fgp8","slide":1,"text":"เปิดด้วยคำถาม: โมเดล Accuracy 98% ใช้งานได้เลยหรือไม่?\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/data-mining-cover.png)."}
+{"kind":"slide","id":"sl/eoe3ha","slide":2,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":6}
+{"kind":"textbox","id":"sh/vyh8j2dc","slide":2,"name":"k-2","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/wzapc7eh","slide":2,"name":"t-2","text":"10 คำถามที่จะพาเราจากข้อมูลไปสู่การตัดสินใจ","textPreview":"10 คำถามที่จะพาเราจากข้อมูลไปสู่การตัดสินใจ","textChars":43,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/hkjqlcv2","slide":2,"name":"r-2","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ils7ehwn","slide":2,"name":"fl-2","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/jm18nmd8","slide":2,"name":"fn-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4napg7et","slide":2,"name":"ql","bbox":[52,202,560,400]}
+{"kind":"shape","id":"sh/5ojqpcve","slide":2,"name":"qr","bbox":[668,202,560,400]}
+{"kind":"textbox","id":"sh/ypo72dwj","slide":2,"name":"qlt","text":"1 ปัญหาธุรกิจและ action คืออะไร?\n2 Target และ prediction time ชัดไหม?\n3 CRISP-DM วนกลับตรงไหน?\n4 Split ก่อน fit เพราะอะไร?\n5 Leakage ซ่อนอยู่ใน feature ใด?","textPreview":"1 ปัญหาธุรกิจและ action คืออะไร? | 2 Target และ prediction time ชัดไหม? | 3 CRISP-DM วนกลับตรงไหน? | 4 Split ก่อน fit เพราะอะไร? | 5 Leak...","textChars":155,"textLines":5,"bbox":[86,234,500,330]}
+{"kind":"textbox","id":"sh/zqxobid4","slide":2,"name":"qrt","text":"6 Tree เลือก split อย่างไร?\n7 ป้องกัน overfit อย่างไร?\n8 Naive Bayes สมมติอะไร?\n9 Metric ใดตรงต้นทุน FP/FN?\n10 Threshold และ monitoring ใครรับผิดชอบ?","textPreview":"6 Tree เลือก split อย่างไร? | 7 ป้องกัน overfit อย่างไร? | 8 Naive Bayes สมมติอะไร? | 9 Metric ใดตรงต้นทุน FP/FN? | 10 Threshold และ moni...","textChars":149,"textLines":5,"bbox":[702,234,500,330]}
+{"kind":"notes","id":"nt/eoe3ha","slide":2,"text":"ให้ผู้เรียนเลือกหนึ่งคำถามเป็น learning target\n\n[Sources]\n- Week-05-Questions.md in this teaching package."}
+{"kind":"slide","id":"sl/sd523n","slide":3,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":10}
+{"kind":"textbox","id":"sh/5wry10fy","slide":3,"name":"k-3","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/itgf65g7","slide":3,"name":"t-3","text":"Accuracy 98% อาจหมายถึงโมเดลไม่จับ Positive เลย","textPreview":"Accuracy 98% อาจหมายถึงโมเดลไม่จับ Positive เลย","textChars":47,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ju9gzqxs","slide":3,"name":"r-3","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/wryx4vy1","slide":3,"name":"fl-3","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/hs7yx0fm","slide":3,"name":"fn-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/upgf2lgb","slide":3,"name":"big","text":"98%","textPreview":"98%","textChars":3,"textLines":1,"bbox":[65,215,310,105]}
+{"kind":"textbox","id":"sh/vqpgvqxw","slide":3,"name":"sub","text":"Accuracy","textPreview":"Accuracy","textChars":8,"textLines":1,"bbox":[65,325,280,44]}
+{"kind":"shape","id":"sh/gn2h0fyl","slide":3,"name":"base","bbox":[430,205,760,305]}
+{"kind":"textbox","id":"sh/1oby9kf6","slide":3,"name":"bh","text":"ข้อมูล 10,000 รายการ • Positive 2%","textPreview":"ข้อมูล 10,000 รายการ • Positive 2%","textChars":34,"textLines":1,"bbox":[470,240,680,42]}
+{"kind":"textbox","id":"sh/xofa103y","slide":3,"name":"bb","text":"โมเดลทำนาย Negative ทุกครั้ง\n\nTN = 9,800     FN = 200\nTP = 0             FP = 0","textPreview":"โมเดลทำนาย Negative ทุกครั้ง |  | TN = 9,800     FN = 200 | TP = 0             FP = 0","textChars":79,"textLines":4,"bbox":[470,325,500,145]}
+{"kind":"textbox","id":"sh/cn6tsvmt","slide":3,"name":"rec","text":"Recall = 0%","textPreview":"Recall = 0%","textChars":11,"textLines":1,"bbox":[970,350,180,60]}
+{"kind":"textbox","id":"sh/bmdszq58","slide":3,"name":"claim","text":"Metric ต้องตอบความเสียหายของการตัดสินใจ ไม่ใช่เพียงคะแนนรวม","textPreview":"Metric ต้องตอบความเสียหายของการตัดสินใจ ไม่ใช่เพียงคะแนนรวม","textChars":59,"textLines":1,"bbox":[135,565,1010,44]}
+{"kind":"notes","id":"nt/sd523n","slide":3,"text":"ให้ผู้เรียนคำนวณ confusion matrix ของ baseline ที่ทำนายคลาสใหญ่เสมอ\n\n[Sources]\n- Scenario synthesized for instruction; no empirical result claimed.\n- scikit-learn, metrics and scoring, https://scikit-learn.org/stable/modules/model_evaluation.html"}
+{"kind":"slide","id":"sl/dkz3qf","slide":4,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":15}
+{"kind":"textbox","id":"sh/xwz2dgbm","slide":4,"name":"k-4","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/qto32lcv","slide":4,"name":"t-4","text":"Classification ใน DSS เชื่อม Score กับ Action ผ่าน Policy","textPreview":"Classification ใน DSS เชื่อม Score กับ Action ผ่าน Policy","textChars":57,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/buhkbqtg","slide":4,"name":"r-4","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/kzql8vad","slide":4,"name":"fl-4","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/lkz2h0bi","slide":4,"name":"fn-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/yx836ls7","slide":4,"name":"f-0","bbox":[38,235,205,230]}
+{"kind":"textbox","id":"sh/zyhkfqts","slide":4,"name":"fh-0","text":"DATA","textPreview":"DATA","textChars":4,"textLines":1,"bbox":[56,275,169,32]}
+{"kind":"textbox","id":"sh/8nalcva9","slide":4,"name":"fb-0","text":"ข้อมูล ณ เวลาทำนาย","textPreview":"ข้อมูล ณ เวลาทำนาย","textChars":18,"textLines":1,"bbox":[56,350,169,70]}
+{"kind":"shape","id":"sh/9oj2l0bu","slide":4,"name":"fa-0","bbox":[238,330,48,30]}
+{"kind":"shape","id":"sh/l07i1cfe","slide":4,"name":"f-1","bbox":[287,235,205,230]}
+{"kind":"textbox","id":"sh/kzyhs7et","slide":4,"name":"fh-1","text":"MODEL","textPreview":"MODEL","textChars":5,"textLines":1,"bbox":[305,275,169,32]}
+{"kind":"textbox","id":"sh/jyp0z2x8","slide":4,"name":"fb-1","text":"risk score / class","textPreview":"risk score / class","textChars":18,"textLines":1,"bbox":[305,350,169,70]}
+{"kind":"shape","id":"sh/yxgzqhwn","slide":4,"name":"fa-1","bbox":[487,330,48,30]}
+{"kind":"shape","id":"sh/t4ri5wfa","slide":4,"name":"f-2","bbox":[536,235,205,230]}
+{"kind":"textbox","id":"sh/83yhwrep","slide":4,"name":"fh-2","text":"POLICY","textPreview":"POLICY","textChars":6,"textLines":1,"bbox":[554,275,169,32]}
+{"kind":"textbox","id":"sh/72p03mx4","slide":4,"name":"fb-2","text":"threshold + cost","textPreview":"threshold + cost","textChars":16,"textLines":1,"bbox":[554,350,169,70]}
+{"kind":"shape","id":"sh/61gzuhwj","slide":4,"name":"fa-2","bbox":[736,330,48,30]}
+{"kind":"shape","id":"sh/98nytsf6","slide":4,"name":"f-3","bbox":[785,235,205,230]}
+{"kind":"textbox","id":"sh/o7ehknel","slide":4,"name":"fh-3","text":"ACTION","textPreview":"ACTION","textChars":6,"textLines":1,"bbox":[803,275,169,32]}
+{"kind":"textbox","id":"sh/0bih0nmh","slide":4,"name":"fb-3","text":"ผ่าน • ตรวจ • ระงับ","textPreview":"ผ่าน • ตรวจ • ระงับ","textChars":19,"textLines":1,"bbox":[803,350,169,70]}
+{"kind":"shape","id":"sh/1cri9sn2","slide":4,"name":"fa-3","bbox":[985,330,48,30]}
+{"kind":"shape","id":"sh/epgzyx4b","slide":4,"name":"f-4","bbox":[1034,235,205,230]}
+{"kind":"textbox","id":"sh/fq90725w","slide":4,"name":"fh-4","text":"EVIDENCE","textPreview":"EVIDENCE","textChars":8,"textLines":1,"bbox":[1052,275,169,32]}
+{"kind":"textbox","id":"sh/ofih47md","slide":4,"name":"fb-4","text":"เหตุผลและผลจริง","textPreview":"เหตุผลและผลจริง","textChars":15,"textLines":1,"bbox":[1052,350,169,70]}
+{"kind":"textbox","id":"sh/pgridcny","slide":4,"name":"audit","text":"ผู้รับผิดชอบต้องมองเห็นนิยามข้อมูล รุ่นโมเดล threshold และผลลัพธ์จริง","textPreview":"ผู้รับผิดชอบต้องมองเห็นนิยามข้อมูล รุ่นโมเดล threshold และผลลัพธ์จริง","textChars":69,"textLines":1,"bbox":[125,550,1030,52]}
+{"kind":"notes","id":"nt/dkz3qf","slide":4,"text":"ย้ำว่าโมเดลไม่ใช่ decision policy ทั้งระบบ\n\n[Sources]\n- Course Week-05 source note and expanded content in this vault.\n- NIST AI RMF Core, https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"}
+{"kind":"slide","id":"sl/c4yqdp","slide":5,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":4}
+{"kind":"textbox","id":"sh/5ofm5gjy","slide":5,"name":"k-5","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/i1o3alkn","slide":5,"name":"t-5","text":"CRISP-DM เป็นวงจรเรียนรู้ ไม่ใช่ขั้นตอนทางเดียว","textPreview":"CRISP-DM เป็นวงจรเรียนรู้ ไม่ใช่ขั้นตอนทางเดียว","textChars":47,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/j2x4361s","slide":5,"name":"r-5","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/sr6lgv2p","slide":5,"name":"fl-5","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/tszm90ja","slide":5,"name":"fn-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"image","id":"im/vatcf654","slide":5,"name":"","geometry":"rect","alt":"หกระยะของ CRISP-DM เชื่อมเป็นวงจร","bbox":[70,180,1140,470]}
+{"kind":"notes","id":"nt/c4yqdp","slide":5,"text":"ให้ผู้เรียนบอกว่าภาพแต่ละสถานีแทน phase ใดและลูกศรย้อนกลับมีความหมายอย่างไร\n\n[Sources]\n- IBM, CRISP-DM Help Overview, https://www.ibm.com/docs/en/spss-modeler/18.6.0?topic=dm-crisp-help-overview\n- Generated illustration: OpenAI ImageGen, 2026 (assets/crisp-dm-cycle.png)."}
+{"kind":"slide","id":"sl/goy46l","slide":6,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":17}
+{"kind":"textbox","id":"sh/x0bi5sbi","slide":6,"name":"k-6","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/axkjudcr","slide":6,"name":"t-6","text":"แต่ละ Phase ต้องทิ้ง Deliverable ที่ตรวจสอบได้","textPreview":"แต่ละ Phase ต้องทิ้ง Deliverable ที่ตรวจสอบได้","textChars":46,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/byt03itc","slide":6,"name":"r-6","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ovi1s3ul","slide":6,"name":"fl-6","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/9wbi18b6","slide":6,"name":"fn-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/mt0jqtcv","slide":6,"name":"p-0","bbox":[54,205,360,142]}
+{"kind":"shape","id":"sh/nu90zyt0","slide":6,"name":"p-0-a","bbox":[54,205,8,142]}
+{"kind":"textbox","id":"sh/8rm147u5","slide":6,"name":"p-0-h","text":"1 BUSINESS","textPreview":"1 BUSINESS","textChars":10,"textLines":1,"bbox":[81,225,312,36]}
+{"kind":"textbox","id":"sh/tsv2dcba","slide":6,"name":"p-0-b","text":"objective • action • cost","textPreview":"objective • action • cost","textChars":25,"textLines":1,"bbox":[81,279,312,52]}
+{"kind":"shape","id":"sh/tc7ilwfi","slide":6,"name":"p-1","bbox":[462,205,360,142]}
+{"kind":"shape","id":"sh/sby1crex","slide":6,"name":"p-1-a","bbox":[462,205,8,142]}
+{"kind":"textbox","id":"sh/7a50jmxc","slide":6,"name":"p-1-h","text":"2 DATA","textPreview":"2 DATA","textChars":6,"textLines":1,"bbox":[489,225,312,36]}
+{"kind":"textbox","id":"sh/69wzahw7","slide":6,"name":"p-1-b","text":"dictionary • quality • bias","textPreview":"dictionary • quality • bias","textChars":27,"textLines":1,"bbox":[489,279,312,52]}
+{"kind":"shape","id":"sh/58nihcfm","slide":6,"name":"p-2","bbox":[870,205,360,142]}
+{"kind":"shape","id":"sh/k7eh87e1","slide":6,"name":"p-2-a","bbox":[870,205,8,142]}
+{"kind":"textbox","id":"sh/j650f2xg","slide":6,"name":"p-2-h","text":"3 PREP","textPreview":"3 PREP","textChars":6,"textLines":1,"bbox":[897,225,312,36]}
+{"kind":"textbox","id":"sh/i5wz6xwv","slide":6,"name":"p-2-b","text":"split • transforms • features","textPreview":"split • transforms • features","textChars":29,"textLines":1,"bbox":[897,279,312,52]}
+{"kind":"shape","id":"sh/p4ritgfq","slide":6,"name":"p-3","bbox":[54,385,360,142]}
+{"kind":"shape","id":"sh/43i1kbe5","slide":6,"name":"p-3-a","bbox":[54,385,8,142]}
+{"kind":"textbox","id":"sh/onqlgfmh","slide":6,"name":"p-3-h","text":"4 MODEL","textPreview":"4 MODEL","textChars":7,"textLines":1,"bbox":[81,405,312,36]}
+{"kind":"textbox","id":"sh/98z2pkn2","slide":6,"name":"p-3-b","text":"baseline • parameters • version","textPreview":"baseline • parameters • version","textChars":31,"textLines":1,"bbox":[81,459,312,52]}
+{"kind":"shape","id":"sh/mlo3e54b","slide":6,"name":"p-4","bbox":[462,385,360,142]}
+{"kind":"shape","id":"sh/nmhkna5w","slide":6,"name":"p-4-a","bbox":[462,385,8,142]}
+{"kind":"textbox","id":"sh/0j6lcvm5","slide":6,"name":"p-4-h","text":"5 EVALUATE","textPreview":"5 EVALUATE","textChars":10,"textLines":1,"bbox":[489,405,312,36]}
+{"kind":"textbox","id":"sh/1kf2l0nq","slide":6,"name":"p-4-b","text":"metrics • subgroup • readiness","textPreview":"metrics • subgroup • readiness","textChars":30,"textLines":1,"bbox":[489,459,312,52]}
+{"kind":"shape","id":"sh/eho3a54f","slide":6,"name":"p-5","bbox":[870,385,360,142]}
+{"kind":"shape","id":"sh/zixkja50","slide":6,"name":"p-5-a","bbox":[870,385,8,142]}
+{"kind":"textbox","id":"sh/sf618vm9","slide":6,"name":"p-5-h","text":"6 DEPLOY","textPreview":"6 DEPLOY","textChars":8,"textLines":1,"bbox":[897,405,312,36]}
+{"kind":"textbox","id":"sh/dgf2h0nu","slide":6,"name":"p-5-b","text":"policy • monitoring • rollback","textPreview":"policy • monitoring • rollback","textChars":30,"textLines":1,"bbox":[897,459,312,52]}
+{"kind":"textbox","id":"sh/vad4rqpg","slide":6,"name":"loop","text":"พบปัญหาเมื่อใด ต้องย้อนกลับไปแก้ phase ที่สร้างสาเหตุ","textPreview":"พบปัญหาเมื่อใด ต้องย้อนกลับไปแก้ phase ที่สร้างสาเหตุ","textChars":53,"textLines":1,"bbox":[200,585,880,40]}
+{"kind":"notes","id":"nt/goy46l","slide":6,"text":"เชื่อม phase กับ artifact ที่นักศึกษาต้องส่งใน Lab\n\n[Sources]\n- IBM, CRISP-DM View, https://www.ibm.com/docs/en/spss-modeler/19.0.0?topic=projects-crisp-dm-view\n- IBM, Deployment Overview, https://www.ibm.com/docs/en/spss-modeler/18.6.0?topic=deployment-overview"}
+{"kind":"slide","id":"sl/ipldri","slide":7,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":13}
+{"kind":"textbox","id":"sh/udk32x4f","slide":7,"name":"k-7","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/hgbmdc3q","slide":7,"name":"t-7","text":"Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต","textPreview":"Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/gf2l47ml","slide":7,"name":"r-7","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/3id4fmlw","slide":7,"name":"fl-7","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/2h436h4b","slide":7,"name":"fn-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/pkvmhw32","slide":7,"name":"line","bbox":[90,370,1100,5]}
+{"kind":"shape","id":"sh/4jml8rmh","slide":7,"name":"dot-0","bbox":[90,353,36,36]}
+{"kind":"textbox","id":"sh/bmd4jml8","slide":7,"name":"et-0","text":"T−90","textPreview":"T−90","textChars":4,"textLines":1,"bbox":[45,275,125,38]}
+{"kind":"textbox","id":"sh/ql43ah4n","slide":7,"name":"eb-0","text":"ประวัติที่ใช้ได้","textPreview":"ประวัติที่ใช้ได้","textChars":16,"textLines":1,"bbox":[10,420,195,60]}
+{"kind":"shape","id":"sh/g3ap4fqx","slide":7,"name":"dot-1","bbox":[440,353,36,36]}
+{"kind":"textbox","id":"sh/14j6x0ri","slide":7,"name":"et-1","text":"T0","textPreview":"T0","textChars":2,"textLines":1,"bbox":[395,275,125,38]}
+{"kind":"textbox","id":"sh/e1s7258r","slide":7,"name":"eb-1","text":"เวลาทำนาย","textPreview":"เวลาทำนาย","textChars":9,"textLines":1,"bbox":[360,420,195,60]}
+{"kind":"shape","id":"sh/f21ova9c","slide":7,"name":"dot-2","bbox":[790,353,36,36]}
+{"kind":"textbox","id":"sh/o7up8fqt","slide":7,"name":"et-2","text":"T+30","textPreview":"T+30","textChars":4,"textLines":1,"bbox":[745,275,125,38]}
+{"kind":"textbox","id":"sh/p8361k7e","slide":7,"name":"eb-2","text":"ช่วงสังเกต","textPreview":"ช่วงสังเกต","textChars":10,"textLines":1,"bbox":[710,420,195,60]}
+{"kind":"shape","id":"sh/25s76583","slide":7,"name":"dot-3","bbox":[1140,353,36,36]}
+{"kind":"textbox","id":"sh/36loza98","slide":7,"name":"et-3","text":"T+90","textPreview":"T+90","textChars":4,"textLines":1,"bbox":[1095,275,125,38]}
+{"kind":"textbox","id":"sh/cvupczq5","slide":7,"name":"eb-3","text":"Target finalized","textPreview":"Target finalized","textChars":16,"textLines":1,"bbox":[1060,420,195,60]}
+{"kind":"textbox","id":"sh/xw365k7q","slide":7,"name":"bad","text":"Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต","textPreview":"Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต","textChars":38,"textLines":1,"bbox":[300,540,680,44]}
+{"kind":"notes","id":"nt/ipldri","slide":7,"text":"ให้ผู้เรียนระบุ event time และ availability time ของตัวแปรการชำระเงิน\n\n[Sources]\n- scikit-learn, common pitfalls and data leakage, https://scikit-learn.org/stable/common_pitfalls.html"}
+{"kind":"slide","id":"sl/zdwpx9","slide":8,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":15}
+{"kind":"textbox","id":"sh/wji98nu5","slide":8,"name":"k-8","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/vi9sfit0","slide":8,"name":"t-8","text":"Split ก่อน Fit คือกฎพื้นฐานในการป้องกัน Leakage","textPreview":"Split ก่อน Fit คือกฎพื้นฐานในการป้องกัน Leakage","textChars":47,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ahgr6dcf","slide":8,"name":"r-8","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/58ralsb2","slide":8,"name":"fl-8","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/k7itcnuh","slide":8,"name":"fn-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/jm9sjitw","slide":8,"name":"s-0","bbox":[38,235,205,230]}
+{"kind":"textbox","id":"sh/il0badcb","slide":8,"name":"sh-0","text":"RAW","textPreview":"RAW","textChars":3,"textLines":1,"bbox":[56,275,169,32]}
+{"kind":"textbox","id":"sh/lc7a9obi","slide":8,"name":"sb-0","text":"ข้อมูลทั้งหมด","textPreview":"ข้อมูลทั้งหมด","textChars":13,"textLines":1,"bbox":[56,350,169,60]}
+{"kind":"shape","id":"sh/0ry903ud","slide":8,"name":"sa-0","bbox":[238,330,48,30]}
+{"kind":"shape","id":"sh/ylozyhgf","slide":8,"name":"s-1","bbox":[287,235,205,230]}
+{"kind":"textbox","id":"sh/jmh072xk","slide":8,"name":"sh-1","text":"SPLIT","textPreview":"SPLIT","textChars":5,"textLines":1,"bbox":[305,275,169,32]}
+{"kind":"textbox","id":"sh/knqh07y5","slide":8,"name":"sb-1","text":"train • valid • test","textPreview":"train • valid • test","textChars":20,"textLines":1,"bbox":[305,350,169,60]}
+{"kind":"shape","id":"sh/lozi9cfq","slide":8,"name":"sa-1","bbox":[487,330,48,30]}
+{"kind":"shape","id":"sh/6p8z2hgb","slide":8,"name":"s-2","bbox":[536,235,205,230]}
+{"kind":"textbox","id":"sh/7ah0bmxw","slide":8,"name":"sh-2","text":"FIT PREP","textPreview":"FIT PREP","textChars":8,"textLines":1,"bbox":[554,275,169,32]}
+{"kind":"textbox","id":"sh/sbqh4ryh","slide":8,"name":"sb-2","text":"เรียนจาก train","textPreview":"เรียนจาก train","textChars":14,"textLines":1,"bbox":[554,350,169,60]}
+{"kind":"shape","id":"sh/tczidwf2","slide":8,"name":"sa-2","bbox":[736,330,48,30]}
+{"kind":"shape","id":"sh/ud8j61g7","slide":8,"name":"s-3","bbox":[785,235,205,230]}
+{"kind":"textbox","id":"sh/fe10f6xs","slide":8,"name":"sh-3","text":"TRANSFORM","textPreview":"TRANSFORM","textChars":9,"textLines":1,"bbox":[803,275,169,32]}
+{"kind":"textbox","id":"sh/ri1g36d0","slide":8,"name":"sb-3","text":"ใช้กฎเดิมกับทุกชุด","textPreview":"ใช้กฎเดิมกับทุกชุด","textChars":18,"textLines":1,"bbox":[803,350,169,60]}
+{"kind":"shape","id":"sh/qhszu1cf","slide":8,"name":"sa-3","bbox":[985,330,48,30]}
+{"kind":"shape","id":"sh/dkjy5wv6","slide":8,"name":"s-4","bbox":[1034,235,205,230]}
+{"kind":"textbox","id":"sh/cjahwbul","slide":8,"name":"sh-4","text":"FIT MODEL","textPreview":"FIT MODEL","textChars":9,"textLines":1,"bbox":[1052,275,169,32]}
+{"kind":"textbox","id":"sh/3e1gzmd4","slide":8,"name":"sb-4","text":"ฝึกและประเมิน","textPreview":"ฝึกและประเมิน","textChars":13,"textLines":1,"bbox":[1052,350,169,60]}
+{"kind":"textbox","id":"sh/2dszqhcj","slide":8,"name":"never","text":"ห้าม fit imputer, scaler, encoder หรือ feature selector ด้วย test data","textPreview":"ห้าม fit imputer, scaler, encoder หรือ feature selector ด้วย test data","textChars":70,"textLines":1,"bbox":[155,555,970,44]}
+{"kind":"notes","id":"nt/zdwpx9","slide":8,"text":"แยก fit กับ transform ให้ชัดเจน\n\n[Sources]\n- scikit-learn, common pitfalls and recommended practices, https://scikit-learn.org/stable/common_pitfalls.html\n- scikit-learn, pipelines and composite estimators, https://scikit-learn.org/stable/modules/compose.html"}
+{"kind":"slide","id":"sl/g6118f","slide":9,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":7}
+{"kind":"textbox","id":"sh/50jat4bu","slide":9,"name":"k-9","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/ixsripc3","slide":9,"name":"t-9","text":"Pipeline ผูก Preprocessing กับ Model ให้ทำซ้ำได้","textPreview":"Pipeline ผูก Preprocessing กับ Model ให้ทำซ้ำได้","textChars":48,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/jy1srudo","slide":9,"name":"r-9","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/s3atojul","slide":9,"name":"fl-9","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/t43axobq","slide":9,"name":"fn-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/61sbm9cf","slide":9,"name":"code","bbox":[52,205,640,365]}
+{"kind":"textbox","id":"sh/r21svet0","slide":9,"name":"sql","text":"Pipeline([\n  ('prep', ColumnTransformer([\n    ('num', impute_scale, numeric),\n    ('cat', impute_onehot, category)\n  ])),\n  ('clf', DecisionTreeClassifier())\n])","textPreview":"Pipeline([ |   ('prep', ColumnTransformer([ |     ('num', impute_scale, numeric), |     ('cat', impute_onehot, category) |   ])), |   ('c...","textChars":160,"textLines":7,"bbox":[82,242,580,275]}
+{"kind":"shape","id":"sh/grutsjuh","slide":9,"name":"why","bbox":[750,205,480,365]}
+{"kind":"textbox","id":"sh/1s3a1ob2","slide":9,"name":"wh","text":"PIPELINE GUARDRAILS","textPreview":"PIPELINE GUARDRAILS","textChars":19,"textLines":1,"bbox":[785,238,390,36]}
+{"kind":"textbox","id":"sh/twbi9cfe","slide":9,"name":"wb","text":"• fit ตามลำดับเดียวกัน\n• cross-validation ไม่รั่ว\n• tune ทุก step ร่วมกัน\n• บันทึก config/version\n• deploy transformation เดิม","textPreview":"• fit ตามลำดับเดียวกัน | • cross-validation ไม่รั่ว | • tune ทุก step ร่วมกัน | • บันทึก config/version | • deploy transformation เดิม","textChars":126,"textLines":5,"bbox":[785,315,390,205]}
+{"kind":"notes","id":"nt/g6118f","slide":9,"text":"ตัวอย่างโค้ดเป็นโครงร่าง ไม่ใช่ผลทดลอง\n\n[Sources]\n- scikit-learn, pipelines and composite estimators, https://scikit-learn.org/stable/modules/compose.html"}
+{"kind":"slide","id":"sl/y1wdpi","slide":10,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":16}
+{"kind":"textbox","id":"sh/w3uxona9","slide":10,"name":"k-10","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/bilgvito","slide":10,"name":"t-10","text":"Data Preparation ทุกขั้นต้องมีเหตุผลและหลักฐาน","textPreview":"Data Preparation ทุกขั้นต้องมีเหตุผลและหลักฐาน","textChars":46,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ahcfmds3","slide":10,"name":"r-10","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/9g3yt8by","slide":10,"name":"fl-10","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/ofuxk3ad","slide":10,"name":"fn-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/nelgryts","slide":10,"name":"a-0","bbox":[54,205,360,142]}
+{"kind":"shape","id":"sh/mdcfitc7","slide":10,"name":"a-0-a","bbox":[54,205,8,142]}
+{"kind":"textbox","id":"sh/tc7ypsb2","slide":10,"name":"a-0-h","text":"MISSING","textPreview":"MISSING","textChars":7,"textLines":1,"bbox":[81,225,312,36]}
+{"kind":"textbox","id":"sh/8behw7ah","slide":10,"name":"a-0-b","text":"ลบ • เติม • indicator","textPreview":"ลบ • เติม • indicator","textChars":21,"textLines":1,"bbox":[81,279,312,52]}
+{"kind":"shape","id":"sh/i94zy58b","slide":10,"name":"a-1","bbox":[462,205,360,142]}
+{"kind":"shape","id":"sh/jad0ra9w","slide":10,"name":"a-1-a","bbox":[462,205,8,142]}
+{"kind":"textbox","id":"sh/4bmh0fqh","slide":10,"name":"a-1-h","text":"ENCODING","textPreview":"ENCODING","textChars":8,"textLines":1,"bbox":[489,225,312,36]}
+{"kind":"textbox","id":"sh/5cvit0r2","slide":10,"name":"a-1-b","text":"one-hot • ordinal","textPreview":"one-hot • ordinal","textChars":17,"textLines":1,"bbox":[489,279,312,52]}
+{"kind":"shape","id":"sh/ul4zulsz","slide":10,"name":"a-2","bbox":[870,205,360,142]}
+{"kind":"shape","id":"sh/v6d0nq9k","slide":10,"name":"a-2-a","bbox":[870,205,8,142]}
+{"kind":"textbox","id":"sh/w7mhwvq5","slide":10,"name":"a-2-h","text":"SCALE","textPreview":"SCALE","textChars":5,"textLines":1,"bbox":[897,225,312,36]}
+{"kind":"textbox","id":"sh/h8vip0rq","slide":10,"name":"a-2-b","text":"standardize เมื่อจำเป็น","textPreview":"standardize เมื่อจำเป็น","textChars":23,"textLines":1,"bbox":[897,279,312,52]}
+{"kind":"shape","id":"sh/e1oz6p8j","slide":10,"name":"a-3","bbox":[54,385,360,142]}
+{"kind":"shape","id":"sh/f2x0zu94","slide":10,"name":"a-3-a","bbox":[54,385,8,142]}
+{"kind":"textbox","id":"sh/bm9wrmpg","slide":10,"name":"a-3-h","text":"OUTLIER","textPreview":"OUTLIER","textChars":7,"textLines":1,"bbox":[81,405,312,36]}
+{"kind":"textbox","id":"sh/qlgfih8v","slide":10,"name":"a-3-b","text":"ตรวจสาเหตุก่อนตัด","textPreview":"ตรวจสาเหตุก่อนตัด","textChars":17,"textLines":1,"bbox":[81,459,312,52]}
+{"kind":"shape","id":"sh/doretw7m","slide":10,"name":"a-4","bbox":[462,385,360,142]}
+{"kind":"shape","id":"sh/cnixkrq1","slide":10,"name":"a-4-a","bbox":[462,385,8,142]}
+{"kind":"textbox","id":"sh/zq9wvmpc","slide":10,"name":"a-4-h","text":"FEATURE","textPreview":"FEATURE","textChars":7,"textLines":1,"bbox":[489,405,312,36]}
+{"kind":"textbox","id":"sh/yp0fmhor","slide":10,"name":"a-4-b","text":"event time ต้อง ≤ T0","textPreview":"event time ต้อง ≤ T0","textChars":20,"textLines":1,"bbox":[489,459,312,52]}
+{"kind":"shape","id":"sh/lcrexw7i","slide":10,"name":"a-5","bbox":[870,385,360,142]}
+{"kind":"shape","id":"sh/0rixor6x","slide":10,"name":"a-5-a","bbox":[870,385,8,142]}
+{"kind":"textbox","id":"sh/7etwz6po","slide":10,"name":"a-5-h","text":"IMBALANCE","textPreview":"IMBALANCE","textChars":9,"textLines":1,"bbox":[897,405,312,36]}
+{"kind":"textbox","id":"sh/mdkfq1o3","slide":10,"name":"a-5-b","text":"weight/resample เฉพาะ train","textPreview":"weight/resample เฉพาะ train","textChars":27,"textLines":1,"bbox":[897,459,312,52]}
+{"kind":"notes","id":"nt/y1wdpi","slide":10,"text":"ถามว่าการเติมค่าเฉลี่ยเหมาะกับ missing ทุกชนิดหรือไม่\n\n[Sources]\n- IBM, Understanding and preparing data, https://www.ibm.com/docs/en/ws-and-kc?topic=modeler-understanding-preparing-data\n- scikit-learn, preprocessing data, https://scikit-learn.org/stable/modules/preprocessing.html\n- scikit-learn, imputation, https://scikit-learn.org/stable/modules/impute.html"}
+{"kind":"slide","id":"sl/wm22hq","slide":11,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":9}
+{"kind":"textbox","id":"sh/rm5onato","slide":11,"name":"k-11","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/c7e5gfa9","slide":11,"name":"t-11","text":"ข้อมูลไม่สมดุลบังคับให้เราดู Beyond Accuracy","textPreview":"ข้อมูลไม่สมดุลบังคับให้เราดู Beyond Accuracy","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/d8n6pkbu","slide":11,"name":"r-11","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/y9wnipsf","slide":11,"name":"fl-11","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/za5orat0","slide":11,"name":"fn-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/0be5kfal","slide":11,"name":"dist","bbox":[60,205,510,370]}
+{"kind":"textbox","id":"sh/lcn6tkbq","slide":11,"name":"dh","text":"10,000 CASES","textPreview":"10,000 CASES","textChars":12,"textLines":1,"bbox":[95,240,300,38]}
+{"kind":"shape","id":"sh/mdg7mpsb","slide":11,"name":"neg","bbox":[95,335,390,80]}
+{"kind":"shape","id":"sh/nepovutw","slide":11,"name":"pos","bbox":[485,335,20,80]}
+{"kind":"textbox","id":"sh/3epgf2d4","slide":11,"name":"nl","text":"Negative 98%","textPreview":"Negative 98%","textChars":12,"textLines":1,"bbox":[95,440,220,34]}
+{"kind":"textbox","id":"sh/2dgf6hcj","slide":11,"name":"pl","text":"Positive 2%","textPreview":"Positive 2%","textChars":11,"textLines":1,"bbox":[330,440,175,34]}
+{"kind":"shape","id":"sh/pgryhcva","slide":11,"name":"guide","bbox":[650,205,570,370]}
+{"kind":"textbox","id":"sh/4fih87up","slide":11,"name":"gh","text":"EVALUATION CHECK","textPreview":"EVALUATION CHECK","textChars":16,"textLines":1,"bbox":[685,240,400,38]}
+{"kind":"textbox","id":"sh/fqpgb2d8","slide":11,"name":"gb","text":"• แสดง prevalence และ baseline\n• ใช้ stratified/group/time split\n• ดู Precision–Recall\n• resample เฉพาะ train\n• ตรวจ alert capacity","textPreview":"• แสดง prevalence และ baseline | • ใช้ stratified/group/time split | • ดู Precision–Recall | • resample เฉพาะ train | • ตรวจ alert capacity","textChars":131,"textLines":5,"bbox":[685,320,450,205]}
+{"kind":"notes","id":"nt/wm22hq","slide":11,"text":"เชื่อม class imbalance กับต้นทุนการปฏิบัติงาน\n\n[Sources]\n- scikit-learn, decision tree practical tips, https://scikit-learn.org/stable/modules/tree.html\n- scikit-learn, metrics and scoring, https://scikit-learn.org/stable/modules/model_evaluation.html"}
+{"kind":"slide","id":"sl/44t0qs","slide":12,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":12}
+{"kind":"textbox","id":"sh/ytw3ytgn","slide":12,"name":"k-12","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/lw72tofy","slide":12,"name":"t-12","text":"Decision Tree แปลงข้อมูลเป็นกฎที่มองเห็นเส้นทางได้","textPreview":"Decision Tree แปลงข้อมูลเป็นกฎที่มองเห็นเส้นทางได้","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/kvyl0jyd","slide":12,"name":"r-12","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/b65knexw","slide":12,"name":"fl-12","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/a5w3u9gb","slide":12,"name":"fn-12","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/xsn2pof2","slide":12,"name":"stem","bbox":[638,295,5,38]}
+{"kind":"shape","id":"sh/crelwjyh","slide":12,"name":"branch","bbox":[381,330,520,5]}
+{"kind":"shape","id":"sh/v29kzix0","slide":12,"name":"leftarr","bbox":[360,330,42,60]}
+{"kind":"shape","id":"sh/u1036dgf","slide":12,"name":"rightarr","bbox":[878,330,42,60]}
+{"kind":"shape","id":"sh/8ny987mx","slide":12,"name":"root","bbox":[475,205,330,95]}
+{"kind":"textbox","id":"sh/9o7qhsni","slide":12,"name":"rt","text":"late_payments > 2?","textPreview":"late_payments > 2?","textChars":18,"textLines":1,"bbox":[500,235,280,34]}
+{"kind":"textbox","id":"sh/mlgr6x47","slide":12,"name":"yes","text":"YES","textPreview":"YES","textChars":3,"textLines":1,"bbox":[315,342,70,28]}
+{"kind":"textbox","id":"sh/nmp8f25s","slide":12,"name":"no","text":"NO","textPreview":"NO","textChars":2,"textLines":1,"bbox":[895,342,70,28]}
+{"kind":"shape","id":"sh/0je94nm1","slide":12,"name":"left","bbox":[150,380,380,150]}
+{"kind":"textbox","id":"sh/lknqdsnm","slide":12,"name":"lt","text":"debt_ratio > 0.45?","textPreview":"debt_ratio > 0.45?","textChars":18,"textLines":1,"bbox":[185,410,310,38]}
+{"kind":"textbox","id":"sh/yxwr2d4v","slide":12,"name":"lb","text":"YES → high risk","textPreview":"YES → high risk","textChars":15,"textLines":1,"bbox":[185,470,310,32]}
+{"kind":"shape","id":"sh/zi58bi5g","slide":12,"name":"right","bbox":[750,380,380,150]}
+{"kind":"textbox","id":"sh/cve90nm5","slide":12,"name":"rr","text":"income stable?","textPreview":"income stable?","textChars":14,"textLines":1,"bbox":[785,410,310,38]}
+{"kind":"textbox","id":"sh/dwnq98na","slide":12,"name":"rb","text":"YES → lower risk","textPreview":"YES → lower risk","textChars":16,"textLines":1,"bbox":[785,470,310,32]}
+{"kind":"textbox","id":"sh/dcf6x4fe","slide":12,"name":"ex","text":"เส้นทาง IF–THEN อธิบายได้ แต่ต้องจำกัดความลึกและตรวจความเสถียร","textPreview":"เส้นทาง IF–THEN อธิบายได้ แต่ต้องจำกัดความลึกและตรวจความเสถียร","textChars":62,"textLines":1,"bbox":[145,580,990,40]}
+{"kind":"notes","id":"nt/44t0qs","slide":12,"text":"กฎเป็นตัวอย่างสังเคราะห์ ไม่ใช่เกณฑ์อนุมัติสินเชื่อจริง\n\n[Sources]\n- scikit-learn, Decision Trees, https://scikit-learn.org/stable/modules/tree.html"}
+{"kind":"slide","id":"sl/sbk9cc","slide":13,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":8}
+{"kind":"textbox","id":"sh/ry9c32dg","slide":13,"name":"k-13","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/czidw7u1","slide":13,"name":"t-13","text":"Split ที่ดีลด Impurity ของ Node ลูกมากที่สุด","textPreview":"Split ที่ดีลด Impurity ของ Node ลูกมากที่สุด","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/d0re5cvm","slide":13,"name":"r-13","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/2tgvqxwz","slide":13,"name":"fl-13","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/3upcz2dk","slide":13,"name":"fn-13","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4vyds7e5","slide":13,"name":"math","bbox":[54,205,560,365]}
+{"kind":"textbox","id":"sh/pw7u1cvq","slide":13,"name":"mh","text":"GINI / ENTROPY","textPreview":"GINI / ENTROPY","textChars":14,"textLines":1,"bbox":[86,238,380,38]}
+{"kind":"textbox","id":"sh/u5wvmdw3","slide":13,"name":"mb","text":"Gini = 1 − Σ pₖ²\n\nEntropy = −Σ pₖ log₂(pₖ)\n\nGain = impurity ก่อน\n       − weighted impurity หลัง","textPreview":"Gini = 1 − Σ pₖ² |  | Entropy = −Σ pₖ log₂(pₖ) |  | Gain = impurity ก่อน |        − weighted impurity หลัง","textChars":96,"textLines":6,"bbox":[86,315,450,220]}
+{"kind":"shape","id":"sh/f6pcvid8","slide":13,"name":"examp","bbox":[670,205,560,365]}
+{"kind":"textbox","id":"sh/rupgnahk","slide":13,"name":"eh","text":"ตัวอย่าง Node: 50 Positive / 50 Negative","textPreview":"ตัวอย่าง Node: 50 Positive / 50 Negative","textChars":40,"textLines":1,"bbox":[705,238,470,38]}
+{"kind":"textbox","id":"sh/qtgfu50z","slide":13,"name":"eb","text":"ก่อน split: Gini = 0.50\n\nหลัง split:\nLeft  40/10 → Gini 0.32\nRight 10/40 → Gini 0.32\n\nGini decrease = 0.18","textPreview":"ก่อน split: Gini = 0.50 |  | หลัง split: | Left  40/10 → Gini 0.32 | Right 10/40 → Gini 0.32 |  | Gini decrease = 0.18","textChars":106,"textLines":7,"bbox":[705,310,440,230]}
+{"kind":"notes","id":"nt/sbk9cc","slide":13,"text":"ให้ผู้เรียนคำนวณ weighted impurity ของ split อีกชุด\n\n[Sources]\n- scikit-learn, Decision Tree mathematical formulation, https://scikit-learn.org/stable/modules/tree.html"}
+{"kind":"slide","id":"sl/0mtw91","slide":14,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":9}
+{"kind":"textbox","id":"sh/i9svi5kf","slide":14,"name":"k-14","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/5cjed0jq","slide":14,"name":"t-14","text":"Tree ลึกจำ Training Data ได้ดี แต่ Generalize แย่ลง","textPreview":"Tree ลึกจำ Training Data ได้ดี แต่ Generalize แย่ลง","textChars":51,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/4badkf25","slide":14,"name":"r-14","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/relwfa1w","slide":14,"name":"fl-14","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/qdsvm5kb","slide":14,"name":"fn-14","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/dg3ehkj2","slide":14,"name":"shallow","bbox":[62,210,520,340]}
+{"kind":"textbox","id":"sh/sfudof2h","slide":14,"name":"sh","text":"SHALLOW TREE","textPreview":"SHALLOW TREE","textChars":12,"textLines":1,"bbox":[92,240,320,38]}
+{"kind":"textbox","id":"sh/7ihc3q1s","slide":14,"name":"sb","text":"กฎน้อย • เสถียรกว่า\nอาจ underfit\n\nตรวจ validation gap","textPreview":"กฎน้อย • เสถียรกว่า | อาจ underfit |  | ตรวจ validation gap","textChars":53,"textLines":4,"bbox":[92,330,400,155]}
+{"kind":"shape","id":"sh/6h8valk7","slide":14,"name":"deep","bbox":[698,210,520,340]}
+{"kind":"textbox","id":"sh/cf2tcnqt","slide":14,"name":"dh","text":"DEEP TREE","textPreview":"DEEP TREE","textChars":9,"textLines":1,"bbox":[728,240,320,38]}
+{"kind":"textbox","id":"sh/d0bu58re","slide":14,"name":"db","text":"กฎมาก • leaf เล็ก\nเสี่ยง overfit\n\nใช้ max_depth • min_samples_leaf • pruning","textPreview":"กฎมาก • leaf เล็ก | เสี่ยง overfit |  | ใช้ max_depth • min_samples_leaf • pruning","textChars":76,"textLines":4,"bbox":[728,330,420,155]}
+{"kind":"textbox","id":"sh/qdkbad8n","slide":14,"name":"cv","text":"เลือกความซับซ้อนจาก validation/cross-validation ไม่ใช่ training score","textPreview":"เลือกความซับซ้อนจาก validation/cross-validation ไม่ใช่ training score","textChars":69,"textLines":1,"bbox":[155,590,970,40]}
+{"kind":"notes","id":"nt/0mtw91","slide":14,"text":"เปรียบเทียบ train score กับ validation score เมื่อเพิ่ม max_depth\n\n[Sources]\n- scikit-learn, Decision Trees advantages and disadvantages, https://scikit-learn.org/stable/modules/tree.html"}
+{"kind":"slide","id":"sl/o2b1kp","slide":15,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":8}
+{"kind":"textbox","id":"sh/nudorm5g","slide":15,"name":"k-15","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/ovmp0r61","slide":15,"name":"t-15","text":"Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate","textPreview":"Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate","textChars":66,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/9wv6twn6","slide":15,"name":"r-15","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ax472hor","slide":15,"name":"fl-15","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/bidovm5c","slide":15,"name":"fn-15","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/wjmp4r6x","slide":15,"name":"formula","bbox":[54,205,590,365]}
+{"kind":"textbox","id":"sh/xkf6xwni","slide":15,"name":"fh","text":"BAYES + CONDITIONAL INDEPENDENCE","textPreview":"BAYES + CONDITIONAL INDEPENDENCE","textChars":32,"textLines":1,"bbox":[86,238,500,36]}
+{"kind":"textbox","id":"sh/ylo761o3","slide":15,"name":"fb","text":"P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y)\n\nprior × likelihoods → posterior\n\nเลือก class ที่ posterior สูงสุด","textPreview":"P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y) |  | prior × likelihoods → posterior |  | เลือก class ที่ posterior สูงสุด","textChars":94,"textLines":5,"bbox":[86,325,500,185]}
+{"kind":"shape","id":"sh/jmxoz65o","slide":15,"name":"types","bbox":[700,205,530,365]}
+{"kind":"textbox","id":"sh/zydcra1c","slide":15,"name":"th","text":"เลือก Variant ให้ตรง Representation","textPreview":"เลือก Variant ให้ตรง Representation","textChars":35,"textLines":1,"bbox":[735,238,430,36]}
+{"kind":"textbox","id":"sh/ex4by5kr","slide":15,"name":"tb","text":"GaussianNB → continuous\nMultinomialNB → counts/text\nBernoulliNB → binary\nComplementNB → imbalanced text\n\nหากใช้ probability เป็น risk\nต้องตรวจ calibration","textPreview":"GaussianNB → continuous | MultinomialNB → counts/text | BernoulliNB → binary | ComplementNB → imbalanced text |  | หากใช้ probability เป็...","textChars":154,"textLines":7,"bbox":[735,310,420,230]}
+{"kind":"notes","id":"nt/o2b1kp","slide":15,"text":"ชี้ว่าความเร็วและความแม่นของ class ไม่ได้แปลว่า probability ตรงความถี่จริง\n\n[Sources]\n- scikit-learn, Naive Bayes, https://scikit-learn.org/stable/modules/naive_bayes.html\n- scikit-learn, probability calibration, https://scikit-learn.org/stable/modules/calibration.html"}
+{"kind":"slide","id":"sl/t65hqv","slide":16,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":19}
+{"kind":"textbox","id":"sh/i10j29on","slide":16,"name":"k-16","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/54b2xony","slide":16,"name":"t-16","text":"Confusion Matrix แยกความผิดพลาดเป็นสี่ชนิด","textPreview":"Confusion Matrix แยกความผิดพลาดเป็นสี่ชนิด","textChars":42,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/43214j6t","slide":16,"name":"r-16","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/r6tkzy54","slide":16,"name":"fl-16","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/65kj6toj","slide":16,"name":"fn-16","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"textbox","id":"sh/t8b21ona","slide":16,"name":"pred","text":"PREDICTED","textPreview":"PREDICTED","textChars":9,"textLines":1,"bbox":[420,205,650,36]}
+{"kind":"textbox","id":"sh/s721836p","slide":16,"name":"actual","text":"ACTUAL","textPreview":"ACTUAL","textChars":6,"textLines":1,"bbox":[50,390,180,36]}
+{"kind":"shape","id":"sh/fadk3y5g","slide":16,"name":"cm-0","bbox":[300,255,360,125]}
+{"kind":"textbox","id":"sh/e9kjatov","slide":16,"name":"ch-0","text":"TP","textPreview":"TP","textChars":2,"textLines":1,"bbox":[322,273,80,32]}
+{"kind":"textbox","id":"sh/8z6xcbm1","slide":16,"name":"cv-0","text":"40","textPreview":"40","textChars":2,"textLines":1,"bbox":[560,273,70,38]}
+{"kind":"textbox","id":"sh/90fylg36","slide":16,"name":"cb-0","text":"จับ Positive ได้","textPreview":"จับ Positive ได้","textChars":16,"textLines":1,"bbox":[322,327,260,30]}
+{"kind":"shape","id":"sh/mxofa14v","slide":16,"name":"cm-1","bbox":[720,255,360,125]}
+{"kind":"textbox","id":"sh/7yxgj6lg","slide":16,"name":"ch-1","text":"FN","textPreview":"FN","textChars":2,"textLines":1,"bbox":[742,273,80,32]}
+{"kind":"textbox","id":"sh/w3qhgbmx","slide":16,"name":"cv-1","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[980,273,70,38]}
+{"kind":"textbox","id":"sh/h4zypg3i","slide":16,"name":"cb-1","text":"พลาด Positive","textPreview":"พลาด Positive","textChars":13,"textLines":1,"bbox":[742,327,260,30]}
+{"kind":"shape","id":"sh/u18fel4r","slide":16,"name":"cm-2","bbox":[300,415,360,125]}
+{"kind":"textbox","id":"sh/v2hgn6lc","slide":16,"name":"ch-2","text":"FP","textPreview":"FP","textChars":2,"textLines":1,"bbox":[322,433,80,32]}
+{"kind":"textbox","id":"sh/47qhkvmt","slide":16,"name":"cv-2","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[560,433,70,38]}
+{"kind":"textbox","id":"sh/58jyt03e","slide":16,"name":"cb-2","text":"เตือนเกิน","textPreview":"เตือนเกิน","textChars":9,"textLines":1,"bbox":[322,487,260,30]}
+{"kind":"shape","id":"sh/dofydgvi","slide":16,"name":"cm-3","bbox":[720,415,360,125]}
+{"kind":"textbox","id":"sh/cn6x4ved","slide":16,"name":"ch-3","text":"TN","textPreview":"TN","textChars":2,"textLines":1,"bbox":[742,433,80,32]}
+{"kind":"textbox","id":"sh/rmdgbqds","slide":16,"name":"cv-3","text":"930","textPreview":"930","textChars":3,"textLines":1,"bbox":[980,433,70,38]}
+{"kind":"textbox","id":"sh/ql4f2lw7","slide":16,"name":"cb-3","text":"ผ่าน Negative","textPreview":"ผ่าน Negative","textChars":13,"textLines":1,"bbox":[742,487,260,30]}
+{"kind":"textbox","id":"sh/1sfy10vu","slide":16,"name":"metrics","text":"Precision = 40/50 = 0.80     Recall = 40/60 = 0.667","textPreview":"Precision = 40/50 = 0.80     Recall = 40/60 = 0.667","textChars":51,"textLines":1,"bbox":[240,590,800,40]}
+{"kind":"notes","id":"nt/t65hqv","slide":16,"text":"ให้นักศึกษาคำนวณ F1 จาก Precision และ Recall\n\n[Sources]\n- scikit-learn, confusion matrix, https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html\n- scikit-learn, metrics and scoring, https://scikit-learn.org/stable/modules/model_evaluation.html"}
+{"kind":"slide","id":"sl/wshxfs","slide":17,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":11}
+{"kind":"textbox","id":"sh/p4bex8fu","slide":17,"name":"k-17","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/21kv2dw3","slide":17,"name":"t-17","text":"Threshold คือ Policy ที่แลก Recall กับ False Alarms","textPreview":"Threshold คือ Policy ที่แลก Recall กับ False Alarms","textChars":51,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/32twvixo","slide":17,"name":"r-17","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/c7mx8nel","slide":17,"name":"fl-17","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/dsve1sfq","slide":17,"name":"fn-17","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/q5kv6dwf","slide":17,"name":"p-0","bbox":[54,220,360,300]}
+{"kind":"shape","id":"sh/b6twzix0","slide":17,"name":"p-0-a","bbox":[54,220,8,300]}
+{"kind":"textbox","id":"sh/sbidwje1","slide":17,"name":"p-0-h","text":"≥ 0.80","textPreview":"≥ 0.80","textChars":6,"textLines":1,"bbox":[81,240,312,36]}
+{"kind":"textbox","id":"sh/twrepofm","slide":17,"name":"p-0-b","text":"AUTO-HOLD\n\nเสี่ยงสูง • หลักฐานพร้อม","textPreview":"AUTO-HOLD |  | เสี่ยงสูง • หลักฐานพร้อม","textChars":35,"textLines":3,"bbox":[81,294,312,210]}
+{"kind":"shape","id":"sh/5wvydsve","slide":17,"name":"p-1","bbox":[462,220,360,300]}
+{"kind":"shape","id":"sh/4v2hknu9","slide":17,"name":"p-1-a","bbox":[462,220,8,300]}
+{"kind":"textbox","id":"sh/3utgbido","slide":17,"name":"p-1-h","text":"0.50–0.79","textPreview":"0.50–0.79","textChars":9,"textLines":1,"bbox":[489,240,312,36]}
+{"kind":"textbox","id":"sh/itkzidw3","slide":17,"name":"p-1-b","text":"MANUAL REVIEW\n\nจำกัดตาม capacity","textPreview":"MANUAL REVIEW |  | จำกัดตาม capacity","textChars":32,"textLines":3,"bbox":[489,294,312,210]}
+{"kind":"shape","id":"sh/dkvyhsvq","slide":17,"name":"p-2","bbox":[870,220,360,300]}
+{"kind":"shape","id":"sh/sjmho7u5","slide":17,"name":"p-2-a","bbox":[870,220,8,300]}
+{"kind":"textbox","id":"sh/rydgf2dk","slide":17,"name":"p-2-h","text":"< 0.50","textPreview":"< 0.50","textChars":6,"textLines":1,"bbox":[897,240,312,36]}
+{"kind":"textbox","id":"sh/qx4zmxcz","slide":17,"name":"p-2-b","text":"PASS + MONITOR\n\nบันทึกและติดตามผล","textPreview":"PASS + MONITOR |  | บันทึกและติดตามผล","textChars":33,"textLines":3,"bbox":[897,294,312,210]}
+{"kind":"textbox","id":"sh/1ofilcvm","slide":17,"name":"cost","text":"เลือกจาก FN cost • FP cost • reviewer capacity • calibration • subgroup impact","textPreview":"เลือกจาก FN cost • FP cost • reviewer capacity • calibration • subgroup impact","textChars":78,"textLines":1,"bbox":[115,575,1050,46]}
+{"kind":"notes","id":"nt/wshxfs","slide":17,"text":"0.5 เป็นค่าเริ่มต้นของบาง classifier ไม่ใช่คำตอบทางธุรกิจ\n\n[Sources]\n- scikit-learn, tuning the decision threshold, https://scikit-learn.org/stable/modules/classification_threshold.html\n- scikit-learn, probability calibration, https://scikit-learn.org/stable/modules/calibration.html"}
+{"kind":"slide","id":"sl/sxm6mo","slide":18,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":6}
+{"kind":"textbox","id":"sh/u54n25cz","slide":18,"name":"k-18","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/h8v6dkba","slide":18,"name":"t-18","text":"20 Applications ต่างกันที่ Target, Cost และ Human Review","textPreview":"20 Applications ต่างกันที่ Target, Cost และ Human Review","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/w7m54fu5","slide":18,"name":"r-18","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/72t47qt8","slide":18,"name":"fl-18","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/m1knylcn","slide":18,"name":"fn-18","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/83250vut","slide":18,"name":"list","bbox":[720,188,510,430]}
+{"kind":"textbox","id":"sh/zyt43qtc","slide":18,"name":"la","text":"01 Credit default\n02 Card fraud\n03 Insurance claim\n04 Hospital triage\n05 Readmission\n06 Pharmacy safety\n07 Telecom churn\n08 Lead qualification\n09 Email spam\n10 Support routing","textPreview":"01 Credit default | 02 Card fraud | 03 Insurance claim | 04 Hospital triage | 05 Readmission | 06 Pharmacy safety | 07 Telecom churn | 08...","textChars":175,"textLines":10,"bbox":[748,212,218,385]}
+{"kind":"textbox","id":"sh/yx0nulcr","slide":18,"name":"lb","text":"11 Cyber intrusion\n12 Predictive maintenance\n13 Manufacturing defect\n14 Delivery exception\n15 Energy fault\n16 Crop disease\n17 Student risk\n18 Benefit eligibility\n19 Environmental alert\n20 Employee attrition","textPreview":"11 Cyber intrusion | 12 Predictive maintenance | 13 Manufacturing defect | 14 Delivery exception | 15 Energy fault | 16 Crop disease | 17...","textChars":206,"textLines":10,"bbox":[974,212,230,385]}
+{"kind":"image","id":"im/cnm1cbap","slide":18,"name":"","geometry":"rect","alt":"ภาพรวมยี่สิบโดเมนที่ใช้ classification","bbox":[42,188,650,430]}
+{"kind":"notes","id":"nt/sxm6mo","slide":18,"text":"ให้แต่ละกลุ่มเลือกหนึ่ง application แล้วระบุ positive class, prediction time, FP/FN cost และ reviewer\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/data-mining-20-applications.png).\n- Week-05 expanded content; applications synthesized as instructional design examples."}
+{"kind":"slide","id":"sl/2lq3j3","slide":19,"title":"DECISION SUPPORT SYSTEMS • WEEK 05","textShapes":7}
+{"kind":"textbox","id":"sh/pwvqh43m","slide":19,"name":"k-19","text":"DECISION SUPPORT SYSTEMS • WEEK 05","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 05","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/29k7mp4b","slide":19,"name":"t-19","text":"Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model","textPreview":"Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/3ad8fulw","slide":19,"name":"r-19","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/g72pkfm5","slide":19,"name":"fl-19","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/18bqdk3q","slide":19,"name":"fn-19","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/f6t8balk","slide":19,"name":"fp","bbox":[830,184,400,455]}
+{"kind":"textbox","id":"sh/k369wjm9","slide":19,"name":"fph","text":"RESPONSIBLE LOOP","textPreview":"RESPONSIBLE LOOP","textChars":16,"textLines":1,"bbox":[862,215,330,34]}
+{"kind":"textbox","id":"sh/l4fqpo3u","slide":19,"name":"fpb","text":"• shared target/feature definitions\n• AI-assisted candidate pipelines\n• cost-aware threshold\n• drift + outcome monitoring\n• subgroup evaluation\n• lineage + permissions\n• human review + appeal","textPreview":"• shared target/feature definitions | • AI-assisted candidate pipelines | • cost-aware threshold | • drift + outcome monitoring | • subgr...","textChars":191,"textLines":7,"bbox":[862,285,330,250]}
+{"kind":"textbox","id":"sh/dg32hcny","slide":19,"name":"fpq","text":"AI เสนอ Candidate\nมนุษย์รับผิดชอบ Decision","textPreview":"AI เสนอ Candidate | มนุษย์รับผิดชอบ Decision","textChars":42,"textLines":2,"bbox":[862,555,330,62]}
+{"kind":"image","id":"im/zaxsfuho","slide":19,"name":"","geometry":"rect","alt":"นักวิเคราะห์และ AI ร่วมกันสร้าง ตรวจ และเฝ้าระวังโมเดล","bbox":[42,184,760,455]}
+{"kind":"notes","id":"nt/2lq3j3","slide":19,"text":"Future Data Mining ไม่จบที่ AutoML แต่รวม governance, monitoring และ human oversight\n\n[Sources]\n- NIST AI RMF 1.0, https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf\n- NIST AIRC, AI Risks and Trustworthiness, https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/\n- Generated illustration: OpenAI ImageGen, 2026 (assets/future-data-mining.png)."}
+{"kind":"slide","id":"sl/zzysr9","slide":20,"title":"WEEK 05 • NEXT ACTION","textShapes":11}
+{"kind":"textbox","id":"sh/pwn29wna","slide":20,"name":"k-20","text":"WEEK 05 • NEXT ACTION","textPreview":"WEEK 05 • NEXT ACTION","textChars":21,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/29cjyhoj","slide":20,"name":"t-20","text":"ลงมือทำ: สร้าง Pipeline แล้วเลือก Policy ที่รับผิดชอบได้","textPreview":"ลงมือทำ: สร้าง Pipeline แล้วเลือก Policy ที่รับผิดชอบได้","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/nal07m54","slide":20,"name":"r-20","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/07u1w76t","slide":20,"name":"fl-20","text":"KSU • Data Mining I","textPreview":"KSU • Data Mining I","textChars":19,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/183i5cny","slide":20,"name":"fn-20","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/e5cjuxon","slide":20,"name":"l1","bbox":[54,202,540,356]}
+{"kind":"shape","id":"sh/f6l03258","slide":20,"name":"l2","bbox":[686,202,540,356]}
+{"kind":"textbox","id":"sh/k3y18b6x","slide":20,"name":"l1n","text":"LAB 01","textPreview":"LAB 01","textChars":6,"textLines":1,"bbox":[86,232,180,34]}
+{"kind":"textbox","id":"sh/l4721gni","slide":20,"name":"l1h","text":"Classification Pipeline","textPreview":"Classification Pipeline","textChars":23,"textLines":1,"bbox":[86,300,450,55]}
+{"kind":"textbox","id":"sh/d43idg7i","slide":20,"name":"l1b","text":"split → preprocessing → Tree/NB\nconfusion matrix + leakage audit\nบันทึก pipeline/version","textPreview":"split → preprocessing → Tree/NB | confusion matrix + leakage audit | บันทึก pipeline/version","textChars":88,"textLines":3,"bbox":[86,410,450,115]}
+{"kind":"textbox","id":"sh/s3ah4bqx","slide":20,"name":"l2n","text":"LAB 02","textPreview":"LAB 02","textChars":6,"textLines":1,"bbox":[718,232,180,34]}
+{"kind":"textbox","id":"sh/r210bqpc","slide":20,"name":"l2h","text":"Threshold & Monitoring","textPreview":"Threshold & Monitoring","textChars":22,"textLines":1,"bbox":[718,300,450,55]}
+{"kind":"textbox","id":"sh/q1sz2l8r","slide":20,"name":"l2b","text":"คำนวณ expected error cost\nออกแบบ 3-level policy\nsubgroup + monitoring plan","textPreview":"คำนวณ expected error cost | ออกแบบ 3-level policy | subgroup + monitoring plan","textChars":74,"textLines":3,"bbox":[718,410,450,115]}
+{"kind":"textbox","id":"sh/50ji9g76","slide":20,"name":"close","text":"เป้าหมาย: ทุกโมเดลมี Target, Time, Metric, Policy และ Owner","textPreview":"เป้าหมาย: ทุกโมเดลมี Target, Time, Metric, Policy และ Owner","textChars":59,"textLines":1,"bbox":[180,602,920,42]}
+{"kind":"notes","id":"nt/zzysr9","slide":20,"text":"ปิดด้วย exit ticket: ระบุ leakage risk และ metric ที่สำคัญที่สุดใน application ของตน\n\n[Sources]\n- Lab-01-Classification-Pipeline.md and Lab-02-Cost-Sensitive-Threshold-and-Monitoring.md."}

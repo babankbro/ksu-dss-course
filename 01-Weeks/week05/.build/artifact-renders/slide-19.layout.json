@@ -1,0 +1,783 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/2lq3j3",
+    "id": "2lq3j3",
+    "slide": 19,
+    "layoutId": "e1122612-014e-49fa-9b0f-1bb22bb7cdc8",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Noto Sans Thai"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e1122612-014e-49fa-9b0f-1bb22bb7cdc8",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwvqh43m",
+      "id": "1",
+      "name": "k-19",
+      "bbox": [
+        42,
+        30,
+        900,
+        28
+      ],
+      "geometry": "rect",
+      "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+      "textPreview": "DECISION SUPPORT SYSTEMS • WEEK 05",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DECISION SUPPORT SYSTEMS • WEEK 05"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+              "fontSize": 17,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/29k7mp4b",
+      "id": "2",
+      "name": "t-19",
+      "bbox": [
+        42,
+        70,
+        1195,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model",
+      "textPreview": "Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 42,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Future Data Mining คือระบบที่ช่วยสร้างและเฝ้าระวัง Model",
+              "fontSize": 42,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ad8fulw",
+      "id": "3",
+      "name": "r-19",
+      "bbox": [
+        42,
+        154,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g72pkfm5",
+      "id": "4",
+      "name": "fl-19",
+      "bbox": [
+        42,
+        676,
+        520,
+        20
+      ],
+      "geometry": "rect",
+      "text": "KSU • Data Mining I",
+      "textPreview": "KSU • Data Mining I",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "KSU • Data Mining I"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "KSU • Data Mining I",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KSU • Data Mining I",
+              "fontSize": 13,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/18bqdk3q",
+      "id": "5",
+      "name": "fn-19",
+      "bbox": [
+        1180,
+        676,
+        58,
+        20
+      ],
+      "geometry": "rect",
+      "text": "19",
+      "textPreview": "19",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "19"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "19",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "19",
+              "fontSize": 13,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/zaxsfuho",
+      "id": "6",
+      "bbox": [
+        42,
+        184,
+        760,
+        455
+      ],
+      "geometry": "rect",
+      "alt": "นักวิเคราะห์และ AI ร่วมกันสร้าง ตรวจ และเฝ้าระวังโมเดล",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "3959f56c-e22e-4a96-867c-d355e4cd9a68",
+        "contentType": "image/png",
+        "byteLength": 1826165
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f6t8balk",
+      "id": "7",
+      "name": "fp",
+      "bbox": [
+        830,
+        184,
+        400,
+        455
+      ],
+      "geometry": "rect",
+      "fillColor": "#EDF0F2",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/k369wjm9",
+      "id": "8",
+      "name": "fph",
+      "bbox": [
+        862,
+        215,
+        330,
+        34
+      ],
+      "geometry": "rect",
+      "text": "RESPONSIBLE LOOP",
+      "textPreview": "RESPONSIBLE LOOP",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "RESPONSIBLE LOOP"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "RESPONSIBLE LOOP",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "RESPONSIBLE LOOP",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l4fqpo3u",
+      "id": "9",
+      "name": "fpb",
+      "bbox": [
+        862,
+        285,
+        330,
+        250
+      ],
+      "geometry": "rect",
+      "text": "• shared target/feature definitions\n• AI-assisted candidate pipelines\n• cost-aware threshold\n• drift + outcome monitoring\n• subgroup evaluation\n• lineage + permissions\n• human review + appeal",
+      "textPreview": "• shared target/feature definitions | • AI-assisted candidate pipelines | • cost-aware threshold | • drift + outcome monitoring | • subgr...",
+      "resolvedFontSize": 21,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 21,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "• shared target/feature definitions"
+          },
+          {
+            "index": 2,
+            "text": "• AI-assisted candidate pipelines"
+          },
+          {
+            "index": 3,
+            "text": "• cost-aware threshold"
+          },
+          {
+            "index": 4,
+            "text": "• drift + outcome monitoring"
+          },
+          {
+            "index": 5,
+            "text": "• subgroup evaluation"
+          },
+          {
+            "index": 6,
+            "text": "• lineage + permissions"
+          },
+          {
+            "index": 7,
+            "text": "• human review + appeal"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "• shared target/feature definitions",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• shared target/feature definitions",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "• AI-assisted candidate pipelines",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• AI-assisted candidate pipelines",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "• cost-aware threshold",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• cost-aware threshold",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "• drift + outcome monitoring",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• drift + outcome monitoring",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "• subgroup evaluation",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• subgroup evaluation",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "• lineage + permissions",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• lineage + permissions",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "• human review + appeal",
+          "resolvedTextStyle": {
+            "fontSize": 21,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "• human review + appeal",
+              "fontSize": 21,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dg32hcny",
+      "id": "10",
+      "name": "fpq",
+      "bbox": [
+        862,
+        555,
+        330,
+        62
+      ],
+      "geometry": "rect",
+      "text": "AI เสนอ Candidate\nมนุษย์รับผิดชอบ Decision",
+      "textPreview": "AI เสนอ Candidate | มนุษย์รับผิดชอบ Decision",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#C84B4B",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AI เสนอ Candidate"
+          },
+          {
+            "index": 2,
+            "text": "มนุษย์รับผิดชอบ Decision"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AI เสนอ Candidate",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AI เสนอ Candidate",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "มนุษย์รับผิดชอบ Decision",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "มนุษย์รับผิดชอบ Decision",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

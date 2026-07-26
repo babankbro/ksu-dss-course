@@ -1,0 +1,1045 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/ipldri",
+    "id": "ipldri",
+    "slide": 7,
+    "layoutId": "e1122612-014e-49fa-9b0f-1bb22bb7cdc8",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Noto Sans Thai"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e1122612-014e-49fa-9b0f-1bb22bb7cdc8",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/udk32x4f",
+      "id": "1",
+      "name": "k-7",
+      "bbox": [
+        42,
+        30,
+        900,
+        28
+      ],
+      "geometry": "rect",
+      "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+      "textPreview": "DECISION SUPPORT SYSTEMS • WEEK 05",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DECISION SUPPORT SYSTEMS • WEEK 05"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+              "fontSize": 17,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hgbmdc3q",
+      "id": "2",
+      "name": "t-7",
+      "bbox": [
+        42,
+        70,
+        1195,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต",
+      "textPreview": "Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 42,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต",
+              "fontSize": 42,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gf2l47ml",
+      "id": "3",
+      "name": "r-7",
+      "bbox": [
+        42,
+        154,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3id4fmlw",
+      "id": "4",
+      "name": "fl-7",
+      "bbox": [
+        42,
+        676,
+        520,
+        20
+      ],
+      "geometry": "rect",
+      "text": "KSU • Data Mining I",
+      "textPreview": "KSU • Data Mining I",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "KSU • Data Mining I"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "KSU • Data Mining I",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KSU • Data Mining I",
+              "fontSize": 13,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2h436h4b",
+      "id": "5",
+      "name": "fn-7",
+      "bbox": [
+        1180,
+        676,
+        58,
+        20
+      ],
+      "geometry": "rect",
+      "text": "07",
+      "textPreview": "07",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "07"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "07",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "07",
+              "fontSize": 13,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkvmhw32",
+      "id": "6",
+      "name": "line",
+      "bbox": [
+        90,
+        370,
+        1100,
+        5
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jml8rmh",
+      "id": "7",
+      "name": "dot-0",
+      "bbox": [
+        90,
+        353,
+        36,
+        36
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#246BCE",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bmd4jml8",
+      "id": "8",
+      "name": "et-0",
+      "bbox": [
+        45,
+        275,
+        125,
+        38
+      ],
+      "geometry": "rect",
+      "text": "T−90",
+      "textPreview": "T−90",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "T−90"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "T−90",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "T−90",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ql43ah4n",
+      "id": "9",
+      "name": "eb-0",
+      "bbox": [
+        10,
+        420,
+        195,
+        60
+      ],
+      "geometry": "rect",
+      "text": "ประวัติที่ใช้ได้",
+      "textPreview": "ประวัติที่ใช้ได้",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ประวัติที่ใช้ได้"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ประวัติที่ใช้ได้",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ประวัติที่ใช้ได้",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/g3ap4fqx",
+      "id": "10",
+      "name": "dot-1",
+      "bbox": [
+        440,
+        353,
+        36,
+        36
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#C84B4B",
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/14j6x0ri",
+      "id": "11",
+      "name": "et-1",
+      "bbox": [
+        395,
+        275,
+        125,
+        38
+      ],
+      "geometry": "rect",
+      "text": "T0",
+      "textPreview": "T0",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "Noto Sans Thai",
+        "color": "#C84B4B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "T0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "T0",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "T0",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/e1s7258r",
+      "id": "12",
+      "name": "eb-1",
+      "bbox": [
+        360,
+        420,
+        195,
+        60
+      ],
+      "geometry": "rect",
+      "text": "เวลาทำนาย",
+      "textPreview": "เวลาทำนาย",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "เวลาทำนาย"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "เวลาทำนาย",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "เวลาทำนาย",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/f21ova9c",
+      "id": "13",
+      "name": "dot-2",
+      "bbox": [
+        790,
+        353,
+        36,
+        36
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#246BCE",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o7up8fqt",
+      "id": "14",
+      "name": "et-2",
+      "bbox": [
+        745,
+        275,
+        125,
+        38
+      ],
+      "geometry": "rect",
+      "text": "T+30",
+      "textPreview": "T+30",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "T+30"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "T+30",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "T+30",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p8361k7e",
+      "id": "15",
+      "name": "eb-2",
+      "bbox": [
+        710,
+        420,
+        195,
+        60
+      ],
+      "geometry": "rect",
+      "text": "ช่วงสังเกต",
+      "textPreview": "ช่วงสังเกต",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "ช่วงสังเกต"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "ช่วงสังเกต",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ช่วงสังเกต",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/25s76583",
+      "id": "16",
+      "name": "dot-3",
+      "bbox": [
+        1140,
+        353,
+        36,
+        36
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#246BCE",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/36loza98",
+      "id": "17",
+      "name": "et-3",
+      "bbox": [
+        1095,
+        275,
+        125,
+        38
+      ],
+      "geometry": "rect",
+      "text": "T+90",
+      "textPreview": "T+90",
+      "resolvedFontSize": 27,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 27,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "T+90"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "T+90",
+          "resolvedTextStyle": {
+            "fontSize": 27,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "T+90",
+              "fontSize": 27,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cvupczq5",
+      "id": "18",
+      "name": "eb-3",
+      "bbox": [
+        1060,
+        420,
+        195,
+        60
+      ],
+      "geometry": "rect",
+      "text": "Target finalized",
+      "textPreview": "Target finalized",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Target finalized"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Target finalized",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Target finalized",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xw365k7q",
+      "id": "19",
+      "name": "bad",
+      "bbox": [
+        300,
+        540,
+        680,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต",
+      "textPreview": "Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 29,
+        "typeface": "Noto Sans Thai",
+        "color": "#C84B4B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "typeface": "Noto Sans Thai",
+            "color": "#C84B4B",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Feature ที่เกิดหลัง T0 = คำใบ้จากอนาคต",
+              "fontSize": 29,
+              "typeface": "Noto Sans Thai",
+              "color": "#C84B4B",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

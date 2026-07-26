@@ -1,11 +1,15 @@
 ---
-title: "W4 — OLAP และการวิเคราะห์หลายมิติ"
-tags: [week, part-2-data]
+title: W4 — OLAP และการวิเคราะห์หลายมิติ
+tags:
+  - week
+  - part-2-data
 week: 4
-part: "Part II — ชั้นข้อมูล"
-clo: [2]
-exam: midterm
+part: Part II — ชั้นข้อมูล
+clo:
+  - 2
+exam: ;0
 ---
+
 
 # 📘 สัปดาห์ที่ 4 — OLAP และการวิเคราะห์หลายมิติ
 

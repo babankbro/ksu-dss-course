@@ -11,6 +11,15 @@ exam: midterm
 
 ⬅️ [[Week-04-OLAP-and-Multidimensional-Analysis]] | ➡️ [[Week-06-Data-Mining-II]]
 
+> [!info] ชุดสอนฉบับขยาย
+> - [[week05/README|ภาพรวม Week 05]]
+> - [[week05/Week-05-Expanded-Content|เนื้อหาขยาย]]
+> - [[week05/Week-05-Questions|คำถาม 10 ข้อพร้อมแนวคำตอบ]]
+> - [[week05/Lab-01-Classification-Pipeline|Lab 1: Classification Pipeline]]
+> - [[week05/Lab-02-Cost-Sensitive-Threshold-and-Monitoring|Lab 2: Threshold และ Monitoring]]
+> - [[week05/References|เอกสารอ้างอิง]]
+> - `week05/Week-05-Data-Mining-I.pptx` — สไลด์ 20 หน้า
+
 ## 🎯 จุดประสงค์การเรียนรู้
 1. อธิบายและใช้กระบวนการมาตรฐานอุตสาหกรรม [[CRISP-DM]] ครบ 6 ระยะ
 2. ดำเนินการเตรียมข้อมูล (Data Preprocessing) ได้อย่างเป็นระบบและอธิบายเหตุผลของแต่ละขั้น

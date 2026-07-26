@@ -1,0 +1,855 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/o2b1kp",
+    "id": "o2b1kp",
+    "slide": 15,
+    "layoutId": "e1122612-014e-49fa-9b0f-1bb22bb7cdc8",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "Noto Sans Thai"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "e1122612-014e-49fa-9b0f-1bb22bb7cdc8",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "8747c3ff-0c18-4a66-a970-2dfbb01374c5",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/nudorm5g",
+      "id": "1",
+      "name": "k-15",
+      "bbox": [
+        42,
+        30,
+        900,
+        28
+      ],
+      "geometry": "rect",
+      "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+      "textPreview": "DECISION SUPPORT SYSTEMS • WEEK 05",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 17,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "DECISION SUPPORT SYSTEMS • WEEK 05"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "DECISION SUPPORT SYSTEMS • WEEK 05",
+              "fontSize": 17,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ovmp0r61",
+      "id": "2",
+      "name": "t-15",
+      "bbox": [
+        42,
+        70,
+        1195,
+        72
+      ],
+      "geometry": "rect",
+      "text": "Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate",
+      "textPreview": "Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate",
+      "resolvedFontSize": 42,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 42,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate",
+          "resolvedTextStyle": {
+            "fontSize": 42,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Naive Bayes เป็น Baseline ที่เร็ว แต่ Probability อาจไม่ Calibrate",
+              "fontSize": 42,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9wv6twn6",
+      "id": "3",
+      "name": "r-15",
+      "bbox": [
+        42,
+        154,
+        1196,
+        2
+      ],
+      "geometry": "rect",
+      "fillColor": "#B8BCC4",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ax472hor",
+      "id": "4",
+      "name": "fl-15",
+      "bbox": [
+        42,
+        676,
+        520,
+        20
+      ],
+      "geometry": "rect",
+      "text": "KSU • Data Mining I",
+      "textPreview": "KSU • Data Mining I",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "KSU • Data Mining I"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "KSU • Data Mining I",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "KSU • Data Mining I",
+              "fontSize": 13,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bidovm5c",
+      "id": "5",
+      "name": "fn-15",
+      "bbox": [
+        1180,
+        676,
+        58,
+        20
+      ],
+      "geometry": "rect",
+      "text": "15",
+      "textPreview": "15",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 13,
+        "typeface": "Noto Sans Thai",
+        "color": "#56606B",
+        "alignment": "right",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "15"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "15",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "typeface": "Noto Sans Thai",
+            "color": "#56606B",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "15",
+              "fontSize": 13,
+              "typeface": "Noto Sans Thai",
+              "color": "#56606B",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/wjmp4r6x",
+      "id": "6",
+      "name": "formula",
+      "bbox": [
+        54,
+        205,
+        590,
+        365
+      ],
+      "geometry": "rect",
+      "fillColor": "#19212A",
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkf6xwni",
+      "id": "7",
+      "name": "fh",
+      "bbox": [
+        86,
+        238,
+        500,
+        36
+      ],
+      "geometry": "rect",
+      "text": "BAYES + CONDITIONAL INDEPENDENCE",
+      "textPreview": "BAYES + CONDITIONAL INDEPENDENCE",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 23,
+        "typeface": "Noto Sans Thai",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "BAYES + CONDITIONAL INDEPENDENCE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "BAYES + CONDITIONAL INDEPENDENCE",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "typeface": "Noto Sans Thai",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "BAYES + CONDITIONAL INDEPENDENCE",
+              "fontSize": 23,
+              "typeface": "Noto Sans Thai",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ylo761o3",
+      "id": "8",
+      "name": "fb",
+      "bbox": [
+        86,
+        325,
+        500,
+        185
+      ],
+      "geometry": "rect",
+      "text": "P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y)\n\nprior × likelihoods → posterior\n\nเลือก class ที่ posterior สูงสุด",
+      "textPreview": "P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y) |  | prior × likelihoods → posterior |  | เลือก class ที่ posterior สูงสุด",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 26,
+        "typeface": "Noto Sans Thai",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 5,
+        "lines": [
+          {
+            "index": 1,
+            "text": "P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y)"
+          },
+          {
+            "index": 2,
+            "text": ""
+          },
+          {
+            "index": 3,
+            "text": "prior × likelihoods → posterior"
+          },
+          {
+            "index": 4,
+            "text": ""
+          },
+          {
+            "index": 5,
+            "text": "เลือก class ที่ posterior สูงสุด"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y)",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Noto Sans Thai",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "P(y|x₁…xₙ) ∝ P(y) ∏ P(xᵢ|y)",
+              "fontSize": 26,
+              "typeface": "Noto Sans Thai",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "prior × likelihoods → posterior",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Noto Sans Thai",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "prior × likelihoods → posterior",
+              "fontSize": 26,
+              "typeface": "Noto Sans Thai",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 5,
+          "text": "เลือก class ที่ posterior สูงสุด",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Noto Sans Thai",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "เลือก class ที่ posterior สูงสุด",
+              "fontSize": 26,
+              "typeface": "Noto Sans Thai",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/jmxoz65o",
+      "id": "9",
+      "name": "types",
+      "bbox": [
+        700,
+        205,
+        530,
+        365
+      ],
+      "geometry": "rect",
+      "fillColor": "#DFF3FC",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zydcra1c",
+      "id": "10",
+      "name": "th",
+      "bbox": [
+        735,
+        238,
+        430,
+        36
+      ],
+      "geometry": "rect",
+      "text": "เลือก Variant ให้ตรง Representation",
+      "textPreview": "เลือก Variant ให้ตรง Representation",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Noto Sans Thai",
+        "color": "#246BCE",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "เลือก Variant ให้ตรง Representation"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "เลือก Variant ให้ตรง Representation",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#246BCE",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "เลือก Variant ให้ตรง Representation",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#246BCE",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ex4by5kr",
+      "id": "11",
+      "name": "tb",
+      "bbox": [
+        735,
+        310,
+        420,
+        230
+      ],
+      "geometry": "rect",
+      "text": "GaussianNB → continuous\nMultinomialNB → counts/text\nBernoulliNB → binary\nComplementNB → imbalanced text\n\nหากใช้ probability เป็น risk\nต้องตรวจ calibration",
+      "textPreview": "GaussianNB → continuous | MultinomialNB → counts/text | BernoulliNB → binary | ComplementNB → imbalanced text |  | หากใช้ probability เป็...",
+      "resolvedFontSize": 24,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 24,
+        "typeface": "Noto Sans Thai",
+        "color": "#111318",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 7,
+        "lines": [
+          {
+            "index": 1,
+            "text": "GaussianNB → continuous"
+          },
+          {
+            "index": 2,
+            "text": "MultinomialNB → counts/text"
+          },
+          {
+            "index": 3,
+            "text": "BernoulliNB → binary"
+          },
+          {
+            "index": 4,
+            "text": "ComplementNB → imbalanced text"
+          },
+          {
+            "index": 5,
+            "text": ""
+          },
+          {
+            "index": 6,
+            "text": "หากใช้ probability เป็น risk"
+          },
+          {
+            "index": 7,
+            "text": "ต้องตรวจ calibration"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "GaussianNB → continuous",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "GaussianNB → continuous",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "MultinomialNB → counts/text",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MultinomialNB → counts/text",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 3,
+          "text": "BernoulliNB → binary",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "BernoulliNB → binary",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 4,
+          "text": "ComplementNB → imbalanced text",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ComplementNB → imbalanced text",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 6,
+          "text": "หากใช้ probability เป็น risk",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "หากใช้ probability เป็น risk",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 7,
+          "text": "ต้องตรวจ calibration",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Noto Sans Thai",
+            "color": "#111318",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ต้องตรวจ calibration",
+              "fontSize": 24,
+              "typeface": "Noto Sans Thai",
+              "color": "#111318",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}
