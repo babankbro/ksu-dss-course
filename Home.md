@@ -66,6 +66,9 @@ weeks: 16
 | สื่อจำลอง | สัปดาห์ | ใบงาน |
 |---|:--:|---|
 | 🎛️ Decision Cockpit — จำลองการตัดสินใจตามกรอบ Simon | W1–W2 | [[Sim-01-Decision-Cockpit]] |
+| 🏗️ Architecture Sandbox — ประกอบสถาปัตยกรรมเองแล้วรันจริง | W2 | [[Sim-03-Architecture-Sandbox]] |
+| 💥 Chaos Lab — ทุบระบบทีละชิ้น | W2 | [[Sim-04-Chaos-Lab]] |
+| 🩺 Anti-pattern Clinic — วินิจฉัยระบบป่วย 8 ราย | W2 | [[Sim-05-Antipattern-Clinic]] |
 | 🧊 OLAP Cube Explorer — ลูกบาศก์ข้อมูลที่จับต้องได้ | W3–W4 | [[Sim-02-OLAP-Cube-Explorer]] |
 | ⚖️ Bias Lab · 🌫️ Fuzzy Playground · 🏁 Signal-to-Action Race | W5–W15 | 🕓 กำลังพัฒนา |
 

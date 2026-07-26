@@ -27,9 +27,24 @@ npm --prefix web run dev
 |:--:|---|:--:|:--:|---|---|
 | 01 | 🎛️ **Decision Cockpit** — จำลองการตัดสินใจตามกรอบ Simon | W1–W2 | ✅ พร้อมใช้ | [[Sim-01-Decision-Cockpit]] | `sim-01-decision-cockpit.html` |
 | 02 | 🧊 **OLAP Cube Explorer** — ลูกบาศก์ข้อมูลที่จับต้องได้ | W3–W4 | ✅ พร้อมใช้ | [[Sim-02-OLAP-Cube-Explorer]] | `sim-02-olap-cube-explorer.html` |
-| 03 | ⚖️ **Bias Lab** — ทำไม Accuracy ถึงโกหก | W5–W6, W9 | 🕓 กำลังพัฒนา | — | — |
-| 04 | 🌫️ **Fuzzy vs Crisp Playground** — เส้นแบ่งที่ไม่คม | W12–W13 | 🕓 กำลังพัฒนา | — | — |
-| 05 | 🏁 **Signal-to-Action Race** — BI vs AI vs DI | W15 | 🕓 กำลังพัฒนา | — | — |
+| 03 | 🏗️ **Architecture Sandbox** — ประกอบสถาปัตยกรรมเองแล้วรันจริง | W2 | ✅ พร้อมใช้ | [[Sim-03-Architecture-Sandbox]] | เว็บแอปเท่านั้น |
+| 04 | 💥 **Chaos Lab** — ทุบระบบทีละชิ้น | W2 | ✅ พร้อมใช้ | [[Sim-04-Chaos-Lab]] | เว็บแอปเท่านั้น |
+| 05 | 🩺 **Anti-pattern Clinic** — วินิจฉัยระบบป่วย 8 ราย | W2 | ✅ พร้อมใช้ | [[Sim-05-Antipattern-Clinic]] | เว็บแอปเท่านั้น |
+| 06 | ⚖️ **Bias Lab** — ทำไม Accuracy ถึงโกหก | W5–W6, W9 | 🕓 กำลังพัฒนา | — | — |
+| 07 | 🌫️ **Fuzzy vs Crisp Playground** — เส้นแบ่งที่ไม่คม | W12–W13 | 🕓 กำลังพัฒนา | — | — |
+| 08 | 🏁 **Signal-to-Action Race** — BI vs AI vs DI | W15 | 🕓 กำลังพัฒนา | — | — |
+
+### ชุดสามตัวของสัปดาห์ที่ 2 ใช้ต่อกันเป็นลำดับ
+
+```mermaid
+flowchart LR
+    A["🏗️ Architecture Sandbox<br/>ประกอบระบบเอง"] --> B["💥 Chaos Lab<br/>ทดสอบสิ่งที่ประกอบ"]
+    B --> C["🩺 Anti-pattern Clinic<br/>วินิจฉัยระบบของคนอื่น"]
+    C -.นำกลับไปออกแบบใหม่.-> A
+```
+
+สร้าง → ทดสอบ → วิพากษ์ · ใช้เต็มคาบปฏิบัติการ 2 ชั่วโมงได้พอดี
+หรือเลือกใช้ตัวเดียวคู่กับ Lab เดิมของสัปดาห์ที่ 2 ก็ได้
 
 ## หลักการออกแบบร่วมของทุกตัว
 

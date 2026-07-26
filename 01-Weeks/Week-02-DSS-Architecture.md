@@ -104,3 +104,15 @@ flowchart TB
 - [[Sim-01-Decision-Cockpit|🎛️ Sim 01 — Decision Cockpit]] — จำลองการตัดสินใจตามกรอบ Simon 4 ระยะ เทียบผลระหว่างไม่มีระบบ / มี BI / มี DSS พร้อมใบงานและเฉลย
 - เปิดใช้: `npm --prefix web run dev` → `http://localhost:3000/sims/decision-cockpit` หรือดับเบิลคลิก `06-Simulations/sim-01-decision-cockpit.html`
 - ดัชนีสื่อจำลองทั้งหมด: [[Simulation-Index]]
+
+### สื่อจำลองชุดสถาปัตยกรรม (สัปดาห์ที่ 2)
+
+ใช้ต่อกันเป็นลำดับ สร้าง → ทดสอบ → วิพากษ์ เต็มคาบปฏิบัติการ 2 ชั่วโมง
+
+| สื่อจำลอง | ใช้คู่กับ | ใบงานพร้อมเฉลย |
+|---|---|---|
+| 🏗️ Architecture Sandbox — ประกอบสถาปัตยกรรมเองแล้วรันคำขอสินเชื่อ 800 เคส | Lab 2 Design a Future DSS | [[Sim-03-Architecture-Sandbox]] |
+| 💥 Chaos Lab — ทุบระบบทีละชิ้น เทียบความจริงกับสิ่งที่ผู้ใช้เห็น | Lab 1 ขั้น Failure injection | [[Sim-04-Chaos-Lab]] |
+| 🩺 Anti-pattern Clinic — วินิจฉัยระบบป่วย 8 ราย ตาม anti-pattern 7 ข้อ | บทที่ 10 Failure Modes | [[Sim-05-Antipattern-Clinic]] |
+
+เปิดใช้: `npm --prefix web run dev` → `http://localhost:3000`
