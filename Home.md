@@ -70,6 +70,7 @@ weeks: 16
 | 💥 Chaos Lab — ทุบระบบทีละชิ้น | W2 | [[Sim-04-Chaos-Lab]] |
 | 🩺 Anti-pattern Clinic — วินิจฉัยระบบป่วย 8 ราย | W2 | [[Sim-05-Antipattern-Clinic]] |
 | 🧊 OLAP Cube Explorer — ลูกบาศก์ข้อมูลที่จับต้องได้ | W3–W4 | [[Sim-02-OLAP-Cube-Explorer]] |
+| 🔎 Grain Detective · 🧼 Dirty Data Gauntlet · 🔁 ETL Pipeline Sim | W3 | [[Sim-W3-Data-Management]] |
 | ⚖️ Bias Lab · 🌫️ Fuzzy Playground · 🏁 Signal-to-Action Race | W5–W15 | 🕓 กำลังพัฒนา |
 
 ---

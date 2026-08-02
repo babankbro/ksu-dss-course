@@ -132,3 +132,22 @@ erDiagram
 - [[Sim-02-OLAP-Cube-Explorer|🧊 Sim 02 — OLAP Cube Explorer]] — ลูกบาศก์ข้อมูลที่หมุนได้ กด Roll-up / Drill-down / Slice / Dice / Pivot แล้วเห็น SQL ที่เทียบเท่า พร้อมโหมดท้าทาย 6 คำถามและเฉลย
 - เปิดใช้: `npm --prefix web run dev` → `http://localhost:3000/sims/olap-cube` หรือดับเบิลคลิก `06-Simulations/sim-02-olap-cube-explorer.html`
 - ดัชนีสื่อจำลองทั้งหมด: [[Simulation-Index]]
+
+## 🎮 สื่อจำลองและ Lab บน Colab
+
+สื่อจำลอง 3 ตัว + Lab Python 3 ชุด ที่ใช้ไฟล์ CSV เดียวกัน ตัวเลขบนหน้าจอกับที่ได้จาก pandas ตรงกันทุกหลัก
+
+| สื่อจำลอง | Lab | เฉลยหลัก |
+|---|---|---|
+| 🔎 Grain Detective | `labs/week03/Lab-W3-1-Grain-Detective.ipynb` | เลือก grain ผิด ยอดขายพอง **+12.96
+## 🎮 สื่อจำลองและ Lab บน Colab
+
+สื่อจำลอง 3 ตัว + Lab Python 3 ชุด ใช้ไฟล์ CSV เดียวกัน ตัวเลขบนหน้าจอกับที่ได้จาก pandas ตรงกันทุกหลัก
+
+| สื่อจำลอง | Lab | เฉลยหลัก |
+|---|---|---|
+| 🔎 Grain Detective | `labs/week03/Lab-W3-1-Grain-Detective.ipynb` | เลือก grain ผิด ยอดขายพอง **+12.96%** |
+| 🧼 Dirty Data Gauntlet | `labs/week03/Lab-W3-2-Dirty-Data-Gauntlet.ipynb` | ยอดที่ถูกต้อง **3,814,298.55 บาท** |
+| 🔁 ETL Pipeline Sim | `labs/week03/Lab-W3-3-ETL-Pipeline.ipynb` | **1,549 แถว · 1,822,503.00 บาท** |
+
+รายละเอียดและเฉลยเต็ม: [[Sim-W3-Data-Management]] · ชุดข้อมูล: `datasets/week03/`

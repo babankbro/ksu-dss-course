@@ -311,3 +311,17 @@ pre{background:var(--panel2);border:1px solid var(--line);border-radius:10px;pad
 .ms-line{padding:4px 0;border-bottom:1px dashed rgba(255,255,255,.12);font-variant-numeric:tabular-nums}
 .ms-verdict{margin-top:9px;font-size:16px;font-weight:700}
 .rxlist{max-height:430px;overflow-y:auto;padding-right:4px}
+
+/* ============================================================
+   Week 03 — Grain Detective / Dirty Data / ETL Pipeline
+   ============================================================ */
+.grainopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px;margin-bottom:14px}
+.grainopts .opt{margin-bottom:0}
+.dirtygrid{display:grid;grid-template-columns:420px 1fr;gap:14px;align-items:start}
+.etlgrid{display:grid;grid-template-columns:360px 1fr;gap:14px;align-items:start}
+@media(max-width:1100px){.dirtygrid,.etlgrid{grid-template-columns:1fr}}
+.fault.on-good{border-color:var(--ok);background:rgba(34,197,94,.1)}
+.sw.on-good{background:var(--ok)}
+.sw.on-good::after{left:17px}
+code{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;
+  font-family:var(--font-mono),ui-monospace,Consolas,monospace;font-size:.9em}

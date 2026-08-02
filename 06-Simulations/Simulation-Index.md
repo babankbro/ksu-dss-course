@@ -30,9 +30,12 @@ npm --prefix web run dev
 | 03 | 🏗️ **Architecture Sandbox** — ประกอบสถาปัตยกรรมเองแล้วรันจริง | W2 | ✅ พร้อมใช้ | [[Sim-03-Architecture-Sandbox]] | เว็บแอปเท่านั้น |
 | 04 | 💥 **Chaos Lab** — ทุบระบบทีละชิ้น | W2 | ✅ พร้อมใช้ | [[Sim-04-Chaos-Lab]] | เว็บแอปเท่านั้น |
 | 05 | 🩺 **Anti-pattern Clinic** — วินิจฉัยระบบป่วย 8 ราย | W2 | ✅ พร้อมใช้ | [[Sim-05-Antipattern-Clinic]] | เว็บแอปเท่านั้น |
-| 06 | ⚖️ **Bias Lab** — ทำไม Accuracy ถึงโกหก | W5–W6, W9 | 🕓 กำลังพัฒนา | — | — |
-| 07 | 🌫️ **Fuzzy vs Crisp Playground** — เส้นแบ่งที่ไม่คม | W12–W13 | 🕓 กำลังพัฒนา | — | — |
-| 08 | 🏁 **Signal-to-Action Race** — BI vs AI vs DI | W15 | 🕓 กำลังพัฒนา | — | — |
+| 06 | 🔎 **Grain Detective** — เลือก grain ผิดแล้วยอดขายพอง 12.96% | W3 | ✅ พร้อมใช้ | [[Sim-W3-Data-Management]] | เว็บแอป + Colab |
+| 07 | 🧼 **Dirty Data Gauntlet** — เปิดกฎคุณภาพทีละข้อ | W3 | ✅ พร้อมใช้ | [[Sim-W3-Data-Management]] | เว็บแอป + Colab |
+| 08 | 🔁 **ETL Pipeline Sim** — schema drift · ข้อมูลมาช้า · แฟ้มซ้ำ | W3 | ✅ พร้อมใช้ | [[Sim-W3-Data-Management]] | เว็บแอป + Colab |
+| 09 | ⚖️ **Bias Lab** — ทำไม Accuracy ถึงโกหก | W5–W6, W9 | 🕓 กำลังพัฒนา | — | — |
+| 10 | 🌫️ **Fuzzy vs Crisp Playground** — เส้นแบ่งที่ไม่คม | W12–W13 | 🕓 กำลังพัฒนา | — | — |
+| 11 | 🏁 **Signal-to-Action Race** — BI vs AI vs DI | W15 | 🕓 กำลังพัฒนา | — | — |
 
 ### ชุดสามตัวของสัปดาห์ที่ 2 ใช้ต่อกันเป็นลำดับ
 

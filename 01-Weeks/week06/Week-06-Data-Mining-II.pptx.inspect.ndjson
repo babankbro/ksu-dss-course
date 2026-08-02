@@ -1,0 +1,479 @@
+{"kind":"deck","id":"pr/r2vyv5","name":"Deck"}
+{"kind":"layout","layoutId":"5e9d8a42-c100-465d-b44d-419d889d454c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"18d91b7a-015f-4100-ac33-ab1598d8aec5","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/4452ag","slide":1,"title":"WEEK 06 • CLUSTERING & ASSOCIATION RULES","textShapes":5}
+{"kind":"shape","id":"sh/0budk7qp","slide":1,"name":"fade","bbox":[0,0,650,720]}
+{"kind":"textbox","id":"sh/1c3edc7a","slide":1,"name":"ck","text":"WEEK 06 • CLUSTERING & ASSOCIATION RULES","textPreview":"WEEK 06 • CLUSTERING & ASSOCIATION RULES","textChars":40,"textLines":1,"bbox":[48,52,600,34]}
+{"kind":"textbox","id":"sh/mdcvmh8v","slide":1,"name":"ct","text":"Data Mining II","textPreview":"Data Mining II","textChars":14,"textLines":1,"bbox":[48,165,600,80]}
+{"kind":"textbox","id":"sh/nelwfmp0","slide":1,"name":"cs","text":"Pattern Discovery → Decision Evidence","textPreview":"Pattern Discovery → Decision Evidence","textChars":37,"textLines":1,"bbox":[48,300,590,48]}
+{"kind":"textbox","id":"sh/ofuxor6l","slide":1,"name":"cq","text":"รูปแบบที่พบ ยังไม่ใช่กลุ่มหรือกฎที่ควรใช้","textPreview":"รูปแบบที่พบ ยังไม่ใช่กลุ่มหรือกฎที่ควรใช้","textChars":41,"textLines":1,"bbox":[48,485,575,68]}
+{"kind":"textbox","id":"sh/9g3ehc76","slide":1,"name":"cc","text":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textPreview":"รายวิชาระบบสนับสนุนการตัดสินใจ • KSU","textChars":36,"textLines":1,"bbox":[48,630,560,28]}
+{"kind":"image","id":"im/2x4rm9sf","slide":1,"name":"","geometry":"rect","alt":"นักวิเคราะห์สำรวจกลุ่มข้อมูลและความสัมพันธ์ของสินค้า","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/4452ag","slide":1,"text":"เปิดด้วยคำถาม: ถ้า algorithm คืนมา 3 clusters องค์กรมีลูกค้า 3 ประเภทจริงหรือไม่?\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/data-mining-ii-cover.png)."}
+{"kind":"slide","id":"sl/vbdiem","slide":2,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":6}
+{"kind":"textbox","id":"sh/do7a9onq","slide":2,"name":"k-2","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/qlgry9of","slide":2,"name":"t-2","text":"10 คำถามที่จะเปลี่ยน Pattern ให้เป็น Decision","textPreview":"10 คำถามที่จะเปลี่ยน Pattern ให้เป็น Decision","textChars":45,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/bmps7e50","slide":2,"name":"r-2","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ojy9wj69","slide":2,"name":"fl-2","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/pk7a54nu","slide":2,"name":"fn-2","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/2xwru9o3","slide":2,"name":"ql","bbox":[52,202,560,400]}
+{"kind":"shape","id":"sh/3i583e5o","slide":2,"name":"qr","bbox":[668,202,560,400]}
+{"kind":"textbox","id":"sh/gve9sz6d","slide":2,"name":"qlt","text":"1 หน่วยวิเคราะห์คืออะไร?\n2 Feature กำหนดความคล้ายอย่างไร?\n3 Scale ใดกำลังครอบงำระยะทาง?\n4 K-Means converged ไปจุดใด?\n5 k ใดทั้งดีและบริหารได้?","textPreview":"1 หน่วยวิเคราะห์คืออะไร? | 2 Feature กำหนดความคล้ายอย่างไร? | 3 Scale ใดกำลังครอบงำระยะทาง? | 4 K-Means converged ไปจุดใด? | 5 k ใดทั้งดี...","textChars":142,"textLines":5,"bbox":[86,234,500,330]}
+{"kind":"textbox","id":"sh/hwnq14ni","slide":2,"name":"qrt","text":"6 กลุ่มเสถียรข้าม seed/เวลาไหม?\n7 Algorithm ใดตรงรูปทรงข้อมูล?\n8 Support–Confidence–Lift บอกอะไร?\n9 Association เป็นเหตุและผลหรือไม่?\n10 จะทดลองและ monitor อย่างไร?","textPreview":"6 กลุ่มเสถียรข้าม seed/เวลาไหม? | 7 Algorithm ใดตรงรูปทรงข้อมูล? | 8 Support–Confidence–Lift บอกอะไร? | 9 Association เป็นเหตุและผลหรือไม...","textChars":164,"textLines":5,"bbox":[702,234,500,330]}
+{"kind":"notes","id":"nt/vbdiem","slide":2,"text":"ให้ผู้เรียนเลือกหนึ่งคำถามเป็น learning target\n\n[Sources]\n- Week-06-Questions.md in this teaching package."}
+{"kind":"slide","id":"sl/d6qoq8","slide":3,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":9}
+{"kind":"textbox","id":"sh/nq1wnm9k","slide":3,"name":"k-3","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/oraxgrq5","slide":3,"name":"t-3","text":"3 Clusters ไม่ได้แปลว่า 3 Customer Segments","textPreview":"3 Clusters ไม่ได้แปลว่า 3 Customer Segments","textChars":43,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/9sjepw7q","slide":3,"name":"r-3","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/atsfi18b","slide":3,"name":"fl-3","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/bu1wr6pw","slide":3,"name":"fn-3","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/wvuxkrq1","slide":3,"name":"algo","bbox":[55,210,520,330]}
+{"kind":"textbox","id":"sh/xw3etw7m","slide":3,"name":"ah","text":"ALGORITHM OUTPUT","textPreview":"ALGORITHM OUTPUT","textChars":16,"textLines":1,"bbox":[88,242,400,36]}
+{"kind":"textbox","id":"sh/yxcfm187","slide":3,"name":"ab","text":"Cluster 0 • 1 • 2\n\nแยกตามระยะทางใน feature space\nไม่มีชื่อ • ไม่มีเจตนา • ไม่มี action","textPreview":"Cluster 0 • 1 • 2 |  | แยกตามระยะทางใน feature space | ไม่มีชื่อ • ไม่มีเจตนา • ไม่มี action","textChars":86,"textLines":4,"bbox":[88,325,425,150]}
+{"kind":"shape","id":"sh/jylwv6ps","slide":3,"name":"mid","bbox":[610,350,60,38]}
+{"kind":"shape","id":"sh/vixo3a10","slide":3,"name":"decision","bbox":[705,210,520,330]}
+{"kind":"textbox","id":"sh/ahonu5kf","slide":3,"name":"dh","text":"DECISION SEGMENT","textPreview":"DECISION SEGMENT","textChars":16,"textLines":1,"bbox":[738,242,400,36]}
+{"kind":"textbox","id":"sh/x4f65kj6","slide":3,"name":"db","text":"มีความหมายเชิงโดเมน\nเสถียรข้ามข้อมูล\nมี owner + capacity + KPI\nผ่านการทดสอบผลของ action","textPreview":"มีความหมายเชิงโดเมน | เสถียรข้ามข้อมูล | มี owner + capacity + KPI | ผ่านการทดสอบผลของ action","textChars":87,"textLines":4,"bbox":[738,325,420,155]}
+{"kind":"textbox","id":"sh/wj6pwf2l","slide":3,"name":"quote","text":"Cluster label เป็นข้อเสนอให้ตรวจสอบ ไม่ใช่คำอธิบายคนโดยอัตโนมัติ","textPreview":"Cluster label เป็นข้อเสนอให้ตรวจสอบ ไม่ใช่คำอธิบายคนโดยอัตโนมัติ","textChars":64,"textLines":1,"bbox":[135,580,1010,42]}
+{"kind":"notes","id":"nt/d6qoq8","slide":3,"text":"แยก algorithmic grouping ออกจาก operational segmentation\n\n[Sources]\n- scikit-learn, Clustering of unlabeled data, https://scikit-learn.org/stable/modules/clustering.html\n- Week-06 expanded content in this package."}
+{"kind":"slide","id":"sl/k7cha3","slide":4,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":11}
+{"kind":"textbox","id":"sh/t876hgvi","slide":4,"name":"k-4","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/65w761cr","slide":4,"name":"t-4","text":"Unsupervised Learning ไม่มีเฉลย จึงต้องใช้หลักฐาน 3 ชั้น","textPreview":"Unsupervised Learning ไม่มีเฉลย จึงต้องใช้หลักฐาน 3 ชั้น","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/765of6dc","slide":4,"name":"r-4","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/kje54bul","slide":4,"name":"fl-4","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/lkn6dwv6","slide":4,"name":"fn-4","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/yhwn21cv","slide":4,"name":"p-0","bbox":[54,225,360,280]}
+{"kind":"shape","id":"sh/ji5ob6d0","slide":4,"name":"p-0-a","bbox":[54,225,8,280]}
+{"kind":"textbox","id":"sh/4fipgvu5","slide":4,"name":"p-0-h","text":"TECHNICAL","textPreview":"TECHNICAL","textChars":9,"textLines":1,"bbox":[81,245,312,38]}
+{"kind":"textbox","id":"sh/5gr690va","slide":4,"name":"p-0-b","text":"cohesion • separation\nstability • sample size","textPreview":"cohesion • separation | stability • sample size","textChars":45,"textLines":2,"bbox":[81,297,312,192]}
+{"kind":"shape","id":"sh/tcjmps3e","slide":4,"name":"p-1","bbox":[462,225,360,280]}
+{"kind":"shape","id":"sh/8bqlgn29","slide":4,"name":"p-1-a","bbox":[462,225,8,280]}
+{"kind":"textbox","id":"sh/7ah4nilo","slide":4,"name":"p-1-h","text":"DOMAIN","textPreview":"DOMAIN","textChars":6,"textLines":1,"bbox":[489,245,312,38]}
+{"kind":"textbox","id":"sh/6983edk3","slide":4,"name":"p-1-b","text":"unit • window • semantics\nalternative explanations","textPreview":"unit • window • semantics | alternative explanations","textChars":50,"textLines":2,"bbox":[489,297,312,192]}
+{"kind":"shape","id":"sh/l8zml83i","slide":4,"name":"p-2","bbox":[870,225,360,280]}
+{"kind":"shape","id":"sh/knqlc32x","slide":4,"name":"p-2-a","bbox":[870,225,8,280]}
+{"kind":"textbox","id":"sh/jmh4jilc","slide":4,"name":"p-2-h","text":"DECISION","textPreview":"DECISION","textChars":8,"textLines":1,"bbox":[897,245,312,38]}
+{"kind":"textbox","id":"sh/yl83adkr","slide":4,"name":"p-2-b","text":"action • capacity • KPI\nexperiment • monitoring","textPreview":"action • capacity • KPI | experiment • monitoring","textChars":47,"textLines":2,"bbox":[897,297,312,192]}
+{"kind":"textbox","id":"sh/543mhc3m","slide":4,"name":"gate","text":"ผ่านทั้ง 3 ชั้น → Candidate Decision","textPreview":"ผ่านทั้ง 3 ชั้น → Candidate Decision","textChars":36,"textLines":1,"bbox":[250,560,780,54]}
+{"kind":"notes","id":"nt/k7cha3","slide":4,"text":"ไม่มี metric เดียวแทนความพร้อมใช้ได้\n\n[Sources]\n- NIST AIRC, AI RMF Core, https://airc.nist.gov/airmf-resources/airmf/5-sec-core/\n- Week-06 expanded content in this package."}
+{"kind":"slide","id":"sl/l9vyir","slide":5,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":9}
+{"kind":"textbox","id":"sh/l4feh8nm","slide":5,"name":"k-5","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/y1ovmdov","slide":5,"name":"t-5","text":"สองเส้นทางค้นหา Pattern ใช้ Decision Gate เดียวกัน","textPreview":"สองเส้นทางค้นหา Pattern ใช้ Decision Gate เดียวกัน","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/z2xwfi5g","slide":5,"name":"r-5","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/876dsn6x","slide":5,"name":"fl-5","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/98zelsni","slide":5,"name":"fn-5","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/m5ovqdor","slide":5,"name":"c1","bbox":[58,212,490,300]}
+{"kind":"shape","id":"sh/n6xwji5c","slide":5,"name":"c1-a","bbox":[58,212,8,300]}
+{"kind":"textbox","id":"sh/wvqdw769","slide":5,"name":"c1-h","text":"CLUSTERING","textPreview":"CLUSTERING","textChars":10,"textLines":1,"bbox":[85,232,442,38]}
+{"kind":"textbox","id":"sh/xwzepsne","slide":5,"name":"c1-b","text":"objects → features → distance\n→ groups/noise\n\nคำถาม: ใครคล้ายใคร?","textPreview":"objects → features → distance | → groups/noise |  | คำถาม: ใครคล้ายใคร?","textChars":65,"textLines":4,"bbox":[85,284,442,212]}
+{"kind":"shape","id":"sh/hormhw7e","slide":5,"name":"c2","bbox":[732,212,490,300]}
+{"kind":"shape","id":"sh/gni5or6t","slide":5,"name":"c2-a","bbox":[732,212,8,300]}
+{"kind":"textbox","id":"sh/f2p4fmpo","slide":5,"name":"c2-h","text":"ASSOCIATION RULES","textPreview":"ASSOCIATION RULES","textChars":17,"textLines":1,"bbox":[759,232,442,38]}
+{"kind":"textbox","id":"sh/u1g3mho3","slide":5,"name":"c2-b","text":"transactions → itemsets → rules\n→ support/confidence/lift\n\nคำถาม: อะไรเกิดร่วมกัน?","textPreview":"transactions → itemsets → rules | → support/confidence/lift |  | คำถาม: อะไรเกิดร่วมกัน?","textChars":82,"textLines":4,"bbox":[759,284,442,212]}
+{"kind":"shape","id":"sh/psrmlw7q","slide":5,"name":"a1","bbox":[555,335,82,40]}
+{"kind":"shape","id":"sh/4ri5sr65","slide":5,"name":"a2","bbox":[643,335,82,40]}
+{"kind":"shape","id":"sh/3q94jmpk","slide":5,"name":"gate","bbox":[450,548,380,68]}
+{"kind":"textbox","id":"sh/2p0nq1oz","slide":5,"name":"gt","text":"VALIDATE → EXPERIMENT → MONITOR","textPreview":"VALIDATE → EXPERIMENT → MONITOR","textChars":31,"textLines":1,"bbox":[470,567,340,32]}
+{"kind":"notes","id":"nt/l9vyir","slide":5,"text":"เปรียบเทียบ object-feature matrix กับ transaction-item matrix\n\n[Sources]\n- scikit-learn, Clustering, https://scikit-learn.org/stable/modules/clustering.html\n- mlxtend, Association rules, https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/association_rules/"}
+{"kind":"slide","id":"sl/2c1epw","slide":6,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":16}
+{"kind":"textbox","id":"sh/qxwrehcv","slide":6,"name":"k-6","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/dk7qpwbm","slide":6,"name":"t-6","text":"Feature คือคำตอบล่วงหน้าว่า ‘ความคล้าย’ หมายถึงอะไร","textPreview":"Feature คือคำตอบล่วงหน้าว่า ‘ความคล้าย’ หมายถึงอะไร","textChars":51,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/sjy9gru1","slide":6,"name":"r-6","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/zmp8r6ts","slide":6,"name":"fl-6","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/elgri1c7","slide":6,"name":"fn-6","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/1o7qtgbi","slide":6,"name":"rfm","bbox":[55,205,600,360]}
+{"kind":"textbox","id":"sh/0ny9kbux","slide":6,"name":"rh","text":"CUSTOMER @ SNAPSHOT","textPreview":"CUSTOMER @ SNAPSHOT","textChars":19,"textLines":1,"bbox":[88,238,450,36]}
+{"kind":"shape","id":"sh/vql8f2t8","slide":6,"name":"rp-0","bbox":[88,305,62,42]}
+{"kind":"textbox","id":"sh/upc76xcn","slide":6,"name":"rp-0-t","text":"R","textPreview":"R","textChars":1,"textLines":1,"bbox":[98,313,42,26]}
+{"kind":"textbox","id":"sh/cz6t4jql","slide":6,"name":"rl-0","text":"Recency","textPreview":"Recency","textChars":7,"textLines":1,"bbox":[175,309,150,32]}
+{"kind":"textbox","id":"sh/d0fad476","slide":6,"name":"rd-0","text":"วันตั้งแต่ซื้อครั้งล่าสุด","textPreview":"วันตั้งแต่ซื้อครั้งล่าสุด","textChars":25,"textLines":1,"bbox":[330,309,270,45]}
+{"kind":"shape","id":"sh/qx4b298f","slide":6,"name":"rp-1","bbox":[88,383,62,42]}
+{"kind":"textbox","id":"sh/ryxsbep0","slide":6,"name":"rp-1-t","text":"F","textPreview":"F","textChars":1,"textLines":1,"bbox":[98,391,42,26]}
+{"kind":"textbox","id":"sh/036t8jqh","slide":6,"name":"rl-1","text":"Frequency","textPreview":"Frequency","textChars":9,"textLines":1,"bbox":[175,387,150,32]}
+{"kind":"textbox","id":"sh/14faho72","slide":6,"name":"rd-1","text":"จำนวนธุรกรรมที่เข้าเกณฑ์","textPreview":"จำนวนธุรกรรมที่เข้าเกณฑ์","textChars":24,"textLines":1,"bbox":[330,387,270,45]}
+{"kind":"shape","id":"sh/e1ob698r","slide":6,"name":"rp-2","bbox":[88,461,62,42]}
+{"kind":"textbox","id":"sh/z2xsfepw","slide":6,"name":"rp-2-t","text":"M","textPreview":"M","textChars":1,"textLines":1,"bbox":[98,469,42,26]}
+{"kind":"textbox","id":"sh/g7m9wzqd","slide":6,"name":"rl-2","text":"Monetary","textPreview":"Monetary","textChars":8,"textLines":1,"bbox":[175,465,150,32]}
+{"kind":"textbox","id":"sh/h8va5k7y","slide":6,"name":"rd-2","text":"ยอดสุทธิหลังคืน/ยกเลิก","textPreview":"ยอดสุทธิหลังคืน/ยกเลิก","textChars":22,"textLines":1,"bbox":[330,465,270,45]}
+{"kind":"shape","id":"sh/xonq9gjm","slide":6,"name":"defs","bbox":[710,205,520,360]}
+{"kind":"textbox","id":"sh/wne90bi1","slide":6,"name":"dh","text":"นิยามก่อนคำนวณ","textPreview":"นิยามก่อนคำนวณ","textChars":14,"textLines":1,"bbox":[745,238,420,36]}
+{"kind":"textbox","id":"sh/v2l8761g","slide":6,"name":"db","text":"• หน่วยวิเคราะห์\n• snapshot date เดียวกัน\n• observation window\n• returns / cancellation\n• missing / duplicate / outlier\n• เหตุผลของทุก feature","textPreview":"• หน่วยวิเคราะห์ | • snapshot date เดียวกัน | • observation window | • returns / cancellation | • missing / duplicate / outlier | • เหตุผ...","textChars":142,"textLines":6,"bbox":[745,310,420,220]}
+{"kind":"notes","id":"nt/2c1epw","slide":6,"text":"Frequency ควรนับ invoice ไม่ใช่ line item\n\n[Sources]\n- Week-06 source note and expanded content in this package."}
+{"kind":"slide","id":"sl/kdsamo","slide":7,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":9}
+{"kind":"textbox","id":"sh/7id0ne5o","slide":7,"name":"k-7","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/sjm1wj69","slide":7,"name":"t-7","text":"Scaling เปลี่ยนระยะทาง — จึงเปลี่ยนเส้นแบ่ง Cluster","textPreview":"Scaling เปลี่ยนระยะทาง — จึงเปลี่ยนเส้นแบ่ง Cluster","textChars":51,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/tkvip4nu","slide":7,"name":"r-7","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/itkzqpo7","slide":7,"name":"fl-7","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/jut0ju5c","slide":7,"name":"fn-7","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/kv2hsz6x","slide":7,"name":"raw","bbox":[55,210,500,340]}
+{"kind":"textbox","id":"sh/5gvil4ni","slide":7,"name":"rt","text":"RAW SCALE","textPreview":"RAW SCALE","textChars":9,"textLines":1,"bbox":[88,242,300,36]}
+{"kind":"textbox","id":"sh/apkzmpov","slide":7,"name":"rb","text":"Monetary  0–50,000\nFrequency  1–50\nRecency    0–365\n\nMonetary ครอบงำ distance","textPreview":"Monetary  0–50,000 | Frequency  1–50 | Recency    0–365 |  | Monetary ครอบงำ distance","textChars":77,"textLines":5,"bbox":[88,330,380,160]}
+{"kind":"shape","id":"sh/vqt0fu5g","slide":7,"name":"sc","bbox":[595,350,70,40]}
+{"kind":"shape","id":"sh/7idwn6ds","slide":7,"name":"std","bbox":[705,210,520,340]}
+{"kind":"textbox","id":"sh/mh4vu1c7","slide":7,"name":"st","text":"TRANSFORM + SCALE","textPreview":"TRANSFORM + SCALE","textChars":17,"textLines":1,"bbox":[738,242,400,36]}
+{"kind":"textbox","id":"sh/9kvepwvi","slide":7,"name":"sb","text":"log1p สำหรับตัวแปรเบ้\nStandardScaler / RobustScaler\n\nบันทึก pipeline เดียวกัน\nสำหรับข้อมูลใหม่","textPreview":"log1p สำหรับตัวแปรเบ้ | StandardScaler / RobustScaler |  | บันทึก pipeline เดียวกัน | สำหรับข้อมูลใหม่","textChars":94,"textLines":5,"bbox":[738,330,410,160]}
+{"kind":"textbox","id":"sh/8jmdwrux","slide":7,"name":"note","text":"Scaling ไม่เป็นกลาง — มันกำหนดน้ำหนักเชิงนโยบายของ feature","textPreview":"Scaling ไม่เป็นกลาง — มันกำหนดน้ำหนักเชิงนโยบายของ feature","textChars":58,"textLines":1,"bbox":[145,590,990,42]}
+{"kind":"notes","id":"nt/kdsamo","slide":7,"text":"อย่า normalize ทุกตัวโดยไม่บอกเหตุผล\n\n[Sources]\n- scikit-learn, Importance of feature scaling, https://scikit-learn.org/stable/auto_examples/preprocessing/plot_scaling_importance.html\n- scikit-learn, Common pitfalls, https://scikit-learn.org/stable/common_pitfalls.html"}
+{"kind":"slide","id":"sl/a7it5a","slide":8,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":13}
+{"kind":"textbox","id":"sh/rqhonqtw","slide":8,"name":"k-8","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/srqpwvah","slide":8,"name":"t-8","text":"K-Means วนซ้ำ: Initialize → Assign → Update","textPreview":"K-Means วนซ้ำ: Initialize → Assign → Update","textChars":43,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/dsz6p0bm","slide":8,"name":"r-8","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/et87y5s7","slide":8,"name":"fl-8","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/fuhorqts","slide":8,"name":"fn-8","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/0vap0vad","slide":8,"name":"p-0","bbox":[42,240,255,230]}
+{"kind":"textbox","id":"sh/1wj6t0by","slide":8,"name":"ph-0","text":"1 INITIALIZE","textPreview":"1 INITIALIZE","textChars":12,"textLines":1,"bbox":[64,275,210,34]}
+{"kind":"textbox","id":"sh/2xs725sj","slide":8,"name":"pb-0","text":"เลือก k centroids","textPreview":"เลือก k centroids","textChars":17,"textLines":1,"bbox":[64,365,210,55]}
+{"kind":"shape","id":"sh/ny18va94","slide":8,"name":"pa-0","bbox":[292,335,58,34]}
+{"kind":"shape","id":"sh/fex8j6p8","slide":8,"name":"p-1","bbox":[351,240,255,230]}
+{"kind":"textbox","id":"sh/udo7q18n","slide":8,"name":"ph-1","text":"2 ASSIGN","textPreview":"2 ASSIGN","textChars":8,"textLines":1,"bbox":[373,275,210,34]}
+{"kind":"textbox","id":"sh/hgfqlg7y","slide":8,"name":"pb-1","text":"ไป centroid ใกล้สุด","textPreview":"ไป centroid ใกล้สุด","textChars":19,"textLines":1,"bbox":[373,365,210,55]}
+{"kind":"shape","id":"sh/gf6psbqt","slide":8,"name":"pa-1","bbox":[601,335,58,34]}
+{"kind":"shape","id":"sh/7axofmpw","slide":8,"name":"p-2","bbox":[660,240,255,230]}
+{"kind":"textbox","id":"sh/69o7mh8b","slide":8,"name":"ph-2","text":"3 UPDATE","textPreview":"3 UPDATE","textChars":8,"textLines":1,"bbox":[682,275,210,34]}
+{"kind":"textbox","id":"sh/tcfqhw72","slide":8,"name":"pb-2","text":"เฉลี่ยสมาชิกใหม่","textPreview":"เฉลี่ยสมาชิกใหม่","textChars":16,"textLines":1,"bbox":[682,365,210,55]}
+{"kind":"shape","id":"sh/sb6porqh","slide":8,"name":"pa-2","bbox":[910,335,58,34]}
+{"kind":"shape","id":"sh/r6h8rqpg","slide":8,"name":"p-3","bbox":[969,240,255,230]}
+{"kind":"textbox","id":"sh/q587yl8v","slide":8,"name":"ph-3","text":"4 STOP?","textPreview":"4 STOP?","textChars":7,"textLines":1,"bbox":[991,275,210,34]}
+{"kind":"textbox","id":"sh/m1cbqps3","slide":8,"name":"pb-3","text":"centroid ขยับน้อย","textPreview":"centroid ขยับน้อย","textChars":17,"textLines":1,"bbox":[991,365,210,55]}
+{"kind":"shape","id":"sh/n2lszu9o","slide":8,"name":"loop","bbox":[485,515,310,58]}
+{"kind":"textbox","id":"sh/83utsza9","slide":8,"name":"loopt","text":"ไม่หยุด → กลับไป ASSIGN","textPreview":"ไม่หยุด → กลับไป ASSIGN","textChars":23,"textLines":1,"bbox":[505,531,270,28]}
+{"kind":"notes","id":"nt/a7it5a","slide":8,"text":"ให้ผู้เรียนจำลอง assign-update ด้วยจุด 2 มิติหนึ่งรอบ\n\n[Sources]\n- scikit-learn, K-means algorithm, https://scikit-learn.org/stable/modules/clustering.html#k-means"}
+{"kind":"slide","id":"sl/cev91y","slide":9,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":9}
+{"kind":"textbox","id":"sh/nyh0rils","slide":9,"name":"k-9","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/8zq1knmd","slide":9,"name":"t-9","text":"Objective ลดระยะกำลังสองภายในกลุ่ม","textPreview":"Objective ลดระยะกำลังสองภายในกลุ่ม","textChars":34,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/90zid83y","slide":9,"name":"r-9","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/a18jmd43","slide":9,"name":"fl-9","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/v210filo","slide":9,"name":"fn-9","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/w3a1onm9","slide":9,"name":"math","bbox":[55,205,560,350]}
+{"kind":"textbox","id":"sh/x4jihs3u","slide":9,"name":"mh","text":"INERTIA / WCSS","textPreview":"INERTIA / WCSS","textChars":14,"textLines":1,"bbox":[88,238,400,36]}
+{"kind":"textbox","id":"sh/q5ozat4z","slide":9,"name":"mb","text":"Σᵢ minⱼ ||xᵢ − μⱼ||²","textPreview":"Σᵢ minⱼ ||xᵢ − μⱼ||²","textChars":20,"textLines":1,"bbox":[88,330,450,62]}
+{"kind":"textbox","id":"sh/b6x0jylk","slide":9,"name":"mc","text":"จุด → centroid ที่ใกล้ที่สุด\nเส้นแบ่งคล้าย Voronoi cells","textPreview":"จุด → centroid ที่ใกล้ที่สุด | เส้นแบ่งคล้าย Voronoi cells","textChars":56,"textLines":2,"bbox":[88,435,450,70]}
+{"kind":"shape","id":"sh/fal4zq14","slide":9,"name":"limits","bbox":[675,205,550,350]}
+{"kind":"textbox","id":"sh/e9cn6lkj","slide":9,"name":"lh","text":"เมื่อ Objective ไม่ตรงรูปทรง","textPreview":"เมื่อ Objective ไม่ตรงรูปทรง","textChars":28,"textLines":1,"bbox":[710,238,455,36]}
+{"kind":"textbox","id":"sh/1c3m1gja","slide":9,"name":"lb","text":"• elongated / manifold clusters\n• ขนาดหรือ variance ต่างกันมาก\n• outlier ดึง centroid\n• high dimension ทำให้ distance แยกยาก","textPreview":"• elongated / manifold clusters | • ขนาดหรือ variance ต่างกันมาก | • outlier ดึง centroid | • high dimension ทำให้ distance แยกยาก","textChars":124,"textLines":4,"bbox":[710,325,430,180]}
+{"kind":"notes","id":"nt/cev91y","slide":9,"text":"inertia ต่ำกว่าไม่เท่ากับ business value สูงกว่า\n\n[Sources]\n- scikit-learn, K-means objective and drawbacks, https://scikit-learn.org/stable/modules/clustering.html#k-means"}
+{"kind":"slide","id":"sl/je709y","slide":10,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":11}
+{"kind":"textbox","id":"sh/ahkfq5wf","slide":10,"name":"k-10","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/x4be1kv6","slide":10,"name":"t-10","text":"Initialization ต่างกัน อาจ Converge คนละ Local Minimum","textPreview":"Initialization ต่างกัน อาจ Converge คนละ Local Minimum","textChars":54,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/w32xsfel","slide":10,"name":"r-10","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/netwvqd4","slide":10,"name":"fl-10","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/md0vmlwj","slide":10,"name":"fn-10","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/9gbex0va","slide":10,"name":"r-0","bbox":[54,225,360,250]}
+{"kind":"shape","id":"sh/of2dovep","slide":10,"name":"r-0-a","bbox":[54,225,8,250]}
+{"kind":"textbox","id":"sh/za9wrqds","slide":10,"name":"r-0-h","text":"RUN A","textPreview":"RUN A","textChars":5,"textLines":1,"bbox":[81,245,312,38]}
+{"kind":"textbox","id":"sh/e90vilwn","slide":10,"name":"r-0-b","text":"random seed 7\n\ninertia 1,240","textPreview":"random seed 7 |  | inertia 1,240","textChars":28,"textLines":3,"bbox":[81,297,312,162]}
+{"kind":"shape","id":"sh/0ji9kf21","slide":10,"name":"r-1","bbox":[462,225,360,250]}
+{"kind":"shape","id":"sh/1kradkjm","slide":10,"name":"r-1-a","bbox":[462,225,8,250]}
+{"kind":"textbox","id":"sh/ehgripkv","slide":10,"name":"r-1-h","text":"RUN B","textPreview":"RUN B","textChars":5,"textLines":1,"bbox":[489,245,312,38]}
+{"kind":"textbox","id":"sh/fi9sba1g","slide":10,"name":"r-1-b","text":"random seed 19\n\ninertia 1,165","textPreview":"random seed 19 |  | inertia 1,165","textChars":29,"textLines":3,"bbox":[489,297,312,162]}
+{"kind":"shape","id":"sh/sfy9gf25","slide":10,"name":"r-2","bbox":[870,225,360,250]}
+{"kind":"shape","id":"sh/dg7a9kja","slide":10,"name":"r-2-a","bbox":[870,225,8,250]}
+{"kind":"textbox","id":"sh/qtgre5kz","slide":10,"name":"r-2-h","text":"RUN C","textPreview":"RUN C","textChars":5,"textLines":1,"bbox":[897,245,312,38]}
+{"kind":"textbox","id":"sh/reps7a1k","slide":10,"name":"r-2-b","text":"random seed 41\n\ninertia 1,310","textPreview":"random seed 41 |  | inertia 1,310","textChars":29,"textLines":3,"bbox":[897,297,312,162]}
+{"kind":"shape","id":"sh/cb2tsz29","slide":10,"name":"practice","bbox":[190,535,900,70]}
+{"kind":"textbox","id":"sh/xcbal4ju","slide":10,"name":"pt","text":"ใช้ k-means++ • หลาย restarts • random_state • เก็บ distribution ของผล","textPreview":"ใช้ k-means++ • หลาย restarts • random_state • เก็บ distribution ของผล","textChars":70,"textLines":1,"bbox":[215,554,850,34]}
+{"kind":"notes","id":"nt/je709y","slide":10,"text":"ตัวเลขเป็นตัวอย่างสังเคราะห์เพื่ออธิบาย local optimum\n\n[Sources]\n- scikit-learn, K-means initialization and local minima, https://scikit-learn.org/stable/modules/clustering.html#k-means\n- scikit-learn, KMeans API, https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html"}
+{"kind":"slide","id":"sl/ulcgyb","slide":11,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":13}
+{"kind":"textbox","id":"sh/upknylg3","slide":11,"name":"k-11","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/hsbmtgzu","slide":11,"name":"t-11","text":"เลือก k ด้วยหลักฐานหลายมิติ ไม่ใช่เส้น Elbow เส้นเดียว","textPreview":"เลือก k ด้วยหลักฐานหลายมิติ ไม่ใช่เส้น Elbow เส้นเดียว","textChars":54,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/gr250vy9","slide":11,"name":"r-11","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/7294n6hs","slide":11,"name":"fl-11","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/610nu1g7","slide":11,"name":"fn-11","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/tormpgzi","slide":11,"name":"k-0","bbox":[54,205,560,135]}
+{"kind":"shape","id":"sh/83i5wbyd","slide":11,"name":"k-0-a","bbox":[54,205,8,135]}
+{"kind":"textbox","id":"sh/rydozahw","slide":11,"name":"k-0-h","text":"ELBOW","textPreview":"ELBOW","textChars":5,"textLines":1,"bbox":[81,225,512,38]}
+{"kind":"textbox","id":"sh/qx4n65gb","slide":11,"name":"k-0-b","text":"ผลตอบแทนจาก inertia เริ่มลด","textPreview":"ผลตอบแทนจาก inertia เริ่มลด","textChars":27,"textLines":1,"bbox":[81,277,512,47]}
+{"kind":"shape","id":"sh/wv2lsv29","slide":11,"name":"k-1","bbox":[666,205,560,135]}
+{"kind":"shape","id":"sh/xwb2103u","slide":11,"name":"k-1-a","bbox":[666,205,8,135]}
+{"kind":"textbox","id":"sh/at03qlk3","slide":11,"name":"k-1-h","text":"SILHOUETTE","textPreview":"SILHOUETTE","textChars":10,"textLines":1,"bbox":[693,225,512,38]}
+{"kind":"textbox","id":"sh/vu9kzqlo","slide":11,"name":"k-1-b","text":"cohesion + separation","textPreview":"cohesion + separation","textChars":21,"textLines":1,"bbox":[693,277,512,47]}
+{"kind":"shape","id":"sh/8rilov2x","slide":11,"name":"k-2","bbox":[54,375,560,135]}
+{"kind":"shape","id":"sh/9sr2xg3i","slide":11,"name":"k-2-a","bbox":[54,375,8,135]}
+{"kind":"textbox","id":"sh/m50jmlk7","slide":11,"name":"k-2-h","text":"STABILITY","textPreview":"STABILITY","textChars":9,"textLines":1,"bbox":[81,395,512,38]}
+{"kind":"textbox","id":"sh/n69kvqls","slide":11,"name":"k-2-b","text":"seed • sample • time","textPreview":"seed • sample • time","textChars":20,"textLines":1,"bbox":[81,447,512,47]}
+{"kind":"shape","id":"sh/03y1kb21","slide":11,"name":"k-3","bbox":[666,375,560,135]}
+{"kind":"shape","id":"sh/l4r2tg3m","slide":11,"name":"k-3-a","bbox":[666,375,8,135]}
+{"kind":"textbox","id":"sh/1kjixcva","slide":11,"name":"k-3-h","text":"CAPACITY","textPreview":"CAPACITY","textChars":8,"textLines":1,"bbox":[693,395,512,38]}
+{"kind":"textbox","id":"sh/0zqho7ep","slide":11,"name":"k-3-b","text":"ทีมดูแล action ได้กี่กลุ่ม","textPreview":"ทีมดูแล action ได้กี่กลุ่ม","textChars":26,"textLines":1,"bbox":[693,447,512,47]}
+{"kind":"textbox","id":"sh/fyh0v2d4","slide":11,"name":"choice","text":"เลือก k ที่ ‘เพียงพอ’ ต่อการตัดสินใจ พร้อมระบุ trade-off","textPreview":"เลือก k ที่ ‘เพียงพอ’ ต่อการตัดสินใจ พร้อมระบุ trade-off","textChars":56,"textLines":1,"bbox":[170,585,940,40]}
+{"kind":"notes","id":"nt/ulcgyb","slide":11,"text":"Elbow อาจไม่ชัด ต้องอธิบาย operational capacity ร่วมด้วย\n\n[Sources]\n- scikit-learn, Selecting number of clusters with silhouette analysis, https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html\n- scikit-learn, K-means inertia, https://scikit-learn.org/stable/modules/clustering.html#k-means"}
+{"kind":"slide","id":"sl/szqnp5","slide":12,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":11}
+{"kind":"textbox","id":"sh/dw7idkvq","slide":12,"name":"k-12","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/qtwzi5cz","slide":12,"name":"t-12","text":"Silhouette อ่านทั้งค่าเฉลี่ยและรูปร่างราย Cluster","textPreview":"Silhouette อ่านทั้งค่าเฉลี่ยและรูปร่างราย Cluster","textChars":49,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/bup0badk","slide":12,"name":"r-12","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/o7ehgvu9","slide":12,"name":"fl-12","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/psni90ve","slide":12,"name":"fn-12","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/25wzelc3","slide":12,"name":"formula","bbox":[55,210,500,340]}
+{"kind":"textbox","id":"sh/365g7qdo","slide":12,"name":"fh","text":"s = (b − a) / max(a, b)","textPreview":"s = (b − a) / max(a, b)","textChars":23,"textLines":1,"bbox":[85,250,440,55]}
+{"kind":"textbox","id":"sh/g3ehcvux","slide":12,"name":"fb","text":"a = ระยะเฉลี่ยในกลุ่มตน\nb = ระยะเฉลี่ยไปกลุ่มเพื่อนบ้าน","textPreview":"a = ระยะเฉลี่ยในกลุ่มตน | b = ระยะเฉลี่ยไปกลุ่มเพื่อนบ้าน","textChars":55,"textLines":2,"bbox":[85,350,440,90]}
+{"kind":"shape","id":"sh/14ny50vi","slide":12,"name":"scale","bbox":[675,210,550,340]}
+{"kind":"textbox","id":"sh/p8retsjy","slide":12,"name":"sh","text":"−1","textPreview":"−1","textChars":2,"textLines":1,"bbox":[715,280,60,35]}
+{"kind":"textbox","id":"sh/o7idknid","slide":12,"name":"sm","text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[925,280,40,35]}
+{"kind":"textbox","id":"sh/n69wri1s","slide":12,"name":"sp","text":"+1","textPreview":"+1","textChars":2,"textLines":1,"bbox":[1120,280,65,35]}
+{"kind":"shape","id":"sh/250vix07","slide":12,"name":"bar1","bbox":[740,345,205,22]}
+{"kind":"shape","id":"sh/147epsjm","slide":12,"name":"bar2","bbox":[945,345,120,22]}
+{"kind":"shape","id":"sh/03ydgni1","slide":12,"name":"bar3","bbox":[1065,345,100,22]}
+{"kind":"textbox","id":"sh/f2pwni1w","slide":12,"name":"sb","text":"อาจอยู่ผิดกลุ่ม        คาบเส้นแบ่ง          แยกชัด","textPreview":"อาจอยู่ผิดกลุ่ม        คาบเส้นแบ่ง          แยกชัด","textChars":50,"textLines":1,"bbox":[715,400,470,38]}
+{"kind":"textbox","id":"sh/ehgved0b","slide":12,"name":"warn","text":"ค่าเฉลี่ยสูงอาจซ่อน cluster เล็กที่มี silhouette ติดลบ","textPreview":"ค่าเฉลี่ยสูงอาจซ่อน cluster เล็กที่มี silhouette ติดลบ","textChars":54,"textLines":1,"bbox":[175,590,930,42]}
+{"kind":"notes","id":"nt/szqnp5","slide":12,"text":"ดู distribution ราย cluster ไม่ใช่เฉพาะค่าเฉลี่ยเดียว\n\n[Sources]\n- scikit-learn, silhouette_score, https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"}
+{"kind":"slide","id":"sl/tl9nje","slide":13,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":11}
+{"kind":"textbox","id":"sh/wrihozy9","slide":13,"name":"k-13","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/bq90vuho","slide":13,"name":"t-13","text":"Profile ก่อนตั้งชื่อ — อธิบายพฤติกรรม ไม่ตีตราคน","textPreview":"Profile ก่อนตั้งชื่อ — อธิบายพฤติกรรม ไม่ตีตราคน","textChars":48,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/ap0zmpg3","slide":13,"name":"r-13","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/lwbi14z6","slide":13,"name":"fl-13","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/kv2hszyl","slide":13,"name":"fn-13","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/jut0zeh0","slide":13,"name":"c-0","bbox":[54,220,360,310]}
+{"kind":"shape","id":"sh/ytkzq9gf","slide":13,"name":"c-0-a","bbox":[54,220,8,310]}
+{"kind":"textbox","id":"sh/tkvi5oz2","slide":13,"name":"c-0-h","text":"CLUSTER 0","textPreview":"CLUSTER 0","textChars":9,"textLines":1,"bbox":[81,240,312,38]}
+{"kind":"textbox","id":"sh/8j2hwjyh","slide":13,"name":"c-0-b","text":"เพิ่งซื้อ • ซื้อถี่\nมูลค่ากลาง\n\nAction: loyalty test","textPreview":"เพิ่งซื้อ • ซื้อถี่ | มูลค่ากลาง |  | Action: loyalty test","textChars":52,"textLines":4,"bbox":[81,292,312,222]}
+{"kind":"shape","id":"sh/e94ni5ov","slide":13,"name":"c-1","bbox":[462,220,360,310]}
+{"kind":"shape","id":"sh/fadoba50","slide":13,"name":"c-1-a","bbox":[462,220,8,310]}
+{"kind":"textbox","id":"sh/0bm5kv6l","slide":13,"name":"c-1-h","text":"CLUSTER 1","textPreview":"CLUSTER 1","textChars":9,"textLines":1,"bbox":[489,240,312,38]}
+{"kind":"textbox","id":"sh/1cv6d0n6","slide":13,"name":"c-1-b","text":"หายไปนาน • เคยซื้อถี่\nมูลค่าสูง\n\nAction: win-back test","textPreview":"หายไปนาน • เคยซื้อถี่ | มูลค่าสูง |  | Action: win-back test","textChars":54,"textLines":4,"bbox":[489,292,312,222]}
+{"kind":"shape","id":"sh/2d4nm5or","slide":13,"name":"c-2","bbox":[870,220,360,310]}
+{"kind":"shape","id":"sh/nedofa5c","slide":13,"name":"c-2-a","bbox":[870,220,8,310]}
+{"kind":"textbox","id":"sh/ofmpof6x","slide":13,"name":"c-2-h","text":"CLUSTER 2","textPreview":"CLUSTER 2","textChars":9,"textLines":1,"bbox":[897,240,312,38]}
+{"kind":"textbox","id":"sh/pgf6hkni","slide":13,"name":"c-2-b","text":"เพิ่งซื้อ • ซื้อครั้งเดียว\nมูลค่าต่ำ\n\nAction: onboarding test","textPreview":"เพิ่งซื้อ • ซื้อครั้งเดียว | มูลค่าต่ำ |  | Action: onboarding test","textChars":61,"textLines":4,"bbox":[897,292,312,222]}
+{"kind":"textbox","id":"sh/ih0nalon","slide":13,"name":"check","text":"ตรวจ median/IQR • size • category mix • examples • outliers • uncertainty","textPreview":"ตรวจ median/IQR • size • category mix • examples • outliers • uncertainty","textChars":73,"textLines":1,"bbox":[125,580,1030,42]}
+{"kind":"notes","id":"nt/tl9nje","slide":13,"text":"ตัวอย่างชื่อกลุ่มเป็นเชิงพรรณนาและไม่อ้างผลเชิงสาเหตุ\n\n[Sources]\n- Week-06 expanded content in this package."}
+{"kind":"slide","id":"sl/oze4lq","slide":14,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":13}
+{"kind":"textbox","id":"sh/jatsz29w","slide":14,"name":"k-14","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/kb298nah","slide":14,"name":"t-14","text":"Stability Test: Seed → Sample → Time","textPreview":"Stability Test: Seed → Sample → Time","textChars":36,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/lcba1sr2","slide":14,"name":"r-14","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/al0r2dsf","slide":14,"name":"fl-14","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/bm9svi90","slide":14,"name":"fn-14","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/wn294nal","slide":14,"name":"s-0","bbox":[42,235,255,255]}
+{"kind":"shape","id":"sh/x8baxsrq","slide":14,"name":"s-0-a","bbox":[42,235,8,255]}
+{"kind":"textbox","id":"sh/mh0ryds3","slide":14,"name":"s-0-h","text":"SEED","textPreview":"SEED","textChars":4,"textLines":1,"bbox":[69,255,207,38]}
+{"kind":"textbox","id":"sh/ni98ryto","slide":14,"name":"s-0-b","text":"รัน ≥10 ค่า\ncentroid/assignment ใกล้กัน?","textPreview":"รัน ≥10 ค่า | centroid/assignment ใกล้กัน?","textChars":40,"textLines":2,"bbox":[69,307,207,167]}
+{"kind":"shape","id":"sh/3ml8fa94","slide":14,"name":"a-0","bbox":[292,345,58,34]}
+{"kind":"shape","id":"sh/2lcrm5sj","slide":14,"name":"s-1","bbox":[351,235,255,255]}
+{"kind":"shape","id":"sh/po3qhkra","slide":14,"name":"s-1-a","bbox":[351,235,8,255]}
+{"kind":"textbox","id":"sh/onu9ofap","slide":14,"name":"s-1-h","text":"SAMPLE","textPreview":"SAMPLE","textChars":6,"textLines":1,"bbox":[378,255,207,38]}
+{"kind":"textbox","id":"sh/bal8ja9g","slide":14,"name":"s-1-b","text":"bootstrap/subsample\nกลุ่มยังเกิดหรือไม่?","textPreview":"bootstrap/subsample | กลุ่มยังเกิดหรือไม่?","textChars":40,"textLines":2,"bbox":[378,307,207,167]}
+{"kind":"shape","id":"sh/qpcrqpsv","slide":14,"name":"a-1","bbox":[601,345,58,34]}
+{"kind":"shape","id":"sh/dc3qlkr6","slide":14,"name":"s-2","bbox":[660,235,255,255]}
+{"kind":"shape","id":"sh/cbu9sfal","slide":14,"name":"s-2-a","bbox":[660,235,8,255]}
+{"kind":"textbox","id":"sh/re187q9w","slide":14,"name":"s-2-h","text":"TIME","textPreview":"TIME","textChars":4,"textLines":1,"bbox":[687,255,207,38]}
+{"kind":"textbox","id":"sh/6t87elsb","slide":14,"name":"s-2-b","text":"rolling snapshots\nprofile/drift เปลี่ยนไหม?","textPreview":"rolling snapshots | profile/drift เปลี่ยนไหม?","textChars":43,"textLines":2,"bbox":[687,307,207,167]}
+{"kind":"shape","id":"sh/a9gbmtcz","slide":14,"name":"a-2","bbox":[910,345,58,34]}
+{"kind":"shape","id":"sh/vapcfytk","slide":14,"name":"s-3","bbox":[969,235,255,255]}
+{"kind":"shape","id":"sh/wbyto3u5","slide":14,"name":"s-3-a","bbox":[969,235,8,255]}
+{"kind":"textbox","id":"sh/hcruh8bq","slide":14,"name":"s-3-h","text":"ACTION","textPreview":"ACTION","textChars":6,"textLines":1,"bbox":[996,255,207,38]}
+{"kind":"textbox","id":"sh/m5gbitc3","slide":14,"name":"s-3-b","text":"KPI/coverage\nยังคุ้มและทำได้ไหม?","textPreview":"KPI/coverage | ยังคุ้มและทำได้ไหม?","textChars":32,"textLines":2,"bbox":[996,307,207,167]}
+{"kind":"textbox","id":"sh/n6pcbeto","slide":14,"name":"drop","text":"ถ้ากลุ่มหายเมื่อเปลี่ยน seed หรือเดือน → อย่ารีบ deploy","textPreview":"ถ้ากลุ่มหายเมื่อเปลี่ยน seed หรือเดือน → อย่ารีบ deploy","textChars":55,"textLines":1,"bbox":[190,560,900,46]}
+{"kind":"notes","id":"nt/oze4lq","slide":14,"text":"stability เป็นหลักฐานเสริม ไม่ใช่การรับรองความถูกต้องเชิงธุรกิจ\n\n[Sources]\n- Week-06 expanded content in this package.\n- NIST AIRC, AI Risks and Trustworthiness, https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/"}
+{"kind":"slide","id":"sl/6ix7o3","slide":15,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":6}
+{"kind":"textbox","id":"sh/cnu9ojql","slide":15,"name":"k-15","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/bmlsfe90","slide":15,"name":"t-15","text":"Hierarchical Clustering มองเห็นโครงสร้างซ้อนระดับ","textPreview":"Hierarchical Clustering มองเห็นโครงสร้างซ้อนระดับ","textChars":49,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/qlcrm9sf","slide":15,"name":"r-15","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/lcnalor2","slide":15,"name":"fl-15","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/0betsjqh","slide":15,"name":"fn-15","text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/ypwrqt8r","slide":15,"name":"hp","bbox":[830,185,400,455]}
+{"kind":"textbox","id":"sh/9g7ap8re","slide":15,"name":"hh","text":"AGGLOMERATIVE","textPreview":"AGGLOMERATIVE","textChars":13,"textLines":1,"bbox":[862,217,330,34]}
+{"kind":"textbox","id":"sh/8fytw3qt","slide":15,"name":"hb","text":"เริ่มหนึ่งจุดต่อหนึ่งกลุ่ม\nแล้วรวมจากล่างขึ้นบน\n\nLinkage\n• Ward: variance\n• Complete: farthest\n• Average: mean\n• Single: nearest\n\nตัด dendrogram = analyst choice","textPreview":"เริ่มหนึ่งจุดต่อหนึ่งกลุ่ม | แล้วรวมจากล่างขึ้นบน |  | Linkage | • Ward: variance | • Complete: farthest | • Average: mean | • Single: ne...","textChars":161,"textLines":10,"bbox":[862,285,330,305]}
+{"kind":"image","id":"im/iho7ypov","slide":15,"name":"","geometry":"rect","alt":"ภาพเปรียบเทียบกลุ่มแบบ centroid, dendrogram และ density","bbox":[42,185,760,455]}
+{"kind":"notes","id":"nt/6ix7o3","slide":15,"text":"ภาพเป็น illustration เชิงแนวคิด ไม่ใช่ผลจาก dataset จริง\n\n[Sources]\n- scikit-learn, Hierarchical clustering, https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering\n- Generated illustration: OpenAI ImageGen, 2026 (assets/clustering-landscape.png)."}
+{"kind":"slide","id":"sl/imzu4k","slide":16,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":6}
+{"kind":"textbox","id":"sh/gbyxon2t","slide":16,"name":"k-16","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/fapwvilo","slide":16,"name":"t-16","text":"DBSCAN นิยาม Cluster จากความหนาแน่นและแยก Noise","textPreview":"DBSCAN นิยาม Cluster จากความหนาแน่นและแยก Noise","textChars":47,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/e9gfmdk3","slide":16,"name":"r-16","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/p0ry1s3q","slide":16,"name":"fl-16","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/ozixsn25","slide":16,"name":"fn-16","text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/3e9gzilk","slide":16,"name":"space","bbox":[55,205,650,365]}
+{"kind":"shape","id":"sh/2d0fqxkz","slide":16,"name":"d-0","bbox":[129,289,22,22]}
+{"kind":"shape","id":"sh/d4by5c3m","slide":16,"name":"d-1","bbox":[154,309,22,22]}
+{"kind":"shape","id":"sh/c3ixw721","slide":16,"name":"d-2","bbox":[179,274,22,22]}
+{"kind":"shape","id":"sh/u9knuhkv","slide":16,"name":"d-3","bbox":[209,324,22,22]}
+{"kind":"shape","id":"sh/vatonm1g","slide":16,"name":"d-4","bbox":[234,289,22,22]}
+{"kind":"shape","id":"sh/wbm5wr21","slide":16,"name":"d-5","bbox":[399,319,22,22]}
+{"kind":"shape","id":"sh/hcv6pwjm","slide":16,"name":"d-6","bbox":[429,289,22,22]}
+{"kind":"shape","id":"sh/id4ny1k7","slide":16,"name":"d-7","bbox":[459,339,22,22]}
+{"kind":"shape","id":"sh/jedor61c","slide":16,"name":"d-8","bbox":[489,304,22,22]}
+{"kind":"shape","id":"sh/4fm50r2x","slide":16,"name":"d-9","bbox":[524,334,22,22]}
+{"kind":"shape","id":"sh/5gv6twji","slide":16,"name":"n-0","bbox":[293,243,14,14]}
+{"kind":"shape","id":"sh/yh0nmxkn","slide":16,"name":"n-1","bbox":[323,443,14,14]}
+{"kind":"shape","id":"sh/zi94f218","slide":16,"name":"n-2","bbox":[568,253,14,14]}
+{"kind":"shape","id":"sh/3mpknyh0","slide":16,"name":"n-3","bbox":[613,463,14,14]}
+{"kind":"shape","id":"sh/2lg3et0f","slide":16,"name":"eps1","bbox":[120,260,155,120]}
+{"kind":"shape","id":"sh/po72p8z6","slide":16,"name":"eps2","bbox":[385,270,175,120]}
+{"kind":"shape","id":"sh/onylg3il","slide":16,"name":"param","bbox":[760,205,470,365]}
+{"kind":"textbox","id":"sh/fy5kjyh4","slide":16,"name":"ph","text":"PARAMETERS","textPreview":"PARAMETERS","textChars":10,"textLines":1,"bbox":[795,238,360,36]}
+{"kind":"textbox","id":"sh/exw3at0j","slide":16,"name":"pb","text":"eps → รัศมีเพื่อนบ้าน\nmin_samples → ความหนาแน่นขั้นต่ำ\n\nข้อดี: รูปร่างอิสระ • แยก noise\n\nข้อจำกัด\n• ไวต่อ scaling\n• varying density ยาก","textPreview":"eps → รัศมีเพื่อนบ้าน | min_samples → ความหนาแน่นขั้นต่ำ |  | ข้อดี: รูปร่างอิสระ • แยก noise |  | ข้อจำกัด | • ไวต่อ scaling | • varying...","textChars":135,"textLines":8,"bbox":[795,305,370,225]}
+{"kind":"notes","id":"nt/imzu4k","slide":16,"text":"จุดและรัศมีเป็นภาพสังเคราะห์\n\n[Sources]\n- scikit-learn, DBSCAN overview, https://scikit-learn.org/stable/modules/clustering.html#dbscan"}
+{"kind":"slide","id":"sl/kt86r8","slide":17,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":25}
+{"kind":"textbox","id":"sh/jmxgjy90","slide":17,"name":"k-17","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/kn6hc3q5","slide":17,"name":"t-17","text":"Algorithm Fit: รูปทรง • Scale • Deployment","textPreview":"Algorithm Fit: รูปทรง • Scale • Deployment","textChars":42,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/lofyl8rq","slide":17,"name":"r-17","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ax4z6t83","slide":17,"name":"fl-17","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/byxgfy9o","slide":17,"name":"fn-17","text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/wz6h83q9","slide":17,"name":"h-0","bbox":[48,200,280,55]}
+{"kind":"textbox","id":"sh/x0fyh8ru","slide":17,"name":"ht-0","text":"เงื่อนไข","textPreview":"เงื่อนไข","textChars":8,"textLines":1,"bbox":[58,215,260,28]}
+{"kind":"shape","id":"sh/ut8zix8n","slide":17,"name":"h-1","bbox":[346,200,280,55]}
+{"kind":"textbox","id":"sh/fuh0ri98","slide":17,"name":"ht-1","text":"K-MEANS","textPreview":"K-MEANS","textChars":7,"textLines":1,"bbox":[356,215,260,28]}
+{"kind":"shape","id":"sh/jix4be5g","slide":17,"name":"h-2","bbox":[644,200,280,55]}
+{"kind":"textbox","id":"sh/ih4329ov","slide":17,"name":"ht-2","text":"HIERARCHICAL","textPreview":"HIERARCHICAL","textChars":12,"textLines":1,"bbox":[654,215,260,28]}
+{"kind":"shape","id":"sh/54fmd4n6","slide":17,"name":"h-3","bbox":[942,200,280,55]}
+{"kind":"textbox","id":"sh/4j6l4z6l","slide":17,"name":"ht-3","text":"DBSCAN","textPreview":"DBSCAN","textChars":6,"textLines":1,"bbox":[952,215,260,28]}
+{"kind":"shape","id":"sh/r6x4fe5c","slide":17,"name":"c-0-0","bbox":[48,258,280,68]}
+{"kind":"textbox","id":"sh/65o369or","slide":17,"name":"ct-0-0","text":"จำนวนกลุ่ม","textPreview":"จำนวนกลุ่ม","textChars":10,"textLines":1,"bbox":[60,278,256,32]}
+{"kind":"shape","id":"sh/t8fmhoni","slide":17,"name":"c-0-1","bbox":[346,258,280,68]}
+{"kind":"textbox","id":"sh/s7658j6x","slide":17,"name":"ct-0-1","text":"กำหนด k","textPreview":"กำหนด k","textChars":7,"textLines":1,"bbox":[358,278,256,32]}
+{"kind":"shape","id":"sh/fah4jy58","slide":17,"name":"c-0-2","bbox":[644,258,280,68]}
+{"kind":"textbox","id":"sh/e9onato3","slide":17,"name":"ct-0-2","text":"ตัด tree","textPreview":"ตัด tree","textChars":8,"textLines":1,"bbox":[656,278,256,32]}
+{"kind":"shape","id":"sh/a5s72x8b","slide":17,"name":"c-0-3","bbox":[942,258,280,68]}
+{"kind":"textbox","id":"sh/b61ob2pg","slide":17,"name":"ct-0-3","text":"ค้นจาก density","textPreview":"ค้นจาก density","textChars":14,"textLines":1,"bbox":[954,278,256,32]}
+{"kind":"shape","id":"sh/c7ap4nq1","slide":17,"name":"c-1-0","bbox":[48,332,280,68]}
+{"kind":"textbox","id":"sh/x8j6ds7m","slide":17,"name":"ct-1-0","text":"รูปทรง","textPreview":"รูปทรง","textChars":6,"textLines":1,"bbox":[60,352,256,32]}
+{"kind":"shape","id":"sh/21s7yd8z","slide":17,"name":"c-1-1","bbox":[346,332,280,68]}
+{"kind":"textbox","id":"sh/n21o7ipk","slide":17,"name":"ct-1-1","text":"convex/isotropic","textPreview":"convex/isotropic","textChars":16,"textLines":1,"bbox":[358,352,256,32]}
+{"kind":"shape","id":"sh/o3ap0nq5","slide":17,"name":"c-1-2","bbox":[644,332,280,68]}
+{"kind":"textbox","id":"sh/p4j69s7q","slide":17,"name":"ct-1-2","text":"ขึ้นกับ linkage","textPreview":"ขึ้นกับ linkage","textChars":15,"textLines":1,"bbox":[656,352,256,32]}
+{"kind":"shape","id":"sh/mxc7ah8j","slide":17,"name":"c-1-3","bbox":[942,332,280,68]}
+{"kind":"textbox","id":"sh/7yl8jmpo","slide":17,"name":"ct-1-3","text":"irregular + noise","textPreview":"irregular + noise","textChars":17,"textLines":1,"bbox":[954,352,256,32]}
+{"kind":"shape","id":"sh/h47ip0v2","slide":17,"name":"c-2-0","bbox":[48,406,280,68]}
+{"kind":"textbox","id":"sh/g3y1wvex","slide":17,"name":"ct-2-0","text":"ข้อมูลใหม่","textPreview":"ข้อมูลใหม่","textChars":10,"textLines":1,"bbox":[60,426,256,32]}
+{"kind":"shape","id":"sh/v2p0nqdc","slide":17,"name":"c-2-1","bbox":[346,406,280,68]}
+{"kind":"textbox","id":"sh/u1gju5wr","slide":17,"name":"ct-2-1","text":"ง่าย","textPreview":"ง่าย","textChars":4,"textLines":1,"bbox":[358,426,256,32]}
+{"kind":"shape","id":"sh/t07il0v6","slide":17,"name":"c-2-2","bbox":[644,406,280,68]}
+{"kind":"textbox","id":"sh/8zy1svel","slide":17,"name":"ct-2-2","text":"ต้องออกแบบ","textPreview":"ต้องออกแบบ","textChars":10,"textLines":1,"bbox":[656,426,256,32]}
+{"kind":"shape","id":"sh/7ep0jqd0","slide":17,"name":"c-2-3","bbox":[942,406,280,68]}
+{"kind":"textbox","id":"sh/6dwjqlwf","slide":17,"name":"ct-2-3","text":"ไม่ใช่จุดเด่น","textPreview":"ไม่ใช่จุดเด่น","textChars":13,"textLines":1,"bbox":[954,426,256,32]}
+{"kind":"shape","id":"sh/dwr2xkva","slide":17,"name":"c-3-0","bbox":[48,480,280,68]}
+{"kind":"textbox","id":"sh/svi14fep","slide":17,"name":"ct-3-0","text":"จุดแข็ง","textPreview":"จุดแข็ง","textChars":7,"textLines":1,"bbox":[60,500,256,32]}
+{"kind":"shape","id":"sh/03m18va9","slide":17,"name":"c-3-1","bbox":[346,480,280,68]}
+{"kind":"textbox","id":"sh/l4fih0ru","slide":17,"name":"ct-3-1","text":"เร็ว/scale ใหญ่","textPreview":"เร็ว/scale ใหญ่","textChars":15,"textLines":1,"bbox":[358,500,256,32]}
+{"kind":"shape","id":"sh/y14z6ls3","slide":17,"name":"c-3-2","bbox":[644,480,280,68]}
+{"kind":"textbox","id":"sh/z2d0fq9o","slide":17,"name":"ct-3-2","text":"เห็น hierarchy","textPreview":"เห็น hierarchy","textChars":14,"textLines":1,"bbox":[656,500,256,32]}
+{"kind":"shape","id":"sh/8761cval","slide":17,"name":"c-3-3","bbox":[942,480,280,68]}
+{"kind":"textbox","id":"sh/9sfil0r6","slide":17,"name":"ct-3-3","text":"noise/outlier","textPreview":"noise/outlier","textChars":13,"textLines":1,"bbox":[954,500,256,32]}
+{"kind":"textbox","id":"sh/m5oja5sf","slide":17,"name":"final","text":"ไม่มี algorithm ที่ดีที่สุดโดยไม่ระบุ geometry และ decision context","textPreview":"ไม่มี algorithm ที่ดีที่สุดโดยไม่ระบุ geometry และ decision context","textChars":67,"textLines":1,"bbox":[145,585,990,42]}
+{"kind":"notes","id":"nt/kt86r8","slide":17,"text":"ตารางย่อเพื่อการเลือก ไม่ครอบคลุมทุกเงื่อนไข\n\n[Sources]\n- scikit-learn, Overview of clustering methods, https://scikit-learn.org/stable/modules/clustering.html#overview-of-clustering-methods"}
+{"kind":"slide","id":"sl/920ck3","slide":18,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":6}
+{"kind":"textbox","id":"sh/idori5kz","slide":18,"name":"k-18","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/50fadk3a","slide":18,"name":"t-18","text":"Association Rules: Transaction → Itemset → Rule → Action","textPreview":"Association Rules: Transaction → Itemset → Rule → Action","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/kz69kf2p","slide":18,"name":"r-18","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/vad87al8","slide":18,"name":"fl-18","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/a94re5kn","slide":18,"name":"fn-18","text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/wbm9gv2t","slide":18,"name":"flow","bbox":[830,185,400,455]}
+{"kind":"textbox","id":"sh/n6d83qlc","slide":18,"name":"fh","text":"WORKFLOW","textPreview":"WORKFLOW","textChars":8,"textLines":1,"bbox":[862,217,330,34]}
+{"kind":"textbox","id":"sh/m54ralkr","slide":18,"name":"fb","text":"1 นิยาม basket boundary\n2 กรอง return/cancel/test item\n3 one-hot transactions\n4 frequent itemsets\n5 generate rules\n6 prune redundancy\n7 validate period/segment\n8 design experiment","textPreview":"1 นิยาม basket boundary | 2 กรอง return/cancel/test item | 3 one-hot transactions | 4 frequent itemsets | 5 generate rules | 6 prune redu...","textChars":179,"textLines":8,"bbox":[862,290,330,300]}
+{"kind":"image","id":"im/sf2tk3ml","slide":18,"name":"","geometry":"rect","alt":"ธุรกรรมไหลสู่ frequent itemsets และกฎความสัมพันธ์","bbox":[42,185,760,455]}
+{"kind":"notes","id":"nt/920ck3","slide":18,"text":"basket boundary อาจเป็นใบเสร็จ session หรือ episode\n\n[Sources]\n- mlxtend, Frequent pattern mining API, https://rasbt.github.io/mlxtend/api_subpackages/mlxtend.frequent_patterns/\n- Generated illustration: OpenAI ImageGen, 2026 (assets/association-rules.png)."}
+{"kind":"slide","id":"sl/t2btcl","slide":19,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":11}
+{"kind":"textbox","id":"sh/r6d0vi98","slide":19,"name":"k-19","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/s7m14nat","slide":19,"name":"t-19","text":"Support • Confidence • Lift ต้องอ่านพร้อมกัน","textPreview":"Support • Confidence • Lift ต้องอ่านพร้อมกัน","textChars":44,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/d8vixsre","slide":19,"name":"r-19","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ihkjydsr","slide":19,"name":"fl-19","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/3it0ry9w","slide":19,"name":"fn-19","text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/4j2103ah","slide":19,"name":"m-0","bbox":[54,205,360,225]}
+{"kind":"shape","id":"sh/5kbit8r2","slide":19,"name":"m-0-a","bbox":[54,205,8,225]}
+{"kind":"textbox","id":"sh/udkzutsf","slide":19,"name":"m-0-h","text":"SUPPORT","textPreview":"SUPPORT","textChars":7,"textLines":1,"bbox":[81,225,312,38]}
+{"kind":"textbox","id":"sh/vet0ny90","slide":19,"name":"m-0-b","text":"P(A∩B)\n\nครอบคลุมข้อมูลเท่าไร","textPreview":"P(A∩B) |  | ครอบคลุมข้อมูลเท่าไร","textChars":28,"textLines":3,"bbox":[81,277,312,137]}
+{"kind":"shape","id":"sh/rm1c7y5c","slide":19,"name":"m-1","bbox":[462,205,360,225]}
+{"kind":"shape","id":"sh/qlsbed4r","slide":19,"name":"m-1-a","bbox":[462,205,8,225]}
+{"kind":"textbox","id":"sh/d8ju98ni","slide":19,"name":"m-1-h","text":"CONFIDENCE","textPreview":"CONFIDENCE","textChars":10,"textLines":1,"bbox":[489,225,312,38]}
+{"kind":"textbox","id":"sh/c7atg3mx","slide":19,"name":"m-1-b","text":"P(B|A)\n\nเมื่อมี A พบ B เท่าไร","textPreview":"P(B|A) |  | เมื่อมี A พบ B เท่าไร","textChars":29,"textLines":3,"bbox":[489,277,312,137]}
+{"kind":"shape","id":"sh/zalcbilo","slide":19,"name":"m-2","bbox":[870,205,360,225]}
+{"kind":"shape","id":"sh/e9cbid43","slide":19,"name":"m-2-a","bbox":[870,205,8,225]}
+{"kind":"textbox","id":"sh/1c3uds3u","slide":19,"name":"m-2-h","text":"LIFT","textPreview":"LIFT","textChars":4,"textLines":1,"bbox":[897,225,312,38]}
+{"kind":"textbox","id":"sh/0budknm9","slide":19,"name":"m-2-b","text":"Conf / P(B)\n\nเหนือ baseline ของ B เท่าไร","textPreview":"Conf / P(B) |  | เหนือ baseline ของ B เท่าไร","textChars":40,"textLines":3,"bbox":[897,277,312,137]}
+{"kind":"shape","id":"sh/fehcze54","slide":19,"name":"ex","bbox":[135,475,1010,115]}
+{"kind":"textbox","id":"sh/ud8b6t4z","slide":19,"name":"et","text":"100 baskets • A=20 • B=50 • A∩B=15  →  Support .15  |  Confidence .75  |  Lift 1.50","textPreview":"100 baskets • A=20 • B=50 • A∩B=15  →  Support .15  |  Confidence .75  |  Lift 1.50","textChars":83,"textLines":1,"bbox":[165,505,950,55]}
+{"kind":"notes","id":"nt/t2btcl","slide":19,"text":"คำนวณจากตัวอย่างสังเคราะห์ 100 baskets\n\n[Sources]\n- mlxtend, Association rules metrics, https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/association_rules/"}
+{"kind":"slide","id":"sl/5ngl20","slide":20,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":11}
+{"kind":"textbox","id":"sh/sbetwjm5","slide":20,"name":"k-20","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/7a5s3ylk","slide":20,"name":"t-20","text":"Confidence สูงอาจไม่เพิ่มข้อมูลจาก Baseline","textPreview":"Confidence สูงอาจไม่เพิ่มข้อมูลจาก Baseline","textChars":43,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/69wbut4z","slide":20,"name":"r-20","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/58na1o3e","slide":20,"name":"fl-20","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/knetsjmt","slide":20,"name":"fn-20","text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/jm5szelo","slide":20,"name":"base","bbox":[55,205,520,350]}
+{"kind":"textbox","id":"sh/ilwbq943","slide":20,"name":"bh","text":"BASE RATE OF B","textPreview":"BASE RATE OF B","textChars":14,"textLines":1,"bbox":[88,238,400,36]}
+{"kind":"textbox","id":"sh/xknax43i","slide":20,"name":"bv","text":"90%","textPreview":"90%","textChars":3,"textLines":1,"bbox":[88,320,400,90]}
+{"kind":"textbox","id":"sh/wjutozmx","slide":20,"name":"bb","text":"B ขายดีอยู่แล้ว","textPreview":"B ขายดีอยู่แล้ว","textChars":15,"textLines":1,"bbox":[88,445,400,36]}
+{"kind":"shape","id":"sh/uhwzetsf","slide":20,"name":"rule","bbox":[705,205,520,350]}
+{"kind":"textbox","id":"sh/fi5g7ytk","slide":20,"name":"rh","text":"RULE A → B","textPreview":"RULE A → B","textChars":10,"textLines":1,"bbox":[738,238,400,36]}
+{"kind":"textbox","id":"sh/gjehg3a5","slide":20,"name":"rv","text":"92%","textPreview":"92%","textChars":3,"textLines":1,"bbox":[738,320,400,90]}
+{"kind":"textbox","id":"sh/hkny98rq","slide":20,"name":"rb","text":"Confidence สูง แต่ Lift = .92/.90 ≈ 1.02","textPreview":"Confidence สูง แต่ Lift = .92/.90 ≈ 1.02","textChars":40,"textLines":1,"bbox":[738,440,400,58]}
+{"kind":"textbox","id":"sh/6dczats3","slide":20,"name":"take","text":"Lift ≈ 1 → กฎแทบไม่ต่างจากการเดา B ตามความนิยมเดิม","textPreview":"Lift ≈ 1 → กฎแทบไม่ต่างจากการเดา B ตามความนิยมเดิม","textChars":50,"textLines":1,"bbox":[145,590,990,42]}
+{"kind":"notes","id":"nt/5ngl20","slide":20,"text":"ตัวเลขเป็นสถานการณ์สังเคราะห์เพื่อแสดง base-rate trap\n\n[Sources]\n- mlxtend, Association rules and lift, https://rasbt.github.io/mlxtend/user_guide/frequent_patterns/association_rules/"}
+{"kind":"slide","id":"sl/0lq0nf","slide":21,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":8}
+{"kind":"textbox","id":"sh/h8ni9kzm","slide":21,"name":"k-21","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/u5czep0v","slide":21,"name":"t-21","text":"Apriori Prune Candidates • FP-Growth บีบ Pattern ใน Tree","textPreview":"Apriori Prune Candidates • FP-Growth บีบ Pattern ใน Tree","textChars":56,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/f6l07uhg","slide":21,"name":"r-21","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/4behkzix","slide":21,"name":"fl-21","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/pcnid4zi","slide":21,"name":"fn-21","text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/29wzip0r","slide":21,"name":"ap","bbox":[55,210,520,350]}
+{"kind":"shape","id":"sh/3a50buhc","slide":21,"name":"ap-a","bbox":[55,210,8,350]}
+{"kind":"textbox","id":"sh/czy1oji9","slide":21,"name":"ap-h","text":"APRIORI","textPreview":"APRIORI","textChars":7,"textLines":1,"bbox":[82,230,472,38]}
+{"kind":"textbox","id":"sh/d07ih4ze","slide":21,"name":"ap-b","text":"Downward closure:\nถ้า {A,B} ไม่ frequent\n{A,B,C} ย่อมไม่ frequent\n\n+ เข้าใจง่าย\n− candidate explosion / scans","textPreview":"Downward closure: | ถ้า {A,B} ไม่ frequent | {A,B,C} ย่อมไม่ frequent |  | + เข้าใจง่าย | − candidate explosion / scans","textChars":109,"textLines":6,"bbox":[82,282,472,262]}
+{"kind":"shape","id":"sh/5sn214zy","slide":21,"name":"fp","bbox":[705,210,520,350]}
+{"kind":"shape","id":"sh/47el8zyd","slide":21,"name":"fp-a","bbox":[705,210,8,350]}
+{"kind":"textbox","id":"sh/365kzuh8","slide":21,"name":"fp-h","text":"FP-GROWTH","textPreview":"FP-GROWTH","textChars":9,"textLines":1,"bbox":[732,230,472,38]}
+{"kind":"textbox","id":"sh/i5w36pgn","slide":21,"name":"fp-b","text":"บีบ transactions เป็น FP-tree\nหา frequent patterns\nโดยไม่สร้าง candidates แบบ Apriori\n\n+ เหมาะข้อมูลแน่น/ใหญ่\n− ยังต้อง prune rules","textPreview":"บีบ transactions เป็น FP-tree | หา frequent patterns | โดยไม่สร้าง candidates แบบ Apriori |  | + เหมาะข้อมูลแน่น/ใหญ่ | − ยังต้อง prune r...","textChars":131,"textLines":6,"bbox":[732,282,472,262]}
+{"kind":"notes","id":"nt/0lq0nf","slide":21,"text":"เลือก algorithm ตามขนาด ความหนาแน่น และระบบประมวลผล\n\n[Sources]\n- mlxtend, Apriori and FP-growth API, https://rasbt.github.io/mlxtend/api_subpackages/mlxtend.frequent_patterns/\n- Apache Spark, FPGrowth API, https://spark.apache.org/docs/latest/api/java/org/apache/spark/ml/fpm/FPGrowth.html"}
+{"kind":"slide","id":"sl/ori8b3","slide":22,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":15}
+{"kind":"textbox","id":"sh/3q9kbi1s","slide":22,"name":"k-22","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/4r2lkn2x","slide":22,"name":"t-22","text":"Association ≠ Causation — ต้องผ่าน Experiment Gate","textPreview":"Association ≠ Causation — ต้องผ่าน Experiment Gate","textChars":50,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/psb2dsji","slide":22,"name":"r-22","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/ul03edkv","slide":22,"name":"fl-22","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/fm9k7i1g","slide":22,"name":"fn-22","text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/gnilgn21","slide":22,"name":"s-0","bbox":[30,225,205,280]}
+{"kind":"textbox","id":"sh/hor29sjm","slide":22,"name":"h-0","text":"RULE","textPreview":"RULE","textChars":4,"textLines":1,"bbox":[48,255,169,34]}
+{"kind":"textbox","id":"sh/6xg3atkz","slide":22,"name":"b-0","text":"{diapers} → {beer}\nlift 2.1","textPreview":"{diapers} → {beer} | lift 2.1","textChars":27,"textLines":2,"bbox":[48,350,169,95]}
+{"kind":"shape","id":"sh/7ypk3y1k","slide":22,"name":"a-0","bbox":[230,335,48,30]}
+{"kind":"shape","id":"sh/32xgvylg","slide":22,"name":"s-1","bbox":[279,225,205,280]}
+{"kind":"textbox","id":"sh/21ozmtkv","slide":22,"name":"h-1","text":"CHECK","textPreview":"CHECK","textChars":5,"textLines":1,"bbox":[297,255,169,34]}
+{"kind":"textbox","id":"sh/p4zix83m","slide":22,"name":"b-1","text":"count • period • store\nreturns • stability","textPreview":"count • period • store | returns • stability","textChars":42,"textLines":2,"bbox":[297,350,169,95]}
+{"kind":"shape","id":"sh/o36ho321","slide":22,"name":"a-1","bbox":[479,335,48,30]}
+{"kind":"shape","id":"sh/b6h0zilc","slide":22,"name":"s-2","bbox":[528,225,205,280]}
+{"kind":"textbox","id":"sh/q58zqdkr","slide":22,"name":"h-2","text":"EXPLAIN","textPreview":"EXPLAIN","textChars":7,"textLines":1,"bbox":[546,255,169,34]}
+{"kind":"textbox","id":"sh/xszi183i","slide":22,"name":"b-2","text":"time • promotion\nhousehold • selection","textPreview":"time • promotion | household • selection","textChars":38,"textLines":2,"bbox":[546,350,169,95]}
+{"kind":"shape","id":"sh/crqhs32x","slide":22,"name":"a-2","bbox":[728,335,48,30]}
+{"kind":"shape","id":"sh/radgnel8","slide":22,"name":"s-3","bbox":[777,225,205,280]}
+{"kind":"textbox","id":"sh/694ze94n","slide":22,"name":"h-3","text":"A/B TEST","textPreview":"A/B TEST","textChars":8,"textLines":1,"bbox":[795,255,169,34]}
+{"kind":"textbox","id":"sh/upcjmh4b","slide":22,"name":"b-3","text":"randomize intervention\nincremental margin","textPreview":"randomize intervention | incremental margin","textChars":41,"textLines":2,"bbox":[795,350,169,95]}
+{"kind":"shape","id":"sh/vqlkvm5w","slide":22,"name":"a-3","bbox":[977,335,48,30]}
+{"kind":"shape","id":"sh/wrulormh","slide":22,"name":"s-4","bbox":[1026,225,205,280]}
+{"kind":"textbox","id":"sh/hs32xwnm","slide":22,"name":"h-4","text":"DEPLOY","textPreview":"DEPLOY","textChars":6,"textLines":1,"bbox":[1044,255,169,34]}
+{"kind":"textbox","id":"sh/mlsjih4z","slide":22,"name":"b-4","text":"guardrail • monitor\nrollback","textPreview":"guardrail • monitor | rollback","textChars":28,"textLines":2,"bbox":[1044,350,169,95]}
+{"kind":"textbox","id":"sh/7m1kr25k","slide":22,"name":"guard","text":"Primary metric + stockout • return • complaint • fairness guardrails","textPreview":"Primary metric + stockout • return • complaint • fairness guardrails","textChars":68,"textLines":1,"bbox":[140,575,1000,42]}
+{"kind":"notes","id":"nt/ori8b3","slide":22,"text":"กฎ diapers-beer ใช้เป็นกรณีอภิปราย ไม่อ้างว่าเป็นผลทดลองขององค์กรใด\n\n[Sources]\n- Week-06 source note and expanded content in this package.\n- NIST AIRC, AI RMF Core, https://airc.nist.gov/airmf-resources/airmf/5-sec-core/"}
+{"kind":"slide","id":"sl/kxwu7z","slide":23,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":6}
+{"kind":"textbox","id":"sh/83utw7yh","slide":23,"name":"k-23","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/72ls3mxw","slide":23,"name":"t-23","text":"20 Applications: จากกลุ่มและกฎสู่ Decision Design","textPreview":"20 Applications: จากกลุ่มและกฎสู่ Decision Design","textChars":49,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/61cbuhgb","slide":23,"name":"r-23","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/l03a1cf6","slide":23,"name":"fl-23","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/kzuts7yl","slide":23,"name":"fn-23","text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/yxsbqxgf","slide":23,"name":"list","bbox":[705,188,525,430]}
+{"kind":"textbox","id":"sh/pwnudwfa","slide":23,"name":"la","text":"01 Customer RFM\n02 Bank branches\n03 Patient pathways\n04 Student learning\n05 Machine states\n06 Traffic patterns\n07 Energy load\n08 Satellite land\n09 Document topics\n10 Cyber events","textPreview":"01 Customer RFM | 02 Bank branches | 03 Patient pathways | 04 Student learning | 05 Machine states | 06 Traffic patterns | 07 Energy load...","textChars":178,"textLines":10,"bbox":[730,214,225,375]}
+{"kind":"textbox","id":"sh/4vet4ryp","slide":23,"name":"lb","text":"11 Retail basket\n12 Web navigation\n13 Telecom bundles\n14 Clinical co-occurrence\n15 Insurance claims\n16 Spare parts\n17 Course enrollment\n18 Tourism itinerary\n19 Fraud sequences\n20 Public services","textPreview":"11 Retail basket | 12 Web navigation | 13 Telecom bundles | 14 Clinical co-occurrence | 15 Insurance claims | 16 Spare parts | 17 Course ...","textChars":194,"textLines":10,"bbox":[970,214,235,375]}
+{"kind":"image","id":"im/ylobm5sz","slide":23,"name":"","geometry":"rect","alt":"ยี่สิบโดเมนการประยุกต์ unsupervised data mining","bbox":[42,190,635,425]}
+{"kind":"notes","id":"nt/kxwu7z","slide":23,"text":"ให้แต่ละกลุ่มเลือกหนึ่ง application แล้วนิยาม unit, pattern, action และ validation\n\n[Sources]\n- Generated illustration: OpenAI ImageGen, 2026 (assets/data-mining-ii-20-applications.png).\n- Week-06 expanded content; applications synthesized as instructional design examples."}
+{"kind":"slide","id":"sl/083ot5","slide":24,"title":"DECISION SUPPORT SYSTEMS • WEEK 06","textShapes":6}
+{"kind":"textbox","id":"sh/xsb2l0zy","slide":24,"name":"k-24","text":"DECISION SUPPORT SYSTEMS • WEEK 06","textPreview":"DECISION SUPPORT SYSTEMS • WEEK 06","textChars":34,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/a5k3a507","slide":24,"name":"t-24","text":"Future Data Mining: AI เสนอ Pattern — ระบบพิสูจน์ Value","textPreview":"Future Data Mining: AI เสนอ Pattern — ระบบพิสูจน์ Value","textChars":55,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/bqtkjahs","slide":24,"name":"r-24","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/kvmlgfy9","slide":24,"name":"fl-24","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/lwvmpkzu","slide":24,"name":"fn-24","text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/zud4naho","slide":24,"name":"fp","bbox":[830,185,400,455]}
+{"kind":"textbox","id":"sh/8zmlkfyl","slide":24,"name":"fh","text":"RESPONSIBLE FUTURE","textPreview":"RESPONSIBLE FUTURE","textChars":18,"textLines":1,"bbox":[862,217,330,34]}
+{"kind":"textbox","id":"sh/90vmtkz6","slide":24,"name":"fb","text":"AI ช่วยเสนอ\n• feature • k • eps • rules\n\nระบบต้องบันทึก\n• lineage • version • rationale\n\nก่อน deploy\n• stability • drift • fairness\n• experiment • human oversight\n• owner • rollback","textPreview":"AI ช่วยเสนอ | • feature • k • eps • rules |  | ระบบต้องบันทึก | • lineage • version • rationale |  | ก่อน deploy | • stability • drift • ...","textChars":181,"textLines":10,"bbox":[862,285,330,305]}
+{"kind":"image","id":"im/fuh0v6p8","slide":24,"name":"","geometry":"rect","alt":"มนุษย์และ AI ร่วมกันสร้างและตรวจรูปแบบก่อนนำไปใช้","bbox":[42,185,760,455]}
+{"kind":"notes","id":"nt/083ot5","slide":24,"text":"ความได้เปรียบย้ายจากหา pattern ไปสู่พิสูจน์ uplift และควบคุมผลกระทบ\n\n[Sources]\n- NIST AIRC, AI Risks and Trustworthiness, https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/\n- NIST AIRC, AI RMF Core, https://airc.nist.gov/airmf-resources/airmf/5-sec-core/\n- Generated illustration: OpenAI ImageGen, 2026 (assets/future-unsupervised-mining.png)."}
+{"kind":"slide","id":"sl/g7m1b4","slide":25,"title":"WEEK 06 • NEXT ACTION","textShapes":11}
+{"kind":"textbox","id":"sh/wby58bqd","slide":25,"name":"k-25","text":"WEEK 06 • NEXT ACTION","textPreview":"WEEK 06 • NEXT ACTION","textChars":21,"textLines":1,"bbox":[42,30,900,28]}
+{"kind":"textbox","id":"sh/ba54f6ps","slide":25,"name":"t-25","text":"ลงมือทำ: พิสูจน์ Cluster และ Rule ก่อนตัดสินใจ","textPreview":"ลงมือทำ: พิสูจน์ Cluster และ Rule ก่อนตัดสินใจ","textChars":46,"textLines":1,"bbox":[42,70,1195,72]}
+{"kind":"shape","id":"sh/a9wn6187","slide":25,"name":"r-25","bbox":[42,154,1196,2]}
+{"kind":"textbox","id":"sh/5g76lg7u","slide":25,"name":"fl-25","text":"KSU • Data Mining II","textPreview":"KSU • Data Mining II","textChars":20,"textLines":1,"bbox":[42,676,520,20]}
+{"kind":"textbox","id":"sh/kfy5cvq9","slide":25,"name":"fn-25","text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1180,676,58,20]}
+{"kind":"shape","id":"sh/jep4jqpo","slide":25,"name":"l1","bbox":[54,202,540,356]}
+{"kind":"shape","id":"sh/idgnal8j","slide":25,"name":"l2","bbox":[686,202,540,356]}
+{"kind":"textbox","id":"sh/1knm9w7q","slide":25,"name":"l1n","text":"LAB 01","textPreview":"LAB 01","textChars":6,"textLines":1,"bbox":[86,232,180,34]}
+{"kind":"textbox","id":"sh/0je50rq5","slide":25,"name":"l1h","text":"Customer Segmentation","textPreview":"Customer Segmentation","textChars":21,"textLines":1,"bbox":[86,300,450,55]}
+{"kind":"textbox","id":"sh/65wjilof","slide":25,"name":"l1b","text":"RFM → transform/scale → k=2..8\nelbow + silhouette + stability\nprofile → action → KPI","textPreview":"RFM → transform/scale → k=2..8 | elbow + silhouette + stability | profile → action → KPI","textChars":84,"textLines":3,"bbox":[86,410,450,115]}
+{"kind":"textbox","id":"sh/76pkrq50","slide":25,"name":"l2n","text":"LAB 02","textPreview":"LAB 02","textChars":6,"textLines":1,"bbox":[718,232,180,34]}
+{"kind":"textbox","id":"sh/87y1kv6l","slide":25,"name":"l2h","text":"Market Basket + Experiment","textPreview":"Market Basket + Experiment","textChars":26,"textLines":1,"bbox":[718,300,450,55]}
+{"kind":"textbox","id":"sh/t872t0nq","slide":25,"name":"l2b","text":"basket → itemsets → rules → prune\nvalidation period + alternatives\nA/B test + guardrails","textPreview":"basket → itemsets → rules → prune | validation period + alternatives | A/B test + guardrails","textChars":88,"textLines":3,"bbox":[718,410,450,115]}
+{"kind":"textbox","id":"sh/u9gjm54b","slide":25,"name":"close","text":"เป้าหมาย: ทุก Pattern มี Evidence, Action, Owner และ Experiment","textPreview":"เป้าหมาย: ทุก Pattern มี Evidence, Action, Owner และ Experiment","textChars":63,"textLines":1,"bbox":[180,602,920,42]}
+{"kind":"notes","id":"nt/g7m1b4","slide":25,"text":"Exit ticket: บอกหนึ่งเหตุผลที่ควรทิ้ง cluster หรือ rule แม้ metric ดูดี\n\n[Sources]\n- Lab-01-Customer-Segmentation.md and Lab-02-Market-Basket-and-Experiment.md."}

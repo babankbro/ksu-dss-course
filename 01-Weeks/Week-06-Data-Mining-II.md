@@ -64,3 +64,13 @@ exam: midterm
 
 ---
 **แนวคิดหลัก:** [[Clustering]] · [[Association-Rules]] · [[Data-Mining-Overview]]
+
+## ชุดสอนฉบับขยาย
+
+- [[week06/README|ภาพรวม Week 06]]
+- [[week06/Week-06-Expanded-Content|เนื้อหาขยาย]]
+- [[week06/Week-06-Questions|คำถาม 10 ข้อพร้อมแนวคำตอบ]]
+- [[week06/Lab-01-Customer-Segmentation|Lab 1: Customer Segmentation]]
+- [[week06/Lab-02-Market-Basket-and-Experiment|Lab 2: Market Basket และ A/B Test]]
+- [[week06/References|เอกสารอ้างอิง]]
+- `week06/Week-06-Data-Mining-II.pptx` — สไลด์ 25 หน้า
