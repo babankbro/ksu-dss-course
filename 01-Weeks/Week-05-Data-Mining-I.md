@@ -87,3 +87,16 @@ flowchart LR
 
 ---
 **แนวคิดหลัก:** [[Data-Mining-Overview]] · [[CRISP-DM]] · [[Data-Preprocessing]] · [[Classification]] · [[Model-Evaluation-Metrics]]
+
+## 🎮 สื่อจำลองและ Lab บน Colab
+
+สื่อจำลอง 3 ตัว + Lab Python 3 ชุด ใช้ไฟล์ CSV เดียวกัน ตัวเลขบนหน้าจอกับที่ได้จาก pandas ตรงกันทุกหลัก
+เดินตามวงจรจริงของงาน Data Mining — สร้าง → ตรวจสอบ → นำไปใช้
+
+| สื่อจำลอง | Lab | เฉลยหลัก |
+|---|---|---|
+| 🌳 Decision Tree Grower | `labs/week05/Lab-W5-3-Decision-Tree.ipynb` | ประเภทสัญญาให้ Gain **0.1763** มากกว่าค่าบริการ 19 เท่า |
+| 🕵️ Leakage Hunter | `labs/week05/Lab-W5-2-Leakage-Hunter.ipynb` | ตัวแปรรั่วให้ AUC **1.0000** · แบ่งตามเวลาเผยว่าประเมินต่ำกว่าจริง 48% |
+| 🎯 Threshold Policy Studio | `labs/week05/Lab-W5-1-Threshold-Policy.ipynb` | เลือกตาม accuracy เสียเพิ่ม **308,900 บาท** |
+
+รายละเอียดและเฉลยเต็ม: [[Sim-W5-Data-Mining]] · ชุดข้อมูล: `datasets/week05/`

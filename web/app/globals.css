@@ -346,3 +346,31 @@ code{background:var(--panel2);border:1px solid var(--line);border-radius:5px;pad
 .deptval{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;margin:5px 0}
 .deptformula{font-family:var(--font-mono),monospace;font-size:10.5px;color:var(--acc);
   background:var(--panel);border-radius:6px;padding:4px 6px;margin-bottom:6px;word-break:break-all}
+
+/* ============================================================
+   Week 05 — Threshold Policy / Leakage Hunter / Tree Grower
+   ============================================================ */
+.cmgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.cmcell{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--panel2)}
+.cmcell span{display:block;font-size:11.5px;color:var(--dim);letter-spacing:.02em}
+.cmcell b{display:block;font-size:28px;font-variant-numeric:tabular-nums;line-height:1.25}
+.cmcell small{display:block;font-size:11.5px;color:var(--dim)}
+.cmcell.tp{border-color:var(--ok);background:rgba(34,197,94,.09)}
+.cmcell.fn{border-color:var(--bad);background:rgba(239,68,68,.11)}
+.cmcell.fp{border-color:var(--warn);background:rgba(245,158,11,.09)}
+.costcurve{width:100%;height:auto;margin-top:6px}
+.costcurve .axis{stroke:var(--line);stroke-width:1}
+.costcurve .pline{fill:none;stroke:var(--acc);stroke-width:2}
+.costcurve .pline.ok{stroke:var(--ok)}
+.costcurve .dot{fill:var(--acc);stroke:var(--panel);stroke-width:2}
+.costcurve .lbl{fill:var(--dim);font-size:11px}
+.featgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:9px;margin:12px 0}
+.feat{display:block;text-align:left;background:var(--panel2);border:2px solid var(--line);
+  border-radius:11px;padding:10px 12px;cursor:pointer;transition:.15s;width:100%}
+.feat:hover{border-color:var(--acc)}
+.feat.on{border-color:var(--acc);background:rgba(99,102,241,.09)}
+.feat.leak{border-color:var(--bad);background:rgba(239,68,68,.09)}
+.feat b{display:block;font-size:13.5px;margin-bottom:3px}
+.feat small{display:block;font-size:11px;color:var(--dim);line-height:1.45}
+.feat em{display:block;font-style:normal;font-size:11px;font-weight:700;margin-top:5px}
+.kpi small{display:block;font-size:11px;color:var(--dim);margin-top:2px}

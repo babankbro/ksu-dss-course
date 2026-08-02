@@ -33,9 +33,17 @@ npm --prefix web run dev
 | 06 | 🔎 **Grain Detective** — เลือก grain ผิดแล้วยอดขายพอง 12.96% | W3 | ✅ พร้อมใช้ | [[Sim-W3-Data-Management]] | เว็บแอป + Colab |
 | 07 | 🧼 **Dirty Data Gauntlet** — เปิดกฎคุณภาพทีละข้อ | W3 | ✅ พร้อมใช้ | [[Sim-W3-Data-Management]] | เว็บแอป + Colab |
 | 08 | 🔁 **ETL Pipeline Sim** — schema drift · ข้อมูลมาช้า · แฟ้มซ้ำ | W3 | ✅ พร้อมใช้ | [[Sim-W3-Data-Management]] | เว็บแอป + Colab |
-| 09 | ⚖️ **Bias Lab** — ทำไม Accuracy ถึงโกหก | W5–W6, W9 | 🕓 กำลังพัฒนา | — | — |
-| 10 | 🌫️ **Fuzzy vs Crisp Playground** — เส้นแบ่งที่ไม่คม | W12–W13 | 🕓 กำลังพัฒนา | — | — |
-| 11 | 🏁 **Signal-to-Action Race** — BI vs AI vs DI | W15 | 🕓 กำลังพัฒนา | — | — |
+| 09 | 🎭 **Simpson's Paradox Lab** — ทุกกลุ่มลง แต่ตัวเลขรวมขึ้น 13.3 จุด | W4 | ✅ พร้อมใช้ | [[Sim-W4-OLAP-Analysis]] | เว็บแอป + Colab |
+| 10 | 🏷️ **Metric Sprawl Arena** — 4 แผนก 4 คำตอบ ห่างกัน 17.68% | W4 | ✅ พร้อมใช้ | [[Sim-W4-OLAP-Analysis]] | เว็บแอป + Colab |
+| 11 | 📅 **Time Intelligence Builder** — YTD · MoM · YoY · Rolling 12 | W4 | ✅ พร้อมใช้ | [[Sim-W4-OLAP-Analysis]] | เว็บแอป + Colab |
+| 12 | 🎯 **Threshold Policy Studio** — accuracy สูงสุดแพงกว่าคำตอบที่ถูก 308,900 บาท | W5–W6, W9 | ✅ พร้อมใช้ | [[Sim-W5-Data-Mining]] | เว็บแอป + Colab |
+| 13 | 🕵️ **Leakage Hunter** — AUC 1.0000 คือรายงานบั๊ก ไม่ใช่ความสำเร็จ | W5 | ✅ พร้อมใช้ | [[Sim-W5-Data-Mining]] | เว็บแอป + Colab |
+| 14 | 🌳 **Decision Tree Grower** — ปลูกต้นไม้ด้วยมือ เทียบกับ Information Gain | W5 | ✅ พร้อมใช้ | [[Sim-W5-Data-Mining]] | เว็บแอป + Colab |
+| 15 | 👥 **Segment Studio** — ลืม normalize แล้วได้แค่การแบ่งช่วงยอดเงิน | W6 | ✅ พร้อมใช้ | [[Sim-W6-Clustering-and-Rules]] | เว็บแอป + Colab |
+| 16 | 🧺 **Lift Detective** — confidence สูงสุดคือกฎไร้ค่าทั้งสิบอันดับ | W6 | ✅ พร้อมใช้ | [[Sim-W6-Clustering-and-Rules]] | เว็บแอป + Colab |
+| 17 | 🔬 **Cluster Reality Check** — K-Means คืนกลุ่มมาให้เสมอ แม้ไม่มีกลุ่มจริง | W6 | ✅ พร้อมใช้ | [[Sim-W6-Clustering-and-Rules]] | เว็บแอป + Colab |
+| 18 | 🌫️ **Fuzzy vs Crisp Playground** — เส้นแบ่งที่ไม่คม | W12–W13 | 🕓 กำลังพัฒนา | — | — |
+| 19 | 🏁 **Signal-to-Action Race** — BI vs AI vs DI | W15 | 🕓 กำลังพัฒนา | — | — |
 
 ### ชุดสามตัวของสัปดาห์ที่ 2 ใช้ต่อกันเป็นลำดับ
 
@@ -48,6 +56,39 @@ flowchart LR
 
 สร้าง → ทดสอบ → วิพากษ์ · ใช้เต็มคาบปฏิบัติการ 2 ชั่วโมงได้พอดี
 หรือเลือกใช้ตัวเดียวคู่กับ Lab เดิมของสัปดาห์ที่ 2 ก็ได้
+
+### ชุดสามตัวของสัปดาห์ที่ 4 ถามคำถามเดียวกันจากคนละมุม
+
+```mermaid
+flowchart LR
+    A["🎭 Simpson's Paradox<br/>ตัวเลขรวมหลอกได้"] --> B["🏷️ Metric Sprawl<br/>ชื่อตัววัดหลอกได้"]
+    B --> C["📅 Time Intelligence<br/>ตัววัดเชิงเวลาหลอกได้"]
+```
+
+ทั้งสามตัวตั้งต้นจากข้อมูลที่**ถูกต้องทุกแถว** แล้วถามว่ายังตัดสินใจผิดได้อย่างไร
+ต่อยอดจากสัปดาห์ที่ 3 ซึ่งถามว่า "ข้อมูลถูกต้องหรือยัง" — ดูรายละเอียดที่ [[Sim-W4-OLAP-Analysis]]
+
+### ชุดสามตัวของสัปดาห์ที่ 5 เดินตามวงจรจริงของงาน Data Mining
+
+```mermaid
+flowchart LR
+    A["🌳 Decision Tree Grower<br/>สร้างโมเดลที่อธิบายได้"] --> B["🕵️ Leakage Hunter<br/>ตรวจว่าโมเดลโกงหรือไม่"]
+    B --> C["🎯 Threshold Policy<br/>แปลงโมเดลเป็นการตัดสินใจ"]
+```
+
+สร้าง → ตรวจสอบ → นำไปใช้ · แต่ละขั้นมีกับดักคนละแบบที่สอนด้วยสไลด์ไม่ได้ผล
+ดูรายละเอียดและเฉลยเต็มที่ [[Sim-W5-Data-Mining]]
+
+### ชุดสามตัวของสัปดาห์ที่ 6 ถามคำถามที่ยากที่สุดของ unsupervised learning
+
+```mermaid
+flowchart LR
+    A["👥 Segment Studio<br/>แบ่งกลุ่มให้ถูกวิธี"] --> B["🔬 Cluster Reality Check<br/>ตรวจว่ากลุ่มมีอยู่จริงไหม"]
+    B --> C["🧺 Lift Detective<br/>อ่านกฎที่ค้นพบให้ถูก"]
+```
+
+ไม่มีคำตอบที่ถูกต้องให้เทียบ แล้วจะรู้ได้อย่างไรว่าผลลัพธ์มีความหมาย
+ดูรายละเอียดและเฉลยเต็มที่ [[Sim-W6-Clustering-and-Rules]]
 
 ## หลักการออกแบบร่วมของทุกตัว
 

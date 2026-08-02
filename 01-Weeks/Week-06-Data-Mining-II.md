@@ -74,3 +74,16 @@ exam: midterm
 - [[week06/Lab-02-Market-Basket-and-Experiment|Lab 2: Market Basket และ A/B Test]]
 - [[week06/References|เอกสารอ้างอิง]]
 - `week06/Week-06-Data-Mining-II.pptx` — สไลด์ 25 หน้า
+
+## 🎮 สื่อจำลองและ Lab บน Colab
+
+สื่อจำลอง 3 ตัว + Lab Python 3 ชุด ใช้ไฟล์ CSV เดียวกัน
+ทั้งชุดตอบคำถามที่ยากที่สุดของ unsupervised learning — ไม่มีคำตอบให้เทียบ แล้วจะรู้ได้อย่างไรว่าผลมีความหมาย
+
+| สื่อจำลอง | Lab | เฉลยหลัก |
+|---|---|---|
+| 👥 Segment Studio | `labs/week06/Lab-W6-1-RFM-Segmentation.ipynb` | ไม่ normalize แล้ว silhouette **สูงกว่า** (0.6392 เทียบ 0.5847) แต่ผลผิด |
+| 🧺 Lift Detective | `labs/week06/Lab-W6-2-Market-Basket.ipynb` | 10 กฎ confidence สูงสุดมี lift ≈ 1 · กฎที่ดีที่สุด lift **5.0312** อยู่อันดับ 14 |
+| 🔬 Cluster Reality Check | `labs/week06/Lab-W6-3-Cluster-Validation.ipynb` | จุดสุ่มล้วนยังได้ silhouette **0.2868** ซึ่ง "ดูพอใช้ได้" |
+
+รายละเอียดและเฉลยเต็ม: [[Sim-W6-Clustering-and-Rules]] · ชุดข้อมูล: `datasets/week06/`

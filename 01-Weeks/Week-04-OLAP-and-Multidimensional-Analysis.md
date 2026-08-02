@@ -101,3 +101,16 @@ flowchart TB
 - [[Sim-02-OLAP-Cube-Explorer|🧊 Sim 02 — OLAP Cube Explorer]] — ลูกบาศก์ข้อมูลที่หมุนได้ กด Roll-up / Drill-down / Slice / Dice / Pivot แล้วเห็น SQL ที่เทียบเท่า พร้อมโหมดท้าทาย 6 คำถามและเฉลย
 - เปิดใช้: `npm --prefix web run dev` → `http://localhost:3000/sims/olap-cube` หรือดับเบิลคลิก `06-Simulations/sim-02-olap-cube-explorer.html`
 - ดัชนีสื่อจำลองทั้งหมด: [[Simulation-Index]]
+
+## 🎮 สื่อจำลองและ Lab บน Colab
+
+สื่อจำลอง 3 ตัว + Lab Python 3 ชุด ใช้ไฟล์ CSV เดียวกัน ตัวเลขบนหน้าจอกับที่ได้จาก pandas ตรงกันทุกหลัก
+ทั้งชุดตั้งต้นจากข้อมูลที่**ถูกต้องทุกแถว** แล้วถามว่ายังตัดสินใจผิดได้อย่างไร
+
+| สื่อจำลอง | Lab | เฉลยหลัก |
+|---|---|---|
+| 🎭 Simpson's Paradox Lab | `labs/week04/Lab-W4-1-Simpsons-Paradox.ipynb` | ทุกกลุ่มลง แต่ตัวเลขรวมขึ้น **+13.3 จุด** |
+| 🏷️ Metric Sprawl Arena | `labs/week04/Lab-W4-2-Metric-Sprawl.ipynb` | 4 นิยาม ห่างกัน **17.68%** |
+| 📅 Time Intelligence Builder | `labs/week04/Lab-W4-3-Time-Intelligence.ipynb` | YTD ยัง **+16.66%** ในเดือนที่ระบบล่ม |
+
+รายละเอียดและเฉลยเต็ม: [[Sim-W4-OLAP-Analysis]] · ชุดข้อมูล: `datasets/week04/`

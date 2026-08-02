@@ -638,6 +638,163 @@ def gen_churn() -> None:
 
 
 # ============================================================
+# W6 · 6.1 Segment Studio — customers_rfm.csv
+# ============================================================
+
+def gen_customers_rfm() -> None:
+    """
+    ลูกค้า 1,200 รายพร้อมค่า RFM สำหรับฝึกแบ่งกลุ่มด้วย K-Means
+
+    ออกแบบให้ 'สเกลของตัวแปร' เป็นตัวชี้ขาด:
+      recency  อยู่ในช่วง 3–420 วัน
+      frequency อยู่ในช่วง 1–48 ครั้ง
+      monetary อยู่ในช่วง 480–210,000 บาท   ← ช่วงกว้างกว่าตัวอื่นหลายพันเท่า
+
+    ถ้าไม่ normalize ก่อน K-Means ระยะทางแบบยุคลิดจะถูก monetary กลืนทั้งหมด
+    ผลลัพธ์จึงกลายเป็นการแบ่ง 'ช่วงยอดเงิน' เฉย ๆ ไม่ใช่การแบ่งพฤติกรรม
+
+    กลุ่มแฝงที่ฝังไว้ 4 กลุ่ม โดยกลุ่ม 'ซื้อครั้งใหญ่ครั้งเดียว' จงใจให้มียอดเงิน
+    ทับซ้อนกับกลุ่มแชมเปี้ยน แต่มีพฤติกรรมตรงข้ามกันสิ้นเชิง
+    """
+    rng = random.Random(SEED + 61)
+    # (ชื่อกลุ่ม, จำนวน, recency, frequency, monetary)
+    segments = [
+        ("แชมเปี้ยน", 260, (3, 45), (18, 48), (42000, 185000)),
+        ("ลูกค้าประจำ", 420, (20, 110), (7, 20), (7000, 42000)),
+        ("หลับใหล", 380, (150, 420), (1, 5), (480, 6800)),
+        ("ซื้อครั้งใหญ่ครั้งเดียว", 140, (95, 260), (1, 2), (52000, 210000)),
+    ]
+    rows = []
+    i = 0
+    for _name, count, r_rng, f_rng, m_rng in segments:
+        for _ in range(count):
+            recency = rng.randint(*r_rng)
+            freq = rng.randint(*f_rng)
+            monetary = round(rng.uniform(*m_rng), 2)
+            rows.append([
+                f"C-{30000+i}", recency, freq, f"{monetary:.2f}",
+                rng.randint(max(recency, 60), 1500),
+                rng.choice(["หน้าร้าน", "ออนไลน์", "แอปมือถือ"]),
+            ])
+            i += 1
+    rng.shuffle(rows)
+    write_csv(
+        out("week06", "customers_rfm.csv"),
+        ["customer_id", "recency_days", "frequency", "monetary",
+         "tenure_days", "main_channel"],
+        rows,
+    )
+    print("     4 กลุ่มแฝง · monetary กว้างกว่า frequency ราว 4,400 เท่า "
+          "→ ไม่ normalize แล้วผลจะผิด")
+
+
+# ============================================================
+# W6 · 6.2 Lift Detective — baskets.csv
+# ============================================================
+
+BASKET_ITEMS = [
+    "ถุงพลาสติก", "น้ำดื่ม", "ขนมปัง", "นมสด", "ไข่ไก่",
+    "ผ้าอ้อม", "ผ้าเช็ดทำความสะอาด", "เบียร์", "มันฝรั่งทอด",
+    "กาแฟสด", "ชาเขียว", "บะหมี่กึ่งสำเร็จรูป", "ผงซักฟอก", "แชมพู",
+]
+
+
+def gen_baskets() -> None:
+    """
+    ตะกร้าสินค้า 5,000 ใบ ที่ฝังกฎไว้ 4 แบบเพื่อสอนการอ่านค่า lift
+
+      1) กฎจริง       ผ้าอ้อม → ผ้าเช็ดทำความสะอาด   lift สูงชัดเจน
+      2) กฎกรณีศึกษา  ผ้าอ้อม → เบียร์                lift ราว 2 ตามตำนาน
+      3) กับดัก       อะไรก็ตาม → ถุงพลาสติก          confidence สูงมาก แต่ lift ≈ 1
+                      เพราะถุงพลาสติกอยู่ในเกือบทุกตะกร้าอยู่แล้ว
+      4) สินค้าทดแทน  กาแฟสด → ชาเขียว                lift < 1 (ซื้ออย่างหนึ่งแล้วไม่ซื้ออีกอย่าง)
+    """
+    rng = random.Random(SEED + 62)
+    rows = []
+    n_tx = 5000
+    start = date(2025, 7, 1)
+
+    for i in range(n_tx):
+        basket: set[str] = set()
+
+        # สินค้าพื้นฐานที่ใครก็หยิบ — ทำให้ถุงพลาสติกกลายเป็นกับดักของ confidence
+        if rng.random() < 0.82:
+            basket.add("ถุงพลาสติก")
+        for item, p in [("น้ำดื่ม", 0.34), ("ขนมปัง", 0.26), ("นมสด", 0.24),
+                        ("ไข่ไก่", 0.22), ("มันฝรั่งทอด", 0.18),
+                        ("บะหมี่กึ่งสำเร็จรูป", 0.20), ("ผงซักฟอก", 0.14),
+                        ("แชมพู", 0.12)]:
+            if rng.random() < p:
+                basket.add(item)
+
+        # กลุ่มพ่อแม่ลูกอ่อน — ต้นตอของกฎที่มีความหมายจริง
+        if rng.random() < 0.12:
+            basket.add("ผ้าอ้อม")
+            if rng.random() < 0.68:
+                basket.add("ผ้าเช็ดทำความสะอาด")
+            if rng.random() < 0.34:
+                basket.add("เบียร์")
+        else:
+            if rng.random() < 0.06:
+                basket.add("ผ้าเช็ดทำความสะอาด")
+            if rng.random() < 0.16:
+                basket.add("เบียร์")
+
+        # กาแฟกับชาเขียวเป็นสินค้าทดแทนกัน — เลือกอย่างใดอย่างหนึ่ง
+        drink = rng.random()
+        if drink < 0.22:
+            basket.add("กาแฟสด")
+        elif drink < 0.40:
+            basket.add("ชาเขียว")
+
+        if not basket:
+            basket.add(rng.choice(BASKET_ITEMS))
+
+        d = start + timedelta(days=rng.randint(0, 89))
+        for item in sorted(basket):
+            rows.append([f"T-{200000+i}", d.isoformat(), item])
+
+    write_csv(
+        out("week06", "baskets.csv"),
+        ["transaction_id", "txn_date", "item"],
+        rows,
+    )
+    print(f"     {n_tx:,} ตะกร้า · ฝังกฎจริง 2 ข้อ · กับดัก confidence 1 ข้อ "
+          f"· สินค้าทดแทน 1 คู่")
+
+
+# ============================================================
+# W6 · 6.3 Cluster Reality Check — no_structure.csv
+# ============================================================
+
+def gen_no_structure() -> None:
+    """
+    จุดข้อมูล 900 จุดที่สุ่มกระจายสม่ำเสมอใน 3 มิติ — 'ไม่มีกลุ่มอยู่จริงเลย'
+
+    ใช้พิสูจน์ว่า K-Means จะคืนกลุ่มมาให้เสมอไม่ว่าข้อมูลจะมีโครงสร้างหรือไม่
+    และค่า silhouette ที่ได้ (ราว 0.3) สูงพอที่นักศึกษาจำนวนมากจะยอมรับ
+
+    ใช้ชื่อคอลัมน์เดียวกับ customers_rfm.csv เพื่อให้สลับชุดข้อมูลได้ทันที
+    โดยไม่ต้องแก้โค้ดแม้แต่บรรทัดเดียว
+    """
+    rng = random.Random(SEED + 63)
+    rows = []
+    for i in range(900):
+        rows.append([
+            f"N-{40000+i}",
+            rng.randint(3, 420),
+            rng.randint(1, 48),
+            f"{rng.uniform(480, 210000):.2f}",
+        ])
+    write_csv(
+        out("week06", "no_structure.csv"),
+        ["customer_id", "recency_days", "frequency", "monetary"],
+        rows,
+    )
+    print("     ไม่มีโครงสร้างใด ๆ — ใช้เป็นกลุ่มควบคุมของการแบ่งกลุ่ม")
+
+
+# ============================================================
 
 def main() -> None:
     print("สร้างชุดข้อมูลจำลองของรายวิชา DSS")
@@ -656,6 +813,11 @@ def main() -> None:
     gen_fraud_scored()
     gen_leaky_loans()
     gen_churn()
+
+    print("\n[Week 06] Data Mining II")
+    gen_customers_rfm()
+    gen_baskets()
+    gen_no_structure()
 
     print("\n" + "=" * 70)
     print("เสร็จสิ้น — ชุดข้อมูลทั้งหมดถูกสร้างด้วย seed คงที่ ผลจึงเหมือนกันทุกครั้ง")
