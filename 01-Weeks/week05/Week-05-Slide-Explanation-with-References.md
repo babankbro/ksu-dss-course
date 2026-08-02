@@ -1,0 +1,125 @@
+---
+title: "สรุปและอธิบายสไลด์ Week 05 (พร้อมอ้างอิงเนื้อหาเชิงลึก)"
+---
+
+# สรุปและอธิบายสไลด์ Week 05: Data Mining I (CRISP-DM & CLASSIFICATION)
+เอกสารนี้อธิบายความหมายและภาพรวมของสไลด์แต่ละหน้า โดยเน้นคำศัพท์ (Technical Terms) และเชื่อมโยงอ้างอิงกับเอกสารเจาะลึก 36 บทในโฟลเดอร์ `content/` พร้อมทั้งตอบคำถามที่อยู่ในสไลด์อย่างครบถ้วน
+
+---
+
+## สไลด์ที่ 1: หน้าปก (WEEK 05 • CRISP-DM & CLASSIFICATION)
+**ภาพรวม:** สไลด์เปิดเข้าสู่เนื้อหาเรื่องการทำเหมืองข้อมูล (Data Mining) พาร์ทแรก เน้นไปที่กระบวนการ CRISP-DM และเทคนิคการจัดกลุ่ม (Classification)
+**คำศัพท์และคีย์เวิร์ดสำคัญ:**
+*   **CRISP-DM (Cross-Industry Standard Process for Data Mining):** มาตรฐานกระบวนการทำเหมืองข้อมูลแบบครบวงจร
+*   **Classification:** การสร้างโมเดลเพื่อจำแนกประเภท (ทำนายคลาสเป้าหมาย) เช่น โกง/ไม่โกง
+*   **Metrics:** ตัวชี้วัดประสิทธิภาพของโมเดล
+**คำถามในสไลด์:** *"โมเดล Accuracy 98% ใช้งานได้เลยหรือไม่?"*
+*   *ตอบ:* ไม่ได้! เพราะหากข้อมูลตั้งต้นมีสัดส่วนคลาสที่ทำนายน้อยมาก (เช่น คนป่วย 2%) โมเดลอาจเดาว่า "ไม่ป่วย" ทั้งหมด ก็จะได้ Accuracy 98% โดยที่จับคนป่วยไม่ได้เลยแม้แต่คนเดียว ต้องดูบริบทของ Metrics อื่นด้วย *(อ้างอิง: [บทที่ 07] Imbalanced Classes and Accuracy Trap)*
+
+## สไลด์ที่ 2: 10 คำถามที่จะพาเราจากข้อมูลไปสู่การตัดสินใจ
+**ภาพรวม:** สไลด์เกริ่น 10 คำถามหลักที่จะเป็นแกนในการเรียน ทั้งเรื่องธุรกิจ (ปัญหา, Target), กระบวนการ (CRISP-DM, Split), ปัญหา (Leakage), ตัวโมเดล (Tree, Naive Bayes), การวัดผล (Metrics), และนโยบาย (Threshold)
+**อธิบาย/อ้างอิง:** Data Mining ที่ดีไม่ได้เริ่มที่โค้ด แต่เริ่มที่การตัดสินใจทางธุรกิจ *(อ้างอิง: [บทที่ 02] Start with Decision Not Algorithm)*
+
+## สไลด์ที่ 3: Accuracy 98% อาจหมายถึงโมเดลไม่จับ Positive เลย
+**ภาพรวม:** แสดงภาพจำลองของ Accuracy Trap
+*   **Positive (สิ่งที่สนใจ):** มีแค่ 2% ในข้อมูลทั้งหมด (10,000 รายการ = 200 รายการ)
+*   ถ้าโมเดลขี้เกียจและทาย Negative ทุกครั้ง ➔ True Negative (TN) = 9,800, False Negative (FN) = 200, True Positive (TP) = 0
+*   *ผลคือ:* Accuracy = 98% แต่ Recall (ความสามารถในการจับ Positive) = 0%
+**อธิบาย/อ้างอิง:** การเลือก Metric ต้องตอบความเสียหายทางธุรกิจ เช่น ถ้าหลุด Positive แล้วอันตราย (คนไข้หนัก) ห้ามใช้ Accuracy เด็ดขาด *(อ้างอิง: [บทที่ 10] Evaluation Confusion Matrix and Metrics)*
+
+## สไลด์ที่ 4: Classification ใน DSS เชื่อม Score กับ Action ผ่าน Policy
+**ภาพรวม:** ชี้ให้เห็นสายพานการนำโมเดลไปใช้จริง:
+`DATA` ➔ `MODEL` (ได้ Risk Score) ➔ `POLICY` (กำหนด Threshold และ Cost) ➔ `ACTION` (ผ่าน/ตรวจ/ระงับ) ➔ `EVIDENCE` (เก็บผลจริง)
+**อธิบาย/อ้างอิง:** โมเดลทำหน้าที่แค่บอก Score แต่การตัดสินใจว่าจะทำอย่างไรขึ้นอยู่กับ Policy ที่มนุษย์ตั้งขึ้น *(อ้างอิง: [บทที่ 11] Threshold Policy and Deployment)*
+
+## สไลด์ที่ 5-6: CRISP-DM เป็นวงจรเรียนรู้
+**ภาพรวม:** สไลด์อธิบาย 6 ขั้นตอนของ CRISP-DM:
+1. **Business Understanding:** ปัญหาและเป้าหมาย
+2. **Data Understanding:** โครงสร้างข้อมูลและคุณภาพ
+3. **Data Preparation:** แปลง ตัด เติมข้อมูล
+4. **Modeling:** ฝึกและปรับจูนโมเดล
+5. **Evaluation:** ประเมินว่าตอบโจทย์ธุรกิจไหม
+6. **Deployment:** นำไปใช้งาน
+**คำถามในสไลด์:** *"ลูกศรย้อนกลับมีความหมายอย่างไร?"*
+*   *ตอบ:* CRISP-DM ไม่ใช่เส้นตรง แต่เป็นวัฏจักร (Iterative) หากเจอข้อมูลไม่พอตอนทำ Data Prep ก็ย้อนกลับไป Data Understanding ได้ หรือถ้า Evaluate ไม่ผ่าน ก็กลับไป Business ได้
+**อธิบาย/อ้างอิง:** *(อ้างอิง: [บทที่ 03] CRISP-DM Methodology)*
+
+## สไลด์ที่ 7: Target ต้องผูกกับเวลา มิฉะนั้น Feature จะเห็นอนาคต (Data Leakage)
+**ภาพรวม:** ตัวอย่าง Time-based Leakage 
+*   **T0:** เวลาทำนาย (Prediction Time)
+*   **T-90:** ประวัติในอดีต (ใช้สร้าง Feature ได้)
+*   **T+30 / T+90:** อนาคต
+**อธิบาย/อ้างอิง:** ถ้านำข้อมูลหลัง T0 มาร่วมสร้าง Feature โมเดลจะเห็น "คำใบ้จากอนาคต (Leakage)" ทำให้ตอนทดสอบแม่นมาก แต่พอใช้จริงทายผิดหมด *(อ้างอิง: [บทที่ 06] Data Leakage and Splitting และ [บทที่ 13] Advanced Data Leakage)*
+
+## สไลด์ที่ 8: Split ก่อน Fit คือกฎพื้นฐานในการป้องกัน Leakage
+**ภาพรวม:** อธิบายกฎเหล็กในการเตรียมข้อมูล
+1. **Split (แบ่งข้อมูล):** เป็น Train, Validation, Test 
+2. **Fit (เรียนรู้):** เรียนรู้ค่าสถิติ (เช่น ค่าเฉลี่ย, ค่า max/min) **จาก Train เท่านั้น**
+3. **Transform (แปลง):** นำกฎที่เรียนจาก Train ไปแปลงทั้ง Train, Validation และ Test
+**อธิบาย/อ้างอิง:** ห้ามนำ Test Data ไปให้ Imputer หรือ Scaler ดูล่วงหน้าเด็ดขาด เพราะ Test Data คือตัวแทนของอนาคต *(อ้างอิง: [บทที่ 06] Data Leakage and Splitting)*
+
+## สไลด์ที่ 9: Pipeline ผูก Preprocessing กับ Model ให้ทำซ้ำได้
+**ภาพรวม:** ใช้ `Pipeline` ใน scikit-learn เพื่อมัดขั้นตอน Data Prep และ Model เข้าด้วยกันเป็นเส้นเดียว
+**อธิบาย/อ้างอิง:** Pipeline ช่วยป้องกัน Data Leakage ตอนทำ Cross-validation เพราะมันรับประกันว่าการ Fit และ Transform จะทำถูกต้องตามลำดับเสมอ และสามารถ Deploy รวมเป็นก้อนเดียวได้ง่าย *(อ้างอิง: [บทที่ 05] Data Preparation and Cleaning)*
+
+## สไลด์ที่ 10: Data Preparation ทุกขั้นต้องมีเหตุผล
+**ภาพรวม:** วิธีจัดการข้อมูล 6 ประเภท
+1. **Missing (ค่าว่าง):** ลบ หรือ เติม (Impute)
+2. **Encoding (ข้อมูลกลุ่ม):** One-hot (ไม่มีลำดับ), Ordinal (มีลำดับ)
+3. **Scale (สเกลเลข):** Standardize เมื่อจำเป็น (เช่น ใช้กับ Distance-based Model)
+4. **Outlier (ค่าผิดปกติ):** ตรวจสาเหตุก่อนตัดทิ้งเสมอ
+5. **Feature:** ต้องเกิดก่อนหรือเท่ากับ T0 เท่านั้น (กัน Leakage)
+6. **Imbalance (คลาสไม่สมดุล):** ให้ Resample (เช่น SMOTE) เฉพาะในชุด Train
+**อธิบาย/อ้างอิง:** *(อ้างอิง: [บทที่ 05, 26, 27] Data Prep, Imputation, และ Target Encoding)*
+
+## สไลด์ที่ 11: ข้อมูลไม่สมดุลบังคับให้เราดู Beyond Accuracy
+**ภาพรวม:** เมื่อคลาสหลัก (Negative) = 98% และคลาสเป้าหมาย (Positive) = 2%
+*   ห้ามใช้ Accuracy เพียวๆ
+*   ต้องใช้การแบ่งข้อมูลแบบ Stratified เพื่อรักษาสัดส่วน
+*   ต้องดู Precision-Recall เป็นหลัก
+**อธิบาย/อ้างอิง:** *(อ้างอิง: [บทที่ 07] Imbalanced Classes และ [บทที่ 17] Advanced Imbalanced Techniques SMOTE)*
+
+## สไลด์ที่ 12-14: Decision Tree (ต้นไม้ตัดสินใจ)
+**ภาพรวม:** 
+*   **IF-THEN Path:** แปลงข้อมูลเป็นกฎที่คนทั่วไปมองเห็นและเข้าใจได้ 
+*   **Split Quality:** การแตกกิ่งที่ดี ต้องลดค่าความมั่ว (Impurity) ของโหนดลูกให้ได้มากที่สุด โดยวัดจาก **Gini** หรือ **Entropy**
+*   **Shallow vs Deep Tree:** 
+    *   *ต้นเตี้ย (Shallow):* กฎน้อย เสถียร แต่อาจเรียนรู้ไม่พอ (Underfit)
+    *   *ต้นลึก (Deep):* จำเก่ง กฎเยอะมาก แต่ใช้งานจริงแย่ (Overfit) เพราะจำเสียงรบกวน (Noise) ไปด้วย
+**อธิบาย/อ้างอิง:** ต้องจูน Parameter (เช่น `max_depth`) จากชุด Validation เสมอ *(อ้างอิง: [บทที่ 08] Decision Tree)*
+
+## สไลด์ที่ 15: Naive Bayes เป็น Baseline ที่เร็ว
+**ภาพรวม:** โมเดลทฤษฎีความน่าจะเป็น (Bayes Theorem) ที่สมมติว่าตัวแปรแต่ละตัวเป็นอิสระต่อกัน (Conditional Independence) 
+*   คำนวณเร็วมาก แบ่งเป็น Gaussian (ค่าต่อเนื่อง), Multinomial (ค่านับ), Bernoulli (ไบนารี)
+**อธิบาย/อ้างอิง:** แม้ Class ที่ออกมาจะถูกบ่อย แต่ค่า Probability (คะแนนความเสี่ยง) ที่ออกมามักจะ "ไม่แม่นยำในสัดส่วนจริง (Not Calibrated)" จึงต้องระวังถ้านำคะแนนดิบไปตั้ง Policy *(อ้างอิง: [บทที่ 09] Naive Bayes และ [บทที่ 18] Model Calibration)*
+
+## สไลด์ที่ 16: Confusion Matrix
+**ภาพรวม:** ตารางแยกความผิดพลาดเป็น 4 ชนิด
+*   **TP (True Positive):** จับ Positive ได้ถูกต้อง
+*   **FN (False Negative):** พลาด Positive (อันตรายมาก เช่น พลาดทายคนเป็นมะเร็งว่าปกติ)
+*   **FP (False Positive):** เตือนเกินจริง (รำคาญหรือเปลือง resource เช่น แจ้งเตือน fraud ปลอม)
+*   **TN (True Negative):** ปล่อยผ่าน Negative ได้ถูก
+**อธิบาย/อ้างอิง:** นำค่าเหล่านี้ไปคำนวณ Precision (ความแม่นยำของการเตือน) และ Recall (ความครอบคลุมการจับผิด) *(อ้างอิง: [บทที่ 10] Evaluation Confusion Matrix and Metrics)*
+
+## สไลด์ที่ 17: Threshold คือ Policy ที่แลก Recall กับ False Alarms
+**ภาพรวม:** การตั้งเกณฑ์ (Threshold) ตัดสินใจ:
+*   `≥ 0.80:` (เสี่ยงสูงมาก) ระงับอัตโนมัติ (Auto-hold)
+*   `0.50 – 0.79:` ให้คนตรวจสอบ (Manual Review) ขึ้นอยู่กับคนที่มี (Capacity)
+*   `< 0.50:` ปล่อยผ่านและติดตามผล (Pass + Monitor)
+**อธิบาย/อ้างอิง:** Threshold ไม่จำเป็นต้องเป็น 0.5 เสมอ ต้องเลือกจาก ต้นทุนที่พลาด (FN) กับ ต้นทุนที่เสียเวลาเช็คฟรี (FP) *(อ้างอิง: [บทที่ 11] Threshold Policy and Deployment และ [บทที่ 20] Cost Sensitive Learning)*
+
+## สไลด์ที่ 18: 20 Applications ของ Classification
+**ภาพรวม:** อุตสาหกรรมต่างๆ ล้วนใช้ Classification เช่น ทายหนี้เสีย (Credit Default), ตรวจจับโกง (Fraud), โอกาสรักษาซ้ำ (Readmission), อีเมลขยะ (Spam) ฯลฯ
+**อธิบาย/อ้างอิง:** *(อ้างอิง: [บทที่ 12] Applications and Checklist for Classification)*
+
+## สไลด์ที่ 19: Future Data Mining (Responsible Loop)
+**ภาพรวม:** โมเดลในอนาคตจะมี AI เข้ามาช่วยสร้างโค้ดและจูนโมเดล แต่หน้าที่หลักของมนุษย์คือเป็น **คนตัดสินใจ (Human Review)** และทำ **Responsible Loop** 
+*   การเฝ้าระวังความลำเอียง (Subgroup evaluation)
+*   การติดตามการเปลี่ยนไปของข้อมูล (Drift monitoring)
+**อธิบาย/อ้างอิง:** *(อ้างอิง: [บทที่ 22] MLOps, Model Monitoring และ [บทที่ 23] Ethical AI and Fairness)*
+
+## สไลด์ที่ 20: Next Action (บทสรุป)
+**ภาพรวม:** Lab ประจำสัปดาห์ 
+*   **Lab 01:** สร้าง Classification Pipeline แบบสมบูรณ์ (ป้องกัน Leakage)
+*   **Lab 02:** ทำ Threshold & Monitoring ออกแบบ Policy อนุมัติ 3 ระดับ จาก Expected Cost
+*   **เป้าหมาย:** ทุกโมเดลต้องมี Target, Time, Metric, Policy และมี Owner รับผิดชอบ

@@ -325,3 +325,24 @@ pre{background:var(--panel2);border:1px solid var(--line);border-radius:10px;pad
 .sw.on-good::after{left:17px}
 code{background:var(--panel2);border:1px solid var(--line);border-radius:5px;padding:1px 6px;
   font-family:var(--font-mono),ui-monospace,Consolas,monospace;font-size:.9em}
+
+/* ============================================================
+   Week 04 — Simpson / Metric Sprawl / Time Intelligence
+   ============================================================ */
+.bigcompare{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap;margin:14px 0}
+.bc{text-align:center;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px 26px}
+.bc span{display:block;font-size:12px;color:var(--dim)}
+.bc b{display:block;font-size:34px;font-variant-numeric:tabular-nums;line-height:1.2}
+.bc small{display:block;font-size:11.5px;color:var(--dim)}
+.bcarrow{font-size:15px;font-weight:700}
+.stack{display:flex;height:26px;border-radius:7px;overflow:hidden;border:1px solid var(--line)}
+.stack i{display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;
+  font-style:normal;white-space:nowrap;overflow:hidden}
+.deptgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin:12px 0}
+.deptcard{background:var(--panel2);border:2px solid var(--line);border-radius:12px;padding:13px;text-align:center;transition:.2s}
+.deptcard.governed{border-color:var(--ok);background:rgba(34,197,94,.08)}
+.deptcard .ico{font-size:22px}
+.deptcard b{display:block;font-size:14px;margin:3px 0}
+.deptval{font-size:19px;font-weight:700;font-variant-numeric:tabular-nums;margin:5px 0}
+.deptformula{font-family:var(--font-mono),monospace;font-size:10.5px;color:var(--acc);
+  background:var(--panel);border-radius:6px;padding:4px 6px;margin-bottom:6px;word-break:break-all}
